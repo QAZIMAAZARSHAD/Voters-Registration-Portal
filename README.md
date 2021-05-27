@@ -15,7 +15,7 @@ Don't worry, now you don't need to circle around government office. All you need
 
 ## About
 
-ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows and web series from multiple genres like crime, comedy, drama, kids etc. 
+This is a demo website of national voter's registration portal. All Indian citizens who are eligible to vote can register themselves on this website to get their voter id's. This portal allow users to fill (Form 6 of Electors Rule-1960) an application for inclusion of name in electoral roll.
 
 ## Link to the website
 https://qazimaazarshad.github.io/Voters-Registration-Portal/
@@ -43,7 +43,7 @@ git clone --depth 1 https://github.com/<your_user_name>/Voters-Registration-Port
 **3.** Navigate to the project directory :file_folder: .
 
 ```
-cd Movie-Streaming-Website
+cd Voters-Registration-Portal
 ```
 
 **4.** Add a reference(remote) to the original repository.
