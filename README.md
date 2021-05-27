@@ -1,13 +1,13 @@
 # Voter's Registration Portal 🗳️
 
-Are you a movie maniac, who loves to binge watch awesome series? If Yes, then you have come to right place.
-<p align="center"><img src="https://noelalanaleon.files.wordpress.com/2015/06/tyrion-29.gif" width = 40%></p>
+Voting is a great power in the hands of citizens. Voting is an opportunity for change. But to contribute to that change you need to register yourself as an eligible voter.
+<p align="center"><img src="https://media0.giphy.com/media/fveKCnZRN7aOrtWNfj/200w.webp?cid=ecf05e47kz4k2qixvi3t7ruoeq3uogqyl1yhmacd88s4n8l2&rid=200w.webp&ct=g" width = 40%></p>
 
-Everyone loves to watch their favorite shows with friends and some snacks. But there is something that you might be missing out on!
-<p align="center"><img src="https://i.pinimg.com/originals/43/c8/7e/43c87e08d3858256c4493e64b2c4c501.gif"></p>
+But where and how to register? 
+<p align="center"><img src="https://media.tenor.com/images/ff0b24e5174865d7aa3d280095d4ba51/tenor.gif"></p>
 
-So, what else do you need?🤔.
-<p align="center"><img src="https://media.tenor.com/images/1498a68342ec3e96a8773995f59dfc39/tenor.gif" width = 40%></p>
+Don't worry, now you don't need to circle around government office. All you need is a proper internet connection and a device, because you can do it online at voter registration portal 🙌
+<p align="center"><img src="https://media1.giphy.com/media/rLevqFeA9IiHeNXKyA/200w.webp?cid=ecf05e47kz4k2qixvi3t7ruoeq3uogqyl1yhmacd88s4n8l2&rid=200w.webp&ct=g" width = 40%></p>
 
 ## A sneek peek into what we have here🙈 :
 
