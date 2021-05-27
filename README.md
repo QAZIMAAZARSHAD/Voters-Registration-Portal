@@ -11,7 +11,7 @@ So, what else do you need?🤔.
 
 ## A sneek peek into what we have here🙈 :
 
-<p align="center"><img src="https://i.postimg.cc/qqVy1RH3/Image-1.gif" width=100%></p>
+<p align="center"><img src="https://i.postimg.cc/tgnzk8n8/Image-2.jpg" width=100%></p>
 
 ## About
 
