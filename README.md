@@ -9,22 +9,9 @@ Everyone loves to watch their favorite shows with friends and some snacks. But t
 So, what else do you need?🤔.
 <p align="center"><img src="https://media.tenor.com/images/1498a68342ec3e96a8773995f59dfc39/tenor.gif" width = 40%></p>
 
-Here is the answer: An awesome movie streaming website of yours that has all your favorites at one place! 
-<p align="center"><img src="https://www.system-concepts.com/wp-content/uploads/2020/02/excited-minions-gif.gif" width = 40%></p>
-
-We already have Netflix, Prime and Hotstar but they might be expenive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge and still you might get something really cool. 
-<p align="center"><img src="https://i.pinimg.com/originals/a1/55/93/a1559307185334cb66fb0ccf5e787bd0.gif" width = 40%></p>
-
-Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre Website__ is here for the rescue!
-<p align="center"><img src="https://i.pinimg.com/originals/eb/39/9a/eb399a729c812376ca23c06df2d1e380.gif" width = 40%></p>
-
 ## A sneek peek into what we have here🙈 :
 
-### Home Page:
-<p align="center"><img src="https://i.postimg.cc/g0vsH5LC/Home-Page.jpg"></p>
-
-### Seperate Page for All Genres:
-<p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
+<p align="center"><img src="https://i.postimg.cc/qqVy1RH3/Image-1.gif" width=100%></p>
 
 ## About
 
