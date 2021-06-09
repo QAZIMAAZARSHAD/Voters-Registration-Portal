@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-    <title> Voter Registration Portal</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<title> Voter Registration Portal</title>
   </head>
 
   <body>
@@ -38,12 +38,13 @@
 
 
     <div class="fontsetting">
-      <button type="button" class="btn btn-primary">A+</button>
-      <button type="button" class="btn btn-primary">A-</button>
-      <span class="lang">Select Language :<select class="btn btn-secondary btn-sm dropdown-toggle"name="" id="" ><option>Hindi</option><option>English</option></select></span>
+        <button type="button" class="btn btn-primary">A+</button>
+        <button type="button" class="btn btn-primary">A-</button>
+        <span class="lang">Select Language :
+		<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch" >
+		<option value="en">English</option>
+		<option value="hindi">Hindi</option></select></span>
     </div>
-
-
 
     <span class="note"><h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3></span>
     <div class="container">
@@ -51,39 +52,39 @@
         <div class="formheading">
           Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
         </div>
-        <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</div><br><br> In service <br><br> Electoral Registration Officer,<br><br><span style="margin-left:100px"></span>        State <sup style="color:rgb(255, 8, 8)">* </sup>
+        <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</div><br><br> In service <br><br> Electoral Registration Officer,<br><br><span style="margin-left:100px"></span>State <sup style="color:rgb(255, 8, 8)">* </sup>
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="" style="width:88px !important;margin-left:10px; padding-left:17px; font-size: 15px;">
           <option value="null">Select</option><option>ANDHRA PRADESH</option>
-                <option>ARUNACHAL PRADESH</option>
-                <option>ASSAM</option>
-                <option>BIHAR</option>
-                <option>CHATTISGARH</option>
-                <option>GOA</option>
-                <option>GUJRAT</option>
-                <option>HARYANA</option>
-                <option>HIMACHAL PRADESH</option>
-                <option>JAMMU AND KASHMIR</option>
-                <option>JHARKHAND</option>
-                <option>KARNATAKA</option>
-                <option>KERALA</option>
-                <option>MADHYA PRADESH</option>
-                <option>MAHARASHTRA</option>
-                <option>MANIPUR</option>
-                <option>MEGHALAYA</option>
-                <option>MIZORAM</option>
-		<option>NAGALAND</option>
-		<option>ODISHA</option>
-		<option>PUNJAB</option>
-		<option>RAJASTHAN</option>
-		<option>SIKKIM</option>
-		<option>TAMIL NADU</option>
-		<option>TELANGANA</option>
-		<option>TRIPURA</option>
-		<option>UTTAR PRADESH</option>
-		<option>UTTARAKHAND</option>
-                <option>WEST BENGAL</option>
+			<option>ARUNACHAL PRADESH</option>
+			<option>ASSAM</option>
+			<option>BIHAR</option>
+			<option>CHATTISGARH</option>
+			<option>GOA</option>
+			<option>GUJRAT</option>
+			<option>HARYANA</option>
+			<option>HIMACHAL PRADESH</option>
+			<option>JAMMU AND KASHMIR</option>
+			<option>JHARKHAND</option>
+			<option>KARNATAKA</option>
+			<option>KERALA</option>
+			<option>MADHYA PRADESH</option>
+			<option>MAHARASHTRA</option>
+			<option>MANIPUR</option>
+			<option>MEGHALAYA</option>
+			<option>MIZORAM</option>
+			<option>NAGALAND</option>
+			<option>ODISHA</option>
+			<option>PUNJAB</option>
+			<option>RAJASTHAN</option>
+			<option>SIKKIM</option>
+			<option>TAMIL NADU</option>
+			<option>TELANGANA</option>
+			<option>TRIPURA</option>
+			<option>UTTAR PRADESH</option>
+			<option>UTTARAKHAND</option>
+            <option>WEST BENGAL</option>
           </select><span style="margin-left:100px"></span> District <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="" style="width:88px !important;margin-left:10px; padding-left:17px; font-size: 15px;"><option value="null">Select</option></select><br><br>        <span style="margin-left:100px"></span>Legislative Assembly / Parlimentary <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="" style="width:88px !important;margin-left:10px; padding-left:17px; font-size: 15px;"><option value="null">Select</option></select>
-        <br><span style="margin-left:100px"></span>constituency<sup style="color:rgb(255, 8, 8)"> * </sup> <br><br> I request that my name be included in electoral rolls for all the aforesaid areas. <br><br>
+        <br><span style="margin-left:100px"></span>constituency<sup style="color:rgb(255, 8, 8)"> * </sup> <br><br> I request that my name be included in electoral rolls for all the aforesaid areas.<br><br>
         <ul class="radio">
           <li><span style="margin-left:100px"></span><input type="radio" name="select" id=""> First time voter<br></li>
           <li><span style="margin-left:100px"></span><input type="radio" name="select" id=""> Due to transfer from other meeting areas.</li>
@@ -154,39 +155,13 @@
             required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)"
             required><input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>Post Office:
           <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)" required>&nbsp;&nbsp;&nbsp;
-          <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup>          <input type="text" name="" id="" required onkeypress="return isNumberKey(event);"><br><br><span style="margin-left:100px"></span>State / Union Territory <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle"
-            name="" id="">
-                <option>Select</option>
-                <option>ANDHRA PRADESH</option>
-                <option>ARUNACHAL PRADESH</option>
-                <option>ASSAM</option>
-                <option>BIHAR</option>
-                <option>CHATTISGARH</option>
-                <option>GOA</option>
-                <option>GUJRAT</option>
-                <option>HARYANA</option>
-                <option>HIMACHAL PRADESH</option>
-                <option>JAMMU AND KASHMIR</option>
-                <option>JHARKHAND</option>
-                <option>KARNATAKA</option>
-                <option>KERALA</option>
-                <option>MADHYA PRADESH</option>
-                <option>MAHARASHTRA</option>
-                <option>MANIPUR</option>
-                <option>MEGHALAYA</option>
-                <option>MIZORAM</option>
-		            <option>NAGALAND</option>
-		            <option>ODISHA</option>
-		            <option>PUNJAB</option>
-	            	<option>RAJASTHAN</option>
-	            	<option>SIKKIM</option>
-	             	<option>TAMIL NADU</option>
-	            	<option>TELANGANA</option>
-	             	<option>TRIPURA</option>
-	            	<option>UTTAR PRADESH</option>
-	            	<option>UTTARAKHAND</option>
-                <option>WEST BENGAL</option></select>
-                <br><br><span style="margin-left:100px"></span>District <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select><br><br>
+          <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"><button><i class="far fa-keyboard"></i></button><br><br>
+		  <span style="margin-left:100px"></span>Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup>
+		  <input type="text" name="" id="pincode" required ><br><br>
+		  <span style="margin-left:100px"></span>State / Union Territory <sup style="color:rgb(255, 8, 8)"> * </sup>
+		  <input type="text" name="" id="state" required ><br><br>
+           <span style="margin-left:100px"></span>District <sup style="color:rgb(255, 8, 8)"> * </sup>
+		  <input type="text" name="" id="district" required ><br><br>
           <hr><br><span style="margin-left:100px"></span>Family / Neighbour Epic No. <input type="text" name="" id="" required><br><br>
           <hr><br>
           <div class="descrip">Optional specialties</div><br><span style="margin-left:100px"></span>(J)  Disability (if any)<br><br>
@@ -204,13 +179,19 @@
             Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
             <span style="float:right;"><a href="">List of supported documents</a>&nbsp;&nbsp;&nbsp;</span>
           </div><br><br><span style="margin-left:100px"></span> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
-          <span style="margin-left:100px"></span><input type="file" name="" id="">
+          <span style="margin-left:100px"></span>
+		  <input type="file" name="" id="" onchange="loadFile1(event)">
+		 <img style="float:right;" id="output1" width="100" height="80"/>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
-          <br><span style="margin-left:100px"></span> Age proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
-          <span style="margin-left:100px"></span><input type="file" name="" id="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
-          <br><span style="margin-left:100px"></span> Adress proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
-          <span style="margin-left:100px"></span><input type="file" name="" id="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
-          <br><br>
+          <br><br><br><span style="margin-left:100px"></span> Age proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
+          <span style="margin-left:100px"></span><input type="file" name="" id="" onchange="loadFile2(event)">
+		  <img style="float:right;" id="output2" width="100" height="80"/>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
+          <br><br><br><span style="margin-left:100px"></span> Adress proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
+          <span style="margin-left:100px"></span><input type="file" name="" id="" onchange="loadFile3(event)">
+		  <img style="float:right;" id="output3" width="100" height="80"/>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
+          <br><br><br><br>
           <div class="descrip">Declaration</div><br><br> I hereby declare that to the best of knowledge and belief <br>(i) I am a citizen of India and place of my birth is; <br><span style="margin-left:100px"></span>City / Village:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
             name="" id="" required><br><span style="margin-left:100px"></span><br><span style="margin-left:100px"></span>Select state
           <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option><option>ANDHRA PRADESH</option>
@@ -295,4 +276,50 @@ punishable under Section 31 of the Representation of the People Act, 1950 (43 of
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
       Copyright © 2020 Qazi Maaz Arshad
     </footer>
+	 <script>
+	$('#lang-switch').change(function () { // put onchange event when user select option from select
+		var lang = $(this).val(); // decide which language to display using switch case.
+		if(lang=='en'){
+		window.open('index.html',"_self");
+		}
+		else{
+		window.open('index_hindi.html',"_self");
+		}
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+		$('#pincode').focusout(function () {
+		var pincode= $('#pincode').val();
+			$.ajax({
+				type: 'GET',
+				url: 'https://api.postalpincode.in/pincode/'+pincode,
+				error:function(){
+				   alert("Something went wrong");
+				},
+				success: function(response){
+					$('#district').val(response[0].PostOffice[0].District);
+				 
+					$('#state').val(response[0].PostOffice[0].State);
+				   
+				}
+			});
+		});
+	});
+	</script>
+	<script>
+		var loadFile1 = function(event) {
+			var image1 = document.getElementById('output1');
+			image1.src = URL.createObjectURL(event.target.files[0]);
+		};
+		var loadFile2 = function(event) {
+			var image = document.getElementById('output2');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+		var loadFile3 = function(event) {
+			var image = document.getElementById('output3');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
 </html>
