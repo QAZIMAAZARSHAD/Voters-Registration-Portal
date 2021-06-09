@@ -1,58 +1,298 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="fonts.googleapis.com/css?family=Hind">
+    <link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title> Voter Registration Portal</title>
+  </head>
+
+  <body>
     <header>
-        <div class="navbar" style="align-content: center;">
-          <table>
-            <tr>
-              <td><a href="#" class="icon"><img src="./Images/flag.png" style="width: 140px;"></img></a></td>
+      <div class="navbar" style="align-content: center;">
+        <table>
+          <tr>
+            <td><a href="#" class="icon"><img src="./Images/flag.png" style="width: 140px;"></img></a></td>
+            <td>
               <td>
-                <td>
-                  <h1 style="font-family: 'Hind', sans-serif;">&nbsp&nbsp&nbsp&nbsp&nbspराष्ट्रीय मतदान सेवा &nbsp डेमो&nbspपोर्टल</h1>
-                </td>
-                <td>
-                  <h1>&nbsp&nbsp&nbsp&nbspNATIONAL VOTERS' SERVICES &nbsp&nbsp&nbsp&nbsp&nbspDEMO&nbsp&nbspPORTAL&nbsp&nbsp</h1>
-                </td>
+                <h1 style="font-family: 'Hind', sans-serif;">&nbsp&nbsp&nbsp&nbsp&nbspराष्ट्रीय मतदान सेवा &nbsp डेमो&nbspपोर्टल</h1>
               </td>
-              <td><a href="#" class="endlogo"><img src="./Images/vote.png" style="width: 140px;border-radius: 8px;"></img></a>
+              <td>
+                <h1>&nbsp&nbsp&nbsp&nbspNATIONAL VOTERS' SERVICES &nbsp&nbsp&nbsp&nbsp&nbspDEMO&nbsp&nbspPORTAL&nbsp&nbsp</h1>
               </td>
-            </tr>
-          </table>
-        </div>
-      </header>
-    <header class="header" id="header" >
-        <div class="banner">
-            <h1 class="banner_title "> Start Your Voting Contribution</h1>
-            <div>
-                <button class="banner_btn">
-                    <a class="atag" href="/Home.html" >Start</a>
-                </button>
-            </div>
-        </div>
-        <article class="video_container">
-            <video class="video_item" autoplay muted loop>
-                <source src="video/vote.mp4" type="video/mp4">
-            </video>
-        </article>
-        <div class="video_switch-container" >
-            <div class="video_switch">
-                <span style="font-size: 1.3rem; padding: 5px;">on</span>
-                <span style="font-size: 1.3rem;padding: 5px;">off</span>
-                <div class="video_switch-btn"></div>
-            </div>
-        </div>
+            </td>
+            <td><a href="#" class="endlogo"><img src="./Images/vote.png" style="width: 140px;border-radius: 8px;"></img></a>
+            </td>
+          </tr>
+        </table>
+      </div>
     </header>
+
+
+
+    <div class="fontsetting">
+      <button type="button" class="btn btn-primary">A+</button>
+      <button type="button" class="btn btn-primary">A-</button>
+      <span class="lang">Select Language :<select class="btn btn-secondary btn-sm dropdown-toggle"name="" id="" ><option>Hindi</option><option>English</option></select></span>
+    </div>
+
+
+
+    <span class="note"><h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3></span>
+    <div class="container">
+      <form action="" class="form1">
+        <div class="formheading">
+          Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
+        </div>
+        <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</div><br><br> In service <br><br> Electoral Registration Officer,<br><br><span style="margin-left:100px"></span>        State <sup style="color:rgb(255, 8, 8)">* </sup>
+        <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="" style="width:88px !important;margin-left:10px; padding-left:17px; font-size: 15px;">
+          <option value="null">Select</option><option>ANDHRA PRADESH</option>
+                <option>ARUNACHAL PRADESH</option>
+                <option>ASSAM</option>
+                <option>BIHAR</option>
+                <option>CHATTISGARH</option>
+                <option>GOA</option>
+                <option>GUJRAT</option>
+                <option>HARYANA</option>
+                <option>HIMACHAL PRADESH</option>
+                <option>JAMMU AND KASHMIR</option>
+                <option>JHARKHAND</option>
+                <option>KARNATAKA</option>
+                <option>KERALA</option>
+                <option>MADHYA PRADESH</option>
+                <option>MAHARASHTRA</option>
+                <option>MANIPUR</option>
+                <option>MEGHALAYA</option>
+                <option>MIZORAM</option>
+		<option>NAGALAND</option>
+		<option>ODISHA</option>
+		<option>PUNJAB</option>
+		<option>RAJASTHAN</option>
+		<option>SIKKIM</option>
+		<option>TAMIL NADU</option>
+		<option>TELANGANA</option>
+		<option>TRIPURA</option>
+		<option>UTTAR PRADESH</option>
+		<option>UTTARAKHAND</option>
+                <option>WEST BENGAL</option>
+          </select><span style="margin-left:100px"></span> District <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="" style="width:88px !important;margin-left:10px; padding-left:17px; font-size: 15px;"><option value="null">Select</option></select><br><br>        <span style="margin-left:100px"></span>Legislative Assembly / Parlimentary <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="" style="width:88px !important;margin-left:10px; padding-left:17px; font-size: 15px;"><option value="null">Select</option></select>
+        <br><span style="margin-left:100px"></span>constituency<sup style="color:rgb(255, 8, 8)"> * </sup> <br><br> I request that my name be included in electoral rolls for all the aforesaid areas. <br><br>
+        <ul class="radio">
+          <li><span style="margin-left:100px"></span><input type="radio" name="select" id=""> First time voter<br></li>
+          <li><span style="margin-left:100px"></span><input type="radio" name="select" id=""> Due to transfer from other meeting areas.</li>
+        </ul><br><br> Below are specifications in support of my claim to be included in the electoral rolls. <br><br>
+        <div class="descrip">Mandatory specifications</div><br><br><span style="margin-left:100px"></span> (A) Name<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)"
+          required>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)" required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>(B)
+        Surname (if any)<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)" required>&nbsp;&nbsp;&nbsp;<input type="text" name=""
+          id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)" required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>(C) Name of the applicant's relative
+        <sup
+          style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)" required>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"
+            required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>(D)Nickname of the applicant's relative<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)"
+            required>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)" required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>(E)
+          Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup> <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id=""><option value="null">Select</option><option>Father</option>
+		<option>Mother</option>
+		<option>Husband</option>
+		<option>Wife</option>
+    <option>Other</option></select><br><br>
+
+          <ul class="radio">
+            <li><span style="margin-left:100px"></span><input type="radio" name="select" id="" checked="checked">(F) Age [on January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup>
+              <input type="text" value="&nbsp;Age" class="field left" readonly></input>
+              <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id=""><option value="null">Year</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option></select>
+              <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id=""><option value="null">Month</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              </select><br><br>
+            </li>
+            <span style="margin-left:100px"></span>
+            <xml style="font-size:20px">Or</xml><br><br>
+            <li><span style="margin-left:100px"></span><input type="radio" name="select" id=""> (G) Date of birth (in the form of month/ day/ year) <input type="date" name="" id="">
+              <br><span style="margin-left:100px"></span>(if known)<sup style="color:rgb(255, 8, 8)"> * </sup>
+            </li>
+          </ul><br><br><span style="margin-left:100px"></span>(H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option><option>Male</option><option>Female</option>
+          <option>Transgender</option></select><br><br>
+          <div class="descrip">
+            (I) Current address where applicant is ordinarily resident
+          </div><br><br><span style="margin-left:100px"></span>House no.
+          <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)" required>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"
+            required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>Street / area / location
+          <sup style="color:rgb(255, 8, 8)"> * </sup>
+          <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)" required>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"
+            required><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)"
+            required><input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>Post Office:
+          <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In English)" required>&nbsp;&nbsp;&nbsp;
+          <input type="text" name="" id="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(In Regional)"><button><i class="far fa-keyboard"></i></button><br><br><span style="margin-left:100px"></span>Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup>          <input type="text" name="" id="" required onkeypress="return isNumberKey(event);"><br><br><span style="margin-left:100px"></span>State / Union Territory <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle"
+            name="" id="">
+                <option>Select</option>
+                <option>ANDHRA PRADESH</option>
+                <option>ARUNACHAL PRADESH</option>
+                <option>ASSAM</option>
+                <option>BIHAR</option>
+                <option>CHATTISGARH</option>
+                <option>GOA</option>
+                <option>GUJRAT</option>
+                <option>HARYANA</option>
+                <option>HIMACHAL PRADESH</option>
+                <option>JAMMU AND KASHMIR</option>
+                <option>JHARKHAND</option>
+                <option>KARNATAKA</option>
+                <option>KERALA</option>
+                <option>MADHYA PRADESH</option>
+                <option>MAHARASHTRA</option>
+                <option>MANIPUR</option>
+                <option>MEGHALAYA</option>
+                <option>MIZORAM</option>
+		            <option>NAGALAND</option>
+		            <option>ODISHA</option>
+		            <option>PUNJAB</option>
+	            	<option>RAJASTHAN</option>
+	            	<option>SIKKIM</option>
+	             	<option>TAMIL NADU</option>
+	            	<option>TELANGANA</option>
+	             	<option>TRIPURA</option>
+	            	<option>UTTAR PRADESH</option>
+	            	<option>UTTARAKHAND</option>
+                <option>WEST BENGAL</option></select>
+                <br><br><span style="margin-left:100px"></span>District <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select><br><br>
+          <hr><br><span style="margin-left:100px"></span>Family / Neighbour Epic No. <input type="text" name="" id="" required><br><br>
+          <hr><br>
+          <div class="descrip">Optional specialties</div><br><span style="margin-left:100px"></span>(J)  Disability (if any)<br><br>
+          <fieldset><span style="margin-left:100px"></span>
+            <input type="checkbox" name="" id=""> Visual impairment &nbsp;
+            <input type="checkbox" name="" id=""> Speech & hearing disability &nbsp;
+            <input type="checkbox" name="" id=""> Locomotor disability &nbsp;
+            <input type="checkbox" name="" id=""> other &nbsp;
+            <input type="text" required>
+          </fieldset><br><span style="margin-left:100px"></span>(K) Email ID (optional) &nbsp; <input type="text" name="" id="" required><br><br><span style="margin-left:100px"></span>(L) Mobile No. (optional) &nbsp;
+          <span>+91</span>
+          <input type="text" name="input" required><br><br>
+
+          <div class="descrip">
+            Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+            <span style="float:right;"><a href="">List of supported documents</a>&nbsp;&nbsp;&nbsp;</span>
+          </div><br><br><span style="margin-left:100px"></span> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
+          <span style="margin-left:100px"></span><input type="file" name="" id="">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
+          <br><span style="margin-left:100px"></span> Age proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
+          <span style="margin-left:100px"></span><input type="file" name="" id="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
+          <br><span style="margin-left:100px"></span> Adress proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
+          <span style="margin-left:100px"></span><input type="file" name="" id="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
+          <br><br>
+          <div class="descrip">Declaration</div><br><br> I hereby declare that to the best of knowledge and belief <br>(i) I am a citizen of India and place of my birth is; <br><span style="margin-left:100px"></span>City / Village:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+            name="" id="" required><br><span style="margin-left:100px"></span><br><span style="margin-left:100px"></span>Select state
+          <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option><option>ANDHRA PRADESH</option>
+                <option>ARUNACHAL PRADESH</option>
+                <option>ASSAM</option>
+                <option>BIHAR</option>
+                <option>CHATTISGARH</option>
+                <option>GOA</option>
+                <option>GUJRAT</option>
+                <option>HARYANA</option>
+                <option>HIMACHAL PRADESH</option>
+                <option>JAMMU AND KASHMIR</option>
+                <option>JHARKHAND</option>
+                <option>KARNATAKA</option>
+                <option>KERALA</option>
+                <option>MADHYA PRADESH</option>
+                <option>MAHARASHTRA</option>
+                <option>MANIPUR</option>
+                <option>MEGHALAYA</option>
+                <option>MIZORAM</option>
+		            <option>NAGALAND</option>
+		            <option>ODISHA</option>
+		            <option>PUNJAB</option>
+	            	<option>RAJASTHAN</option>
+	            	<option>SIKKIM</option>
+	             	<option>TAMIL NADU</option>
+	            	<option>TELANGANA</option>
+	             	<option>TRIPURA</option>
+	            	<option>UTTAR PRADESH</option>
+	            	<option>UTTARAKHAND</option>
+                <option>WEST BENGAL</option></select>&nbsp;&nbsp;&nbsp;&nbsp; District
+          <sup style="color:rgb(255, 8, 8)"> * </sup>&nbsp;&nbsp;&nbsp;&nbsp;<select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select><br><br>(ii) I am ordinarily resident at the address given at (h) above since;Date
+          <sup style="color:rgb(255, 8, 8);"> *   </sup><input type="date" name="" id=""><br><br>
+           (iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency.;<br><br>
+          <ul class="radio">
+            <li><span style="margin-left:100px"></span><input type="radio" name="select" id="">(iv) My name has not already been included in the electoral roll for this or any other assembly/ parliamentary constituency</li><br> <span style="margin-left:100px"></span>
+            <xml
+              style="font-size:18px">Or</xml> <br><br>
+              <li><span style="margin-left:100px"></span><input type="radio" name="select" id="">My name may have been included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select> Constituency in
+          <sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option><option>ANDHRA PRADESH</option>
+                <option>ARUNACHAL PRADESH</option>
+                <option>ASSAM</option>
+                <option>BIHAR</option>
+                <option>CHATTISGARH</option>
+                <option>GOA</option>
+                <option>GUJRAT</option>
+                <option>HARYANA</option>
+                <option>HIMACHAL PRADESH</option>
+                <option>JAMMU AND KASHMIR</option>
+                <option>JHARKHAND</option>
+                <option>KARNATAKA</option>
+                <option>KERALA</option>
+                <option>MADHYA PRADESH</option>
+                <option>MAHARASHTRA</option>
+                <option>MANIPUR</option>
+                <option>MEGHALAYA</option>
+                <option>MIZORAM</option>
+		            <option>NAGALAND</option>
+		            <option>ODISHA</option>
+		            <option>PUNJAB</option>
+	            	<option>RAJASTHAN</option>
+	            	<option>SIKKIM</option>
+	             	<option>TAMIL NADU</option>
+	            	<option>TELANGANA</option>
+	             	<option>TRIPURA</option>
+	            	<option>UTTAR PRADESH</option>
+	            	<option>UTTARAKHAND</option>
+                <option>WEST BENGAL</option></select>
+State in which I was ordinarily resident earlier at the address mentioned below and if so, I request that the same may be deleted from that
+electoral roll.</li>
+          </ul><br>
+          <hr><br><br><span style="margin-left:100px"></span>Location
+          <sup style="color:rgb(255, 8, 8)"> * </sup>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date <input type="date" name="" id=""><br><br><input type="radio" name="select" id=""> I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, is
+punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950). <br><br><span style="margin-left:100px"></span>Captcha <img src="./Images/captcha.png"
+            alt="" style="width: 150px;">&nbsp;
+          <i class="fas fa-redo"></i> &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" required><br><br>
+
+          </fieldset><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span>
+          <input type="reset" class="btn btn-success" value="Reset" style="margin-bottom:10px !important; font-weight: bold;"><input type="submit" style="margin-bottom:10px !important; margin-left:8px; font-weight: bold;" class="btn btn-success" value="Submit">
+      </form>
+    </div>
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
-        Copyright © 2020 Qazi Maaz Arshad
+      Copyright © 2020 Qazi Maaz Arshad
     </footer>
-    <script src="js/video.js" ></script>
-</body>
 </html>
