@@ -1,0 +1,170 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: rgb(42, 43, 43);
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: aliceblue;
+  }
+body{
+    background: darkgray; 
+    font-size:20px;
+    
+
+}
+.container{
+    margin: 100px 120px;
+}
+.contact-box{
+    background: wheat;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px ;
+    background:rgb(156, 58, 58);
+    color: white;
+}
+.container h1{
+    margin-bottom: 20px;
+    color: black;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color:rgb(156, 58, 58)
+    
+    
+}
+button{
+    background:rgb(156, 58, 58);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px 0px rgba((28,0,181,0.3), green, blue, alpha);
+    
+}
+.contact-left h2{
+    color:rgb(156, 58, 58);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right{
+    
+    font-weight: 600;
+
+}
+tr td:first-child{
+    padding-right: 20px;
+
+}
+tr td{
+    padding-top: 20px;
+}
+.faq{
+    margin-left: 70px;
+}
+.FAQ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+    font-style: initial;
+}
+.container1{
+    width: 50%;
+    max-width: 80rem;
+    margin: 0px auto;
+    padding: 0px 1.5rem;
+    margin-left: auto;
+    margin-top: -26px;
+}
+.accordian-item{
+    background-color: #ccc;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(lightgrey);
+}
+.accordian-link{
+    font-size: -0.6rem;
+    color: rgba(black);
+    text-decoration: none;
+    background-color: #ccc;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.accordian-link i{
+    color: black;
+    padding: .5rem;
+}
+.accordian-link .ion-md-remove{
+    display: none;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color:white;
+    transition: max-height 650ms;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: lightslategrey;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    font-size: -0.6rem;
+    padding: 2rem;
+}
+.accordian-item:target .answer{
+    max-height: 20rem;
+}
+.accordian-item:target .accordian-link .ion-md-remove{
+    display: block;
+}

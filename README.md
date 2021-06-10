@@ -140,3 +140,6 @@ git push -u origin <your_branch_name>
 <p align="center"><img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/LICENSE">
 <h5 align="center"><b>MIT License</b></a> 
+
+# Made a help page in help page i make a query form and take a some example of FAQ answers please review it and thank you for assign me that task
+
