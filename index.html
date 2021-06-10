@@ -2,12 +2,12 @@
 <html lang="en">
 
   <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+
+    <link rel="stylesheet" href="Style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
-    <link rel="stylesheet" href="Style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
@@ -202,7 +202,55 @@
 
           <div class="descrip">
             Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
-            <span style="float:right;"><a href="">List of supported documents</a>&nbsp;&nbsp;&nbsp;</span>
+            <!-- <span><a href="https://dot.gov.in/sites/default/files/2016_11_18%20POIA-AS-II.pdf?download=1#:~:text=Card%20with%20address.-,Kisan%20Passbook%20with%20photograph%20Kisan%20Passbook%20with%20address.,older%20than%20last%20three%20months" id="myBtn"><u>List of supported documents</u><div id="myModal" class="modal"> -->
+            <span><button><u id="myBtn">List of supported documents</u>
+            <div id="myModal" class="modal" style="width:84%;">
+
+              <!-- <img src="https://raw.githubusercontent.com/Sourav61/progate/gh-pages/download.jpg" alt="Mera Aadhar Meri Pehchan"> -->
+
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4 class="head">List of Acceptable Supporting Documents For Verification</h4>
+                <!-- <img align="right" src="https://raw.githubusercontent.com/Sourav61/progate/gh-pages/download.jpg" alt="Mera Aadhar Meri Pehchan">  -->
+
+                <p><ol class="ol">
+                  <li>Recent passport size photographs</li>
+                  <li>Address proof (any one of the following)</li>
+                    <ul class="ul">
+                      <li>Copy of your Passport</li>
+                      <li>Gas bill</li>
+                      <li>Water bill</li>
+                      <li>Ration Card</li>
+                      <li>Bank Passbook</li>
+                      <li>Aadhaar Card</li>
+                    </ul>
+                  <li>Copy of proof of age</li>
+                    <ul class="ul">
+                        <li>10th Standard Certificate</li>
+                        <li>Birth Certificate</li>
+                        <li>Pan Card</li>
+                        <li>Aadhaar Card</li>
+                        <li>Driving Licence</li>
+                        <li>Copy of Passport</li>
+                        <li>Kisan Card</li>
+                    </ul class="ul">
+                  <li>Identity proof (any one of the following)</li>
+                    <ul class="ul">
+                        <li>Pan Card</li>
+                        <li>Driving Licence</li>
+                        <li>Ration Card</li>
+                        <li>Passport Copy</li>
+                        <li>Bank Passbook with Photograph</li>
+                        <li>SSLC Certificate</li>
+                        <li>Student ID Card</li>
+                        <li>Aadhaar Card</li>
+                    </ul>
+
+                </ol></p>
+              </div>
+
+            </div>
+          </a>&nbsp;&nbsp;&nbsp;</span>
           </div><br><br><span style="margin-left:100px"></span> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
           <span style="margin-left:100px"></span><input type="file" name="" id="">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>Select</option></select>
@@ -292,6 +340,7 @@ punishable under Section 31 of the Representation of the People Act, 1950 (43 of
           <input type="reset" class="btn btn-success" value="Reset" style="margin-bottom:10px !important; font-weight: bold;"><input type="submit" style="margin-bottom:10px !important; margin-left:8px; font-weight: bold;" class="btn btn-success" value="Submit">
       </form>
     </div>
+    <script src="./index.js"></script>
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
       Copyright © 2020 Qazi Maaz Arshad
     </footer>

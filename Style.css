@@ -95,6 +95,7 @@ h3 {
   background-color: gray;
   height: 38px;
   font-size: 20px;
+  display: contents;
 }
 
 input,
@@ -103,4 +104,83 @@ textarea {
   border-radius: 5px;
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  margin-left: 110px!important;
+  /* width: 75%; /* Full width */ */
+  height: 110%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow: auto;
+}
+
+/* .modal-content li{
+  font-size: 10px;
+} */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn{
+   font-size: 20px;
+   margin: 1% 0%;
+   text-underline: none;
+   color: blue;
+   display: contents;
+}
+
+img {
+  height: 80px;
+  width: 100px;
+}
+
+*, ::after, ::before{
+  margin-left: 0.6em;
+}
+
+.head{
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 0.6em 0em;
+}
+
+.ol{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 13px;
+}
+
+.ul {
+  font-size: 13px;
+  font-weight: normal;
 }
