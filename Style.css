@@ -337,7 +337,8 @@ body {
   padding-top: 10px;
   text-align: center;
   border: solid 0.5px rgb(221, 221, 221);
-  padding-bottom: 22px;
+  margin: 5px;
+  padding-bottom: 40px;
 }
 .fontsetting button {
   width: 80px;
