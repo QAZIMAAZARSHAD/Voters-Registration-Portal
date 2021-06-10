@@ -188,9 +188,6 @@
           <span style="margin-left:100px"></span><input type="file" name="" id="" onchange="loadFile3(event)">
 		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="margin-left:100px"></span> दस्तावेज़ प्रकार<sup style="color:rgb(255, 8, 8)"> * </sup><select class="btn btn-secondary btn-sm dropdown-toggle" name="" id=""><option>चुनना</option></select>
           <br><br>
-		   <img style=" margin-left: 100px; float:left;" id="output1" width="150" height="130"/>
-		   <img style=" margin-left: 110px; float:center;" id="output2" width="240" height="230"/>
-		   <img style=" margin-right: 150px; float:right;" id="output3" width="240" height="230"/>
 		  <br><br>
           <div class="descrip">घोषणा</div><br><br> मैं इसके द्वारा घोषणा की है कि ज्ञान और विश्वास का सबसे अच्छा करने के लिए <br>(i) मैं भारत का नागरिक हूं और मेरे जन्म का स्थान है; <br><span style="margin-left:100px"></span>शहर/गांव:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
             name="" id="" required><br><span style="margin-left:100px"></span><br><span style="margin-left:100px"></span>राज्य का चयन करें
@@ -288,38 +285,5 @@
 	});
 	</script>
 
-	<script>
-	$(document).ready(function(){
-		$('#pincode').focusout(function () {
-		var pincode= $('#pincode').val();
-			$.ajax({
-				type: 'GET',
-				url: 'https://api.postalpincode.in/pincode/'+pincode,
-				error:function(){
-				   alert("Something went wrong");
-				},
-				success: function(response){
-					$('#district').val(response[0].PostOffice[0].District);
-				 
-					$('#state').val(response[0].PostOffice[0].State);
-				   
-				}
-			});
-		});
-	});
-	</script>
-	<script>
-		var loadFile1 = function(event) {
-			var image1 = document.getElementById('output1');
-			image1.src = URL.createObjectURL(event.target.files[0]);
-		};
-		var loadFile2 = function(event) {
-			var image = document.getElementById('output2');
-			image.src = URL.createObjectURL(event.target.files[0]);
-		};
-		var loadFile3 = function(event) {
-			var image = document.getElementById('output3');
-			image.src = URL.createObjectURL(event.target.files[0]);
-		};
-	</script>
+
 </html>
