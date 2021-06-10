@@ -1,4 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h1{
+  font-family: 'Hind', sans-serif;
+}
+
+.navbar>.container, .navbar>.container-fluid,.navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+  justify-content: space-evenly !important;
+
+}
+
+.row>* {
+  padding-left: 0 !important;
+}
 .navbar {
+  align-content: center;
   background-color: rgb(42, 43, 43);
   padding-left: 15px;
   padding-right: 10px;
@@ -10,30 +30,16 @@ ul {
   list-style-type: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border-radius: 3px;
-  outline: none;
-}
 
 .container {
   background-color: rgb(238, 238, 238);
-  margin: 5px;
   padding: 5px;
-  margin-left: 80px;
-  margin-right: 80px;
   border: solid 0.5px gray;
 }
 
 table {
   text-align: center;
 }
-
-body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .descrip {
   background-color: rgb(224, 171, 157)
 }
@@ -42,7 +48,7 @@ body {
   padding-top: 10px;
   text-align: center;
   border: solid 0.5px rgb(221, 221, 221);
-  margin: 5px;
+  margin-top: 5rem;
   padding-bottom: 22px;
 }
 
@@ -53,24 +59,18 @@ body {
   margin-left: 50px;
   background-color: gray;
   height: 28px;
+  color: beige;
 }
 
 .fontsetting select {
-  float: right;
-  margin-right: 50px;
   width: 150px;
   padding-left: 50px;
   height: 28px;
 }
 
-.lang {
-  margin-left: 700px;
-  ;
-}
-
 h3 {
   color: brown;
-  margin-left: 98px;
+  margin: 5px;
   font-weight: 1;
   padding-top: 10px;
 }
@@ -87,15 +87,25 @@ h3 {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.form1 button {
-  width: 80px;
-  padding: 2px;
-  margin-left: 50px;
-  background-color: gray;
-  height: 38px;
-  font-size: 20px;
+.myBtn{
+  margin:3px; 
+  padding-left:17px; 
+  font-size: 15px;
 }
+
+
+.myForm{
+  padding-bottom: 0.6rem;
+} 
+
+.fileChoose{
+  border: none;
+  width: inherit;
+}
+.form1 button {
+  color: whitesmoke;
+  font-size: 20px; 
+} 
 
 input,
 textarea {
@@ -103,4 +113,35 @@ textarea {
   border-radius: 5px;
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
+}
+
+footer{
+  text-align:center;
+   height:60px;
+    padding-top:0.5rem;
+     background-color: rgb(7, 7, 7);
+  color:darkgray;
+}
+@media (max-width:850px){
+  
+  #im2{
+    display: none;
+  }
+}
+
+
+@media (max-width:570px){
+  
+.fontsetting {
+  margin-top: 8rem;
+  
+}
+.fontsetting button{
+  width: 50px;
+  padding: 2px;
+  margin-left:5px;
+  background-color: gray;
+  height: 28px;
+  color: beige;
+}
 }
