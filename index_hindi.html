@@ -284,6 +284,25 @@
 		}
 	});
 	</script>
-
+		<script>
+	$(document).ready(function(){
+		$('#pincode').focusout(function () {
+		var pincode= $('#pincode').val();
+			$.ajax({
+				type: 'GET',
+				url: 'https://api.postalpincode.in/pincode/'+pincode,
+				error:function(){
+				   alert("Something went wrong");
+				},
+				success: function(response){
+					$('#district').val(response[0].PostOffice[0].District);
+				 
+					$('#state').val(response[0].PostOffice[0].State);
+				   
+				}
+			});
+		});
+	});
+	</script>
 
 </html>
