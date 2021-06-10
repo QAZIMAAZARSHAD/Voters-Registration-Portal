@@ -104,3 +104,12 @@ textarea {
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
 }
+.main-section{
+  margin:50px 0px 50px 0px;
+  border-radius:50% !important;
+}
+
+.voter-img{
+  background: scroll center url('./Images/voting.jpg');
+  background-size: cover;
+}
