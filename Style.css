@@ -25,6 +25,33 @@ ul {
   border-radius: 3px;
   outline: none;
 }
+ #form
+{
+  text-decoration: none;
+  font-size: 1.2rem;
+  
+  color: #fff;
+  background: #06aa52;
+  height: 35px;
+  
+  text-align: center;
+  
+}
+/*
+a span
+{
+    position: relative;
+    width: 1.5rem;
+    visibility: hidden;
+}
+a span:after
+{
+   content: '\21D3';
+   font-size: 1.5rem;
+   position: absolute;
+   padding-left: 10px;
+  
+} */
 
 .container {
   background-color: rgb(238, 238, 238);

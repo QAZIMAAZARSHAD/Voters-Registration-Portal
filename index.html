@@ -13,11 +13,7 @@
 
     <title> Voter Registration Portal</title>
   </head>
-
-  <body >
-    <div id="loading">
-      
-    </div>
+<body>
 
     <header>
       <div class="navbar" style="align-content: center;">
@@ -294,27 +290,25 @@ punishable under Section 31 of the Representation of the People Act, 1950 (43 of
 
           </fieldset><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span>
           <input type="reset" class="btn btn-success" value="Reset" style="margin-bottom:10px !important; font-weight: bold;"><input type="submit" style="margin-bottom:10px !important; margin-left:8px; font-weight: bold;" class="btn btn-success" value="Submit">
+          <a href="Voterregform.pdf" download="Voterregform.pdf"><input type="download" style="margin-bottom:10px !important; margin-left:8px; font-weight: bold; width: 120px;" id="form" value="Download" class="btn btn-success" download="Voterregform.pdf" ></a>
+          
       </form>
     </div>
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
       Copyright © 2020 Qazi Maaz Arshad
     </footer>
-    <script >
-        //  var preloader=document.getElementById('loading');
-        //  function myFunction()
-        //  {
-        //    preloader.style.display='none';
-        //  }
-  //       $(window).load(function() {
-  //  $(".loading").delay(10).fadeOut("slow");
-  // //  $("#overlayer").delay(5000).fadeOut("slow");
-  // //  })
-  //       });
-  $(window).setTimeout(function() { 
-    // $('#preloader').fadeOut();
-    $('.loading').delay(50).fadeOut('fast'); 
-}, 10);
 
+    <script>
+      let button=document.querySelector("#form");
+      button.addEventListener("click",()=>
+      {
+         
+         setTimeout(()=>
+         {
+         
+         },1000);
+      })
     </script>
+    
     </body>
 </html>
