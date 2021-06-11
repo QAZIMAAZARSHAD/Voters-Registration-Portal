@@ -107,6 +107,13 @@
 }
 /*end of home*/
 
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  outline: none;
+}
+
 .navbar {
   background-color: rgb(42, 43, 43);
   padding-left: 15px;
