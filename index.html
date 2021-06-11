@@ -9,12 +9,28 @@
     <link rel="stylesheet" href="Style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title> Voter Registration Portal</title>
   </head>
+  <script>
+    setTimeout(function(){
+      $('.loader_bg').fadeToggle();
+    }, 2500);
+  </script>
 
   <body>
+    <div class="loader_bg">
+      <div class="loader1"></div>
+      <div class="loader"></div>
+      <div class="loader2"></div>
+      <div class="head">
+      <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better 
+        <span class="span1">IN</span>D<span class="span2">IA</span>
+        <span class="span1">.</span>.<span class="span2">.</span>
+      </h1>
+    </div>
+    </div>
     <header>
       <div class="navbar" style="align-content: center;">
         <table>
@@ -295,4 +311,5 @@ punishable under Section 31 of the Representation of the People Act, 1950 (43 of
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
       Copyright © 2020 Qazi Maaz Arshad
     </footer>
+
 </html>
