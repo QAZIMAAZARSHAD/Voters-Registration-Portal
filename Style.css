@@ -1,14 +1,3 @@
-.navbar {
-  background-color: rgb(42, 43, 43);
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-top: 3px;
-  color: aliceblue;
-}
-
-ul {
-  list-style-type: none;
-}
 
 * {
   margin: 0;
@@ -17,19 +6,44 @@ ul {
   outline: none;
 }
 
+
+
+.navbar {
+  background-color: rgb(42, 43, 43);
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 3px;
+  color: aliceblue;
+  text-align: center;
+}
+.icon img{
+  width: 140px;
+}
+.endlogo img{
+  width: 140px;
+  border-radius: 8px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
 .container {
   background-color: rgb(238, 238, 238);
   margin: 5px;
   padding: 5px;
-  margin-left: 80px;
-  margin-right: 80px;
   border: solid 0.5px gray;
 }
 
-table {
-  text-align: center;
-}
+.conatinerFluid{
 
+  /* border: 2px solid black; */
+  width: 75vw;
+  padding: 9px;
+  margin: auto;
+  display: block;
+}
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -39,38 +53,41 @@ body {
 }
 
 .fontsetting {
+  width: 100%;
   padding-top: 10px;
   text-align: center;
   border: solid 0.5px rgb(221, 221, 221);
-  margin: 5px;
   padding-bottom: 22px;
 }
-
 .fontsetting button {
   width: 80px;
   padding: 2px;
   float: left;
-  margin-left: 50px;
+  margin: 5px;
   background-color: gray;
   height: 28px;
 }
 
 .fontsetting select {
-  float: right;
-  margin-right: 50px;
+  
+  margin: 5px;
   width: 150px;
   padding-left: 50px;
   height: 28px;
 }
+.lang{
+  float: right;
 
-.lang {
-  margin-left: 700px;
-  ;
 }
+
+.note h3{
+  padding: 10px;
+}
+
 
 h3 {
   color: brown;
-  margin-left: 98px;
+  margin-left: 4px;
   font-weight: 1;
   padding-top: 10px;
 }
@@ -87,14 +104,34 @@ h3 {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+span{
+  margin: 5px;
+  margin-left: 10px;
+}
+.select{
+  width:auto;
+  margin-left:1rem;
+}
 
+.radio{
+  text-align:justify;
+}
+
+xml{
+padding: 1rem;
+}
+
+
+.docs{
+  font-size: large;
+}
 .form1 button {
-  width: 80px;
-  padding: 2px;
-  margin-left: 50px;
+  width: 54px;
+  padding: 0px;
+  margin-left: 4px;
+  margin-top: 8px;
   background-color: gray;
-  height: 38px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 input,
@@ -103,4 +140,84 @@ textarea {
   border-radius: 5px;
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
+}
+footer{
+  text-align:center;
+   height:80px;
+    padding-top:28px; 
+    background-color: rgb(7, 7, 7);
+    color:darkgray;
+}
+
+
+.myBtn{
+  text-align: center;
+}
+
+.h1, h1{
+  font-size: 2rem !important;
+}
+@media (max-width:1090px){
+.navbar{
+  flex-direction: column;
+  text-align: center;
+}
+
+.endlogo{
+  display: none;
+}
+h1{
+  margin: 1rem;
+}
+.icon img{
+  margin: 1rem;
+}
+.docs{
+  font-size: medium;
+}
+.conatinerFluid{
+
+  /* border: 2px solid black; */
+  width: 70vw;
+  padding: 9px;
+  margin: auto;
+  display: block;
+}
+}
+
+@media (max-width:500px) {
+  .h1, h1{
+    font-size: 1rem !important;
+  }
+  h1{
+    margin: 0rem;
+  }
+  .icon img{
+    margin: 8px;
+    width: 68px;
+    height: 34px;
+  }
+  span{
+    margin-left: 10px;
+  }
+  .district{
+margin: 15px;
+  }
+  .select{
+  margin-top: 5px;
+
+  }
+
+  .docs{
+    font-size: x-small;
+  }
+  .conatinerFluid{
+
+    /* border: 2px solid black; */
+    width: 63vw;
+    padding: 9px;
+    margin: auto;
+    display: block;
+  }
+  
 }
