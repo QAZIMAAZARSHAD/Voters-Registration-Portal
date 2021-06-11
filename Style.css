@@ -123,7 +123,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 .h1{
   position: relative;
@@ -199,7 +199,7 @@
   z-index: 3;
 }
 .banner_title{
-  font-size: 5rem; 
+  font-size: 5rem;
   text-transform: capitalize;
   color: #000;
 }
@@ -345,7 +345,7 @@ body {
 }
 
 .fontsetting select {
-  
+
   margin: 5px;
   width: 150px;
   padding-left: 50px;
@@ -420,7 +420,7 @@ textarea {
 footer{
   text-align:center;
    height:80px;
-    padding-top:28px; 
+    padding-top:28px;
     background-color: rgb(7, 7, 7);
     color:darkgray;
 }
@@ -495,5 +495,80 @@ margin: 15px;
     margin: auto;
     display: block;
   }
-  
+
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 0px;
+  margin-left: 110px!important;
+  height: 110%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow: auto;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn{
+   font-size: 20px;
+   margin: 1% 0%;
+   text-underline: none;
+   color: blue;
+   display: contents;
+}
+
+img {
+  height: 80px;
+  width: 100px;
+}
+
+*, ::after, ::before{
+  margin-left: 0.6em;
+}
+
+.head{
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 0.6em 0em;
+}
+
+.ol{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 13px;
+}
+
+.ul {
+  font-size: 13px;
+  font-weight: normal;
 }
