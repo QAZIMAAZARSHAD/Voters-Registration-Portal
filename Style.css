@@ -1,10 +1,128 @@
+
+/* Home style */
+
+*{ /*universal selector*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width:768px) {
+  .header{
+    background-image: url('./Images/voteImg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.banner{
+  text-align: center;
+  z-index: 3;
+}
+.banner_title{
+  font-size: 5rem; 
+  text-transform: capitalize;
+  color: #000;
+}
+@media screen and (max-width:768px) {
+  .banner_title{
+    font-size: 7rem;
+  }
+}
+.banner_btn{
+  padding: 10px;
+  width: 180px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  outline: none;
+  border-color: 1px solid black;
+}
+.atag{
+  font-size: 2.3rem;
+  color:green;
+}
+.banner_btn:hover{
+  background-color: rgb(255, 136, 0);
+  box-shadow: 0 10px 7px 0 black;
+}
+.video_container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.7;
+}
+.video_item{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video_switch-container{
+  display: none;
+
+}
+@media screen and (min-width:768px){
+  .video_switch-container{
+      display: block;
+      position: absolute;
+      bottom: 21%;
+      right: 5%;
+      z-index: 3;
+  }
+  .video_switch{
+      position: relative;
+      width: 6rem;
+      background: rgb(255, 136, 0);
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.25rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
+  }
+  .video_switch-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:green;
+      height: 100%;
+      width: 50%;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease-out;
+  }
+  .video_btnSlide{
+      left: 50%;
+  }
+}
+/*end of home*/
+
 .navbar {
   background-color: rgb(42, 43, 43);
   padding-left: 15px;
   padding-right: 10px;
   padding-top: 3px;
   color: aliceblue;
+  text-align: center;
 }
+.icon img{
+  width: 140px;
+}
+.endlogo img{
+  width: 140px;
+  border-radius: 8px;
+}
+
 
 ul {
   list-style-type: none;
@@ -18,6 +136,7 @@ ul {
     z-index: 99999;
     animation:  10s infinite ease;
 }
+
 
 * {
   margin: 0;
@@ -53,19 +172,23 @@ a span:after
   
 } */
 
+=======
+>>>>>>> master
 .container {
   background-color: rgb(238, 238, 238);
   margin: 5px;
   padding: 5px;
-  margin-left: 80px;
-  margin-right: 80px;
   border: solid 0.5px gray;
 }
 
-table {
-  text-align: center;
-}
+.conatinerFluid{
 
+  /* border: 2px solid black; */
+  width: 75vw;
+  padding: 9px;
+  margin: auto;
+  display: block;
+}
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -75,38 +198,41 @@ body {
 }
 
 .fontsetting {
+  width: 100%;
   padding-top: 10px;
   text-align: center;
   border: solid 0.5px rgb(221, 221, 221);
-  margin: 5px;
   padding-bottom: 22px;
 }
-
 .fontsetting button {
   width: 80px;
   padding: 2px;
   float: left;
-  margin-left: 50px;
+  margin: 5px;
   background-color: gray;
   height: 28px;
 }
 
 .fontsetting select {
-  float: right;
-  margin-right: 50px;
+  
+  margin: 5px;
   width: 150px;
   padding-left: 50px;
   height: 28px;
 }
+.lang{
+  float: right;
 
-.lang {
-  margin-left: 700px;
-  ;
 }
+
+.note h3{
+  padding: 10px;
+}
+
 
 h3 {
   color: brown;
-  margin-left: 98px;
+  margin-left: 4px;
   font-weight: 1;
   padding-top: 10px;
 }
@@ -123,14 +249,34 @@ h3 {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+span{
+  margin: 5px;
+  margin-left: 10px;
+}
+.select{
+  width:auto;
+  margin-left:1rem;
+}
 
+.radio{
+  text-align:justify;
+}
+
+xml{
+padding: 1rem;
+}
+
+
+.docs{
+  font-size: large;
+}
 .form1 button {
-  width: 80px;
-  padding: 2px;
-  margin-left: 50px;
+  width: 54px;
+  padding: 0px;
+  margin-left: 4px;
+  margin-top: 8px;
   background-color: gray;
-  height: 38px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 input,
@@ -139,4 +285,84 @@ textarea {
   border-radius: 5px;
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
+}
+footer{
+  text-align:center;
+   height:80px;
+    padding-top:28px; 
+    background-color: rgb(7, 7, 7);
+    color:darkgray;
+}
+
+
+.myBtn{
+  text-align: center;
+}
+
+.h1, h1{
+  font-size: 2rem !important;
+}
+@media (max-width:1090px){
+.navbar{
+  flex-direction: column;
+  text-align: center;
+}
+
+.endlogo{
+  display: none;
+}
+h1{
+  margin: 1rem;
+}
+.icon img{
+  margin: 1rem;
+}
+.docs{
+  font-size: medium;
+}
+.conatinerFluid{
+
+  /* border: 2px solid black; */
+  width: 70vw;
+  padding: 9px;
+  margin: auto;
+  display: block;
+}
+}
+
+@media (max-width:500px) {
+  .h1, h1{
+    font-size: 1rem !important;
+  }
+  h1{
+    margin: 0rem;
+  }
+  .icon img{
+    margin: 8px;
+    width: 68px;
+    height: 34px;
+  }
+  span{
+    margin-left: 10px;
+  }
+  .district{
+margin: 15px;
+  }
+  .select{
+  margin-top: 5px;
+
+  }
+
+  .docs{
+    font-size: x-small;
+  }
+  .conatinerFluid{
+
+    /* border: 2px solid black; */
+    width: 63vw;
+    padding: 9px;
+    margin: auto;
+    display: block;
+  }
+  
 }
