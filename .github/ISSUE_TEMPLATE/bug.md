@@ -30,4 +30,3 @@ If applicable, add logs to help explain your problem (e.g. the error message and
 ## Additional context
 Add any other context about the problem here.
 
----
