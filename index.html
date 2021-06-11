@@ -5,6 +5,9 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -105,7 +108,7 @@
           <ul class="radio">
             <li><span style="margin-left:100px"></span><input type="radio" name="select" id="" checked="checked">(F) Age [on January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup>
               <input type="text" value="&nbsp;Age" class="field left" readonly></input>
-              <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id=""><option value="null">Year</option>
+              <select class="btn btn-secondary btn-sm dropdown-toggle" name="Select" id="age"><option value="null">Year</option>
               <option>18</option>
               <option>19</option>
               <option>20</option>
@@ -289,10 +292,14 @@ punishable under Section 31 of the Representation of the People Act, 1950 (43 of
           <i class="fas fa-redo"></i> &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="" id="" required><br><br>
 
           </fieldset><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span><span style="margin-left:100px"></span>
-          <input type="reset" class="btn btn-success" value="Reset" style="margin-bottom:10px !important; font-weight: bold;"><input type="submit" style="margin-bottom:10px !important; margin-left:8px; font-weight: bold;" class="btn btn-success" value="Submit">
+          <input type="reset" class="btn btn-success" value="Reset" style="margin-bottom:10px !important; font-weight: bold;">
+          <button type="button" style="margin-bottom:10px !important; margin-left:8px; font-weight: bold;" class="btn btn-success" >
+            <a style="color: white;" href="/result.html">Submit</a>
+          </button>
       </form>
     </div>
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
       Copyright © 2020 Qazi Maaz Arshad
     </footer>
+
 </html>
