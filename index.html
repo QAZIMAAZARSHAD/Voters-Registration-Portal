@@ -41,7 +41,12 @@
     <div class="fontsetting">
       <button type="button" class="btn btn-primary">A+</button>
       <button type="button" class="btn btn-primary">A-</button>
-     
+                                           <!-- dark-mode Toogle switch button -->
+      <label class="switch">
+       <input type="checkbox">
+        <span class="slider round" onclick="myFunction()"></span>
+      </label>
+                                            <!-- ------------------ -->
       <span class="lang">Select Language :<select class="btn btn-secondary btn-sm dropdown-toggle"name="" id="" ><option>Hindi</option><option>English</option></select></span>
       
      
@@ -301,6 +306,13 @@ punishable under Section 31 of the Representation of the People Act, 1950 (43 of
       <a href="instructions.html" target="" style="color: white; font-size: 13px; float: right; position: relative;
       left: -50px; font-size: 16px; font-weight: bold;">Help</a>
     </footer>
+    <!-- script for dark mode -->
+    <script>
+      function myFunction(){
+         var element=document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
     </body>
     
 </html>
