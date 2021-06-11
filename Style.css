@@ -53,12 +53,12 @@ body {
 }
 
 .fontsetting {
+  width: 100%;
   padding-top: 10px;
   text-align: center;
   border: solid 0.5px rgb(221, 221, 221);
   padding-bottom: 22px;
 }
-
 .fontsetting button {
   width: 80px;
   padding: 2px;
@@ -69,11 +69,15 @@ body {
 }
 
 .fontsetting select {
-  float: right;
+  
   margin: 5px;
   width: 150px;
   padding-left: 50px;
   height: 28px;
+}
+.lang{
+  float: right;
+
 }
 
 .note h3{
