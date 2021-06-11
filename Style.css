@@ -201,7 +201,7 @@
 .banner_title{
   font-size: 5rem;
   text-transform: capitalize;
-  color: #000;
+  color: #008000;
 }
 @media screen and (max-width:768px) {
   .banner_title{
@@ -209,6 +209,7 @@
   }
 }
 .banner_btn{
+  margin-top: 51px;
   padding: 10px;
   width: 180px;
   border-radius: 50px;
@@ -219,6 +220,9 @@
 .atag{
   font-size: 2.3rem;
   color:green;
+}
+.atag:hover{
+  text-decoration: none;
 }
 .banner_btn:hover{
   background-color: rgb(255, 136, 0);
