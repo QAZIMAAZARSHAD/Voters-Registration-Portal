@@ -132,11 +132,13 @@ git push -u origin <your_branch_name>
 </p>
 
 ## Code of Conduct
-<p align="center"><img width=35% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
+<p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/CODE_OF_CONDUCT.md">
+<img width=35% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
 <h5 align="center"><b>Click to read</b></a>  
 
 ## License 
-<p align="center"><img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
+<p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/LICENSE">
+<img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
 <h5 align="center"><b>MIT License</b></a> 
