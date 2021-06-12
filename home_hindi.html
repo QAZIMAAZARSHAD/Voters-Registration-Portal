@@ -47,6 +47,11 @@
   <div class="fontsetting">
     <button type="button" class="btn btn-primary">क+</button>
     <button type="button" class="btn btn-primary">क-</button>
+    <span>Dark mode&nbsp; : </span>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round" onclick="myFunction()"></span>
+    </label>
     <span class="lang">चुनिंदा भाषा  :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
 		<option value="en">अंग्रेज़ी</option>
 		<option value="hindi" selected>हिंदी</option>
@@ -592,4 +597,11 @@
 		}
 	});
 	</script>
+  <!-- script for dark mode -->
+  <script>
+    function myFunction(){
+       var element=document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 </html>
