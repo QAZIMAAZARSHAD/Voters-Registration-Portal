@@ -93,8 +93,28 @@
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
         Copyright © 2020 Qazi Maaz Arshad
     </footer>
+
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+  </button>
+  <script>
+    $(document).ready(function(){
+      var scrollTopButton = document.getElementById("scrollToTopButton");
+      window.onscroll = function () { scrollFunction() };
   
-</script>
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+      } else {
+        scrollTopButton.style.display = "none";
+      }
+    }
+  
+    $("#scrollToTopButton").click(function(){
+    $('html ,body').animate({scrollTop : 0},800)
+  });
+  }); 
+  </script>
  <script src="js/video.js" ></script>
  </body>
 </html>
