@@ -15,7 +15,7 @@ html{
 }
   
 body{
-    background: rgb(219, 192, 157);
+    /* background: rgb(219, 192, 157); */
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
@@ -91,6 +91,10 @@ tr td:first-child{
 tr td{
     padding-top: 20px;
 }
+
+
+
+/* 
 .faq{
     margin-left: 70px;
 }
@@ -161,6 +165,62 @@ tr td{
 .accordian-item:target .accordian-link .ion-md-remove{
     display: block;
 }
-    
+     */
 
 
+
+     .accordion{
+        max-width: 80rem;
+       } 
+       .accordion-item{ 
+        border-radius: 2px;
+        margin-bottom: 1rem; 
+        border: none;
+        box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
+      } 
+      
+      .accordion-link{
+        color: rgb(0, 0, 0);
+        width: 100%;
+        background-color: rgb(253, 155, 116);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 1rem .7rem;
+        position: relative;
+      
+      }
+      .accordion-link:hover{
+          color: black;
+      }
+      .accordion-link::after{
+        content: "\002B";
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.2s ease-in-out;
+      
+      
+      }
+      
+      .accordion-link.active::after{
+      transform: rotate(45deg);
+      }
+      
+      
+      
+      .accordion-link i{
+        color: #e7d5ff;
+        padding: .3rem;
+      }
+      
+      
+      .answer{
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.2s ease-out;
+        /* padding: 1rem; */
+        
+      }
+      

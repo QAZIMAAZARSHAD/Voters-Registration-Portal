@@ -142,3 +142,9 @@ git push -u origin <your_branch_name>
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/LICENSE">
 <img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
 <h5 align="center"><b>MIT License</b></a> 
+
+
+## ✨ Contributors
+<a href = "https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Voters-Registration-Portal"/>
+</a>
