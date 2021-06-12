@@ -31,7 +31,14 @@
       <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
         DEMO PORTAL
       </h1>
-
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
       <a href="#" class="endlogo">
         <img src="./Images/vote.png">
         </img>
@@ -582,6 +589,12 @@
 
   <!-- footer ends -->
 	 <script>
+    const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+    
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
 		if(lang=='en'){
