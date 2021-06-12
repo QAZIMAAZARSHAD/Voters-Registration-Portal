@@ -24,6 +24,34 @@
       color: transparent !important;
   }
   </style>
+   <!-- Captcha CSS -->
+   <style>
+    .input-icons i {
+      position: absolute;
+    }
+
+    .input-icons {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      padding: 10px;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <style>
+    input[type="button"] {
+      font-family: FontAwesome;
+    }
+  </style>
 </head>
 
 <body>
@@ -565,12 +593,23 @@
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <!-- form part 6 ends -->
-
       <div class="conatinerFluid">
         <br>
-        Captcha <img src="./Images/captcha.png" alt="" style="width: 150px;">
-        <i class="fas fa-redo"></i>
-        <input type="text" name="" id="" required><br><br>
+        Captcha 
+        <form action="" name="passGen">
+          
+          <div class="input-icons">
+            <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
+            <!-- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
+            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
+         
+            <input class="zoomeffect" type="text" name="" id="" required><br><br>
+        </div>
+         
+
+    
+        </form>
+       
 
       </div>
       <div class="myBtn">
@@ -592,6 +631,7 @@
   </footer>
 
   <!-- footer ends -->
+  
 	 <!-- <script>
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
@@ -630,4 +670,7 @@
     }
     </script>
      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="js/video.js"></script>
+
 </html>

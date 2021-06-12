@@ -15,6 +15,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title>  मतदाता पंजीकरण पोर्टल</title>
+    <!-- Captcha CSS -->
+    <style>
+      .input-icons i {
+        position: absolute;
+      }
+  
+      .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      .icon {
+        padding: 10px;
+        min-width: 50px;
+        text-align: center;
+      }
+  
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <style>
+      input[type="button"] {
+        font-family: FontAwesome;
+      }
+    </style>
 </head>
 
 <body>
@@ -529,11 +557,24 @@
       <br>
       <!-- form part 6 ends -->
 
+      
+
       <div class="conatinerFluid">
         <br>
-        कैप्चा <img src="./Images/captcha.png" alt="" style="width: 150px;">
-        <i class="fas fa-redo"></i>
-        <input type="text" name="" id="" required><br><br>
+        कैप्चा
+        <form action="" name="passGen">
+          
+          <div class="input-icons">
+            <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
+            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
+         
+            <input class="zoomeffect" type="text" name="" id="" required><br><br>
+        </div>
+         
+
+    
+        </form>
+       
 
       </div>
       <div class="myBtn">
@@ -587,4 +628,7 @@
 		});
 	});
 	</script>
+
+  <script src="js/video.js"></script>
+
 </html>
