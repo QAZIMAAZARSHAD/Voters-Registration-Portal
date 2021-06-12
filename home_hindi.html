@@ -15,9 +15,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title>  मतदाता पंजीकरण पोर्टल</title>
+  <script>
+    setTimeout(function(){
+      $('.loader_bg').fadeToggle();
+    }, 2500);
+  </script>
 </head>
 
 <body>
+  <div class="loader_bg">
+    <div class="loader1"></div>
+    <div class="loader"></div>
+    <div class="loader2"></div>
+    <div class="head">
+    <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better 
+      <span class="span1">IN</span>D<span class="span2">IA</span>
+      <span class="span1">.</span>.<span class="span2">.</span>
+    </h1>
+  </div>
+  </div>
   <!-- navbar starts -->
   <header>
     <div class="navbar">
@@ -577,8 +593,27 @@
   </footer>
 
   <!-- footer ends -->
-	 <script>
-	$('#lang-switch').change(function () { // put onchange event when user select option from select
+  <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+    <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+</button>
+<script>
+  $(document).ready(function(){
+    var scrollTopButton = document.getElementById("scrollToTopButton");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  }
+
+  $("#scrollToTopButton").click(function(){
+  $('html ,body').animate({scrollTop : 0},800)
+});
+}); 
+$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
 		if(lang=='en'){
 		window.open('Home.html',"_self");
@@ -587,5 +622,7 @@
 		window.open('home_hindi.html',"_self");
 		}
 	});
-	</script>
+
+</script>
+	 
 </html>
