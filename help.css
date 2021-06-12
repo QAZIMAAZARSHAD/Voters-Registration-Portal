@@ -15,7 +15,7 @@ html{
 }
   
 body{
-    background: rgb(219, 192, 157);
+    /* background: rgb(219, 192, 157); */
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
@@ -171,21 +171,16 @@ tr td{
 
      .accordion{
         max-width: 80rem;
-        /* width: 50%;
-        margin-right: 4%; */
-        /* font-size:  */
        } 
        .accordion-item{ 
-        /* background-color: #00bffb; */
         border-radius: 2px;
         margin-bottom: 1rem; 
-        /* padding: 1rem; */
-         box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
+        border: none;
+        box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
       } 
       
       .accordion-link{
-        /* font-size: 1.6rem; */
-        color: white;
+        color: rgb(0, 0, 0);
         width: 100%;
         background-color: rgb(253, 155, 116);
         display: flex;
@@ -196,7 +191,9 @@ tr td{
         position: relative;
       
       }
-      
+      .accordion-link:hover{
+          color: black;
+      }
       .accordion-link::after{
         content: "\002B";
         position: absolute;
@@ -207,7 +204,6 @@ tr td{
       }
       
       .accordion-link.active::after{
-        /* content: "\2212"; */
       transform: rotate(45deg);
       }
       
@@ -218,16 +214,13 @@ tr td{
         padding: .3rem;
       }
       
-      /* .accordion-link .fa-minus{
-        display: none;
-      } */
       
       .answer{
         max-height: 0;
         overflow: hidden;
         position: relative;
-        background-color: #ffffff;
         transition: max-height 0.2s ease-out;
+        /* padding: 1rem; */
         
       }
       
