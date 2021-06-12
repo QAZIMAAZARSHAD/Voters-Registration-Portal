@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Progressbar - Step Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://use.fontawesome.com/c47bc38e87.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="navbar.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div
+  id="app"
+  :class="progressClasses"
+>
+  <div class="progress__bg"></div>
+  <template v-for="(step, index) in steps">
+    <div :class="stepClasses(index)">
+      <div class="progress__indicator">
+        <i class="fa fa-check"></i>
+      </div>
+      <div class="progress__label">
+        {{step.label}}
+      </div>
+    </div>
+  </template>
+  
+  <div class="progress__actions">
+    <div
+      class="btn"
+      v-on:click="nextStep(false)"
+    >
+      Back
+    </div>
+    <div
+      class="btn"
+      v-on:click="nextStep"
+    >
+      Next
+    </div>
+    <div>
+      Step:
+      {{currentStep ? currentStep.label : "Start"}}
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

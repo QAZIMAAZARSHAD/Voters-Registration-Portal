@@ -1,0 +1,124 @@
+body {
+  font-family: Arial;
+  text-transform: capitalize;
+}
+
+.progress {
+  position: absolute;
+  top: 15vh;
+  width: 0%;
+  height: 10px;
+  background-color: #2183DD;
+  transition: width 0.2s;
+}
+.progress.progress--1 {
+  width: calc(20%);
+}
+.progress.progress--2 {
+  width: calc(40%);
+}
+.progress.progress--3 {
+  width: calc(60%);
+}
+.progress.progress--4 {
+  width: calc(80%);
+}
+.progress.progress--5 {
+  width: calc(100%);
+}
+.progress.progress--complete {
+  width: 100vw;
+}
+
+.progress__bg {
+  position: absolute;
+  width: 100vw;
+  height: 10px;
+  background-color: #E5E5E5;
+  z-index: -1;
+}
+
+.progress__step {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.progress__step.progress__step--1 {
+  left: calc(20vw - 9px);
+}
+.progress__step.progress__step--2 {
+  left: calc(40vw - 9px);
+}
+.progress__step.progress__step--3 {
+  left: calc(60vw - 9px);
+}
+.progress__step.progress__step--4 {
+  left: calc(80vw - 9px);
+}
+.progress__step.progress__step--5 {
+  left: calc(100vw - 9px);
+}
+.progress__step.progress__step--active {
+  color: #2183DD;
+  font-weight: 600;
+}
+.progress__step.progress__step--complete .progress__indicator {
+  background-color: #009900;
+  border-color: #2183DD;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress__step.progress__step--complete .progress__indicator .fa {
+  display: block;
+}
+.progress__step.progress__step--complete .progress__label {
+  font-weight: 600;
+  color: #009900;
+}
+
+.progress__indicator {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #808080;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.progress__indicator .fa {
+  display: none;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.progress__label {
+  position: absolute;
+  top: 40px;
+}
+
+.progress__actions {
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.btn {
+  width: fit-content;
+  padding: 5px 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.btn:nth-child(2) {
+  margin: 0 10px;
+}
