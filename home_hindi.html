@@ -52,15 +52,21 @@
 
   <!-- font starts -->
   <div class="fontsetting">
+    <div class="row">
+      <div class="col col-md-6 col-sm-6">
     <button type="button" class="btn btn-primary">क+</button>
     <button type="button" class="btn btn-primary">क-</button>
+    </div>
+    <div class="col col-md-6 col-sm-6">
     <span class="lang">चुनिंदा भाषा  :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
 		<option value="en">अंग्रेज़ी</option>
 		<option value="hindi" selected>हिंदी</option>
       </select>
+    </div>
     </span>
     <br>
     <br>
+    </div>
   </div>
 
 
@@ -293,54 +299,22 @@
         <input type="text" name="" id="" placeholder="(क्षेत्रीय में)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        पिन कोड <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" required
+        पिन कोड <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="pincode" required
           onkeypress="return isNumberKey(event);"><br><br>
 
         राज्य/केंद्र शासित प्रदेश 
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>चुनना</option>
-          <option>ANDHRA PRADESH</option>
-          <option>ARUNACHAL PRADESH</option>
-          <option>ASSAM</option>
-          <option>BIHAR</option>
-          <option>CHATTISGARH</option>
-          <option>GOA</option>
-          <option>GUJRAT</option>
-          <option>HARYANA</option>
-          <option>HIMACHAL PRADESH</option>
-          <option>JAMMU AND KASHMIR</option>
-          <option>JHARKHAND</option>
-          <option>KARNATAKA</option>
-          <option>KERALA</option>
-          <option>MADHYA PRADESH</option>
-          <option>MAHARASHTRA</option>
-          <option>MANIPUR</option>
-          <option>MEGHALAYA</option>
-          <option>MIZORAM</option>
-          <option>NAGALAND</option>
-          <option>ODISHA</option>
-          <option>PUNJAB</option>
-          <option>RAJASTHAN</option>
-          <option>SIKKIM</option>
-          <option>TAMIL NADU</option>
-          <option>TELANGANA</option>
-          <option>TRIPURA</option>
-          <option>UTTAR PRADESH</option>
-          <option>UTTARAKHAND</option>
-          <option>WEST BENGAL</option>
-        </select>
+        <input type="text" name="" id="state" required >
         <br><br>
 
         <span class="district">
           जिला 
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>चुनना</option>
-        </select><br><br>
+		
+        <input type="text" name="" id="district" required >
+        <br><br>
         <hr><br>
 
         परिवार/पड़ोसी महाकाव्य संख्या  <input type="text" name="" id="" required><br><br>
@@ -580,7 +554,7 @@
 
   <!-- footer starts -->
   <footer>
-    Copyright © 2020 Qazi Maaz Arshad
+    Copyright © <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     <a href="help.html" target=""
       style="color:rgb(7, 7, 7); font-size: 1.0625em; float: right; position: relative;
       left: -50px;  font-weight:500; background-color:whitesmoke; height: 40px; width:100px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
@@ -603,6 +577,27 @@
 		else{
 		window.open('home_hindi.html',"_self");
 		}
+	});
+	</script>
+	
+		<script>
+	$(document).ready(function(){
+		$('#pincode').focusout(function () {
+		var pincode= $('#pincode').val();
+			$.ajax({
+				type: 'GET',
+				url: 'https://api.postalpincode.in/pincode/'+pincode,
+				error:function(){
+				   alert("Something went wrong");
+				},
+				success: function(response){
+					$('#district').val(response[0].PostOffice[0].District);
+				 
+					$('#state').val(response[0].PostOffice[0].State);
+				   
+				}
+			});
+		});
 	});
 	</script>
 </html>
