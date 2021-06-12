@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="help.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
@@ -80,10 +81,11 @@
         </div>
 
     </section>
-    <section class="faq">
+    <div class="container">
+    <section class="">
         <h1 class="FAQ">FAQ</h1>
         <br><br>
-        <div class="container1">
+        <!-- <div class="container1">
             <div class="accordian">
                 <div class="accordian-item" id="question1">
                     <a class="accordian-link" href="#question1">
@@ -142,14 +144,67 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+    
+        <div class="row">
+            <div class="col-md-6">
+          <div class="accordion">
+            <div class="accordion-item" id="question1">
+              <a class="accordion-link " href="#question1"> Q. Is the application also available in android playstore?
+              </a>
+              <div class="answer">
+                Android phone based users can install an application from the website of the Government.
+              </div>
+              </div>
+            </div>
+         
+
+           <div class="accordion">
+            <div class="accordion-item" id="question2">
+              <a class="accordion-link" href="#question2"> Q. Who can access the service?       
+              </a>
+              <div class="answer">
+                A user can access the service by sending the SMS.
+              </div>
+            </div>
+          </div>
+
+        
         </div>
+    
+        
+          <div class="col-md-6">
+        <div class="accordion">
+          <div class="accordion-item" id="question7">
+            <a class="accordion-link" href="#question7"> Q. How can we access the server from operators?
+            </a>
+            <div class="answer">
+            A special five digit code is provided for accessing the service by operators such as Aircel, Airtel, BSNL, Idea, MTS, Reliance, Tata Docomo, Tata Indicom, Uninor, Videocon and Vodafone.               </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item" id="question8">
+            <a class="accordion-link" href="#question8"> Q. How can we access the service from sms?
+            </a>
+            <div class="answer">
+            In order to access the services through SMS, Voters must send a pre-formatted SMS with a word “ECI” followed by details such as name, name of father/husband, locality, age or date of birth and gender separated by commas. As an example, an SMS “ECI Sumit Bhattacharjee” would fetch the details of a voter by name “Sumit bhattacharjee” on a nation-wide search of voters.
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+      
+    </div> 
+    
     </section>
 
-    
+</div>
 
 
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="help.js"></script>
 </body>
 
 </html>
