@@ -12,17 +12,45 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title> Voter Registration Portal</title>
   <style>
     .goog-logo-link {
-      display:none !important;
-  } 
-  
-  .goog-te-gadget{
+      display: none !important;
+    }
+
+    .goog-te-gadget {
       color: transparent !important;
-  }
+    }
+  </style>
+  <!-- Captcha CSS -->
+  <style>
+    .input-icons i {
+      position: absolute;
+    }
+
+    .input-icons {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      padding: 10px;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <style>
+    input[type="button"] {
+      font-family: FontAwesome;
+    }
   </style>
 </head>
 
@@ -55,16 +83,16 @@
   <div class="fontsetting">
     <div class="row">
       <div class="col col-md-6 col-sm-6">
-    <button type="button" class="btn btn-primary">A+</button>
-    <button type="button" class="btn btn-primary">A-</button>
+        <button type="button" class="btn btn-primary">A+</button>
+        <button type="button" class="btn btn-primary">A-</button>
       </div>
       <div class="col col-md-6 col-sm-6">
-    <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
-    </div>  
-      
-    </span>
-    <br>
-    <br>
+        <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
+      </div>
+
+      </span>
+      <br>
+      <br>
     </div>
   </div>
 
@@ -316,7 +344,7 @@
         State / Union Territory
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-         <input type="text" name="" id="state" required >
+        <input type="text" name="" id="state" required>
         <br><br>
 
         <span class="district">
@@ -324,7 +352,7 @@
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <input type="text" name="" id="district" required >
+        <input type="text" name="" id="district" required>
         <br><br>
         <hr><br>
 
@@ -364,7 +392,7 @@
 
       </div>
       <!-- form part 4 ends -->
-      
+
       <!-- form part 5 starts -->
 
       <div class="descrip">
@@ -565,12 +593,23 @@
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <!-- form part 6 ends -->
-
       <div class="conatinerFluid">
         <br>
-        Captcha <img src="./Images/captcha.png" alt="" style="width: 150px;">
-        <i class="fas fa-redo"></i>
-        <input type="text" name="" id="" required><br><br>
+        Captcha 
+        <form action="" name="passGen">
+          
+          <div class="input-icons">
+            <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
+            <!-- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
+            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
+         
+            <input class="zoomeffect" type="text" name="" id="" required><br><br>
+        </div>
+         
+
+    
+        </form>
+       
 
       </div>
       <div class="myBtn">
@@ -584,7 +623,8 @@
 
   <!-- footer starts -->
   <footer>
-    Copyright © <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+    Copyright ©
+    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     <a href="help.html" target=""
       style="color:rgb(7, 7, 7); font-size: 1.0625em; float: right; position: relative;
       left: -50px;  font-weight:500; background-color:whitesmoke; height: 40px; width:100px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
@@ -592,7 +632,7 @@
   </footer>
 
   <!-- footer ends -->
-	 <!-- <script>
+  <!-- <script>
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
 		if(lang=='en'){
@@ -603,31 +643,34 @@
 		}
 	});
 	</script> -->
-	
-		<script>
-	$(document).ready(function(){
-		$('#pincode').focusout(function () {
-		var pincode= $('#pincode').val();
-			$.ajax({
-				type: 'GET',
-				url: 'https://api.postalpincode.in/pincode/'+pincode,
-				error:function(){
-				   alert("Something went wrong");
-				},
-				success: function(response){
-					$('#district').val(response[0].PostOffice[0].District);
-				 
-					$('#state').val(response[0].PostOffice[0].State);
-				   
-				}
-			});
-		});
-	});
-	</script>
+
+  <script>
+    $(document).ready(function () {
+      $('#pincode').focusout(function () {
+        var pincode = $('#pincode').val();
+        $.ajax({
+          type: 'GET',
+          url: 'https://api.postalpincode.in/pincode/' + pincode,
+          error: function () {
+            alert("Something went wrong");
+          },
+          success: function (response) {
+            $('#district').val(response[0].PostOffice[0].District);
+
+            $('#state').val(response[0].PostOffice[0].State);
+
+          }
+        });
+      });
+    });
+  </script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
-    </script>
-     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/video.js"></script>
+
 </html>
