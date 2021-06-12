@@ -394,7 +394,7 @@
 
         <br><br> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs">
+        <input type="file" name="" class="docs" onchange="loadFile1(event)">
         Document type
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -408,7 +408,7 @@
 
         <sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs"> Document type<sup style="color:rgb(255, 8, 8)"> *
+        <input type="file" name="" class="docs" onchange="loadFile2(event)"> Document type<sup style="color:rgb(255, 8, 8)"> *
         </sup>
 
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
@@ -419,9 +419,9 @@
         </select>
         <br>
 
-        Adress proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
+        Address proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs">
+        <input type="file" name="" class="docs" onchange="loadFile3(event)">
         <!-- <span style="margin-left:100px"></span> -->
         Document
         type
@@ -434,7 +434,19 @@
           <option> .jpeg </option>
         </select>
         <br><br>
-
+		
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+           <img style="padding: 5px;" id="output1" width="240" height="230"/>
+		   </div>
+          <div class="col-lg-4 col-md-4">
+          <img style="padding: 5px;" id="output2" width="240" height="230"/>
+          </div>
+          <div class="col-lg-4 col-md-4">
+           <img style="padding: 5px;" id="output3" width="240" height="230"/>
+		   </div>
+        </div>
+		
       </div>
       <!-- form part 5 ends -->
 
@@ -617,4 +629,18 @@
 		}
 	});
 	</script>
+	<script>
+		var loadFile1 = function(event) {
+			var image1 = document.getElementById('output1');
+			image1.src = URL.createObjectURL(event.target.files[0]);
+		};
+		var loadFile2 = function(event) {
+			var image = document.getElementById('output2');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+		var loadFile3 = function(event) {
+			var image = document.getElementById('output3');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>	
 </html>
