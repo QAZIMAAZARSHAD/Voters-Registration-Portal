@@ -80,24 +80,18 @@
   <!-- navbar ends -->
 
 
+  <!-- font starts -->
   <div class="fontsetting">
-    <div class="row">
-      <div class="col col-md-6 col-sm-6">
-        <button type="button" class="btn btn-primary">A+</button>
-        <button type="button" class="btn btn-primary">A-</button>
-      </div>
-      <div class="col col-md-6 col-sm-6">
-        <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
-      </div>
-
-      </span>
-      <br>
-      <br>
-    </div>
+    <button type="button" class="btn btn-primary" id="inc">A+</button>
+    <button type="button" class="btn btn-primary" id="dec">A-</button>
+    <span class="lang">Select Language :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
+		<option value="en">English</option>
+		<option value="hindi">Hindi</option>
+      </select>
+    </span>
+    <br>
+    <br>
   </div>
-
-
-  <!-- font ends -->
 
 
   <!-- font ends -->
@@ -189,29 +183,29 @@
 
         (A) Name
         <sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" id="" placeholder="(In English)" required>
+        </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
 
-        <input type="text" name="" id="" placeholder="(In Regional)" required>
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
-        Surname (if any)<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id=""
+        Surname (if any)<sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id=""
           placeholder="(In English)" required>
 
-        <input type="text" name="" id="" placeholder="(In Regional)" required><button><i
+        <input type="text" name="" class="zoomeffect" id="" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
         (C) Name
         of the applicant's relative
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(In English)"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" class="zoomeffect" name="" id="" placeholder="(In English)"
           required>
 
-        <input type="text" name="" id="" placeholder="(In Regional)" required><button><i
+        <input type="text" name=""  id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (D)Nickname of the applicant's relative<sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" id="" placeholder="(In English)" required>
+        </sup> <input type="text" name="" id=""  class="zoomeffect" placeholder="(In English)" required>
 
-        <input type="text" name="" id="" placeholder="(In Regional)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (E)
@@ -233,7 +227,7 @@
             January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup>
 
 
-            <input type="text" value="Age" class="field left" readonly></input>
+            <input type="text" value="Age"  class="zoomeffect field left" readonly></input>
             <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
               <option value="null">Year</option>
               <option>18</option>
@@ -277,7 +271,7 @@
             (G) Date of birth (in the
             form of month/ day/ year)
 
-            <input type="date" name="" id="">
+            <input class="zoomeffect" type="date" name="" id="">
             <br>(if known)<sup style="color:rgb(255, 8, 8)"> * </sup>
           </li>
         </ul><br><br>
@@ -305,46 +299,77 @@
       <div class="conatinerFluid">
 
         <br>House no.
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(In English)"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="" placeholder="(In English)"
           required>
 
 
-        <input type="text" name="" id="" placeholder="(In Regional)" required><button><i
+        <input class="zoomeffect" type="text" name="" id="" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
 
         Street /
         area / location
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(In English)"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input  class="zoomeffect" type="text" name="" id="" placeholder="(In English)"
           required>
 
-        <input type="text" name="" id="" placeholder="(In Regional)" required><button><i
+        <input class="zoomeffect" type="text" name="" id="" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         City /
-        Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(In English)"
+        Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" class="zoomeffect" name="" id="" placeholder="(In English)"
           required>
 
 
-        <input type="text" name="" id="" placeholder="(In Regional)"><button><i
+        <input type="text" class="zoomeffect" name="" id="" placeholder="(In Regional)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
 
         Post Office:
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(In English)"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="" placeholder="(In English)"
           required>
 
 
-        <input type="text" name="" id="" placeholder="(In Regional)"><button><i
+        <input type="text" name="" class="zoomeffect" id="" placeholder="(In Regional)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="pincode" required
+        Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="" required
           onkeypress="return isNumberKey(event);"><br><br>
 
         State / Union Territory
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <input type="text" name="" id="state" required>
+        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
+          <option>Select</option>
+          <option>ANDHRA PRADESH</option>
+          <option>ARUNACHAL PRADESH</option>
+          <option>ASSAM</option>
+          <option>BIHAR</option>
+          <option>CHATTISGARH</option>
+          <option>GOA</option>
+          <option>GUJRAT</option>
+          <option>HARYANA</option>
+          <option>HIMACHAL PRADESH</option>
+          <option>JAMMU AND KASHMIR</option>
+          <option>JHARKHAND</option>
+          <option>KARNATAKA</option>
+          <option>KERALA</option>
+          <option>MADHYA PRADESH</option>
+          <option>MAHARASHTRA</option>
+          <option>MANIPUR</option>
+          <option>MEGHALAYA</option>
+          <option>MIZORAM</option>
+          <option>NAGALAND</option>
+          <option>ODISHA</option>
+          <option>PUNJAB</option>
+          <option>RAJASTHAN</option>
+          <option>SIKKIM</option>
+          <option>TAMIL NADU</option>
+          <option>TELANGANA</option>
+          <option>TRIPURA</option>
+          <option>UTTAR PRADESH</option>
+          <option>UTTARAKHAND</option>
+          <option>WEST BENGAL</option>
+        </select>
         <br><br>
 
         <span class="district">
@@ -352,11 +377,12 @@
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <input type="text" name="" id="district" required>
-        <br><br>
+        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
+          <option>Select</option>
+        </select><br><br>
         <hr><br>
 
-        Family / Neighbour Epic No. <input type="text" name="" id="" required><br><br>
+        Family / Neighbour Epic No. <input class="zoomeffect" type="text" name="" id="" required><br><br>
         <hr><br>
 
       </div>
@@ -375,24 +401,24 @@
           <input type="checkbox" name="" id=""> Visual impairment
           <input type="checkbox" name="" id=""> Speech & hearing disability
           <input type="checkbox" name="" id=""> Locomotor disability
-          <input type="checkbox" name="" id=""> other
-          <input type="text" required>
+          <input   type="checkbox" name="" id=""> other
+          <input class="zoomeffect" type="text" required>
         </fieldset>
 
         <br>
 
-        Email ID (optional) <input type="text" name="" id="" required><br><br>
+        Email ID (optional) <input  class="zoomeffect" type="text" name="" id="" required><br><br>
 
         Mobile No. (optional)
 
         <span>+91</span>
 
 
-        <input type="text" name="input" required><br><br>
+        <input class="zoomeffect" type="text" name="input" required><br><br>
 
       </div>
       <!-- form part 4 ends -->
-
+      
       <!-- form part 5 starts -->
 
       <div class="descrip">
@@ -416,6 +442,7 @@
           <option> .jpeg </option>
         </select>
         <br> Age proof
+
         <sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
         <input type="file" name="" class="docs"> Document type<sup style="color:rgb(255, 8, 8)"> *
@@ -466,7 +493,7 @@
         City /
         Village:
 
-        <input type="text" name="" id="" required><br>
+        <input class="zoomeffect" type="text" name="" id="" required><br>
         Select state
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -518,7 +545,7 @@
       (ii) I am ordinarily resident at the address given above since Date
       <sup style="color:rgb(255, 8, 8);"> * </sup>
 
-      <input type="date" name="" id=""><br><br>
+      <input class="zoomeffect" type="date" name="" id=""><br><br>
 
       (iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency<br><br>
 
@@ -583,8 +610,8 @@
 
         Location
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <input type="text" name="" id="" required>
-        date <input type="date" name="" id=""><br>
+        <input  class="zoomeffect" type="text" name="" id="" required>
+        date <input class="zoomeffect" type="date" name="" id=""><br>
       </div>
 
       <br><input type="radio" name="select" id=""> I am aware that making a statement or declaration which
@@ -593,6 +620,7 @@
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <!-- form part 6 ends -->
+
       <div class="conatinerFluid">
         <br>
         Captcha 
@@ -613,7 +641,6 @@
 
       </div>
       <div class="myBtn">
-
         <input type="reset" class="btn btn-success" value="Reset">
         <input type="submit" class="btn btn-success" value="Submit">
       </div>
@@ -622,14 +649,14 @@
 
 
   <!-- footer starts -->
-  <footer>
-    Copyright ©
-    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+  <footer id="ft">
+    Copyright © 2020 Qazi Maaz Arshad
     <a href="help.html" target=""
       style="color:rgb(7, 7, 7); font-size: 1.0625em; float: right; position: relative;
-      left: -50px;  font-weight:500; background-color:whitesmoke; height: 40px; width:100px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
+      left: -2px;  font-weight:500; background-color:whitesmoke; height: 40px; width:140px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
       Desk</a>
   </footer>
+
 
   <!-- footer ends -->
   <!-- <script>

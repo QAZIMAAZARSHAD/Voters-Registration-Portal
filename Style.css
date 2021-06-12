@@ -413,6 +413,21 @@ padding: 1rem;
   background-color: gray;
   font-size: 16px;
 }
+.myBtn1{
+  width: 80px; height: 25px;
+}
+
+/* Zooom CSS */
+.zoomeffect{
+  font-size: medium !important;
+}
+.footZoom{
+  height: 100px;
+}
+.refreshZoom{
+ height: 38px;
+}
+/* ends */
 
 input,
 textarea {
@@ -424,7 +439,7 @@ textarea {
 footer{
   text-align:center;
    height:80px;
-    padding-top:28px; 
+    padding-top:3px; 
     background-color: rgb(7, 7, 7);
     color:darkgray;
 }

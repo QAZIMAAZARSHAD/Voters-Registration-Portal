@@ -73,21 +73,15 @@
 
   <!-- font starts -->
   <div class="fontsetting">
-    <div class="row">
-      <div class="col col-md-6 col-sm-6">
-        <button type="button" class="btn btn-primary">क+</button>
-        <button type="button" class="btn btn-primary">क-</button>
-      </div>
-      <div class="col col-md-6 col-sm-6">
-        <span class="lang">चुनिंदा भाषा :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
-            <option value="en">अंग्रेज़ी</option>
-            <option value="hindi" selected>हिंदी</option>
-          </select>
-      </div>
-      </span>
-      <br>
-      <br>
-    </div>
+    <button type="button" class="btn btn-primary" id="inc">क+</button>
+    <button type="button" class="btn btn-primary" id="dec">क-</button>
+    <span class="lang">चुनिंदा भाषा :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
+        <option value="en">अंग्रेज़ी</option>
+        <option value="hindi" selected>हिंदी</option>
+      </select>
+    </span>
+    <br>
+    <br>
   </div>
 
 
@@ -179,27 +173,27 @@
 
         (क) नाम
         <sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)" required>
+        </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required>
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
-        (ख) उपनाम (यदि कोई हो)<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id=""
-          placeholder="(अंग्रेजी में)" required>
+        (ख) उपनाम (यदि कोई हो)<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" class="zoomeffect" name=""
+          id="" placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
         (ग) आवेदक के रिश्तेदार का नाम
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (घ)आवेदक के रिश्तेदार का उपनाम<sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)" required>
+        </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (ङ) रिश्ते का प्रकार<sup style="color:rgb(255, 8, 8)"> * </sup>
@@ -219,7 +213,7 @@
             (च) आयु [वर्तमान कैलेंडर के 1 जनवरी को] <sup style="color:rgb(255, 8, 8)"> * </sup>
 
 
-            <input type="text" value="Age" class="field left" readonly></input>
+            <input type="text" value="Age" class="zoomeffect field left" readonly></input>
             <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
               <option value="null">साल</option>
               <option>18</option>
@@ -262,7 +256,7 @@
 
             (छ) जन्म तिथि (महीने/दिन/वर्ष के रूप में)
 
-            <input type="date" name="" id="">
+            <input class="zoomeffect" type="date" name="" id="">
             <br>(यदि ज्ञात हो)<sup style="color:rgb(255, 8, 8)"> * </sup>
           </li>
         </ul><br><br>
@@ -290,44 +284,75 @@
       <div class="conatinerFluid">
 
         <br>मकान नंबर
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(अंग्रेजी में)" required>
 
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
 
         सड़क/क्षेत्र/स्थान
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        शहर/गांव: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id=""
+        शहर/गांव: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
           placeholder="(अंग्रेजी में)" required>
 
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)"><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
 
         डाकघर:
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(अंग्रेजी में)" required>
 
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)"><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        पिन कोड <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="pincode" required
+        पिन कोड <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="" required
           onkeypress="return isNumberKey(event);"><br><br>
 
         राज्य/केंद्र शासित प्रदेश
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <input type="text" name="" id="state" required>
+        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
+          <option>चुनना</option>
+          <option>ANDHRA PRADESH</option>
+          <option>ARUNACHAL PRADESH</option>
+          <option>ASSAM</option>
+          <option>BIHAR</option>
+          <option>CHATTISGARH</option>
+          <option>GOA</option>
+          <option>GUJRAT</option>
+          <option>HARYANA</option>
+          <option>HIMACHAL PRADESH</option>
+          <option>JAMMU AND KASHMIR</option>
+          <option>JHARKHAND</option>
+          <option>KARNATAKA</option>
+          <option>KERALA</option>
+          <option>MADHYA PRADESH</option>
+          <option>MAHARASHTRA</option>
+          <option>MANIPUR</option>
+          <option>MEGHALAYA</option>
+          <option>MIZORAM</option>
+          <option>NAGALAND</option>
+          <option>ODISHA</option>
+          <option>PUNJAB</option>
+          <option>RAJASTHAN</option>
+          <option>SIKKIM</option>
+          <option>TAMIL NADU</option>
+          <option>TELANGANA</option>
+          <option>TRIPURA</option>
+          <option>UTTAR PRADESH</option>
+          <option>UTTARAKHAND</option>
+          <option>WEST BENGAL</option>
+        </select>
         <br><br>
 
         <span class="district">
@@ -335,11 +360,12 @@
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <input type="text" name="" id="district" required>
-        <br><br>
+        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
+          <option>चुनना</option>
+        </select><br><br>
         <hr><br>
 
-        परिवार/पड़ोसी महाकाव्य संख्या <input type="text" name="" id="" required><br><br>
+        परिवार/पड़ोसी महाकाव्य संख्या <input class="zoomeffect" type="text" name="" id="" required><br><br>
         <hr><br>
 
       </div>
@@ -358,19 +384,19 @@
           <input type="checkbox" name="" id=""> भाषण और श्रवण विकलांगता
           <input type="checkbox" name="" id=""> लोकोमोटर विकलांगता
           <input type="checkbox" name="" id=""> दूसरा
-          <input type="text" required>
+          <input class="zoomeffect" type="text" required>
         </fieldset>
 
         <br>
 
-        ईमेल आईडी (वैकल्पिक) <input type="text" name="" id="" required><br><br>
+        ईमेल आईडी (वैकल्पिक) <input class="zoomeffect" type="text" name="" id="" required><br><br>
 
         (ठ) मोबाइल नंबर (वैकल्पिक)
 
         <span>+91</span>
 
 
-        <input type="text" name="input" required><br><br>
+        <input class="zoomeffect" type="text" name="input" required><br><br>
 
       </div>
       <!-- form part 4 ends -->
@@ -436,7 +462,7 @@
 
         शहर/गांव:
 
-        <input type="text" name="" id="" required><br>
+        <input class="zoomeffect" type="text" name="" id="" required><br>
         राज्य का चयन करें
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -488,7 +514,7 @@
       (ii) मैं आमतौर पर ऊपर दिए गए पते पर निवासी हूं (झ) के बाद से दिनांक
       <sup style="color:rgb(255, 8, 8);"> * </sup>
 
-      <input type="date" name="" id=""><br><br>
+      <input class="zoomeffect" type="date" name="" id=""><br><br>
 
       (iii) मैंने किसी अन्य निर्वाचन क्षेत्र के लिए अपना नाम मतदाता सूची में शामिल करने के लिए आवेदन नहीं किया
       है।<br><br>
@@ -553,8 +579,8 @@
 
         स्थान
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <input type="text" name="" id="" required>
-        दिनांक <input type="date" name="" id=""><br>
+        <input class="zoomeffect" type="text" name="" id="" required>
+        दिनांक <input class="zoomeffect" type="date" name="" id=""><br>
       </div>
       <br><input type="radio" name="select" id="">
       मुझे पता है कि एक बयान या घोषणा जो झूठी है और जो मैं जानता हूं या झूठी होने का विश्वास है या सच नहीं मानता है, है,
@@ -565,21 +591,9 @@
 
       <div class="conatinerFluid">
         <br>
-        कैप्चा
-        <form action="" name="passGen">
-
-          <div class="input-icons">
-            <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
-            <!-- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
-            <input type="button" class="myBtn1" value="Refresh" onclick=printCaptcha(6)>
-
-            <input class="zoomeffect" type="text" name="" id="" required><br><br>
-          </div>
-
-
-
-        </form>
-
+        कैप्चा <img src="./Images/captcha.png" alt="" style="width: 150px;">
+        <i class="fas fa-redo"></i>
+        <input class="zoomeffect" type="text" name="" id="" required><br><br>
 
       </div>
       <div class="myBtn">
@@ -592,12 +606,11 @@
 
 
   <!-- footer starts -->
-  <footer>
-    Copyright ©
-    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+  <footer id="ft">
+    Copyright © 2020 Qazi Maaz Arshad
     <a href="help.html" target=""
       style="color:rgb(7, 7, 7); font-size: 1.0625em; float: right; position: relative;
-      left: -50px;  font-weight:500; background-color:whitesmoke; height: 40px; width:100px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
+        left: -2px;  font-weight:500; background-color:whitesmoke; height: 40px; width:140px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
       Desk</a>
   </footer>
 
@@ -634,5 +647,8 @@
       });
     });
   </script>
+
+  <script src="js/video.js"></script>
+
 
 </html>
