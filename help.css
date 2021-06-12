@@ -91,6 +91,10 @@ tr td:first-child{
 tr td{
     padding-top: 20px;
 }
+
+
+
+/* 
 .faq{
     margin-left: 70px;
 }
@@ -161,6 +165,69 @@ tr td{
 .accordian-item:target .accordian-link .ion-md-remove{
     display: block;
 }
-    
+     */
 
 
+
+     .accordion{
+        max-width: 80rem;
+        /* width: 50%;
+        margin-right: 4%; */
+        /* font-size:  */
+       } 
+       .accordion-item{ 
+        /* background-color: #00bffb; */
+        border-radius: 2px;
+        margin-bottom: 1rem; 
+        /* padding: 1rem; */
+         box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
+      } 
+      
+      .accordion-link{
+        /* font-size: 1.6rem; */
+        color: white;
+        width: 100%;
+        background-color: rgb(253, 155, 116);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 1rem .7rem;
+        position: relative;
+      
+      }
+      
+      .accordion-link::after{
+        content: "\002B";
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.2s ease-in-out;
+      
+      
+      }
+      
+      .accordion-link.active::after{
+        /* content: "\2212"; */
+      transform: rotate(45deg);
+      }
+      
+      
+      
+      .accordion-link i{
+        color: #e7d5ff;
+        padding: .3rem;
+      }
+      
+      /* .accordion-link .fa-minus{
+        display: none;
+      } */
+      
+      .answer{
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        background-color: #ffffff;
+        transition: max-height 0.2s ease-out;
+        
+      }
+      
