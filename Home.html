@@ -655,13 +655,10 @@
           <div class="input-icons">
             <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
             <!-- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
-            <input type="button" class="myBtn1" value="Refresh" onclick=printCaptcha(6)>
+            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
 
             <input class="zoomeffect" type="text" name="" id="" required><br><br>
-          </div>
-
-
-
+        </div>
         </form>
 
 
@@ -669,7 +666,7 @@
       <div class="myBtn">
 
         <input type="reset" class="btn btn-success" value="Reset">
-        <input type="submit" class="btn btn-success" value="Submit">
+        <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
       </div>
     </form>
   </div>
@@ -687,7 +684,9 @@
 
   <!-- footer ends -->
 
-  <!-- <script>
+
+<!--    <script>
+
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
 		if(lang=='en'){
@@ -697,10 +696,16 @@
 		window.open('home_hindi.html',"_self");
 		}
 	});
+                                         
+	</script>  -->
 
-    </script> -->
-
+  <script>
+    $("input#submitButton").click(function(){
+      alert("Form successfully submitted");
+    });
   </script>
+
+
 
   <script>
     var loadFile1 = function (event) {
