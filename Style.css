@@ -452,6 +452,36 @@ textarea {
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
 }
+
+/* CSS for scrollbar */
+.scroll-bar {
+	height: auto;
+	width: auto;
+	margin: auto;
+  overflow-y:auto;
+  overflow-x: hidden;
+	max-width: 100%;
+}
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid whitesmoke;
+	background-color:whitesmoke;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color:whitesmoke;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color:#E0AB9D;
+	border-radius: 10px;
+
+}
+
 footer{
   text-align:center;
    height:80px;
@@ -531,8 +561,10 @@ margin: 15px;
     margin: auto;
     display: block;
   }
-  
+
 }
+  
+
 .helpdesk
 {
   color:rgb(87, 6, 6); 
