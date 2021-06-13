@@ -12,37 +12,40 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <title>  मतदाता पंजीकरण पोर्टल</title>
-    <!-- Captcha CSS -->
-    <style>
-      .input-icons i {
-        position: absolute;
-      }
-  
-      .input-icons {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-  
-      .icon {
-        padding: 10px;
-        min-width: 50px;
-        text-align: center;
-      }
-  
-      .input-field {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-    <style>
-      input[type="button"] {
-        font-family: FontAwesome;
-      }
-    </style>
+  <title> मतदाता पंजीकरण पोर्टल</title>
+  <!-- Captcha CSS -->
+  <style>
+    .input-icons i {
+      position: absolute;
+    }
+
+    .input-icons {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      padding: 10px;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <style>
+    input[type="button"] {
+      font-family: FontAwesome;
+    }
+    .hindButton{
+      width: 130px;
+    }
+  </style>
 </head>
 
 <body>
@@ -50,7 +53,7 @@
   <header>
     <div class="navbar">
       <a href="#" class="icon">
-        <img class= "imgs" src="./Images/flag.png">
+        <img class="imgs" src="./Images/flag.png">
         </img>
       </a>
 
@@ -75,18 +78,18 @@
   <div class="fontsetting">
     <div class="row">
       <div class="col col-md-6 col-sm-6">
-    <button type="button" class="btn btn-primary">क+</button>
-    <button type="button" class="btn btn-primary">क-</button>
-    </div>
-    <div class="col col-md-6 col-sm-6">
-    <span class="lang">चुनिंदा भाषा  :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
-		<option value="en">अंग्रेज़ी</option>
-		<option value="hindi" selected>हिंदी</option>
-      </select>
-    </div>
-    </span>
-    <br>
-    <br>
+        <button type="button" class="btn btn-primary">क+</button>
+        <button type="button" class="btn btn-primary">क-</button>
+      </div>
+      <div class="col col-md-6 col-sm-6">
+        <span class="lang">चुनिंदा भाषा :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
+            <option value="en">अंग्रेज़ी</option>
+            <option value="hindi" selected>हिंदी</option>
+          </select>
+      </div>
+      </span>
+      <br>
+      <br>
     </div>
   </div>
 
@@ -102,11 +105,12 @@
   <div class="container">
     <form action="" class="form1">
       <div class="formheading">
-         फॉर्म 6<br>(देखें नियम 13 (1) और 26) निर्वाचकों का पंजीकरण नियम-1960
+        फॉर्म 6<br>(देखें नियम 13 (1) और 26) निर्वाचकों का पंजीकरण नियम-1960
       </div>
 
       <!-- form part 1 starts -->
-      <div class="descrip">किसी एक निर्वाचन क्षेत्र से मतदाता या किसी अन्य निर्वाचन क्षेत्र के स्थानांतरण के कारण पहली बार मतदाता सूची में नाम शामिल करने के लिए आवेदन</div><br><br>  सेवा में<br><br>
+      <div class="descrip">किसी एक निर्वाचन क्षेत्र से मतदाता या किसी अन्य निर्वाचन क्षेत्र के स्थानांतरण के कारण पहली
+        बार मतदाता सूची में नाम शामिल करने के लिए आवेदन</div><br><br> सेवा में<br><br>
       निर्वाचक रजिस्ट्रीकरण अधिकारी,<br><br>
 
       <!-- -->
@@ -146,7 +150,7 @@
           <option>WEST BENGAL</option>
         </select>
         <span class="district">
-                          जिला
+          जिला
         </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select">
           <option value="null">चुनना</option>
@@ -170,35 +174,35 @@
 
 
       <!-- form part 2 starts -->
-      <br> मतदाता सूचियों में शामिल किए जाने के मेरे दावे के समर्थन में नीचे विनिर्देश दिए गए हैं ।  <br><br>
+      <br> मतदाता सूचियों में शामिल किए जाने के मेरे दावे के समर्थन में नीचे विनिर्देश दिए गए हैं । <br><br>
 
       <div class="descrip">अनिवार्य विनिर्देश</div><br>
       <br>
       <div class="conatinerFluid">
 
-                     (क)  नाम
+        (क) नाम
         <sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)" required>
+        </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required>
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
-         (ख) उपनाम (यदि कोई हो)<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id=""
-          placeholder="(अंग्रेजी में)" required>
+        (ख) उपनाम (यदि कोई हो)<sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id=""
+          class="zoomeffect" placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
-     (ग) आवेदक के रिश्तेदार का नाम
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
+        (ग) आवेदक के रिश्तेदार का नाम
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)"
           required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (घ)आवेदक के रिश्तेदार का उपनाम<sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)" required>
+        </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)" required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (ङ) रिश्ते का प्रकार<sup style="color:rgb(255, 8, 8)"> * </sup>
@@ -218,7 +222,7 @@
             (च) आयु [वर्तमान कैलेंडर के 1 जनवरी को] <sup style="color:rgb(255, 8, 8)"> * </sup>
 
 
-            <input type="text" value="Age" class="field left" readonly></input>
+            <input class="zoomeffect" type="text" value="Age" class="field left" readonly></input>
             <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
               <option value="null">साल</option>
               <option>18</option>
@@ -261,7 +265,7 @@
 
             (छ) जन्म तिथि (महीने/दिन/वर्ष के रूप में)
 
-            <input type="date" name="" id="">
+            <input class="zoomeffect" type="date" name="" id="">
             <br>(यदि ज्ञात हो)<sup style="color:rgb(255, 8, 8)"> * </sup>
           </li>
         </ul><br><br>
@@ -283,62 +287,62 @@
 
       <!-- form part 3 starts -->
       <div class="descrip">
-       वर्तमान पता जहां आवेदक आमतौर पर निवासी है
+        वर्तमान पता जहां आवेदक आमतौर पर निवासी है
       </div><br>
 
       <div class="conatinerFluid">
 
         <br>मकान नंबर
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"placeholder="(अंग्रेजी में)"
           required>
 
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect"placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
 
-       सड़क/क्षेत्र/स्थान
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
+        सड़क/क्षेत्र/स्थान
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)"
           required>
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)" required><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        शहर/गांव:  <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
-          required>
+        शहर/गांव: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id=""
+          class="zoomeffect" placeholder="(अंग्रेजी में)" required>
 
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)"><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
 
         डाकघर:
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" placeholder="(अंग्रेजी में)"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(अंग्रेजी में)"
           required>
 
 
-        <input type="text" name="" id="" placeholder="(क्षेत्रीय में)"><button><i
+        <input type="text" name="" id="" class="zoomeffect" placeholder="(क्षेत्रीय में)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        पिन कोड <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="pincode" required
+        पिन कोड <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" class="zoomeffect" id="pincode" required
           onkeypress="return isNumberKey(event);"><br><br>
 
-        राज्य/केंद्र शासित प्रदेश 
+        राज्य/केंद्र शासित प्रदेश
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
-        <input type="text" name="" id="state" required >
+        <input class="zoomeffect" type="text" name="" id="state" required>
         <br><br>
 
         <span class="district">
-          जिला 
+          जिला
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-		
-        <input type="text" name="" id="district" required >
+
+        <input class="zoomeffect" type="text" name="" id="district" required>
         <br><br>
         <hr><br>
 
-        परिवार/पड़ोसी महाकाव्य संख्या  <input type="text" name="" id="" required><br><br>
+        परिवार/पड़ोसी महाकाव्य संख्या <input type="text" name="" id="" class="zoomeffect" required><br><br>
         <hr><br>
 
       </div>
@@ -351,25 +355,25 @@
       <div class="conatinerFluid">
 
 
-         विकलांगता (यदि कोई हो)<br><br>
+        विकलांगता (यदि कोई हो)<br><br>
         <fieldset>
           <input type="checkbox" name="" id=""> दृश्य हानि
           <input type="checkbox" name="" id=""> भाषण और श्रवण विकलांगता
-          <input type="checkbox" name="" id="">  लोकोमोटर विकलांगता 
+          <input type="checkbox" name="" id=""> लोकोमोटर विकलांगता
           <input type="checkbox" name="" id=""> दूसरा
-          <input type="text" required>
+          <input class="zoomeffect" type="text" required>
         </fieldset>
 
         <br>
 
-        ईमेल आईडी (वैकल्पिक)  <input type="text" name="" id="" required><br><br>
+        ईमेल आईडी (वैकल्पिक) <input class="zoomeffect" type="text" name="" id="" required><br><br>
 
-        (ठ) मोबाइल नंबर (वैकल्पिक) 
+        (ठ) मोबाइल नंबर (वैकल्पिक)
 
         <span>+91</span>
 
 
-        <input type="text" name="input" required><br><br>
+        <input class="zoomeffect" type="text" name="input" required><br><br>
 
       </div>
       <!-- form part 4 ends -->
@@ -394,13 +398,14 @@
           <option> .jpg </option>
           <option> .png </option>
           <option> .bmp </option>
-          <option> .jpeg </option>        
+          <option> .jpeg </option>
         </select>
         <br> आयु प्रमाण
 
         <sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs" onchange="loadFile2(event)"> दस्तावेज़ प्रकार<sup style="color:rgb(255, 8, 8)"> *
+        <input type="file" name="" class="docs" onchange="loadFile2(event)"> दस्तावेज़ प्रकार<sup
+          style="color:rgb(255, 8, 8)"> *
         </sup>
 
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
@@ -425,19 +430,19 @@
           <option> .jpeg </option>
         </select>
         <br><br>
-		
-        <div class="row">
-          <div class="col-lg-4 col-md-4">
-           <img style="padding: 5px;" id="output1" width="240" height="230"/>
-		   </div>
-          <div class="col-lg-4 col-md-4">
-          <img style="padding: 5px;" id="output2" width="240" height="230"/>
-          </div>
-          <div class="col-lg-4 col-md-4">
-           <img style="padding: 5px;" id="output3" width="240" height="230"/>
-		   </div>
-        </div>
-		   
+
+        <!-- <div class="row"> -->
+          <!-- <div class="col-lg-4 col-md-4"> -->
+            <img style="padding: 5px;" id="output1" width="200" height="230" />
+          <!-- </div> -->
+          <!-- <div class="col-lg-4 col-md-4"> -->
+            <img style="padding: 5px;" id="output2" width="200" height="230" />
+          <!-- </div> -->
+          <!-- <div class="col-lg-4 col-md-4"> -->
+            <img style="padding: 5px;" id="output3" width="200" height="230" />
+          <!-- </div> -->
+        <!-- </div> -->
+
       </div>
       <!-- form part 5 ends -->
 
@@ -448,14 +453,15 @@
       <div class="descrip">घोषणा</div><br><br>
 
 
-             मैं इसके द्वारा घोषणा की है कि ज्ञान और विश्वास का सबसे अच्छा करने के लिए <br>(i) मैं भारत का नागरिक हूं और मेरे जन्म का स्थान है; <br>
+      मैं इसके द्वारा घोषणा की है कि ज्ञान और विश्वास का सबसे अच्छा करने के लिए <br>(i) मैं भारत का नागरिक हूं और मेरे
+      जन्म का स्थान है; <br>
 
       <div class="conatinerFluid">
 
 
         शहर/गांव:
 
-        <input type="text" name="" id="" required><br>
+        <input class="zoomeffect" type="text" name="" id="" required><br>
         राज्य का चयन करें
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -493,7 +499,7 @@
         </select>
 
         <span class="district">
-           जिला
+          जिला
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -507,24 +513,27 @@
       (ii) मैं आमतौर पर ऊपर दिए गए पते पर निवासी हूं (झ) के बाद से दिनांक
       <sup style="color:rgb(255, 8, 8);"> * </sup>
 
-      <input type="date" name="" id=""><br><br>
+      <input class="zoomeffect" type="date" name="" id=""><br><br>
 
-      (iii) मैंने किसी अन्य निर्वाचन क्षेत्र के लिए अपना नाम मतदाता सूची में शामिल करने के लिए आवेदन नहीं किया है।<br><br>
+      (iii) मैंने किसी अन्य निर्वाचन क्षेत्र के लिए अपना नाम मतदाता सूची में शामिल करने के लिए आवेदन नहीं किया
+      है।<br><br>
 
       <div class="conatinerFluid">
 
         <ul class="radio">
           <li>
-            <input type="radio" name="select" id=""> (iv) मेरा नाम पहले से ही इस या किसी अन्य विधानसभा/संसदीय क्षेत्र के लिए मतदाता सूची में शामिल नहीं किया गया है
+            <input type="radio" name="select" id=""> (iv) मेरा नाम पहले से ही इस या किसी अन्य विधानसभा/संसदीय क्षेत्र के
+            लिए मतदाता सूची में शामिल नहीं किया गया है
           </li><br>
           <xml>नहीं तो</xml> <br><br>
           <li>
-            <input type="radio" name="select" id="">मेरा नाम के लिए मतदाता सूची में शामिल किया गया हो सकता है<sup style="color:rgb(255, 8, 8)"> * </sup>
+            <input type="radio" name="select" id="">मेरा नाम के लिए मतदाता सूची में शामिल किया गया हो सकता है<sup
+              style="color:rgb(255, 8, 8)"> * </sup>
             <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
               <option>चुनना</option>
             </select>
 
-             निर्वाचन क्षेत्र में
+            निर्वाचन क्षेत्र में
             <sup style="color:rgb(255, 8, 8)"> * </sup>
             <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
               <option>चुनना</option>
@@ -559,8 +568,9 @@
               <option>WEST BENGAL</option>
             </select>
             <br>
-           जिस राज्य में मैं नीचे उल्लिखित पते पर पहले आमतौर पर निवासी था और यदि हां, तो मैं अनुरोध करता हूं कि उसी से हटाया जा सकता है
-              मतदाता सूची।
+            जिस राज्य में मैं नीचे उल्लिखित पते पर पहले आमतौर पर निवासी था और यदि हां, तो मैं अनुरोध करता हूं कि उसी से
+            हटाया जा सकता है
+            मतदाता सूची।
           </li>
         </ul>
         <br>
@@ -568,34 +578,34 @@
 
         स्थान
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <input type="text" name="" id="" required>
-        दिनांक <input type="date" name="" id=""><br>
+        <input class="zoomeffect" type="text" name="" id="" required>
+        दिनांक <input class="zoomeffect" type="date" name="" id=""><br>
       </div>
       <br><input type="radio" name="select" id="">
-	 मुझे पता है कि एक बयान या घोषणा जो झूठी है और जो मैं जानता हूं या झूठी होने का विश्वास है या सच नहीं मानता है, है,
-	जनप्रतिनिधित्व कानून, 1950 (1950 के 43) की धारा 31 के तहत दंडनीय।
-	  
+      मुझे पता है कि एक बयान या घोषणा जो झूठी है और जो मैं जानता हूं या झूठी होने का विश्वास है या सच नहीं मानता है, है,
+      जनप्रतिनिधित्व कानून, 1950 (1950 के 43) की धारा 31 के तहत दंडनीय।
+
       <br>
       <!-- form part 6 ends -->
 
-      
+
 
       <div class="conatinerFluid">
         <br>
         कैप्चा
         <form action="" name="passGen">
-          
+
           <div class="input-icons">
             <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
-            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
-         
-            <input class="zoomeffect" type="text" name="" id="" required><br><br>
-        </div>
-         
+            <input type="button" class="myBtn1 hindButton" value="Refresh" onclick=printCaptcha(6)>
 
-    
+            <input class="zoomeffect" type="text" name="" id="" required><br><br>
+          </div>
+
+
+
         </form>
-       
+
 
       </div>
       <div class="myBtn">
@@ -608,62 +618,63 @@
 
 
   <!-- footer starts -->
-  <footer>
-    Copyright © <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+  <footer id="ft">
+    Copyright ©
+    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     <a href="help.html" target=""
       style="color:rgb(7, 7, 7); font-size: 1.0625em; float: right; position: relative;
-      left: -50px;  font-weight:500; background-color:whitesmoke; height: 40px; width:100px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
+      left: -2px;  font-weight:500; background-color:whitesmoke; height: 40px; width:140px; border:none; outline: none;cursor: pointer;transition: .3s;">Help
       Desk</a>
   </footer>
 
   <!-- footer ends -->
-	 <script>
-	$('#lang-switch').change(function () { // put onchange event when user select option from select
-		var lang = $(this).val(); // decide which language to display using if else.
-		if(lang=='en'){
-		window.open('Home.html',"_self");
-		}
-		else{
-		window.open('home_hindi.html',"_self");
-		}
-	});
-	</script>
+  <script>
+    $('#lang-switch').change(function () { // put onchange event when user select option from select
+      var lang = $(this).val(); // decide which language to display using if else.
+      if (lang == 'en') {
+        window.open('Home.html', "_self");
+      }
+      else {
+        window.open('home_hindi.html', "_self");
+      }
+    });
+  </script>
 
-	<script>
-		var loadFile1 = function(event) {
-			var image1 = document.getElementById('output1');
-			image1.src = URL.createObjectURL(event.target.files[0]);
-		};
-		var loadFile2 = function(event) {
-			var image = document.getElementById('output2');
-			image.src = URL.createObjectURL(event.target.files[0]);
-		};
-		var loadFile3 = function(event) {
-			var image = document.getElementById('output3');
-			image.src = URL.createObjectURL(event.target.files[0]);
-		};
-	
-		<script>
-	$(document).ready(function(){
-		$('#pincode').focusout(function () {
-		var pincode= $('#pincode').val();
-			$.ajax({
-				type: 'GET',
-				url: 'https://api.postalpincode.in/pincode/'+pincode,
-				error:function(){
-				   alert("Something went wrong");
-				},
-				success: function(response){
-					$('#district').val(response[0].PostOffice[0].District);
-				 
-					$('#state').val(response[0].PostOffice[0].State);
-				   
-				}
-			});
-		});
-	});
+  <script>
+    var loadFile1 = function (event) {
+      var image1 = document.getElementById('output1');
+      image1.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile2 = function (event) {
+      var image = document.getElementById('output2');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile3 = function (event) {
+      var image = document.getElementById('output3');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#pincode').focusout(function () {
+        var pincode = $('#pincode').val();
+        $.ajax({
+          type: 'GET',
+          url: 'https://api.postalpincode.in/pincode/' + pincode,
+          error: function () {
+            alert("Something went wrong");
+          },
+          success: function (response) {
+            $('#district').val(response[0].PostOffice[0].District);
 
-	</script>
+            $('#state').val(response[0].PostOffice[0].State);
+
+          }
+        });
+      });
+    });
+
+  </script>
 
   <script src="js/video.js"></script>
 
