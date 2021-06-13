@@ -15,6 +15,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title> Voter Registration Portal</title>
+  <style>
+    .goog-logo-link {
+      display:none !important;
+  } 
+  
+  .goog-te-gadget{
+      color: transparent !important;
+  }
+  </style>
 </head>
 
 <body>
@@ -50,10 +59,7 @@
     <button type="button" class="btn btn-primary">A-</button>
       </div>
       <div class="col col-md-6 col-sm-6">
-    <span class="lang">Select Language :<select class="btn btn-secondary btn-sm dropdown-toggle" id="lang-switch">
-		<option value="en">English</option>
-		<option value="hindi">Hindi</option>
-      </select> 
+    <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
     </div>  
       
     </span>
@@ -382,7 +388,6 @@
           <option> .jpeg </option>
         </select>
         <br> Age proof
-
         <sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
         <input type="file" name="" class="docs" onchange="loadFile2(event)"> Document type<sup style="color:rgb(255, 8, 8)"> *
@@ -599,7 +604,7 @@
   </footer>
 
   <!-- footer ends -->
-	 <script>
+	 <!-- <script>
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
 		if(lang=='en'){
@@ -609,6 +614,8 @@
 		window.open('home_hindi.html',"_self");
 		}
 	});
+    </script> -->                                     
+
 	</script>
 
 	<script>
@@ -625,8 +632,8 @@
 			image.src = URL.createObjectURL(event.target.files[0]);
 		};
 	</script>	
-
-		<script>
+                                         
+	<script>
 	$(document).ready(function(){
 		$('#pincode').focusout(function () {
 		var pincode= $('#pincode').val();
@@ -646,5 +653,12 @@
 		});
 	});
 	</script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </html>
