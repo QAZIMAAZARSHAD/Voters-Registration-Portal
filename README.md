@@ -11,7 +11,7 @@ Don't worry, now you don't need to circle around government office. All you need
 
 ## A sneek peek into what we have here🙈 :
 
-<p align="center"><img src="https://i.postimg.cc/tgnzk8n8/Image-2.jpg" width=100%></p>
+<p align="center"><img src="Images/snapshot.png" width=100%></p>
 
 ## About
 
@@ -142,3 +142,9 @@ git push -u origin <your_branch_name>
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/LICENSE">
 <img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
 <h5 align="center"><b>MIT License</b></a> 
+
+
+## ✨ Contributors
+<a href = "https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Voters-Registration-Portal"/>
+</a>

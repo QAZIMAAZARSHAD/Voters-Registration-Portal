@@ -19,6 +19,15 @@ body{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
+.imgs:hover{
+    color: #e90fc4;
+    background-color: #f3aa21;
+    box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
+    transition-delay: 1s;
+   
+    
+  }
+  
 .container{
     width: 80%;
     margin: 100px;
