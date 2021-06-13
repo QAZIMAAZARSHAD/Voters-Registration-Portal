@@ -340,6 +340,10 @@ body {
   background-color: rgb(224, 171, 157)
 }
 
+.declaration_city{
+  margin-bottom: 20px;
+}
+
 .fontsetting {
   width: 100%;
   padding-top: 10px;
