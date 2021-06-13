@@ -327,7 +327,7 @@ ul {
 .conatinerFluid{
 
   /* border: 2px solid black; */
-  width: 75vw;
+  width: 73vw;
   padding: 9px;
   margin: auto;
   display: block;
@@ -359,8 +359,8 @@ body {
 .fontsetting select {
   
   margin: 5px;
-  width: 150px;
-  padding-left: 50px;
+  /* width: 150px;
+  padding-left: 50px; */
   height: 28px;
 }
 .lang{
@@ -422,6 +422,29 @@ padding: 1rem;
   font-size: 16px;
 }
 
+/* Zooom CSS */
+.myBtn1{
+  width: 138px; height: 35px;
+}
+
+.zoomeffect{
+  font-size: medium !important;
+}
+.footZoom{
+  height: 100px;
+}
+.refreshZoom{
+ height: 38px;
+}
+
+/* .dropdown-toggle{
+  width: inherit;
+}  */
+/* #slct3{
+  width: -webkit-fill-available;
+} */
+/* ends */
+
 input,
 textarea {
   max-width: 400px;
@@ -432,7 +455,7 @@ textarea {
 footer{
   text-align:center;
    height:80px;
-    padding-top:28px; 
+    padding-top:3px; 
     background-color: rgb(7, 7, 7);
     color:darkgray;
 }
