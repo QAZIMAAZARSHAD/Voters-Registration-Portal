@@ -15,6 +15,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title>  मतदाता पंजीकरण पोर्टल</title>
+    <!-- Captcha CSS -->
+    <style>
+      .input-icons i {
+        position: absolute;
+      }
+  
+      .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+  
+      .icon {
+        padding: 10px;
+        min-width: 50px;
+        text-align: center;
+      }
+  
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <style>
+      input[type="button"] {
+        font-family: FontAwesome;
+      }
+    </style>
 </head>
 
 <body>
@@ -358,37 +386,58 @@
 
         <br><br>आपकी तस्वीर<sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs">
+        <input type="file" name="" class="docs" onchange="loadFile1(event)">
         दस्तावेज़ प्रकार
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>चुनना</option>
+          <option> .jpg </option>
+          <option> .png </option>
+          <option> .bmp </option>
+          <option> .jpeg </option>        
         </select>
         <br> आयु प्रमाण
 
         <sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs"> दस्तावेज़ प्रकार<sup style="color:rgb(255, 8, 8)"> *
+        <input type="file" name="" class="docs" onchange="loadFile2(event)"> दस्तावेज़ प्रकार<sup style="color:rgb(255, 8, 8)"> *
         </sup>
 
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>चुनना</option>
+          <option> .jpg </option>
+          <option> .png </option>
+          <option> .bmp </option>
+          <option> .jpeg </option>
         </select>
         <br>
 
         एड्रेस प्रूफ<sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs">
+        <input type="file" name="" class="docs" onchange="loadFile3(event)">
         <!-- <span style="margin-left:100px"></span> -->
         दस्तावेज़ प्रकार
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>चुनना</option>
+          <option> .jpg </option>
+          <option> .png </option>
+          <option> .bmp </option>
+          <option> .jpeg </option>
         </select>
         <br><br>
-
+		
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+           <img style="padding: 5px;" id="output1" width="240" height="230"/>
+		   </div>
+          <div class="col-lg-4 col-md-4">
+          <img style="padding: 5px;" id="output2" width="240" height="230"/>
+          </div>
+          <div class="col-lg-4 col-md-4">
+           <img style="padding: 5px;" id="output3" width="240" height="230"/>
+		   </div>
+        </div>
+		   
       </div>
       <!-- form part 5 ends -->
 
@@ -529,11 +578,24 @@
       <br>
       <!-- form part 6 ends -->
 
+      
+
       <div class="conatinerFluid">
         <br>
-        कैप्चा <img src="/Images/captcha.png" alt="" style="width: 150px;">
-        <i class="fas fa-redo"></i>
-        <input type="text" name="" id="" required><br><br>
+        कैप्चा
+        <form action="" name="passGen">
+          
+          <div class="input-icons">
+            <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
+            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
+         
+            <input class="zoomeffect" type="text" name="" id="" required><br><br>
+        </div>
+         
+
+    
+        </form>
+       
 
       </div>
       <div class="myBtn">
@@ -566,6 +628,20 @@
 		}
 	});
 	</script>
+
+	<script>
+		var loadFile1 = function(event) {
+			var image1 = document.getElementById('output1');
+			image1.src = URL.createObjectURL(event.target.files[0]);
+		};
+		var loadFile2 = function(event) {
+			var image = document.getElementById('output2');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+		var loadFile3 = function(event) {
+			var image = document.getElementById('output3');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
 	
 		<script>
 	$(document).ready(function(){
@@ -586,5 +662,9 @@
 			});
 		});
 	});
+
 	</script>
+
+  <script src="js/video.js"></script>
+
 </html>
