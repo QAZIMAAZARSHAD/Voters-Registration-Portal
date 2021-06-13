@@ -208,6 +208,14 @@
     font-size: 7rem;
   }
 }
+.imgs:hover{
+  color: #e90fc4;
+  background-color: #f3aa21;
+  box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
+  transition-delay: 1s;
+ 
+  
+}
 .banner_btn{
   margin-top: 51px;
   padding: 10px;
