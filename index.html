@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <link href="fonts.googleapis.com/css?family=Hind">
+  <title>Welcome To Voters Registration Portal</title>
+  <link rel="stylesheet" href="Style.css">
 
     <link href="fonts.googleapis.com/css?family=Hind">
     <title>Welcome To Voters Registration Portal</title>
-    <link rel="icon" href="Images/logo2.png" type="image/png">
+    <link rel="icon" href="Images/flag.png" type="image/png">
     <link rel="stylesheet" href="Style.css">
     
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
     crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
     integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
     crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title> Voter Registration Portal</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title> Voter Registration Portal</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title> Voter Registration Portal</title>
-  </head>
-  <script>
-    setTimeout(function(){
-      $('.loader_bg').fadeToggle();
-    }, 2500);
-  </script>
+  <title> Voter Registration Portal</title>
+</head>
+<script>
+  setTimeout(function () {
+    $('.loader_bg').fadeToggle();
+  }, 2500);
+</script>
 
-  <body>
-    <div class="loader_bg">
-      <div class="loader1"></div>
-      <div class="loader"></div>
-      <div class="loader2"></div>
-      <div class="head">
-      <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better 
+<body>
+  <div class="loader_bg">
+    <div class="loader1"></div>
+    <div class="loader"></div>
+    <div class="loader2"></div>
+    <div class="head">
+      <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better
         <span class="span1">IN</span>D<span class="span2">IA</span>
         <span class="span1">.</span>.<span class="span2">.</span>
       </h1>
     </div>
-    </div>
-    <!-- navbar starts -->
+  </div>
+  <!-- navbar starts -->
   <header>
     <div class="navbar">
       <a href="#" class="icon">
-        <img class= "imgs" src="./Images/flag.png">
+        <img class="imgs" src="./Images/flag.png">
         </img>
       </a>
 
@@ -74,33 +87,35 @@
 
   <!-- navbar ends -->
 
-    <header class="header" id="header" >
-        <div class="banner">
-            <h1 class="banner_title "> Start Your Voting Contribution</h1>
-            <div>
-                <button class="banner_btn">
-                    <a class="atag" href="Home.html" >Start</a>
-                </button>
-            </div>
-        </div>
-        <article class="video_container">
-            <video class="video_item" autoplay muted loop>
-                <source src="video/vote.mp4" type="video/mp4">
-            </video>
-        </article>
-        <div class="video_switch-container" >
-            <div class="video_switch">
-                <span style="font-size: 1.3rem; padding: 5px;">on</span>
-                <span style="font-size: 1.3rem;padding: 5px;">off</span>
-                <div class="video_switch-btn"></div>
-            </div>
-        </div>
-    </header>
-    <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
-        Copyright © <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
-    </footer>
-  
-</script>
- <script src="js/video.js" ></script>
- </body>
+  <header class="header" id="header">
+    <div class="banner">
+      <h1 class="banner_title "> Start Your Voting Contribution</h1>
+      <div>
+        <button class="banner_btn">
+          <a class="atag" href="Home.html">Start</a>
+        </button>
+      </div>
+    </div>
+    <article class="video_container">
+      <video class="video_item" autoplay muted loop>
+        <source src="video/vote.mp4" type="video/mp4">
+      </video>
+    </article>
+    <div class="video_switch-container">
+      <div class="video_switch">
+        <span style="font-size: 1.3rem; padding: 5px;">on</span>
+        <span style="font-size: 1.3rem;padding: 5px;">off</span>
+        <div class="video_switch-btn"></div>
+      </div>
+    </div>
+  </header>
+  <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
+    Copyright ©
+    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+  </footer>
+
+  </script>
+  <script src="js/video.js"></script>
+</body>
+
 </html>

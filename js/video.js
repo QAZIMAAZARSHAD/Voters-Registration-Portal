@@ -1,3 +1,22 @@
+// Font JS
+var increase = document.querySelector("#inc");
+var deccrease = document.querySelector("#dec");
+var foot = document.querySelector("#ft");
+var cap = document.querySelector(".myBtn1");
+console.log(cap);
+
+inc.addEventListener('click',()=>{
+    document.body.style.fontSize = "x-large";
+    ft.classList.add('footZoom');
+    cap.classList.add('refreshZoom');
+})
+
+
+dec.addEventListener('click',()=>{
+    document.body.style.fontSize = "small";
+})
+
+
 
 
 
