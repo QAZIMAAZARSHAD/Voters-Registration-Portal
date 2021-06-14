@@ -334,6 +334,8 @@ ul {
 }
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
 .descrip {
@@ -429,13 +431,7 @@ textarea {
   padding-left: 3px;
   border: rgb(0, 0, 0, 0.2) solid 1px;
 }
-footer{
-  text-align:center;
-   height:80px;
-    padding-top:28px; 
-    background-color: rgb(7, 7, 7);
-    color:darkgray;
-}
+
 
 
 .myBtn{
@@ -509,3 +505,41 @@ margin: 15px;
   }
   
 }
+.inner-footer{
+  padding: 20px 0px;
+  width: 100;
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+}
+.social-links{
+  display: flex;
+}
+.social-links ul{
+  padding: 20px;
+  display: flex;
+  margin: auto;
+}
+.social-items {
+  list-style: none;
+}
+.social-items a{
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #6cccc6;
+  transition: all .25s;
+  
+}
+.social-items a:hover{
+  color: #adb35d;
+
+}
+.outer-footer{
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  background-color: #3f3f3f;
+}
+
+
