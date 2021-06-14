@@ -156,7 +156,7 @@
 
   <!-- form starts -->
   <div class="container">
-    <form action="" class="form1">
+    <form action="" class="form1" name="form25">
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
       </div>
@@ -400,7 +400,8 @@
             class="far fa-keyboard"></i></button><br><br>
 
         Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="pincode"
-          required onkeypress="return isNumberKey(event);"><br><br>
+          required onkeypress="return isNumberKey(event);" required pattern="^[0-9]{6}$"><br><br>
+        <!-- Pin code Validation set -->
 
         State / Union Territory
         <sup style="color:rgb(255, 8, 8)"> * </sup>
@@ -442,14 +443,14 @@
 
         <br>
 
-        Email ID (optional) <input class="zoomeffect" type="text" name="" id="" required><br><br>
+        Email ID (optional) <input class="zoomeffect" type="text" name="text1" id="" required><br><br>
 
         Mobile No. (optional)
 
         <span>+91</span>
 
 
-        <input class="zoomeffect" type="text" name="input" required><br><br>
+        <input class="zoomeffect" type="text" name="text2" required><br><br>
 
       </div>
       <!-- form part 4 ends -->
@@ -736,7 +737,8 @@
       <div class="myBtn">
 
         <input type="reset" class="btn btn-success" value="Reset">
-        <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
+        <input type="submit" class="btn btn-success" value="Submit" id="submitButton"
+          onclick="ValidateEmail(document.form25.text1); ">
       </div>
     </form>
   </div>
@@ -768,11 +770,11 @@
                                          
 	</script>  -->
 
-  <script>
+  <!-- <script>
     $("input#submitButton").click(function () {
       alert("Form successfully submitted");
     });
-  </script>
+  </script> -->
 
 
 
@@ -1468,6 +1470,23 @@
     })
   </script>
   <script src="js/video.js"></script>
+  <!-- script for email-validation -->
+  <script>
+    function ValidateEmail(inputText) {
+      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      if (inputText.value.match(mailformat)) {
+        alert("Valid email address!");
+        document.form1.text1.focus();
+        return true;
+      }
+      else {
+        alert("You have entered an invalid email address!");
+        document.form1.text1.focus();
+        return false;
+      }
+    }
+
+  </script>
 </body>
 
 </html>
