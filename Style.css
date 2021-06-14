@@ -199,13 +199,15 @@
   z-index: 3;
 }
 .banner_title{
-  font-size: 5rem; 
+  font-size: 4rem; 
+  font-weight: bold;
   text-transform: capitalize;
-  color: #008000;
+  font-family: 'Righteous', cursive;
+  color: rgb(4, 40, 71);
 }
 @media screen and (max-width:768px) {
   .banner_title{
-    font-size: 7rem;
+    font-size: 2rem;
   }
 }
 .imgs:hover{
@@ -216,25 +218,31 @@
  
   
 }
-.banner_btn{
+
+.butn
+{
   margin-top: 51px;
-  padding: 10px;
-  width: 180px;
-  border-radius: 50px;
-  background-color: whitesmoke;
+}
+.banner_btn{
+  text-align: center;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  background-color: rgb(6, 30, 58);
   outline: none;
-  border-color: 1px solid black;
+  border: 3px solid rgb(6, 30, 58);
 }
 .atag{
-  font-size: 2.3rem;
-  color:green;
+  font-size: 2rem;
+  color:white;
+  font-weight: bold;
 }
 .atag:hover{
   text-decoration: none;
+  color: rgb(5, 23, 44);
 }
 .banner_btn:hover{
-  background-color: rgb(255, 136, 0);
-  box-shadow: 0 10px 7px 0 black;
+  background: linear-gradient(rgba(221, 237, 248, 0.5), rgba(220, 237, 247, 0.5));
+  
 }
 .video_container{
   position: absolute;
@@ -243,7 +251,7 @@
   width: 100%;
   height: 100vh;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .video_item{
   width: 100%;
@@ -258,18 +266,20 @@
   .video_switch-container{
       display: block;
       position: absolute;
-      bottom: 21%;
-      right: 5%;
+      top:3%;
+      right: 3%;
       z-index: 3;
   }
   .video_switch{
       position: relative;
-      width: 6rem;
-      background: rgb(255, 136, 0);
+      width: 5rem;
+      background: rgb(125, 138, 151);
+      color: rgb(14, 13, 13);
+      font-weight: bold;
       text-transform: uppercase;
       display: flex;
       justify-content: space-between;
-      padding: 0.25rem;
+      padding: 0.15rem;
       cursor: pointer;
       border-radius: 0.5rem;
   }
@@ -277,7 +287,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      background:green;
+      background:rgb(5, 23, 44);
+      color: white;
       height: 100%;
       width: 50%;
       border-radius: 0.5rem;
@@ -297,15 +308,31 @@
 }
 
 .navbar {
-  background-color: rgb(42, 43, 43);
+  background-color: rgb(42, 43, 43); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(253, 86, 9), white, rgb(3, 134, 3));
   padding-left: 15px;
   padding-right: 10px;
   padding-top: 3px;
-  color: aliceblue;
+  color: rgb(4, 40, 71);
   text-align: center;
 }
+
+.heading
+{
+  text-align: center;
+}
+
+.navbar .row
+{
+  display: flex;
+  align-items: center;
+}
+.emblem
+{
+  width: 180px;
+}
 .icon img{
-  width: 140px;
+  width: 130px;
 }
 .endlogo img{
   width: 140px;
