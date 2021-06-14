@@ -49,20 +49,20 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="firstname" class="form-label">FirstName</label>
-                                    <input class="form-control" type="text" placeholder="FirstName" aria-label="default input example">
+                                    <label for="fname" class="form-label">FirstName</label>
+                                    <input class="form-control" type="text" placeholder="FirstName" id="fname" >
                                 </div>
                                 <div class="mb-3">
-                                    <label for="lastname" class="form-label">LastName</label>
-                                    <input class="form-control" type="text" placeholder="LastName" aria-label="default input example">
+                                    <label for="lname" class="form-label">LastName</label>
+                                    <input class="form-control" type="text" placeholder="LastName" id="lname" >
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <label for="Email" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                  <label for="password1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="password1">
                                 </div>
                                 <div class="mb-3">
                                     <label for="confirmPassword1" class="form-label">Confirm Password</label>
@@ -81,53 +81,54 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="State" class="form-label">State</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="null">Select</option><option>ANDHRA PRADESH</option>
-                                        <option>ARUNACHAL PRADESH</option>
-                                        <option>ASSAM</option>
-                                        <option>BIHAR</option>
-                                        <option>CHATTISGARH</option>
-                                        <option>GOA</option>
-                                        <option>GUJRAT</option>
-                                        <option>HARYANA</option>
-                                        <option>HIMACHAL PRADESH</option>
-                                        <option>JAMMU AND KASHMIR</option>
-                                        <option>JHARKHAND</option>
-                                        <option>KARNATAKA</option>
-                                        <option>KERALA</option>
-                                        <option>MADHYA PRADESH</option>
-                                        <option>MAHARASHTRA</option>
-                                        <option>MANIPUR</option>
-                                        <option>MEGHALAYA</option>
-                                        <option>MIZORAM</option>
-                                        <option>NAGALAND</option>
-                                        <option>ODISHA</option>
-                                        <option>PUNJAB</option>
-                                        <option>RAJASTHAN</option>
-                                        <option>SIKKIM</option>
-                                        <option>TAMIL NADU</option>
-                                        <option>TELANGANA</option>
-                                        <option>TRIPURA</option>
-                                        <option>UTTAR PRADESH</option>
-                                        <option>UTTARAKHAND</option>
-                                        <option>WEST BENGAL</option>
+                                    <select class="form-select" id="state" aria-label="Default select example">
+                                        <option value="0">Select</option>
+                                        <option value="1">ANDHRA PRADESH</option>
+                                        <option value="2">ARUNACHAL PRADESH</option>
+                                        <option value="3">ASSAM</option>
+                                        <option value="4">BIHAR</option>
+                                        <option value="5">CHATTISGARH</option>
+                                        <option value="6">GOA</option>
+                                        <option value="7">GUJRAT</option>
+                                        <option value="8">HARYANA</option>
+                                        <option value="9">HIMACHAL PRADESH</option>
+                                        <option value="10">JAMMU AND KASHMIR</option>
+                                        <option value="11">JHARKHAND</option>
+                                        <option value="12">KARNATAKA</option>
+                                        <option value="13">KERALA</option>
+                                        <option value="14">MADHYA PRADESH</option>
+                                        <option value="15">MAHARASHTRA</option>
+                                        <option value="16">MANIPUR</option>
+                                        <option value="17">MEGHALAYA</option>
+                                        <option value="18">MIZORAM</option>
+                                        <option value="18">NAGALAND</option>
+                                        <option value="20">ODISHA</option>
+                                        <option value="21">PUNJAB</option>
+                                        <option value="22">RAJASTHAN</option>
+                                        <option value="23">SIKKIM</option>
+                                        <option value="24">TAMIL NADU</option>
+                                        <option value="25">TELANGANA</option>
+                                        <option value="26">TRIPURA</option>
+                                        <option value="27">UTTAR PRADESH</option>
+                                        <option value="28">UTTARAKHAND</option>
+                                        <option value="29">WEST BENGAL</option>
                                     </select>                                           
                                 </div>
                                 <div class="mb-3">
                                     <label for="city" class="form-label">City</label>
-                                    <input class="form-control" type="text" placeholder="city" aria-label="default input example">
+                                    <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example">
                                 </div>
                                 
                                 <div class="mb-3">
-                                    <label for="number" class="form-label">Zip Code</label>
-                                    <input type="number" class="form-control" id="number" placeholder="zip Code">
+                                    <label for="zip_code" class="form-label">Zip Code</label>
+                                    <input type="number" class="form-control" id="zip_code" placeholder="zip Code">
                                 </div>
                                 <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div>
                             </div>  
                         </div>
                
                        
-                        <button type="submit" class="btn btn-success">Sign Up</button>
+                        <button type="submit" class="btn btn-success" onclick="signup()">Sign Up</button>
                     </form>
                 </div>
             </div>
@@ -136,7 +137,70 @@
 
         
     </div>
+    <script>
+        function signup(){
+            var f_name = document.getElementById('fname').value;
+            var l_name = document.getElementById('lname').value;
+            var email = document.getElementById('Email').value;
+            var pwd1 = document.getElementById('password1').value;
+            var pwd2 = document.getElementById('confirmPassword1').value;
+            var st = document.getElementById('state').value;
+            var mob_num = document.getElementById('number').value;
+            var city = document.getElementById('city').value;
+            var add1 = document.getElementById('address').value;
+            var zip = document.getElementById('zip_code').value;
 
+            if(f_name == ''){
+              alert('Please enter your FirstName!');
+            }
+            else if(l_name == ''){
+              alert('Plese enter your LastName!');
+            }
+            else if(pwd1==''){
+              alert('Plese enter your Password!');
+            }
+            else if(pwd2==''){
+              alert('Plese enter your Password twice!');
+            }
+            else if(pwd2==''){
+              alert('Plese enter your Password twice!');
+            }
+            else if(city =='' ){
+              alert('Plese enter your city!');
+            }
+            else if(add1 == ''){
+              alert('Plese enter your address!');
+            }
+            else if(mob_num ==''){
+              alert('Plese enter your valid mobile number!');
+            }
+            else if(zip ==''){
+              alert('Plese enter your valid mobile number!');
+            }
+            else if(mob_num =='' || mob_num >= 10000000000 || mob_num <= 999999999){
+              alert('Plese enter your valid mobile number!');
+            }
+            else if(pwd1 != pwd2){
+              alert("Your passwords are not matching!");
+            }
+            else if(pwd1.length < 6 || pwd1.length > 6 )
+            {
+              alert("Password min and max length is 6.");
+            }
+            
+            else if(st == 0)
+            {
+               alert("Please select your State !");
+            }
+            else
+            {
+            alert('Thank You for Registering! & You are Redirecting to Home page');
+              setTimeout(function() {window.location = "Home.html" });
+            }
+          
+          }
+
+    </script>
 
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
         Copyright © 2020 Qazi Maaz Arshad

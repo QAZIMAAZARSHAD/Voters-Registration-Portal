@@ -48,12 +48,12 @@
                     <div class="col-lg-12">
                         <form>
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <label for="Email1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
+                              <label for="Password1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="Password1">
                               <div id="passwordhelp" class="form-text">Forgot Password? <a href="#">click here</a></div>
                             </div>
                             <div class="mb-3 form-check">
@@ -61,8 +61,10 @@
                                 <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>  
                             <div id="newuser" class="form-text" style="text-align:right;font-size:15px;">New User? <a href="sign-up.html">Register here</a></div>
-                            <button type="submit" class="btn btn-success">Login</button>                               
-                        </form>
+                            <button type="submit" class="btn btn-success" onClick="login()">Login</button>                               
+                            <button type="submit" class="btn btn-info" onClick="clearFunc()">Reset</button>                               
+                        
+                          </form>
                      </div>       
                 </div>
             </div>
@@ -71,7 +73,41 @@
 
         
     </div>
-
+    <script>
+        function login()
+        {
+          var uname = document.getElementById("Email1").value;
+          var pwd = document.getElementById("Password1").value;
+          var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          if(uname =='')
+          {
+            alert("please enter user name.");
+          }
+          else if(pwd=='')
+          {
+                alert("enter the password");
+          }
+          else if(!filter.test(uname))
+          {
+            alert("Enter valid email id.");
+          }
+          else if(pwd.length < 6 || pwd.length > 6)
+          {
+            alert("Password min and max length is 6.");
+          }
+          else
+          {
+          alert('Thank You for Login & You are Redirecting to Home page');
+            setTimeout(function() {window.location = "Home.html" });
+          }
+        }
+        function clearFunc()
+        {
+          document.getElementById("Email1").value="";
+          document.getElementById("Password1").value="";
+        }	
+        
+    </script>
 
     <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
         Copyright © 2020 Qazi Maaz Arshad

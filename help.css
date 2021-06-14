@@ -19,6 +19,15 @@ body{
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
+.imgs:hover{
+    color: #e90fc4;
+    background-color: #f3aa21;
+    box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
+    transition-delay: 1s;
+   
+    
+  }
+  
 .container{
     width: 80%;
     margin: 100px;
@@ -164,3 +173,31 @@ tr td{
     
 
 
+/* CSS for scrollbar */
+.scroll-bar {
+	height: auto;
+	width: auto;
+	margin: auto;
+  overflow-y:auto;
+  overflow-x: hidden;
+	max-width: 100%;
+}
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid whitesmoke;
+	background-color:whitesmoke;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color:whitesmoke;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color:#E0AB9D;
+	border-radius: 10px;
+
+}
