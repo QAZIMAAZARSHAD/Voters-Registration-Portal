@@ -176,18 +176,18 @@ tr td{
     margin: 0;
     padding: 0;
     background-color: #272727;
-  }
-  .social-links{
+}
+.social-links{
     display: flex;
-  }
-  .social-links ul{
+}
+.social-links ul{
     padding: 20px;
     display: flex;
     margin: auto;
-  }
-  .social-items {
+}
+.social-items {
     list-style: none;
-  }
+}
   .social-items a{
     padding: 10px 20px;
     font-size: 30px;
