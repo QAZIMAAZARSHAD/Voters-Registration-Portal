@@ -9,13 +9,13 @@ But where and how to register?
 Don't worry, now you don't need to circle around government office. All you need is a proper internet connection and a device, because you can do it online at voter registration portal 🙌
 <p align="center"><img src="https://media1.giphy.com/media/rLevqFeA9IiHeNXKyA/200w.webp?cid=ecf05e47kz4k2qixvi3t7ruoeq3uogqyl1yhmacd88s4n8l2&rid=200w.webp&ct=g" width = 40%></p>
 
-## A sneek peek into what we have here🙈 :
+## A sneak peek into what we have here🙈 :
 
 <p align="center"><img src="Images/snapshot.png" width=100%></p>
 
 ## About
 
-This is a demo website of national voter's registration portal. All Indian citizens who are eligible to vote can register themselves on this website to get their voter id's. This portal allow users to fill (Form 6 of Electors Rule-1960) an application for inclusion of name in electoral roll.
+This is a demo website of National Voters' Registration portal. All Indian citizens who are eligible to vote can register themselves on this website to get their voter ID's. This portal allow users to fill (Form 6 of Electors Rule-1960) an application for inclusion of name in electoral roll.
 
 ## Link to the website
 https://qazimaazarshad.github.io/Voters-Registration-Portal/
@@ -38,11 +38,11 @@ You can refer to the following articles on the basics of Git and Github and also
 
 ## Contribution Guidelines 🏗
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further.
 
 To start contributing, follow the below guidelines: 
 
-🌟. Star🌟 the project to bookmark and appreciate the work.
+🌟Star🌟 the project to bookmark and appreciate the work.
 
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
@@ -112,7 +112,7 @@ git push -u origin <your_branch_name>
 
 **14.** Click on `Create Pull Request`.
 
-**15.** Voila :exclamation: You have made a PR to the National Voters Registration website :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand, at times the time taken to review a PR can vary from a few hours to a few days.
+**15.** Voila :exclamation: You have made a PR to the National Voters' Registration website :boom:. Sit back patiently and relax while the project maintainers review your PR. Please understand, at times the time taken to review a PR can vary from a few hours to a few days.
 
 <p align="center"><img src="https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif" width=30%></p>
 
