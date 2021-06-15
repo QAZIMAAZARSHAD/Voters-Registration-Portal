@@ -185,9 +185,55 @@
   position: relative;
 }
 
+.hindi-heading
+{
+  font-size: 2.8rem;
+}
+
+.english-heading
+{
+    font-size: 2.4rem;
+}
+
+.emblem
+{
+  width: 150px;
+}
+
+@media screen and (max-width:768px)
+{
+  .english-heading
+  {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:575px)
+{
+  .hindi-heading
+  {
+    font-size: 1.4rem;
+  }
+  .english-heading
+  {
+    font-size: 0.9rem;
+  }
+  .emblem
+  {
+    width: 90px;
+  }
+
+}
+
+.main-heading
+{
+  margin: 0 auto;
+}
+
 @media screen and (max-width:768px) {
   .header{
     background-image: url('./Images/voteImg.jpg');
+    background: linear-gradient(rgba(27, 27, 27, 0.329),rgba(255, 254, 254, 0.329));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,6 +252,14 @@
   color: rgb(4, 40, 71);
 }
 @media screen and (max-width:768px) {
+  .banner_title{
+    font-size: 2.6rem;
+    text-shadow: white;
+    text-decoration-color: white;
+  }
+}
+
+@media screen and (max-width:575px) {
   .banner_title{
     font-size: 2rem;
   }
@@ -244,6 +298,17 @@
   background: linear-gradient(rgba(221, 237, 248, 0.5), rgba(220, 237, 247, 0.5));
   
 }
+
+@media screen and (max-width:575px)
+{
+  .banner_btn{
+    padding: 0.6rem 1.8rem;
+  }
+  .atag{
+    font-size: 1.8rem;
+  }
+}
+
 .video_container{
   position: absolute;
   top: 0;
@@ -327,18 +392,22 @@
   display: flex;
   align-items: center;
 }
-.emblem
-{
-  width: 180px;
-}
+
 .icon img{
   width: 130px;
 }
 .endlogo img{
-  width: 140px;
+  width: 120px;
   border-radius: 8px;
 }
 
+.logo
+{
+  position: absolute;
+  top: 5%;
+  right: 3%;
+
+}
 
 ul {
   list-style-type: none;
@@ -540,6 +609,7 @@ footer{
 }
 @media (max-width:1090px){
 .navbar{
+
   flex-direction: column;
   text-align: center;
 }
