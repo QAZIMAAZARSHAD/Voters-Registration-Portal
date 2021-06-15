@@ -74,18 +74,15 @@
             .input-icons i {
               position: absolute;
             }
-
             .input-icons {
               width: 100%;
               margin-bottom: 10px;
             }
-
             .icon {
               padding: 10px;
               min-width: 50px;
               text-align: center;
             }
-
             .input-field {
               width: 100%;
               padding: 10px;
@@ -115,7 +112,14 @@
       <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
         DEMO PORTAL
       </h1>
-
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
       <a href="#" class="endlogo">
         <img src="./Images/vote.png">
         </img>
@@ -156,7 +160,7 @@
 
   <!-- form starts -->
   <div class="container">
-    <form action="" class="form1" name="form25">
+    <form action="" class="form1">
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
       </div>
@@ -400,8 +404,7 @@
             class="far fa-keyboard"></i></button><br><br>
 
         Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="pincode"
-          required onkeypress="return isNumberKey(event);" required pattern="^[0-9]{6}$"><br><br>
-        <!-- Pin code Validation set -->
+          required onkeypress="return isNumberKey(event);"><br><br>
 
         State / Union Territory
         <sup style="color:rgb(255, 8, 8)"> * </sup>
@@ -443,14 +446,14 @@
 
         <br>
 
-        Email ID (optional) <input class="zoomeffect" type="text" name="text1" id="" required><br><br>
+        Email ID (optional) <input class="zoomeffect" type="text" name="" id="" required><br><br>
 
         Mobile No. (optional)
 
         <span>+91</span>
 
 
-        <input class="zoomeffect" type="text" name="text2" required><br><br>
+        <input class="zoomeffect" type="text" name="input" required><br><br>
 
       </div>
       <!-- form part 4 ends -->
@@ -722,23 +725,18 @@
         <br>
         Captcha
         <form action="" name="passGen">
-
           <div class="input-icons">
             <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
             <!- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
       <!-- <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
-
             <input class="zoomeffect" type="text" name="" id="" required><br><br>
         </div>
         </form>
-
-
       </div> -->
       <div class="myBtn">
 
         <input type="reset" class="btn btn-success" value="Reset">
-        <input type="submit" class="btn btn-success" value="Submit" id="submitButton"
-          onclick="ValidateEmail(document.form25.text1); ">
+        <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
       </div>
     </form>
   </div>
@@ -757,7 +755,6 @@
 
 
   <!--    <script>
-
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
 		if(lang=='en'){
@@ -769,12 +766,18 @@
 	});
                                          
 	</script>  -->
+  <script>
+    const chk = document.getElementById('chk');
 
-  <!-- <script>
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+</script>
+  <script>
     $("input#submitButton").click(function () {
       alert("Form successfully submitted");
     });
-  </script> -->
+  </script>
 
 
 
@@ -1470,23 +1473,6 @@
     })
   </script>
   <script src="js/video.js"></script>
-  <!-- script for email-validation -->
-  <script>
-    function ValidateEmail(inputText) {
-      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-      if (inputText.value.match(mailformat)) {
-        alert("Valid email address!");
-        document.form1.text1.focus();
-        return true;
-      }
-      else {
-        alert("You have entered an invalid email address!");
-        document.form1.text1.focus();
-        return false;
-      }
-    }
-
-  </script>
 </body>
 
 </html>

@@ -68,7 +68,14 @@
       <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
         DEMO PORTAL
       </h1>
-
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
       <a href="#" class="endlogo">
         <img src="./Images/vote.png">
         </img>
@@ -78,7 +85,13 @@
   </header>
 
   <!-- navbar ends -->
+  <script>
+    const chk = document.getElementById('chk');
 
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+</script>
   <header class="header" id="header">
     <div class="banner">
       <h1 class="banner_title "> Start Your Voting Contribution</h1>
