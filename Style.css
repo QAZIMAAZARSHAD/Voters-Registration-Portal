@@ -270,10 +270,7 @@ body.dark {
 .imgs:hover{
   color: #e90fc4;
   background-color: #f3aa21;
-  box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
-  transition-delay: 1s;
- 
-  
+  box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21; 
 }
 .banner_btn{
   margin-top: 51px;
