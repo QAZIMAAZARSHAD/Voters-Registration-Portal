@@ -27,32 +27,78 @@
   </style>
   <!-- Captcha CSS -->
   <style>
-    .input-icons i {
-      position: absolute;
+    .captcha-container {
+      min-width: 37%;
+      max-width: 29%;
+      display: block;
+      background: #d5d5d5;
+      font-family: 'poppins', sans-serif;
     }
 
-    .input-icons {
+    .header9 {
+      background: #037AE2;
+      color: #FFF;
+      font-size: 1.5rem;
       width: 100%;
-      margin-bottom: 10px;
+      text-align: center;
+      border-radius: 20px 20px 0 0;
+      padding: 15px;
     }
 
-    .icon {
-      padding: 10px;
-      min-width: 50px;
-      text-align: center;
+    .securityCode {
+      width: 99%;
+      height: 74px;
     }
 
-    .input-field {
-      width: 100%;
-      padding: 10px;
+    #code {
       text-align: center;
+      letter-spacing: 5px;
+      user-select: none;
+    }
+
+    .securityCode p {
+      line-height: 63px;
+      color: rgb(36, 36, 36);
+      font-family: "Montserrat";
+      font-size: 5vw;
+      font-weight: bold;
+    }
+
+    .securityCode .icons .fas:hover {
+      color: #357fc9;
+      cursor: pointer;
     }
   </style>
-  <style>
-    input[type="button"] {
-      font-family: FontAwesome;
-    }
-  </style>
+
+  <!-- <style>
+            .input-icons i {
+              position: absolute;
+            }
+
+            .input-icons {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+
+            .icon {
+              padding: 10px;
+              min-width: 50px;
+              text-align: center;
+            }
+
+            .input-field {
+              width: 100%;
+              padding: 10px;
+              text-align: center;
+            }
+          </style>
+          <style>
+            input[type="button"] {
+              font-family: FontAwesome;
+            }
+          </style> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
@@ -69,7 +115,14 @@
       <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
         DEMO PORTAL
       </h1>
-
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
       <a href="#" class="endlogo">
         <img src="./Images/vote.png">
         </img>
@@ -83,17 +136,17 @@
 
   <div class="fontsetting">
     <!-- <div class="row"> -->
-      <!-- <div class="col col-md-6 col-sm-6"> -->
-        <button type="button" class="btn btn-primary" id="inc">A+</button>
-        <button type="button" class="btn btn-primary" id="dec">A-</button>
-      <!-- </div> -->
-      <!-- <div class="col col-md-6 col-sm-6"> -->
-        <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
+    <!-- <div class="col col-md-6 col-sm-6"> -->
+    <button type="button" class="btn btn-primary" id="inc">A+</button>
+    <button type="button" class="btn btn-primary" id="dec">A-</button>
+    <!-- </div> -->
+    <!-- <div class="col col-md-6 col-sm-6"> -->
+    <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
       <!-- </div> -->
 
-      </span>
-      <br>
-      <br>
+    </span>
+    <br>
+    <br>
     <!-- </div> -->
   </div>
 
@@ -125,7 +178,7 @@
 
         <span>State</span> <sup style="color:rgb(255, 8, 8)">* </sup>
         <select class="zoomeffect btn btn-secondary btn-sm dropdown-toggle" name="slct7" id="slct7"
-          onchange="populate(this.id,'slct8')"  style="width:156px !important; padding-left:9px; font-size: 15px;"> 
+          onchange="populate(this.id,'slct8')" style="width:156px !important; padding-left:9px; font-size: 15px;">
 
           <option> --Choose State -- </option>
           <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
@@ -211,15 +264,14 @@
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
-        Surname (if any) <input type="text" name="" id=""
-          class="zoomeffect" placeholder="(In English)" required>
+        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
 
         <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
         (C) Name
         of the applicant's relative
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(In English)" required>
 
         <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
@@ -321,8 +373,8 @@
       <div class="conatinerFluid">
 
         <br>House no.
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(In English)" required>
 
 
         <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
@@ -331,15 +383,15 @@
 
         Street /
         area / location
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(In English)" required>
 
         <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         City /
-        Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)"
-          required>
+        Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(In English)" required>
 
 
         <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)"><button><i
@@ -347,15 +399,15 @@
 
 
         Post Office:
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)"
-          required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+          placeholder="(In English)" required>
 
 
         <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)"><button><i
             class="far fa-keyboard"></i></button><br><br>
 
-        Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="pincode" required
-          onkeypress="return isNumberKey(event);"><br><br>
+        Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="pincode"
+          required onkeypress="return isNumberKey(event);"><br><br>
 
         State / Union Territory
         <sup style="color:rgb(255, 8, 8)"> * </sup>
@@ -463,15 +515,15 @@
         <br><br>
 
         <!-- <div class="row"> -->
-          <!-- <div class="col-lg-4 col-md-4"> -->
-            <img style="padding: 5px;" id="output1" width="200" height="230" />
-          <!-- </div> -->
-          <!-- <div class="col-lg-4 col-md-4"> -->
-            <img style="padding: 5px;" id="output2" width="200" height="230" />
-          <!-- </div> -->
-          <!-- <div class="col-lg-4 col-md-4"> -->
-            <img style="padding: 5px;" id="output3" width="200" height="230" />
-          <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-4"> -->
+        <img style="padding: 5px;" id="output1" width="200" height="230" />
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-4"> -->
+        <img style="padding: 5px;" id="output2" width="200" height="230" />
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-4"> -->
+        <img style="padding: 5px;" id="output3" width="200" height="230" />
+        <!-- </div> -->
         <!-- </div> -->
 
       </div>
@@ -492,11 +544,11 @@
       <div class="conatinerFluid">
         <div class="declaration_city">
 
-        City /
-        Village:
+          City /
+          Village:
 
-        <input class="zoomeffect" type="text" name="" id="" required><br>
-      </div>
+          <input class="zoomeffect" type="text" name="" id="" required><br>
+        </div>
         Select state
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -648,23 +700,46 @@
       know or believe to be false or do not believe to be true, is
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
+      <br>
+      <div class="captcha-container"
+        style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
+        <div class="securityCode">
+          <p id="code"></p>
+          <div class="icons">
+            <span class="readText" style="align-items: center;">
+              <i class="fas fa-headphones"></i>
+
+            </span>
+            <span class="changeText">
+              <i class="fas fa-sync-alt"></i>
+            </span>
+
+            <input type="text" placeholder="Type the text here">
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+      <script src="./script.js"></script>
       <!-- form part 6 ends -->
-      <div class="conatinerFluid">
+      <!-- <div class="conatinerFluid">
         <br>
         Captcha
         <form action="" name="passGen">
 
           <div class="input-icons">
             <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
-            <!-- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
-            <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
+            <!- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
+      <!-- <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
 
             <input class="zoomeffect" type="text" name="" id="" required><br><br>
         </div>
         </form>
 
 
-      </div>
+      </div> -->
       <div class="myBtn">
 
         <input type="reset" class="btn btn-success" value="Reset">
@@ -679,14 +754,14 @@
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     <a class="helpdesk" href="help.html" target="">Help
-      Desk</a> 
+      Desk</a>
 
   </footer>
 
   <!-- footer ends -->
 
 
-<!--    <script>
+  <!--    <script>
 
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
@@ -699,9 +774,15 @@
 	});
                                          
 	</script>  -->
-
   <script>
-    $("input#submitButton").click(function(){
+    const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+</script>
+  <script>
+    $("input#submitButton").click(function () {
       alert("Form successfully submitted");
     });
   </script>
@@ -1350,15 +1431,56 @@
 
   </script>
 
-
+  <!-- script for captcha and speaker -->
 
 
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    const changeTextBtn = document.querySelector('.changeText');
+    const readTextBtn = document.querySelector('.readText');
+    const code = document.querySelector('#code');
+    const input = document.querySelector('.userInput input');
+    const submitBtn = document.querySelector('.btn');
 
+    changeTextBtn.addEventListener('click', () => {
+      code.textContent = createCaptcha();
+    });
+    window.addEventListener('load', () => {
+      code.textContent = createCaptcha();
+    });
 
-
+    function createCaptcha() {
+      let letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+      let a = letters[Math.floor(Math.random() * letters.length)];
+      let b = letters[Math.floor(Math.random() * letters.length)];
+      let c = letters[Math.floor(Math.random() * letters.length)];
+      let d = letters[Math.floor(Math.random() * letters.length)];
+      let e = letters[Math.floor(Math.random() * letters.length)];
+      let f = letters[Math.floor(Math.random() * letters.length)];
+      let g = letters[Math.floor(Math.random() * letters.length)];
+      let code = a + b + c + d + e + f + g;
+      return code;
+    }
+    submitBtn.addEventListener('click', () => {
+      let val = input.value;
+      if (val == '') {
+        alert('Please Enter The code');
+      }
+      else if (val === code.textContent) {
+        alert('Valid input');
+      }
+      else {
+        alert('invalid input !');
+      }
+    })
+    readTextBtn.addEventListener('click', () => {
+      let text = code.textContent;
+      responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });
+    })
+  </script>
   <script src="js/video.js"></script>
-
+</body>
 
 </html>
