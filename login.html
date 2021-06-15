@@ -71,7 +71,7 @@
                 <label for="Password1" class="form-label">Password</label>
                 <input type="password" class="form-control" id="myInput">
                 <div style="position: relative; left: 270px; bottom: -7px;">
-                  <input type="checkbox" class="form-check-input" onclick="myFunction()">Show Password
+                  <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
                 </div>
                 <div id="passwordhelp" class="form-text">Forgot Password? <a href="#">click here</a></div>
               </div>
@@ -135,6 +135,16 @@
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
   </footer>
+  <script>
+    function showPwdToogle() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
 </body>
 
 </html>
