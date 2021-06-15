@@ -268,13 +268,27 @@ body.dark {
   }
 }
 .imgs:hover{
-  color: #e90fc4;
-  background-color: #f3aa21;
-  box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
+  
+  background-color: green , green;
+  box-shadow: 0 0 10px greenyellow, 0 0 40px #fff, 0 0 80px #f3aa21;
   transition-delay: 1s;
+ 
+ 
+  
  
   
 }
+.imgs::before{
+  content:'';
+  position: absolute;
+  width: 20px;
+  height:-33px ;
+  left:20px;
+  top: -2px;
+  
+}
+
+
 .banner_btn{
   margin-top: 51px;
   padding: 10px;
