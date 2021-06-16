@@ -354,20 +354,33 @@ body.dark {
   outline: none;
 }
 
-.navbar {
+.navbars {
   background-color: rgb(42, 43, 43);
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-top: 3px;
+  
+  padding: 20px;
+    padding-bottom: 50px;
   color: aliceblue;
   text-align: center;
 }
-.icon img{
-  width: 140px;
+.nav-img-left{
+  width: 170px;
+    height: 100px;
+    float: left;
+    
 }
-.endlogo img{
+.navbars h1{
+    margin-right: 200px;
+}
+.nav-toggle{
+    margin-right: -500px;
+    margin-top: -50px;
+}
+.nav-img-right{
   width: 140px;
   border-radius: 8px;
+    float: right;
+    margin-top: -90px;
+    padding-right: 10px;
 }
 
 
@@ -570,18 +583,22 @@ footer{
   font-size: 2rem !important;
 }
 @media (max-width:1090px){
-.navbar{
-  flex-direction: column;
+.navbars{
+  flex-direction:column;
   text-align: center;
 }
-
-.endlogo{
+    .nav-toggle{
+        margin: 1rem;
+    }
+.nav-img-right{
   display: none;
 }
-h1{
+.navbars h1{
   margin: 1rem;
+    
+    text-align: center;
 }
-.icon img{
+.nav-img-left{
   margin: 1rem;
 }
 .docs{

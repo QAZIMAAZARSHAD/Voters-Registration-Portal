@@ -43,7 +43,7 @@
 </script>
 
 <body>
-  <div class="loader_bg">
+ <div class="loader_bg">
     <div class="loader1"></div>
     <div class="loader"></div>
     <div class="loader2"></div>
@@ -56,18 +56,13 @@
   </div>
   <!-- navbar starts -->
   <header>
-    <div class="navbar">
-      <a href="#" class="icon">
-        <img class="imgs" src="./Images/flag.png">
-        </img>
-      </a>
-
-      <h1 style="font-family: 'Hind', sans-serif;">राष्ट्रीय मतदान सेवा&nbsp; <br>डेमो पोर्टल</h1>
-
-      <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
+      <div class="navbars">
+      <img class="nav-img-left" src="Images/flag.png">
+      <h1>NATIONAL VOTERS' SERVICES
         DEMO PORTAL
       </h1>
-      <div>
+    <h1 style="font-family: 'Hind', sans-serif;">राष्ट्रीय मतदान सेवा डेमो पोर्टल</h1>
+          <div class="nav-toggle">
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
           <i class="fas fa-moon"></i>
@@ -75,12 +70,14 @@
           <div class="ball"></div>
         </label>
       </div>
-      <a href="#" class="endlogo">
-        <img src="./Images/vote.png">
-        </img>
-      </a>
-
-    </div>
+    <img class="nav-img-right" src="Images/vote.png">
+      
+      
+      
+      
+      </div>
+        
+    
   </header>
 
   <!-- navbar ends -->
@@ -139,7 +136,7 @@ chk.addEventListener('change', () => {
   $('html ,body').animate({scrollTop : 0},800)
 });
 }); 
-</script>
+
   <script src="js/video.js"></script>
 </body>
 
