@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
     integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
     crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -56,17 +58,26 @@
   </div>
   <!-- navbar starts -->
   <header>
-    <div class="navbar">
-      <a href="#" class="icon">
-        <img class="imgs" src="./Images/flag.png">
-        </img>
-      </a>
+    <div class="navbar"> 
+      <div class="main-heading">
 
-      <h1 style="font-family: 'Hind', sans-serif;">राष्ट्रीय मतदान सेवा&nbsp; <br>डेमो पोर्टल</h1>
+        <div class="logo">
+          <a href="#" class="endlogo">
+            <img src="./Images/vote.png">
+            </img>
+          </a>
+        </div>
 
-      <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
-        DEMO PORTAL
-      </h1>
+        <div class="heading">
+          <img class="emblem"  src="./Images/emblem.png"></img>
+            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
+            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+        </div>
+      
+  
+      </div>
+
+
       <div>
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
@@ -75,12 +86,17 @@
           <div class="ball"></div>
         </label>
       </div>
-      <a href="#" class="endlogo">
-        <img src="./Images/vote.png">
-        </img>
-      </a>
+
 
     </div>
+
+    <script>
+      const chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+  </script>
   </header>
 
   <!-- navbar ends -->
@@ -93,11 +109,9 @@ chk.addEventListener('change', () => {
 </script>
   <header class="header" id="header">
     <div class="banner">
-      <h1 class="banner_title "> Start Your Voting Contribution</h1>
-      <div>
-        <button class="banner_btn" onclick="window.location.href='login.html';">
-          <a class="atag" href="login.html">Start</a>
-        </button>
+      <p class="banner_title "> Start Your Voting Contribution</p>
+      <div class="butn">
+        <a class="atag banner_btn " href="login.html">START</a>
       </div>
     </div>
     <article class="video_container">
@@ -107,8 +121,8 @@ chk.addEventListener('change', () => {
     </article>
     <div class="video_switch-container">
       <div class="video_switch">
-        <span style="font-size: 1.3rem; padding: 5px;">on</span>
-        <span style="font-size: 1.3rem;padding: 5px;">off</span>
+        <span style="font-size: 1rem; padding: 4px;">ON</span>
+        <span style="font-size: 1rem;padding: 4px;">OFF</span>
         <div class="video_switch-btn"></div>
       </div>
     </div>

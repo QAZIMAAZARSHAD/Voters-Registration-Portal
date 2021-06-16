@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -27,11 +28,12 @@ body.dark {
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px;
-	position: relative;
-  top:50%;
-  left:50%;
-	height: 26px;
-	width: 50px;
+  position: absolute;
+  right: 5rem;
+  top: 8.5rem;
+	height: 22px;
+	width: 45px;
+
 	transform: scale(1.5);
 }
 
@@ -39,8 +41,8 @@ body.dark {
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
-	top: 2px;
-	left: 2px;
+	top: 0.6px;
+	left: 1px;
 	height: 22px;
 	width: 22px;
 	transform: translateX(0px);
@@ -57,6 +59,70 @@ body.dark {
   font-size: 12px;
 
 }
+
+@media screen and (max-width:1024px)
+{
+  .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+    
+  }
+}
+
+
+@media screen and (max-width:768px)
+{
+  .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    height: 20px;
+    width: 42px;
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width:575px)
+{
+  .label 
+  {
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    height: 10px;
+    width: 22px;
+    
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon
+  {
+    font-size: 4px;
+  }
+  .fa-moon, .fa-sun {
+    font-size: 8px;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+
+}
+
 .loader_bg{
   position: fixed;
   z-index: 999999;
@@ -244,9 +310,91 @@ body.dark {
   position: relative;
 }
 
+.hindi-heading
+{
+  font-size: 2.8rem;
+}
+
+.english-heading
+{
+    font-size: 2.4rem;
+}
+
+.emblem
+{
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 150px;
+}
+
+@media screen and (max-width:1024px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.4rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.5rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width:575px)
+{
+  .hindi-heading
+  {
+    font-size: 1rem;
+  }
+  .english-heading
+  {
+    font-size: 0.7rem;
+  }
+  .emblem
+  {
+    width: 60px;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+  }
+
+}
+
+.main-heading
+{
+  margin: 0 auto;
+}
+
 @media screen and (max-width:768px) {
   .header{
     background-image: url('./Images/voteImg.jpg');
+    background: linear-gradient(rgba(27, 27, 27, 0.329),rgba(255, 254, 254, 0.329));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,13 +406,23 @@ body.dark {
   z-index: 3;
 }
 .banner_title{
-  font-size: 5rem; 
+  font-size: 4rem; 
+  font-weight: bold;
   text-transform: capitalize;
-  color: #008000;
+  font-family: 'Righteous', cursive;
+  color: rgb(4, 40, 71);
 }
 @media screen and (max-width:768px) {
   .banner_title{
-    font-size: 7rem;
+    font-size: 2.6rem;
+    text-shadow: white;
+    text-decoration-color: white;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .banner_title{
+    font-size: 2rem;
   }
 }
 .imgs:hover{
@@ -274,26 +432,43 @@ body.dark {
  
   
 }
-.banner_btn{
+
+.butn
+{
   margin-top: 51px;
-  padding: 10px;
-  width: 180px;
-  border-radius: 50px;
-  background-color: whitesmoke;
+}
+.banner_btn{
+  text-align: center;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  background-color: rgb(6, 30, 58);
   outline: none;
-  border-color: 1px solid black;
+  border: 3px solid rgb(6, 30, 58);
 }
 .atag{
-  font-size: 2.3rem;
-  color:green;
+  font-size: 2rem;
+  color:white;
+  font-weight: bold;
 }
 .atag:hover{
   text-decoration: none;
+  color: rgb(5, 23, 44);
 }
 .banner_btn:hover{
-  background-color: rgb(255, 136, 0);
-  box-shadow: 0 10px 7px 0 black;
+  background: linear-gradient(rgba(221, 237, 248, 0.5), rgba(220, 237, 247, 0.5));
+  
 }
+
+@media screen and (max-width:575px)
+{
+  .banner_btn{
+    padding: 0.6rem 1.8rem;
+  }
+  .atag{
+    font-size: 1.8rem;
+  }
+}
+
 .video_container{
   position: absolute;
   top: 0;
@@ -301,7 +476,7 @@ body.dark {
   width: 100%;
   height: 100vh;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .video_item{
   width: 100%;
@@ -316,18 +491,20 @@ body.dark {
   .video_switch-container{
       display: block;
       position: absolute;
-      bottom: 21%;
-      right: 5%;
+      top:3%;
+      right: 3%;
       z-index: 3;
   }
   .video_switch{
       position: relative;
-      width: 6rem;
-      background: rgb(255, 136, 0);
+      width: 5rem;
+      background: rgb(125, 138, 151);
+      color: rgb(14, 13, 13);
+      font-weight: bold;
       text-transform: uppercase;
       display: flex;
       justify-content: space-between;
-      padding: 0.25rem;
+      padding: 0.15rem;
       cursor: pointer;
       border-radius: 0.5rem;
   }
@@ -335,7 +512,8 @@ body.dark {
       position: absolute;
       top: 0;
       left: 0;
-      background:green;
+      background:rgb(5, 23, 44);
+      color: white;
       height: 100%;
       width: 50%;
       border-radius: 0.5rem;
@@ -355,21 +533,42 @@ body.dark {
 }
 
 .navbar {
-  background-color: rgb(42, 43, 43);
+  background-color: rgb(42, 43, 43); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(253, 86, 9), white, rgb(3, 134, 3));
   padding-left: 15px;
   padding-right: 10px;
   padding-top: 3px;
-  color: aliceblue;
+  color: rgb(4, 40, 71);
+  text-align: center;
+  border-bottom: 2px solid rgb(4, 29, 49);
+}
+
+.heading
+{
   text-align: center;
 }
+
+.navbar .row
+{
+  display: flex;
+  align-items: center;
+}
+
 .icon img{
-  width: 140px;
+  width: 130px;
 }
 .endlogo img{
-  width: 140px;
+  width: 120px;
   border-radius: 8px;
 }
 
+.logo
+{
+  position: absolute;
+  top: 5%;
+  right: 3%;
+
+}
 
 ul {
   list-style-type: none;
@@ -571,6 +770,7 @@ footer{
 }
 @media (max-width:1090px){
 .navbar{
+
   flex-direction: column;
   text-align: center;
 }

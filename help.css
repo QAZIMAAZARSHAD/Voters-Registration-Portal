@@ -27,11 +27,12 @@ body.dark {
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px;
-	position: relative;
-  top:50%;
-  left:50%;
-	height: 26px;
-	width: 50px;
+  position: absolute;
+  right: 5rem;
+  top: 8.5rem;
+	height: 22px;
+	width: 45px;
+
 	transform: scale(1.5);
 }
 
@@ -39,8 +40,8 @@ body.dark {
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
-	top: 2px;
-	left: 2px;
+	top: 0.6px;
+	left: 1px;
 	height: 22px;
 	width: 22px;
 	transform: translateX(0px);
@@ -57,21 +58,166 @@ body.dark {
   font-size: 12px;
 
 }
-*,*::before,*::after{
+
+@media screen and (max-width:1024px)
+{
+    .checkbox .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+    
+  }
+}
+
+
+@media screen and (max-width:768px)
+{
+    .checkbox .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    height: 20px;
+    width: 42px;
+  }
+ .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width:575px)
+{
+    .label 
+  {
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    height: 10px;
+    width: 22px;
+    
+  }
+     .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon
+  {
+    font-size: 4px;
+  }
+  .fa-moon, .fa-sun {
+    font-size: 8px;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+
+}
+
+
+*{ /*universal selector*/
     margin: 0;
     padding: 0;
-   
-}
-html{
     box-sizing: border-box;
 }
-.navbar {
-    background-color: rgb(42, 43, 43);
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 3px;
-    color: aliceblue;
+.header{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.hindi-heading
+{
+  font-size: 2.8rem;
+}
+
+.english-heading
+{
+    font-size: 2.4rem;
+}
+
+.emblem
+{
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 150px;
+}
+
+@media screen and (max-width:1024px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.4rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.5rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width:575px)
+{
+  .hindi-heading
+  {
+    font-size: 1rem;
+  }
+  .english-heading
+  {
+    font-size: 0.7rem;
+  }
+  .emblem
+  {
+    width: 60px;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+  }
+
+}
+
+.main-heading
+{
+  margin: 0 auto;
+}
+
   
 body{
     background: rgb(219, 192, 157);
@@ -260,3 +406,50 @@ tr td{
 	border-radius: 10px;
 
 }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .navbar {
+    background-color: rgb(42, 43, 43); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(253, 86, 9), white, rgb(3, 134, 3));
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: rgb(4, 40, 71);
+    text-align: center;
+    border-bottom: 2px solid rgb(4, 29, 49);
+  }
+  
+  .heading
+  {
+    text-align: center;
+  }
+  
+  .navbar .row
+  {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon img{
+    width: 130px;
+  }
+  .endlogo img{
+    width: 120px;
+    border-radius: 8px;
+  }
+  
+  .logo
+  {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+  
+  }
