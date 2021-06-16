@@ -13,7 +13,68 @@ body {
 body.dark {
 	background: #292C35;
 }
+/*======NAVBAR=============*/
+.navbars {
+  background-color: rgb(42, 43, 43);
+  
+  padding: 20px;
+    padding-bottom: 50px;
+  color: aliceblue;
+  text-align: center;
+}
+.nav-img-left{
+  width: 170px;
+    height: 100px;
+    float: left;
+    
+}
+.navbars h1{
+    margin-right: 200px;
+}
+.nav-toggle{
+    margin-left: -350px;
+    margin-top: -50px;
+}
+.nav-img-right{
+  width: 140px;
+  border-radius: 8px;
+    float: right;
+    margin-top: -90px;
+    padding-right: 10px;
+}
 
+@media (max-width:1090px){
+.navbars{
+  flex-direction:column;
+  text-align: center;
+}
+    .nav-toggle{
+        margin: 1rem;
+    }
+.nav-img-right{
+  display: none;
+}
+.navbars h1{
+  margin: 1rem;
+    
+    text-align: center;
+}
+.nav-img-left{
+  margin: 1rem;
+}
+.docs{
+  font-size: medium;
+}
+.conatinerFluid{
+
+  /* border: 2px solid black; */
+  width: 70vw;
+  padding: 9px;
+  margin: auto;
+  display: block;
+}
+}
+/*======NAVBAR=============*/
 .checkbox {
 	opacity: 0;
 	position: absolute;
@@ -65,13 +126,7 @@ body.dark {
 html{
     box-sizing: border-box;
 }
-.navbar {
-    background-color: rgb(42, 43, 43);
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 3px;
-    color: aliceblue;
-}
+
   
 body{
     background: rgb(219, 192, 157);
