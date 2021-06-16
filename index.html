@@ -72,11 +72,28 @@
         <div class="heading">
           <img class="emblem"  src="./Images/emblem.png"></img>
             <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
-            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTERS' SERVICES DEMO PORTAL</p>
+            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
       </div>
 
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
     </div>
+
+    <script>
+      const chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+  </script>
   </header>
 
   <!-- navbar ends -->
