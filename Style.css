@@ -60,6 +60,17 @@ body.dark {
 
 }
 
+@media screen and (max-width:1024px)
+{
+  .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+    
+  }
+}
+
 
 @media screen and (max-width:768px)
 {
@@ -315,6 +326,25 @@ body.dark {
   top: 8%;
   left: 10%;
   width: 150px;
+}
+
+@media screen and (max-width:1024px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.4rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
 }
 
 @media screen and (max-width:768px)
