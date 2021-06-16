@@ -18,29 +18,42 @@
   <body>
     <header>
       <div class="navbar">
-        <a href="#" class="icon">
-          <img class="imgs" src="./Images/flag.png">
-          </img>
-        </a>
-  
-        <h1 style="font-family: 'Hind', sans-serif;">राष्ट्रीय मतदान सेवा&nbsp; <br>डेमो पोर्टल</h1>
-  
-        <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
-          DEMO PORTAL
-        </h1>
-        <div>
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
+      <div class="main-heading">
+
+        <div class="logo">
+          <a href="#" class="endlogo">
+            <img src="./Images/vote.png">
+            </img>
+          </a>
         </div>
-        <a href="#" class="endlogo">
-          <img src="./Images/vote.png">
-          </img>
-        </a>
+
+        <div class="heading">
+          <img class="emblem"  src="./Images/emblem.png"></img>
+            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
+            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+        </div>
       </div>
+
+      
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+  
+      </div>
+
+      <script>
+        const chk = document.getElementById('chk');
+    
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+    </script>
+
     </header>
 
     <div class="main-section">

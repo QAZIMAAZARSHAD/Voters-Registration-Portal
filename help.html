@@ -9,78 +9,120 @@
     <link rel="stylesheet" href="help.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+<style>
+    #scrollToTopButton{
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0px gray;
+}
+
+</style>
 
 <body>
     <div class="scroll-bar">
-    <section class="header">
+    
         <header>
-            <div class="navbar" style="align-content: center;">
-                <table>
-                    <tr>
-                        <td><a href="#" class="icon"><img class= "imgs" src="./Images/flag.png" style="width: 140px;"></img></a></td>
-                        <td>
-                        <td>
-                            <h1 style="font-family: 'Hind', sans-serif;">&nbsp&nbsp&nbsp&nbsp&nbspराष्ट्रीय मतदान सेवा &nbsp
-                                डेमो&nbspपोर्टल</h1>
-                        </td>
-                        <td>
-                            <h1>&nbsp&nbsp&nbsp&nbspNATIONAL VOTERS' SERVICES
-                                &nbsp&nbsp&nbsp&nbsp&nbspDEMO&nbsp&nbspPORTAL&nbsp&nbsp</h1>
-                        </td>
-                        </td>
-                        <td><a href="#" class="endlogo"><img src="./Images/vote.png"
-                                    style="width: 140px;border-radius: 8px;"></img></a>
-                        </td>
-                        <td>
-                            <input type="checkbox" class="checkbox" id="chk" />
-                            <label class="label" for="chk">
-                              <i class="fas fa-moon"></i>
-                              <i class="fas fa-sun"></i>
-                              <div class="ball"></div>
-                            </label>
-                        </td>
-                    </tr>
-                </table>
+            <div class="navbar"> 
+              <div class="main-heading">
+        
+                <div class="logo">
+                  <a href="#" class="endlogo">
+                    <img src="./Images/vote.png">
+                    </img>
+                  </a>
+                </div>
+        
+                <div class="heading">
+                  <img class="emblem"  src="./Images/emblem.png"></img>
+                    <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
+                    <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+                </div>
+              
+          
+              </div>
+        
+        
+              <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+        
+        
             </div>
-        </header>
-    </section>
+        
+            <script>
+              const chk = document.getElementById('chk');
+          
+          chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+          });
+          </script>
+          </header>
+        
     <section class="body">
         <div class="container">
             <h1>How can we help you?</h1>
             <div class="help-box">
                 <div class="help-left">
-                    <h3>Details</h3>
+                    <h2>Details</h2>
+                    <br>
+                    <br>
                     <form>
                         <div class="input-row">
                             <div class="input-group">
-                                <label>Name</label>
+                                <label><h4>Name</h4></label>
                                 <input type="text" placeholder="Fill your name">
                             </div>
                             <div class="input-group">
-                                <label>Email ID</label>
+                                <label><h4>Email ID</h4></label>
                                 <input type="email" placeholder="xyz@abc.com">
                             </div>
                         </div>
-                        <label>Message</label>
+                        <label><h4>Message</h4></label>
                         <textarea rows="5">Your message</textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
                 <div class="help-right">
-                    <h3>Reach us</h3>
+                    <h2>Reach us</h2>
                     <table>
                         <tr>
-                            <td>Email</td>
-                            <td>help@Voterregistrationportal.com</td>
+                            <td><b>Email</b></td>
+                            <td style="color: rgb(58, 52, 52); font-weight: bold;">help@Voterregistrationportal.com</td>
                         </tr>
                         <tr>
-                            <td>Phone</td>
-                            <td>123456789</td>
+                            <td><b>Phone</b></td>
+                            <td style="color: rgb(58, 52, 52); font-weight: bold;">123456789</td>
                         </tr>
                         <tr>
-                            <td>Address</td>
-                            <td>114 abc buiding, near xyz road</td>
+                            <td><b>Address</b></td>
+                            <td style="color: rgb(58, 52, 52); font-weight: bold;">114 abc buiding, near xyz road</td>
                         </tr>
                     </table>
     
@@ -161,6 +203,27 @@
 chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
+</script>
+<button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+    <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+</button>
+<script>
+  $(document).ready(function(){
+    var scrollTopButton = document.getElementById("scrollToTopButton");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  }
+
+  $("#scrollToTopButton").click(function(){
+  $('html ,body').animate({scrollTop : 0},800)
+});
+}); 
 </script>
 </body>
 
