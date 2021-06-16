@@ -69,11 +69,17 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="password1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="password1">
+                                  <input type="password" class="form-control" id="myInput1">
+                  <div style="position: relative; left: 167px; bottom: -7px;">
+                    <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
+                  </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="confirmPassword1" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword1">
+                                    <input type="password" class="form-control" id="myInput">
+                  <div style="position: relative; left: 167px; bottom: -7px;">
+                    <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
+                  </div>
                                </div>        
                             </div>
                             <div class="col-lg-6">
@@ -220,5 +226,23 @@ chk.addEventListener('change', () => {
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
   </footer>
+  <script>
+    function showPwdToogle() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    function showPwdToogle1() {
+      var x = document.getElementById("myInput1");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
    </body>
 </html>
