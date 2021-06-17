@@ -131,6 +131,36 @@ git push -u origin <your_branch_name>
 <a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
 </p>
 
+## Levels & Points
+
+<table>
+  <tr>
+    <th>Level</th>
+    <th>Points</th> 
+  </tr>
+  <tr>
+    <td>Level 0</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Level 1</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Level 2</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Level 3</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Level 4</td>
+    <td>45</td>
+  </tr>
+</table>
+<hr>
+
 ## Code of Conduct
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/CODE_OF_CONDUCT.md">
