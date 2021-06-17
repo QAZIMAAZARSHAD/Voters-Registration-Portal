@@ -159,7 +159,6 @@ git push -u origin <your_branch_name>
     <td>45</td>
   </tr>
 </table>
-<hr>
 
 ## Code of Conduct
 <p align="center">
