@@ -42,7 +42,7 @@ Are we missing any of your favorite features, which you think you can add to it�
 
 To start contributing, follow the below guidelines: 
 
-🌟Star🌟 the project to bookmark and appreciate the work.
+**🌟.** Star🌟 the project to bookmark and appreciate the work.
 
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
