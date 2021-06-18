@@ -95,13 +95,13 @@
 <body>
   <!-- navbar starts -->
   <header>
-    <div class="navbar"> 
+    <div class="navbar">
       <div class="main-heading">
 
         <div class="logo">
           <a href="#" class="endlogo">
             <img src="./Images/flag.png">
-           
+
           </a>
         </div>
 
@@ -110,8 +110,8 @@
             <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
             <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
-      
-  
+
+
       </div>
 
 
@@ -129,7 +129,7 @@
 
     <script>
       const chk = document.getElementById('chk');
-  
+
   chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
   });
@@ -470,8 +470,52 @@
 
       <div class="descrip">
         Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
-        <span">
-          <a href="">List of supported documents</a></span>
+        <span>
+          <button style="display: contents"><u id="myBtn">List of supported documents</u>
+          <div id="myModal" class="modal" style="width:84%;">
+
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4 class="head">List of Acceptable Supporting Documents For Verification</h4>
+
+                <p><ol class="ol">
+                  <li>Recent passport size photographs</li>
+                  <li>Address proof (any one of the following)</li>
+                    <ul class="ul">
+                      <li>Copy of your Passport</li>
+                      <li>Gas bill</li>
+                      <li>Water bill</li>
+                      <li>Ration Card</li>
+                      <li>Bank Passbook</li>
+                      <li>Aadhaar Card</li>
+                    </ul>
+                  <li>Copy of proof of age</li>
+                    <ul class="ul">
+                        <li>10th Standard Certificate</li>
+                        <li>Birth Certificate</li>
+                        <li>Pan Card</li>
+                        <li>Aadhaar Card</li>
+                        <li>Driving Licence</li>
+                        <li>Copy of Passport</li>
+                        <li>Kisan Card</li>
+                    </ul class="ul">
+                  <li>Identity proof (any one of the following)</li>
+                    <ul class="ul">
+                        <li>Pan Card</li>
+                        <li>Driving Licence</li>
+                        <li>Ration Card</li>
+                        <li>Passport Copy</li>
+                        <li>Bank Passbook with Photograph</li>
+                        <li>SSLC Certificate</li>
+                        <li>Student ID Card</li>
+                        <li>Aadhaar Card</li>
+                    </ul>
+
+                </ol></p>
+              </div>
+
+            </div>
+          </a>&nbsp;&nbsp;&nbsp;</span>
       </div>
 
       <div class="conatinerFluid">
@@ -777,7 +821,7 @@
 		window.open('home_hindi.html',"_self");
 		}
 	});
-                                         
+
 	</script>  -->
   <script>
     const chk = document.getElementById('chk');
@@ -1492,7 +1536,7 @@ chk.addEventListener('change', () => {
     $(document).ready(function(){
       var scrollTopButton = document.getElementById("scrollToTopButton");
       window.onscroll = function () { scrollFunction() };
-  
+
       function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollTopButton.style.display = "block";
@@ -1500,13 +1544,14 @@ chk.addEventListener('change', () => {
         scrollTopButton.style.display = "none";
       }
     }
-  
+
     $("#scrollToTopButton").click(function(){
     $('html ,body').animate({scrollTop : 0},800)
   });
-  }); 
+  });
   </script>
   <script src="js/video.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
