@@ -263,9 +263,9 @@
 
         (A) Name
         <sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" class="zoomeffect" id="" placeholder="(In English)" required>
+        </sup> <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
@@ -275,16 +275,16 @@
             class="far fa-keyboard"></i></button><br><br>
         (C) Name
         of the applicant's relative
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="relative" class="zoomeffect"
           placeholder="(In English)" required>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
+        <input type="text" name="" id="relativeregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (D)Nickname of the applicant's relative
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
+        <input type="text" name="" id="nickname" class="zoomeffect" placeholder="(In English)" required>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
+        <input type="text" name="" id="nicknameregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (E)
@@ -788,7 +788,21 @@ chk.addEventListener('change', () => {
 </script>
   <script>
     $("input#submitButton").click(function () {
-      alert("Form successfully submitted");
+      const name = document.querySelector("#name");
+      const surname = document.querySelector("#surname");
+      const nickname = document.querySelector("#nickname");
+      const relative = document.querySelector("#relative");
+      const relativeregional = document.querySelector("#relativeregional");
+      const nameregional = document.querySelector("#nameregional");
+      const nicknameregional = document.querySelector("#nicknameregional");
+      console.log(name);
+      console.log(nickname);
+      console.log(relative);
+      if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+        alert("Please fill all the required details⚠️");
+      } else {
+        alert("Form successfully submitted");
+      }
     });
   </script>
 
