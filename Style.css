@@ -840,10 +840,16 @@ margin: 15px;
 {
   color:rgb(87, 6, 6); 
   font-size: 1.0625em; 
-  float: right; 
-  position: relative; 
-  left: -139px;  font-weight:700; background-color:beige; height: 35px; width:120px; border:whitesmoke; cursor: pointer;transition: .3s;
-  
+  right: 90px; 
+  position: absolute; 
+  font-weight: 700; 
+  background-color:beige; 
+  height: 35px; 
+  width: 120px; 
+  border:whitesmoke; 
+  cursor: pointer;
+  transition: .3s;
+  padding: 5px;
 }
 
 #scrollToTopButton{
@@ -862,4 +868,12 @@ margin: 15px;
   padding: 6px;
   border-radius: 50%;
   box-shadow: 0 6px 10px 0px gray;
+}
+
+
+#ft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
 }
