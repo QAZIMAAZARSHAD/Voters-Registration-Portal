@@ -24,8 +24,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
     integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
     crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -58,23 +58,24 @@
   </div>
   <!-- navbar starts -->
   <header>
-    <div class="navbar"> 
+    <div class="navbar">
       <div class="main-heading">
 
         <div class="logo">
           <a href="#" class="endlogo">
             <img src="./Images/flag.png">
-           
+
           </a>
         </div>
 
         <div class="heading">
-          <img class="emblem"  src="./Images/emblem.png"></img>
-            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
-            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+          <img class="emblem" src="./Images/emblem.png"></img>
+          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
+            डेमो पोर्टल</p>
+          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
-      
-  
+
+
       </div>
 
 
@@ -88,25 +89,25 @@
       </div>
 
 
-    
 
-    <script>
-      const chk = document.getElementById('chk');
-  
-  chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-  });
-  </script>
+
+      <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+        });
+      </script>
   </header>
 
   <!-- navbar ends -->
   <script>
     const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
   <header class="header" id="header">
     <div class="banner">
       <p class="banner_title "> Start Your Voting Contribution</p>
@@ -119,13 +120,6 @@ chk.addEventListener('change', () => {
         <source src="video/vote.mp4" type="video/mp4">
       </video>
     </article>
-    <div class="video_switch-container">
-      <div class="video_switch">
-        <span style="font-size: 1rem; padding: 4px;">ON</span>
-        <span style="font-size: 1rem;padding: 4px;">OFF</span>
-        <div class="video_switch-btn"></div>
-      </div>
-    </div>
   </header>
   <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
     Copyright ©
@@ -133,27 +127,27 @@ chk.addEventListener('change', () => {
   </footer>
 
   </script>
-  <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+  <button id="scrollToTopButton" title="Go to top" class="ml-5">
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
-</button>
-<script>
-  $(document).ready(function(){
-    var scrollTopButton = document.getElementById("scrollToTopButton");
-    window.onscroll = function () { scrollFunction() };
+  </button>
+  <script>
+    $(document).ready(function () {
+      var scrollTopButton = document.getElementById("scrollToTopButton");
+      window.onscroll = function () { scrollFunction() };
 
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollTopButton.style.display = "block";
-    } else {
-      scrollTopButton.style.display = "none";
-    }
-  }
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
 
-  $("#scrollToTopButton").click(function(){
-  $('html ,body').animate({scrollTop : 0},800)
-});
-}); 
-</script>
+      $("#scrollToTopButton").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 800)
+      });
+    });
+  </script>
   <script src="js/video.js"></script>
 </body>
 
