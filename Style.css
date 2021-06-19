@@ -819,11 +819,14 @@ h1 {
   cursor: pointer;
   transition: 0.3s;
   padding: 5px;
+  margin-bottom: 20px;
 }
+
+
 
 #scrollToTopButton {
   position: fixed;
-  bottom: 15px;
+  bottom: 40px;
   right: 10px;
   font-size: 25px;
   z-index: 99;
@@ -839,15 +842,15 @@ h1 {
   box-shadow: 0 6px 10px 0px gray;
 }
 
+/* **********Footer style************ */
+
 #ft {
-  text-align: center;
-  height: 160px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(7, 7, 7);
-  color: darkgray;
+  background: url("./Images/ivote.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 475px;
+  opacity: 0.7;
 }
 
 .hr {
@@ -858,12 +861,23 @@ h1 {
 
 footer {
   text-align: center;
-  height: 160px;
+  height: 140px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   background-color: rgb(7, 7, 7);
+  color: darkgray;
+}
+
+.footer-down {
+  text-align: center;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(51, 51, 51);
   color: darkgray;
 }
 
@@ -885,4 +899,150 @@ footer {
 
 .footer-links a:hover {
   color: darkgray;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4em;
+  margin: 30px 90px;
+  color: rgb(252, 248, 248);
+  z-index: 100000;
+}
+
+.contact h2 {
+  font-size: 21px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.phonei,
+.envelopei {
+  font-size: 18px;
+}
+
+.contact h3 {
+  color: rgb(252, 248, 248);
+  font-size: 16px;
+  border: 2px solid rgb(252, 248, 248);
+  width: fit-content;
+  padding: 10px;
+}
+
+.follow-us h2 {
+  font-size: 21px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.fbi {
+  color: #4267b2;
+  background-color: white;
+  padding: 6px 9px;
+  border-radius: 50%;
+}
+
+.fbi:hover {
+  background-color: #4267b2;
+  color: white;
+}
+
+.twi {
+  color: #1da1f2;
+  background-color: white;
+  padding: 6px 6px;
+  border-radius: 50%;
+}
+
+.twi:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.yti {
+  color: #ff0000;
+  background-color: white;
+  padding: 6px 6px;
+  border-radius: 50%;
+}
+
+.yti:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.igi {
+  color: #c13584;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.igi:hover {
+  background-color: #c13584;
+  color: white;
+}
+
+.li {
+  color: #0077b5;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.li:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.icons {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.icons i {
+  margin-right: 8px;
+}
+
+.two h2,
+.four h2 {
+  font-size: 21px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.two h3,
+.three h4,
+.four h4 {
+  color: rgb(252, 248, 248);
+  text-transform: capitalize;
+  font-size: 15px;
+  text-align: left;
+}
+
+.three h4 {
+  margin-bottom: 20px;
+}
+
+.four h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.two select {
+  width: 100%;
+  padding: 5px 2px;
+}
+
+.four li {
+  text-align: left;
+  font-size: 15px;
+  color: rgb(4, 29, 80);
+  font-weight: bold;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.four li {
+  color: white;
 }
