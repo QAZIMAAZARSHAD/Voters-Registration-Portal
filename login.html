@@ -190,6 +190,7 @@
   <script>
     const chk = document.getElementById('chk');
 
+
     chk.addEventListener('change', () => {
       document.body.classList.toggle('dark');
     });
@@ -226,7 +227,59 @@
   </script>
   <footer style="text-align:center; height:80px; padding-top:28px; background-color: rgb(7, 7, 7);color:darkgray;">
     Copyright ©
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+</script>
+
+
+    <script>
+        function login()
+        {
+          var uname = document.getElementById("Email1").value;
+          var pwd = document.getElementById("Password1").value;
+          var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          if(uname =='')
+          {
+            alert("please enter user name.");
+          }
+          else if(pwd=='')
+          {
+                alert("enter the password");
+          }
+          else if(!filter.test(uname))
+          {
+            alert("Enter valid email id.");
+          }
+          else if(pwd.length < 6 || pwd.length > 6)
+          {
+            alert("Password min and max length is 6.");
+          }
+          else
+          {
+          alert('Thank You for Login & You are Redirecting to Home page');
+            setTimeout(function() {window.location = "Home.html" });
+          }
+        }
+        function clearFunc()
+        {
+          document.getElementById("Email1").value="";
+          document.getElementById("Password1").value="";
+        }	
+        
+    </script>
+     <footer>
+      <div class="footer-links">
+        <a class="link" href="/login.html">Login</a>
+        <a class="link" href="/sign-up.html">SignUp</a>
+      </div>
+     <hr class="hr" style="margin: 20px auto; border: 0; border-top: 1px solid darkgray;"/>
+    <div class="copyright">
+     Copyright ©
+
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+    </div>
   </footer>
   <button id="scrollToTopButton" title="Go to top" class="ml-5">
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
