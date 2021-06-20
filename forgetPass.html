@@ -45,27 +45,9 @@
   border-radius: 50%;
   box-shadow: 0 6px 10px 0px gray;
 }
-body{
-  background: url('images/vote.jpg');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-}
-.container{
-  height: auto;
-    width: 65%;
-    box-shadow: 0 15px 15px 0px grey;
-    margin-top: -36px;
-    border-radius: 25px;
-    background: none;
-    backdrop-filter: blur(10px);
-}
-::placeholder{
-  color: white !important;
-}
-
 
   </style>
- 
+
 <body>
     <header>
     <div class="navbar"> 
@@ -112,7 +94,7 @@ body{
 
       <div class="main-section">
 
-        <div class="container">
+        <div class="container" style="height:auto;width:65%;box-shadow: 0 15px 15px 0px gray;">
             <div class="row" style="height: auto;">
                 <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
                     
@@ -122,20 +104,20 @@ body{
                     <div class="col-lg-12">
                         <form>
                             <div class="mb-3">
-                              <label for="Email1" class="form-label" style="color: white;">Email address</label>
-                              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter your E-mail address" style="outline: none;border: none; background: none; border-bottom: 2px solid blue;">
+                              <label for="Email1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
-                              <label for="Password1" class="form-label" style="color: white;">New Password</label>
-                              <input type="password" class="form-control" id="Password1" placeholder="Enter your New Password" style="outline: none;border: none; background: none; border-bottom: 2px solid blue;">
-                              <div style="margin-left: 20px; margin-top: 10px; color: white;">
+                              <label for="Password1" class="form-label">New Password</label>
+                              <input type="password" class="form-control" id="Password1">
+                              <div style="position: relative; left: 269px; bottom: -7px;">
                                 <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
                               </div>
-                              <div id="passwordhelp" class="form-text" style="margin-top: 15px; font-size: 15px; color: white;">Go back <a href="/login.html" style="color: blue;">Login</a></div>
+                              <div id="passwordhelp" class="form-text">Go back <a href="login.html">Login</a></div>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1" style="color: white;">Remember Me</label>
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>  
                             <button type="submit" class="btn btn-success" onClick="forget()">Login</button>                                                      
                           </form>
