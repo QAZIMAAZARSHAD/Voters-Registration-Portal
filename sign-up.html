@@ -21,7 +21,23 @@
     <title> Voter Sign-Up</title>
       <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
   </head>
-
+ <style>
+   body{
+     background: url('images/vote.jpg');
+     background-repeat: no-repeat;
+     background-size: 100vw 140vh;
+   }
+   .container{
+     height:auto;
+     width: 65%;
+     border-radius: 25px;
+     background: none;
+    backdrop-filter: blur(12px);
+   }
+   ::placeholder{
+     color: white  !important;
+   }
+ </style>
   <body>
     <header>
       <div class="navbar">
@@ -65,7 +81,7 @@
 
     <div class="main-section">
 
-        <div class="container" style="height:auto;">
+        <div class="container">
             <div class="row" style="height: auto;">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
                     <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;">Welcome to Voter's Registration Portal</p>
@@ -76,28 +92,28 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="fname" class="form-label">FirstName</label>
-                                    <input class="form-control" type="text" placeholder="FirstName" id="fname" >
+                                    <label for="fname" class="form-label" style="color: white;">FirstName</label>
+                                    <input class="form-control" type="text" placeholder="Enter your FirstName" id="fname" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;" >
                                 </div>
                                 <div class="mb-3">
-                                    <label for="lname" class="form-label">LastName</label>
-                                    <input class="form-control" type="text" placeholder="LastName" id="lname" >
+                                    <label for="lname" class="form-label" style="color: white;">LastName</label>
+                                    <input class="form-control" type="text" placeholder="Enter your LastName" id="lname" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="Email" class="form-label">Email address</label>
-                                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                  <label for="Email" class="form-label" style="color: white;">Email address</label>
+                                  <input type="email" class="form-control" id="Email" placeholder="Enter your E-mail address" aria-describedby="emailHelp" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="password1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="password1">
-                                  <div style="position: relative; left: 164px; bottom: -7px;">
+                                  <label for="password1" class="form-label" style="color: white;">Password</label>
+                                  <input type="password" class="form-control" id="password1" placeholder="Enter your Password" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;">
+                                  <div style="margin-top: 10px; margin-left: 20px; color: white;">
                                   <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
                                   </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="confirmPassword1" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword1">
-                                    <div style="position: relative; left: 164px; bottom: -7px;">
+                                    <label for="confirmPassword1" class="form-label" style="color: white;">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword1" placeholder="Re-Type your Password" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;">
+                                    <div style="margin-top: 10px; margin-left: 20px; color: white;">
                                     <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
                                     </div>
                                </div>        
@@ -105,17 +121,17 @@
                             <div class="col-lg-6">
                                
                                 <div class="mb-3">
-                                    <label for="number" class="form-label">Mobile Number</label>
-                                    <input type="number" class="form-control" id="number" placeholder="Mobile Number" >
+                                    <label for="number" class="form-label" style="color: white;">Mobile Number</label>
+                                    <input type="number" class="form-control" id="number" placeholder="Enter your Mobile Number" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;" >
                                 </div>
                                 <div class="mb-3">
-                                    <label for="address" class="form-label">Address</label>
-                                    <textarea class="form-control" id="address" rows="3"></textarea>
+                                    <label for="address" class="form-label" style="color: white;">Address</label>
+                                    <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="State" class="form-label">State</label>
+                                    <label for="State" class="form-label" style="color: white;">State</label>
                                     <select class="form-select" id="state" aria-label="Default select example">
-                                        <option value="0">Select</option>
+                                        <option value="0">Select your Select</option>
                                         <option value="1">ANDHRA PRADESH</option>
                                         <option value="2">ARUNACHAL PRADESH</option>
                                         <option value="3">ASSAM</option>
@@ -148,20 +164,20 @@
                                     </select>                                           
                                 </div>
                                 <div class="mb-3">
-                                    <label for="city" class="form-label">City</label>
-                                    <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example">
+                                    <label for="city" class="form-label" style="color: white;">City</label>
+                                    <input class="form-control" type="text" id="city" placeholder="Enter your City" aria-label="default input example" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;">
                                 </div>
                                 
                                 <div class="mb-3">
-                                    <label for="zip_code" class="form-label">Zip Code</label>
-                                    <input type="number" class="form-control" id="zip_code" placeholder="zip Code">
+                                    <label for="zip_code" class="form-label" style="color: white;">Zip Code</label>
+                                    <input type="number" class="form-control" id="zip_code" placeholder="Enter your Zip Code" style="outline: none; border: none; background: none; border-bottom: 2px solid blue;">
                                 </div>
-                                <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div>
+                                <div id="olduser" class="form-text" style="margin-top: 20px;font-size:15px; color: white;">Already a user? <a href="login.html" style="color: blue;">Login here</a></div>
                             </div>  
                         </div>
                
                        
-                        <button type="submit" class="btn btn-success" onclick="signup()">Sign Up</button>
+                        <button type="submit" class="btn btn-success" onclick="signup()" style="margin-top: 20px;">Sign Up</button>
                     </form>
                 </div>
             </div>
