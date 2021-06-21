@@ -1035,7 +1035,6 @@ h1 {
   font-weight: bold;
   list-style: disc;
   list-style-position: inside;
-  margin-left: -25px;
 }
 
 .four li {
@@ -1056,9 +1055,13 @@ h1 {
   padding-right: 6px;
 }
 
+.flex {
+  display: flex;
+}
+
 @media(max-width: 1240px) {
   #footer {
-    margin: 30px 30px;
+    margin: 30px 50px;
   }
 }
 
@@ -1095,21 +1098,10 @@ h1 {
   #ft {
     /* height: 105vh; */
     height: fit-content;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 }
 
-@media(max-width: 769px) {
-  #ft {
-    height: 108vh;
-  }
-}
-
-@media(max-width: 707px) {
-  #ft {
-    height: 117vh;
-  }
-}
 
 @media(max-width: 620px) {
   #footer {
@@ -1127,6 +1119,6 @@ h1 {
 
 @media(max-width: 411px) {
   #footer {
-    margin: 30px 10px;
+    margin: 30px 50px;
   }
 }
