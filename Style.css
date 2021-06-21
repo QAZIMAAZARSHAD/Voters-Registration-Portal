@@ -698,6 +698,24 @@ textarea {
   border-radius: 50% !important;
 }
 
+.showPwd{
+  position: relative;
+  left: 269px;
+  bottom: -7px;
+}
+
+@media screen and (min-width: 576px) {
+  .showPwd{
+    left: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .showPwd{
+    left: 20px;
+  }
+}
+
 .voter-img {
   background: scroll center url("./Images/voting.jpg");
   background-size: cover;
