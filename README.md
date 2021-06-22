@@ -22,7 +22,7 @@ https://qazimaazarshad.github.io/Voters-Registration-Portal/
 
 ## Tech Stack
 
-<img src="https://i.postimg.cc/8zzmr2zh/download.png">
+<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
 
 ## How to get started❓
 
