@@ -201,6 +201,14 @@ body.dark {
   }
 }
 
+.captcha-container {
+  text-align: center;
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center; 
+  border: 2px solid black;
+}
+
 .loader2 {
   border: 0 solid transparent;
   border-radius: 50%;
@@ -1121,4 +1129,17 @@ h1 {
   #footer {
     margin: 30px 50px;
   }
+}
+
+@media print {
+  #ft,
+  header,
+  .securityCode,
+  .myBtn,
+  .fontsetting,
+  .note {
+    display: none;
+  }
+
+
 }
