@@ -124,10 +124,7 @@
           <div class="ball"></div>
         </label>
       </div>
-      <div>
-        <i class="fa fa-print fa-2x" aria-hidden="true" onclick="window.print()" style="position: relative; top: 67px; cursor: pointer; color: black;"></i>
-      </div>
-
+      
     </div>
 
     <script>
@@ -165,12 +162,15 @@
   <!-- font ends -->
 
 
-  <span class="note">
-    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3>
+  <span class="note" id="print">
+    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory 
+        <span><i class="fa fa-print" aria-hidden="true" onclick="printDiv('printMe')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
+  
 
   <!-- form starts -->
   <div class="container">
+    <div id="printMe">
     <form action="" class="form1">
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
@@ -709,6 +709,7 @@
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <br>
+    </div>
       <div class="captcha-container"
         style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
         <div class="securityCode">
@@ -1644,6 +1645,19 @@ chk.addEventListener('change', () => {
   }); 
   </script>
   <script src="js/video.js"></script>
+  <script>
+		function printDiv(printMe){
+			var printContents = document.getElementById("printMe").innerHTML;
+			var originalContents = document.body.innerHTML;
+
+			document.body.innerHTML = printContents;
+
+			window.print();
+
+			document.body.innerHTML = originalContents;
+
+		}
+	</script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ https://qazimaazarshad.github.io/Voters-Registration-Portal/
 
 ## Tech Stack
 
-<img src="https://i.postimg.cc/8zzmr2zh/download.png">
+<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
 
 ## How to get started❓
 
@@ -126,39 +126,39 @@ git push -u origin <your_branch_name>
 <h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
 ## Open Source Programs we have been associated with: 
-
-<p align="center">
-<a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
-</p>
-
-## Levels & Points
-
-<table>
-  <tr>
-    <th>Level</th>
-    <th>Points</th> 
-  </tr>
-  <tr>
-    <td>Level 0</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>Level 1</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Level 2</td>
-    <td>15</td>
-  </tr>
-  <tr>
-    <td>Level 3</td>
-    <td>30</td>
-  </tr>
-  <tr>
-    <td>Level 4</td>
-    <td>45</td>
-  </tr>
-</table>
+<div style="display:flex">
+     <div style="flex:1;padding-right:50px;padding-left:50px">
+          <a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%" align="left"/></a>
+     </div>
+     <div style="flex:1;padding-left:10px;">
+       <table>
+        <tr>
+          <th>Level</th>
+          <th>Points</th> 
+        </tr>
+        <tr>
+          <td>Level 0</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Level 1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Level 2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Level 3</td>
+          <td>30</td>
+        </tr>
+      <tr>
+          <td>Level 4</td>
+          <td>45</td>
+        </tr>
+      </table>  
+     </div>
+</div>
 
 ## Code of Conduct
 <p align="center">

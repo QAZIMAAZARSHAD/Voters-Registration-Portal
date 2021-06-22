@@ -60,7 +60,7 @@ body.dark {
 }
 
 @media screen and (max-width: 1024px) {
-  .label {
+  .label #print {
     position: absolute;
     right: 2rem;
     top: 4.5rem;
