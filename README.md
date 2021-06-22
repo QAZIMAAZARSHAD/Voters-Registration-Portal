@@ -22,7 +22,7 @@ https://qazimaazarshad.github.io/Voters-Registration-Portal/
 
 ## Tech Stack
 
-<img src="https://i.postimg.cc/8zzmr2zh/download.png">
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/rwLcjwvF/html5-logo-31816.png' width="250px" border='0' alt='html5-logo-31816'/></a><br /><a href='https://thesawmillgrill.com/'></a><br />
 
 ## How to get started❓
 
