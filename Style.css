@@ -663,3 +663,23 @@ margin: 15px;
   border-radius: 50%;
   box-shadow: 0 6px 10px 0px gray;
 }
+
+.Logout{
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  font-size: 21px;
+  width: 74px;
+  height: 40px;
+  background-color: rgb(194, 60, 60);
+  color: black;
+  border: none;
+  outline: none;
+  padding: 3px;
+  border-radius: 10%;
+  box-shadow: 0 6px 10px 0px rgb(26, 26, 26);
+}
+
+.Logout:hover{
+  color: black;
+}
