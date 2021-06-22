@@ -857,7 +857,6 @@ h1 {
   box-shadow: 0 6px 10px 0px gray;
 }
 
-<<<<<<< HEAD
 .Logout{
   position: absolute;
   top: 250px;
@@ -876,7 +875,7 @@ h1 {
 
 .Logout:hover{
   color: black;
-=======
+}
 /* **********Footer style************ */
 
 #ft {
@@ -1162,5 +1161,4 @@ h1 {
   }
 
 
->>>>>>> fa206902b26ad839cd94e307b39692c5d8fcc17e
 }
