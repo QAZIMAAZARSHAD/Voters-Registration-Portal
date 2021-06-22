@@ -27,45 +27,73 @@
   </head>
 
   <style>
-    #scrollToTopButton{
-  position: fixed;
-  bottom: 15px;
-  right: 10px;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  box-shadow: 0 6px 10px 0px gray;
-}
+    #scrollToTopButton {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0px gray;
+  }
+
+  .btn {
+    display: flex;
+  }
+
+  body {
+    background-image: url('images/vote.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 112vh;
+    ;
+
+  }
+
+  ::placeholder {
+    color: white !important;
+  }
+
+  .container {
+    height: auto;
+    width: 55%;
+    border-radius: 50px;
+    margin-top: -12px;
+    background: none;
+    backdrop-filter: blur(8px);
+  }
+ 
+
 
   </style>
   <body>
     <header>
       <div class="navbar">
         <div class="main-heading">
-
+  
           <div class="logo">
             <a href="#" class="endlogo">
               <img src="./Images/flag.png">
-              
+  
             </a>
           </div>
   
           <div class="heading">
-            <img class="emblem"  src="./Images/emblem.png"></img>
-              <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
-              <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+            <img class="emblem" src="./Images/emblem.png"></img>
+            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
+              डेमो पोर्टल</p>
+            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
           </div>
         </div>
   
-        
+  
         <div>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -74,58 +102,79 @@
             <div class="ball"></div>
           </label>
         </div>
-    
-   
-
   
-      <script>
+  
+  
+  
+        <script>
           const chk = document.getElementById('chk');
-      
-      chk.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-      });
-      </script>
+  
+          chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+          });
+        </script>
     </header>
-
-    <div class="main-section">
-
-        <div class="container" style="height:auto;width:65%;">
-            <div class="row" style="height: auto;">
-                <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
-                    <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;">Welcome Back!</p>
-                    <div class="row"><img src="./Images/voting-img.jpg"></div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="padding-top:50px;padding-bottom:50px;">
-                    <div class="col-lg-12">
-                        <form>
-                            <div class="mb-3">
-                              <label for="Email1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                              <label for="Password1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="Password1">
-                              <div style="position: relative; left: 269px; bottom: -7px;">
-                                <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
-                              </div>
-                              <div id="passwordhelp" class="form-text">Forgot Password? <a href="forgetPass.html">click here</a></div>
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                            </div>  
-                            <div id="newuser" class="form-text" style="text-align:right;font-size:15px;">New User? <a href="sign-up.html">Register here</a></div>
-                            <button type="submit" class="btn btn-success" onClick="login()">Login</button>                               
-                            <button type="submit" class="btn btn-info" onClick="clearFunc()">Reset</button>                               
-                        
-                          </form>
-                     </div>       
-                </div>
+    <div class="main">
+      <div class="main-section">
+  
+  
+        <div class="container">
+          <div class="row" style="height: auto;">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;margin-top: 30px;">
+              <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;">Welcome Back!</p>
+              <div class="row"><img src="./Images/voting-img.jpg"></div>
             </div>
-
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="padding-top:50px;padding-bottom:50px;">
+              <div class="col-lg-12">
+                <form>
+                  <div class="mb-3">
+                    <label for="Email1" class="form-label" style="color: white;">Email address</label>
+                    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp"
+                      style=" border: none; outline: none;border-bottom: 2px solid blue;background: none;"
+                      placeholder="Enter your e-mail address">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Password1" class="form-label" style="color: white;">Password</label>
+                    <input type="password" class="form-control" id="Password1" placeholder="Enter your password"
+                      style=" border: none; outline: none;border-bottom: 2px solid blue;background: none; ">
+                    <div style="margin-left: 20px;">
+                      <br>
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1" style="color: white;"
+                        onclick="showPwdToogle()">Show Password</label>
+  
+                    </div>
+                    <br>
+                    <!-- <div id="passwordhelp" class="form-text" style="margin-top: -8px;">Forgot Password? <a href="forgetPass.html">click here</a></div> -->
+  
+                  </div>
+  
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1" style="color: white;">Remember Me</label>
+                    <a href="forgetPass.html" id="passwordhelp" class="form-text"
+                      style="float: right;margin-right: 19px;margin-top: 0px;color: blue;">Forgot your password?</a>
+                  </div>
+                  <div class="btn">
+                    <button type="submit" class="btn btn-success" onClick="login()"
+                      style="width: 80%; justify-content: center;">Login</button>
+                    <button type="submit" class="btn btn-info"  onClick="clearFunc()"
+                      style="background-color:#fb641b; color: white; border:2px solid #fb641b; width: 80%; margin-left: 10px; justify-content: center;">Reset</button>
+                  </div>
+                  <div id="newuser" class="form-text"
+                    style="font-size:17px; margin-left: 108px; margin-top: 10px;color: white;">New User? <a
+                      href="sign-up.html" style="color: blue;">Register here</a></div>
+                </form>
+  
+  
+              </div>
+            </div>
+          </div>
+  
         </div>
-
-        
+  
+  
+      </div>
     </div>
 <script>
     const chk = document.getElementById('chk');
