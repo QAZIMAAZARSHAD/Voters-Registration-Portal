@@ -27,11 +27,12 @@ body.dark {
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px;
-	position: relative;
-  top:50%;
-  left:50%;
-	height: 26px;
-	width: 50px;
+  position: absolute;
+  right: 5rem;
+  top: 8.5rem;
+	height: 22px;
+	width: 45px;
+
 	transform: scale(1.5);
 }
 
@@ -39,8 +40,8 @@ body.dark {
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
-	top: 2px;
-	left: 2px;
+	top: 0.6px;
+	left: 1px;
 	height: 22px;
 	width: 22px;
 	transform: translateX(0px);
@@ -57,21 +58,166 @@ body.dark {
   font-size: 12px;
 
 }
-*,*::before,*::after{
+
+@media screen and (max-width:1024px)
+{
+    .checkbox .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+    
+  }
+}
+
+
+@media screen and (max-width:768px)
+{
+    .checkbox .label 
+  {
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    height: 20px;
+    width: 42px;
+  }
+ .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width:575px)
+{
+    .label 
+  {
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    height: 10px;
+    width: 22px;
+    
+  }
+     .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon
+  {
+    font-size: 4px;
+  }
+  .fa-moon, .fa-sun {
+    font-size: 8px;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+
+}
+
+
+*{ /*universal selector*/
     margin: 0;
     padding: 0;
-   
-}
-html{
     box-sizing: border-box;
 }
-.navbar {
-    background-color: rgb(42, 43, 43);
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-top: 3px;
-    color: aliceblue;
+.header{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.hindi-heading
+{
+  font-size: 2.8rem;
+}
+
+.english-heading
+{
+    font-size: 2.4rem;
+}
+
+.emblem
+{
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 150px;
+}
+
+@media screen and (max-width:1024px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.4rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  .hindi-heading
+  {
+    font-size: 1.8rem;
+  }
+  .english-heading
+  {
+    font-size: 1.5rem;
+  }
+  .emblem
+  {
+    width: 90px;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width:575px)
+{
+  .hindi-heading
+  {
+    font-size: 1rem;
+  }
+  .english-heading
+  {
+    font-size: 0.7rem;
+  }
+  .emblem
+  {
+    width: 60px;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+  }
+
+}
+
+.main-heading
+{
+  margin: 0 auto;
+}
+
   
 body{
     background: rgb(219, 192, 157);
@@ -259,4 +405,282 @@ tr td{
 	background-color:#E0AB9D;
 	border-radius: 10px;
 
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .navbar {
+    background-color: rgb(42, 43, 43); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(253, 86, 9), white, rgb(3, 134, 3));
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: rgb(4, 40, 71);
+    text-align: center;
+    border-bottom: 2px solid rgb(4, 29, 49);
+  }
+  
+  .heading
+  {
+    text-align: center;
+  }
+  
+  .navbar .row
+  {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon img{
+    width: 130px;
+  }
+  .endlogo img{
+    width: 160px;
+    border-radius: 8px;
+  }
+  
+  .logo
+  {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+  
+  }
+
+  /* footer styles */
+  
+#ft {
+  background: url("./Images/ivote.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 540px;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+
+.hr {
+  border: 0.1px solid rgb(88, 88, 88);
+  width: 90%;
+  border-radius: 1px;
+}
+
+
+
+.footer-down {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-links {
+  margin-top: 22px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #dfdfdf;
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: darkgray;
+}
+
+#footer {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4em;
+  margin: 30px 90px;
+  color: rgb(252, 248, 248);
+  z-index: 100000;
+}
+
+.contact h2 {
+  font-size: 21px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.phonei,
+.envelopei {
+  font-size: 18px;
+}
+
+.contact h3 {
+  color: rgb(252, 248, 248);
+  font-size: 16px;
+  border: 2px solid rgb(252, 248, 248);
+  width: fit-content;
+  padding: 10px;
+}
+
+.follow-us h2 {
+  font-size: 21px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.fbi {
+  color: #4267b2;
+  background-color: white;
+  padding: 6px 9px;
+  border-radius: 50%;
+}
+
+.fbi:hover {
+  background-color: #4267b2;
+  color: white;
+}
+
+.twi {
+  color: #1da1f2;
+  background-color: white;
+  padding: 6px 6px;
+  border-radius: 50%;
+}
+
+.twi:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.yti {
+  color: #ff0000;
+  background-color: white;
+  padding: 6px 6px;
+  border-radius: 50%;
+}
+
+.yti:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.igi {
+  color: #c13584;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.igi:hover {
+  background-color: #c13584;
+  color: white;
+}
+
+.li {
+  color: #0077b5;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.li:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.icons {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.envelope {
+  display: flex;
+}
+
+.envelopei {
+  padding-right: 6px;
+}
+
+.icons i {
+  margin-right: 8px;
+}
+
+.two h2,
+.four h2 {
+  font-size: 21px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.two h3,
+.three h4,
+.four h4 {
+  color: rgb(252, 248, 248);
+  text-transform: capitalize;
+  font-size: 15px;
+  text-align: left;
+}
+
+.three h4 {
+  margin-bottom: 20px;
+}
+
+.four h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.two select {
+  width: 100%;
+  padding: 5px 2px;
+}
+
+.four li {
+  text-align: left;
+  font-size: 15px;
+  color: rgb(4, 29, 80);
+  font-weight: bold;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.four li {
+  color: white;
+}
+
+.footer-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.helpdesk {
+  color: white;
+  font-size: 1.0625em;
+  border: 2px solid white;
+  font-weight: 500;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 9px 18px;
+  margin-bottom: 20px;
+}
+
+.helpdeskDiv {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.helpdesk:hover {
+  background-color: white;
+  color: black;
 }

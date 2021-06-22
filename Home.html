@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="Style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title> Voter Registration Portal</title>
-  <link rel="icon" href="images/flag.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
   <style>
     #scrollToTopButton{
   position: fixed;
@@ -88,33 +89,6 @@
     }
   </style>
 
-  <!-- <style>
-            .input-icons i {
-              position: absolute;
-            }
-
-            .input-icons {
-              width: 100%;
-              margin-bottom: 10px;
-            }
-
-            .icon {
-              padding: 10px;
-              min-width: 50px;
-              text-align: center;
-            }
-
-            .input-field {
-              width: 100%;
-              padding: 10px;
-              text-align: center;
-            }
-          </style>
-          <style>
-            input[type="button"] {
-              font-family: FontAwesome;
-            }
-          </style> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
@@ -122,17 +96,26 @@
 <body>
   <!-- navbar starts -->
   <header>
-    <div class="navbar">
-      <a href="#" class="icon">
-        <img class="imgs" src="./Images/flag.png">
-        </img>
-      </a>
+    <div class="navbar"> 
+      <div class="main-heading">
 
-      <h1 style="font-family: 'Hind', sans-serif;">राष्ट्रीय मतदान सेवा&nbsp; <br>डेमो पोर्टल</h1>
+        <div class="logo">
+          <a href="#" class="endlogo">
+            <img src="./Images/flag.png">
+           
+          </a>
+        </div>
 
-      <h1>NATIONAL VOTERS' SERVICES &nbsp;<br>
-        DEMO PORTAL
-      </h1>
+        <div class="heading">
+          <img class="emblem"  src="./Images/emblem.png"></img>
+            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
+            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+        </div>
+      
+  
+      </div>
+
+
       <div>
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
@@ -141,12 +124,16 @@
           <div class="ball"></div>
         </label>
       </div>
-      <a href="#" class="endlogo">
-        <img src="./Images/vote.png">
-        </img>
-      </a>
-
+      
     </div>
+
+    <script>
+      const chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+  </script>
   </header>
 
   <!-- navbar ends -->
@@ -175,14 +162,17 @@
   <!-- font ends -->
 
 
-  <span class="note">
-    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3>
+  <span class="note" id="print">
+    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory 
+        <span><i class="fa fa-print" aria-hidden="true" onclick="printDiv('printMe')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
+  
 
   <a class="Logout" href="login.html">Logout</a>
   
   <!-- form starts -->
   <div class="container">
+    <div id="printMe">
     <form action="" class="form1">
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
@@ -278,9 +268,9 @@
 
         (A) Name
         <sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" class="zoomeffect" id="" placeholder="(In English)" required>
+        </sup> <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
@@ -290,16 +280,16 @@
             class="far fa-keyboard"></i></button><br><br>
         (C) Name
         of the applicant's relative
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="relative" class="zoomeffect"
           placeholder="(In English)" required>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
+        <input type="text" name="" id="relativeregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (D)Nickname of the applicant's relative
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
+        <input type="text" name="" id="nickname" class="zoomeffect" placeholder="(In English)" required>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
+        <input type="text" name="" id="nicknameregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
             class="far fa-keyboard"></i></button><br><br>
 
         (E)
@@ -721,6 +711,7 @@
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <br>
+    </div>
       <div class="captcha-container"
         style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
         <div class="securityCode">
@@ -770,18 +761,138 @@
 
 
   <!-- footer starts -->
+
   <footer id="ft">
-    Copyright ©
-    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+    
+  
+  <div id="footer">
+    <div class="one">
+      <div class="contact">
+      <h2>Contact Us</h2>
+      <h3> 
+        <i class="fas fa-phone-alt phonei"></i>
+        Toll free: 1947
+      </h3>
+      <h3>
+        <div class="envelope">
+        <i class="fas fa-envelope envelopei"></i>
+        help@nationalvoterportal.gov.in
+      </div>
+      </h3>
+    </div>
+    <div class="helpdeskDiv">
     <a class="helpdesk" href="help.html" target="">Help
       Desk</a>
+    </div>
+    <div class="follow-us">
+      <h2>Follow Us</h2>
+      <div class="icons">
+        <a href="https://www.facebook.com/NationalPortalIndia/">
+          <i class="fab fa-facebook-f fbi"></i>
+        </a>
+        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <i class="fab fa-twitter twi"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU">
+          <i class="fab fa-youtube yti"></i>
+        </a>
+        <a href="https://www.instagram.com/mygovindia/?hl=en">
+          <i class="fab fa-instagram igi"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/government-of-india">
+          <i class="fab fa-linkedin-in li"></i>
+        </a>
+      </div>
+    </div>
+    </div>
 
+    <div class="two">
+      <h2>NATIONAL VOTER PORTAL Head Office</h2>
+      <h3>unique identification authority of india</h3>
+      <h3>government of india</h3>
+      <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
+      
+      <h2>Regional Offices</h2>
+      <select name="place" id="place">
+        <option value="delhi">Delhi</option>
+      </select>
+      <h3>National Voter Portal Regional Office, Delhi</h3>
+      <h3>Ground floor, pragati maidan metro station, new delhi - 110001</h3>
+    </div>
+
+
+    <div class="three">
+      <h4>Website Policy</h4>
+      <h4>terms and conditions</h4>
+      <h4>privacy policy</h4>
+      <h4>hyperlinking policy</h4>
+      <h4>copyright policy</h4>
+      <h4>disclaimer</h4>
+      <h4>help</h4>
+      <h4>feedback</h4>
+      <h4>sitemap</h4>
+    </div>
+
+    <div class="four">
+      <h2>Government of India</h2>
+      <h4>Integrity Pledge  
+        <i class="fas fa-external-link-alt"></i>
+      </h4>
+        <ul>
+          <li>
+         
+            <a href="#">
+              My Gov <i class="fas fa-external-link-alt"></i>
+            </a>
+       
+          </li>
+          <li>
+          
+            <a href="#">
+              National Voter Portal  
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          
+          </li>
+          <li>
+           
+            <a href="#">
+              Digital India <i class="fas fa-external-link-alt"></i>
+            </a>
+       
+          </li>
+          <li>
+           
+            <a href="#">
+              GST.gov.in <i class="fas fa-external-link-alt"></i>
+            </a>
+       
+          </li>
+          <li>
+          
+            <a href="#">
+              DBT Bharatpur <i class="fas fa-external-link-alt"></i>
+            </a>
+          
+          </li>
+        </ul>
+    </div>
+  </div>
+
+
+
+  <div class="footer-down">
+  <div class="copyright">
+    Copyright ©
+    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+    </div>
+  </div> 
   </footer>
 
-  <!-- footer ends -->
 
+ 
 
-  <!--    <script>
+    <script>
 
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
@@ -793,7 +904,7 @@
 		}
 	});
                                          
-	</script>  -->
+	</script> 
   <script>
     const chk = document.getElementById('chk');
 
@@ -803,7 +914,21 @@ chk.addEventListener('change', () => {
 </script>
   <script>
     $("input#submitButton").click(function () {
-      alert("Form successfully submitted");
+      const name = document.querySelector("#name");
+      const surname = document.querySelector("#surname");
+      const nickname = document.querySelector("#nickname");
+      const relative = document.querySelector("#relative");
+      const relativeregional = document.querySelector("#relativeregional");
+      const nameregional = document.querySelector("#nameregional");
+      const nicknameregional = document.querySelector("#nicknameregional");
+      console.log(name);
+      console.log(nickname);
+      console.log(relative);
+      if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+        alert("Please fill all the required details⚠️");
+      } else {
+        alert("Form successfully submitted");
+      }
     });
   </script>
 
@@ -1522,6 +1647,19 @@ chk.addEventListener('change', () => {
   }); 
   </script>
   <script src="js/video.js"></script>
+  <script>
+		function printDiv(printMe){
+			var printContents = document.getElementById("printMe").innerHTML;
+			var originalContents = document.body.innerHTML;
+
+			document.body.innerHTML = printContents;
+
+			window.print();
+
+			document.body.innerHTML = originalContents;
+
+		}
+	</script>
 </body>
 
 </html>
