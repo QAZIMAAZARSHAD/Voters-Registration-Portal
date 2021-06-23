@@ -1,0 +1,234 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+   
+}
+html{
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: rgb(42, 43, 43);
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 3px;
+    color: aliceblue;
+}
+  
+body{
+    /* background: rgb(219, 192, 157); */
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.imgs:hover{
+    color: #e90fc4;
+    background-color: #f3aa21;
+    box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
+    transition-delay: 1s;
+   
+    
+  }
+  
+.container{
+    width: 80%;
+    margin: 100px;
+}
+.help-box{
+    background: cornsilk;
+    display: flex;
+}
+.help-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.help-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: rgb(253, 155, 116);
+}
+h1{
+    margin-bottom: 10px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom:1px solid #ccc;
+    outline: none;
+    padding-bottom:5px; 
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: black;
+}
+button{
+    background: darkgray;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: black;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(lightgrey);
+}
+.help-left h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.help-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+
+
+
+/* 
+.faq{
+    margin-left: 70px;
+}
+.FAQ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+    font-style: initial;
+}
+.container1{
+    width: 50%;
+    max-width: 80rem;
+    margin: 0px auto;
+    padding: 0px 1.5rem;
+    margin-left: auto;
+    margin-top: -26px;
+}
+.accordian-item{
+    background-color: #ccc;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(lightgrey);
+}
+.accordian-link{
+    font-size: -0.6rem;
+    color: rgba(black);
+    text-decoration: none;
+    background-color: #ccc;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.accordian-link i{
+    color: black;
+    padding: .5rem;
+}
+.accordian-link .ion-md-remove{
+    display: none;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color:white;
+    transition: max-height 650ms;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: lightslategrey;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    font-size: -0.6rem;
+    padding: 2rem;
+}
+.accordian-item:target .answer{
+    max-height: 20rem;
+}
+.accordian-item:target .accordian-link .ion-md-remove{
+    display: block;
+}
+     */
+
+
+
+     .accordion{
+        max-width: 80rem;
+       } 
+       .accordion-item{ 
+        border-radius: 2px;
+        margin-bottom: 1rem; 
+        border: none;
+        box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
+      } 
+      
+      .accordion-link{
+        color: rgb(0, 0, 0);
+        width: 100%;
+        background-color: rgb(253, 155, 116);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 1rem .7rem;
+        position: relative;
+      
+      }
+      .accordion-link:hover{
+          color: black;
+      }
+      .accordion-link::after{
+        content: "\002B";
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.2s ease-in-out;
+      
+      
+      }
+      
+      .accordion-link.active::after{
+      transform: rotate(45deg);
+      }
+      
+      
+      
+      .accordion-link i{
+        color: #e7d5ff;
+        padding: .3rem;
+      }
+      
+      
+      .answer{
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.2s ease-out;
+        
+      }
+      
