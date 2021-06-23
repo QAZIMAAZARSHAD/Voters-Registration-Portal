@@ -61,19 +61,29 @@ body.dark {
 
 @media screen and (max-width:1024px)
 {
-    .checkbox .label 
+    .checkbox .label
   {
     position: absolute;
     right: 2rem;
     top: 4.5rem;
-    
+
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .label{
+    top: 6rem;
   }
 }
 
 
 @media screen and (max-width:768px)
 {
-    .checkbox .label 
+  .label{
+    top: 6.9rem;
+    right: 0.75rem;
+  }
+    .checkbox .label
   {
     position: absolute;
     right: 2rem;
@@ -89,16 +99,16 @@ body.dark {
     width: 20px;
   }
 }
-@media screen and (max-width:575px)
+@media screen and (max-width:650px)
 {
-    .label 
+    .label
   {
     position: absolute;
     right: 1rem;
     top: 4.5rem;
     height: 10px;
     width: 22px;
-    
+
   }
      .label .ball {
     position: absolute;
@@ -114,6 +124,39 @@ body.dark {
   }
   .fa-moon, .fa-sun {
     font-size: 8px;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+
+}
+
+@media screen and (max-width:450px)
+{
+    .label
+  {
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    height: 10px;
+    width: 22px;
+
+  }
+     .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon
+  {
+    font-size: 2px;
+  }
+  .fa-moon, .fa-sun {
+    font-size: 4px;
   }
 
   .checkbox:checked + .label .ball {
@@ -189,7 +232,7 @@ body.dark {
     width: 90px;
     position: absolute;
     top: 10%;
-    left: 4%;
+    left: 0%;
   }
 }
 
@@ -218,7 +261,7 @@ body.dark {
   margin: 0 auto;
 }
 
-  
+
 body{
     background: rgb(219, 192, 157);
     font-size: 14px;
@@ -229,10 +272,10 @@ body{
     background-color: #f3aa21;
     box-shadow: 0 0 10px #f3aa21, 0 0 40px #f3aa21, 0 0 80px #f3aa21;
     transition-delay: 1s;
-   
-    
+
+
   }
-  
+
 .container{
     width: 80%;
     margin: 100px;
@@ -250,6 +293,28 @@ body{
     padding: 40px;
     background: rgb(253, 155, 116);
 }
+
+@media screen and (max-width: 786px){
+  .container{
+    margin-top: 40px;
+  }
+  .container .help-box{
+    background: cornsilk;
+    display: block;
+    position: relative;
+  }
+  .help-left{
+      padding: 30px 10px;
+  }
+  .help-right{
+      max-width: 100%;
+      padding: 30px;
+      padding-left: 10px;
+      background: rgb(253, 155, 116);
+      white-space: nowrap;
+  }
+}
+
 h1{
     margin-bottom: 10px;
 }
@@ -261,12 +326,22 @@ h1{
 .input-row .input-group{
     flex-basis: 45%;
 }
+
+.input-row .input-group label{
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px){
+  /* .input-row .input-group{
+    padding: 5px;
+  } */
+}
 input{
     width: 100%;
     border: none;
     border-bottom:1px solid #ccc;
     outline: none;
-    padding-bottom:5px; 
+    padding-bottom:5px;
 }
 textarea{
     width: 100%;
@@ -305,8 +380,16 @@ tr td:first-child{
 tr td{
     padding-top: 20px;
 }
+
+@media screen and (max-width: 450px){
+  tr td{
+    padding-top: 5px;
+    display: block;
+    justify-content: center;
+  }
+}
 .faq{
-    margin-left: 70px;
+    margin-left: 0px;
 }
 .FAQ{
     display: flex;
@@ -375,7 +458,16 @@ tr td{
 .accordian-item:target .accordian-link .ion-md-remove{
     display: block;
 }
-    
+
+@media screen and (max-width: 786px){
+  .faq{
+    margin-left: 0px;
+  }
+
+  .container1{
+    width: 90%;
+  }
+}
 
 
 /* CSS for scrollbar */
@@ -414,8 +506,9 @@ tr td{
     padding: 0;
     border-radius: 3px;
     outline: none;
+    /* border: 1px solid red; Debugging code*/
   }
-  
+
   .navbar {
     background-color: rgb(42, 43, 43); /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, rgb(253, 86, 9), white, rgb(3, 134, 3));
@@ -426,18 +519,18 @@ tr td{
     text-align: center;
     border-bottom: 2px solid rgb(4, 29, 49);
   }
-  
+
   .heading
   {
     text-align: center;
   }
-  
+
   .navbar .row
   {
     display: flex;
     align-items: center;
   }
-  
+
   .icon img{
     width: 130px;
   }
@@ -445,24 +538,42 @@ tr td{
     width: 160px;
     border-radius: 8px;
   }
-  
+
   .logo
   {
     position: absolute;
     top: 5%;
     right: 3%;
-  
+
+  }
+
+  @media (max-width: 1090px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .endlogo {
+      display: none;
+    }
+    h1 {
+      margin: 1rem;
+    }
+    .icon img {
+      margin: 1rem;
+    }
+
   }
 
   /* footer styles */
-  
+
 #ft {
   background: url("./Images/ivote.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 540px;
   opacity: 0.7;
+  flex: 1 1 auto;
   margin-top: 30px;
 }
 
@@ -683,4 +794,68 @@ tr td{
 .helpdesk:hover {
   background-color: white;
   color: black;
+}
+
+@media(max-width: 1240px) {
+  #footer {
+    margin: 30px 50px;
+  }
+}
+
+@media(max-width: 1074px) {
+  #footer {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 990px) {
+  #footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact h3 {
+    padding: 5px;
+  }
+  .follow-us h2 {
+    margin-top: 20px;
+  }
+  .icons {
+    margin-top: 10px;
+  }
+  .two h2, .four h2 {
+    margin-bottom: 0;
+    font-size: 19px;
+  }
+  .three h4 {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media(max-width: 1000px) {
+  #ft {
+    /* height: 105vh; */
+    height: fit-content;
+    padding-bottom: 15px;
+  }
+}
+
+
+@media(max-width: 620px) {
+  #footer {
+    grid-template-columns: 1fr;
+  }
+  #ft {
+    height: fit-content;
+    padding-bottom: 15px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: 411px) {
+  #footer {
+    margin: 30px 50px;
+  }
 }
