@@ -49,11 +49,11 @@
     display: flex;
   }
 
-  body {
+  body{
     background-image: url('Images/votebanner.jpg');
     background-repeat: no-repeat;
-    background-size: 100vw 112vh;
-    ;
+    background-size: 100vw 100vh;
+    
 
   }
 
@@ -64,13 +64,11 @@
   .container {
     height: auto;
     width: 55%;
-    border-radius: 50px;
     margin-top: -12px;
     background: none;
     backdrop-filter: blur(8px);
+    margin-top: 10px;
   }
- 
-
 
   </style>
   <body>
@@ -139,10 +137,13 @@
                       style=" border: none; outline: none;border-bottom: 2px solid blue;background: none; ">
                     <div style="margin-left: 20px;">
                       <br>
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1" style="color: white;"
-                        onclick="showPwdToogle()">Show Password</label>
+                     
   
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px; color: white;">
+                    
+                 
+                      <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
                     </div>
                     <br>
                     <!-- <div id="passwordhelp" class="form-text" style="margin-top: -8px;">Forgot Password? <a href="forgetPass.html">click here</a></div> -->
