@@ -61,7 +61,7 @@ body.dark {
 }
 
 @media screen and (max-width: 1024px) {
-  .label {
+  .label #print {
     position: absolute;
     right: 2rem;
     top: 4.5rem;
@@ -209,6 +209,14 @@ body.dark {
     transform: scale(1);
     opacity: 0;
   }
+}
+
+.captcha-container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 2px solid black;
 }
 
 .loader2 {
@@ -1248,4 +1256,17 @@ h1 {
   .three h4{
     text-align: left;
   }
+}
+
+@media print {
+  #ft,
+  header,
+  .securityCode,
+  .myBtn,
+  .fontsetting,
+  .note {
+    display: none;
+  }
+
+
 }
