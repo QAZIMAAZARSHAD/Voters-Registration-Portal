@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
@@ -30,7 +30,7 @@
         <div class="logo">
           <a href="#" class="endlogo">
             <img src="./Images/flag.png">
-            
+
           </a>
         </div>
 
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      
+
       <div>
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
@@ -50,12 +50,12 @@
           <div class="ball"></div>
         </label>
       </div>
-  
-     
+
+
 
       <script>
         const chk = document.getElementById('chk');
-    
+
     chk.addEventListener('change', () => {
       document.body.classList.toggle('dark');
     });
@@ -90,20 +90,20 @@
                                 <div class="mb-3">
                                   <label for="password1" class="form-label">Password</label>
                                   <input type="password" class="form-control" id="password1">
-                                  <div style="position: relative; left: 164px; bottom: -7px;">
+                                  <div class="showPwd1">
                                   <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
                                   </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="confirmPassword1" class="form-label">Confirm Password</label>
                                     <input type="password" class="form-control" id="confirmPassword1">
-                                    <div style="position: relative; left: 164px; bottom: -7px;">
+                                    <div class="showPwd1">
                                     <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
                                     </div>
-                               </div>        
+                               </div>
                             </div>
                             <div class="col-lg-6">
-                               
+
                                 <div class="mb-3">
                                     <label for="number" class="form-label">Mobile Number</label>
                                     <input type="number" class="form-control" id="number" placeholder="Mobile Number" >
@@ -145,22 +145,22 @@
                                         <option value="27">UTTAR PRADESH</option>
                                         <option value="28">UTTARAKHAND</option>
                                         <option value="29">WEST BENGAL</option>
-                                    </select>                                           
+                                    </select>
                                 </div>
                                 <div class="mb-3">
                                     <label for="city" class="form-label">City</label>
                                     <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example">
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="zip_code" class="form-label">Zip Code</label>
                                     <input type="number" class="form-control" id="zip_code" placeholder="zip Code">
                                 </div>
                                 <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div>
-                            </div>  
+                            </div>
                         </div>
-               
-                       
+
+
                         <button type="submit" class="btn btn-success" onclick="signup()">Sign Up</button>
                     </form>
                 </div>
@@ -168,7 +168,7 @@
 
         </div>
 
-        
+
     </div>
     <script>
     const chk = document.getElementById('chk');
@@ -227,7 +227,7 @@ chk.addEventListener('change', () => {
             {
               alert("Password min and max length is 6.");
             }
-            
+
             else if(st == 0)
             {
                alert("Please select your State !");
@@ -237,20 +237,20 @@ chk.addEventListener('change', () => {
             alert('Thank You for Registering! & You are Redirecting to Home page');
               setTimeout(function() {window.location = "Home.html" });
             }
-          
+
           }
 
     </script>
 
 
 <footer id="ft">
-    
-  
+
+
   <div id="footer">
     <div class="one">
       <div class="contact">
       <h2>Contact Us</h2>
-      <h3> 
+      <h3>
         <i class="fas fa-phone-alt phonei"></i>
         Toll free: 1947
       </h3>
@@ -292,7 +292,7 @@ chk.addEventListener('change', () => {
       <h3>unique identification authority of india</h3>
       <h3>government of india</h3>
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
-      
+
       <h2>Regional Offices</h2>
       <select name="place" id="place">
         <option value="delhi">Delhi</option>
@@ -315,50 +315,50 @@ chk.addEventListener('change', () => {
 
     <div class="four">
       <h2>Government of India</h2>
-      <h4>Integrity Pledge  
+      <h4>Integrity Pledge
         <i class="fas fa-external-link-alt"></i>
       </h4>
         <ul>
           <li>
-         
+
             <a href="#">
               My Gov <i class="fas fa-external-link-alt"></i>
             </a>
-       
+
           </li>
           <li>
-          
+
             <a href="#">
-              National Voter Portal  
+              National Voter Portal
               <i class="fas fa-external-link-alt"></i>
             </a>
-          
+
           </li>
           <li>
-           
+
             <a href="#">
               Digital India <i class="fas fa-external-link-alt"></i>
             </a>
-       
+
           </li>
           <li>
-           
+
             <a href="#">
               GST.gov.in <i class="fas fa-external-link-alt"></i>
             </a>
-       
+
           </li>
           <li>
-          
+
             <a href="#">
               DBT Bharatpur <i class="fas fa-external-link-alt"></i>
             </a>
-          
+
           </li>
         </ul>
     </div>
   </div>
-    
+
 
 
   <div class="footer-down">
@@ -366,13 +366,13 @@ chk.addEventListener('change', () => {
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
-  </div> 
+  </div>
   </footer>
 
 
 
 
-     
+
 
 
 
@@ -395,7 +395,7 @@ chk.addEventListener('change', () => {
   $("#scrollToTopButton").click(function(){
   $('html ,body').animate({scrollTop : 0},800)
 });
-}); 
+});
 </script>
 <script>
   function showPwdToogle() {
