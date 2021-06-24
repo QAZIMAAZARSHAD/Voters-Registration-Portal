@@ -835,7 +835,7 @@ tr td{
   #ft {
     /* height: 105vh; */
     height: fit-content;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
 }
 
@@ -846,7 +846,7 @@ tr td{
   }
   #ft {
     height: fit-content;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
   .flex {
     display: flex;
