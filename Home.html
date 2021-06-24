@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="fonts.googleapis.com/css?family=Hind">
@@ -91,6 +92,45 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script type="text/javascript">
+    function CopyElem(elem) {
+      $('form input[type=text]').each(function () {
+        $(this).attr('value', $(this).val());
+      });
+
+      $('form input[type=checkbox]').each(function () {
+        $(this).attr('checked', $(this).prop("checked"));
+      });
+    }
+
+    function PrintElem(elem) {
+      Popup($(elem).html());
+    }
+
+    function Popup(data) {var mywindow = window.open('', 'my div', 'height=800,width=1000');
+    mywindow.document.write('<html><head><title>Voter Registration</title>');
+    mywindow.document.write('<link rel="stylesheet" href="css/main.css" type="text/css" />');
+    mywindow.document.write('</head><body >');
+    mywindow.document.write(data);
+    mywindow.document.write('data');
+    mywindow.document.write('</body></html>');
+    mywindow.document.close(); // necessary for IE >= 10
+
+    myDelay = setInterval(checkReadyState, 10);
+
+    function checkReadyState() {
+        if (mywindow.document.readyState == "complete") {
+            clearInterval(myDelay);
+            mywindow.focus(); // necessary for IE >= 10
+
+            mywindow.print();
+            mywindow.close();
+        }
+    }
+
+    return true;
+    }
+  </script>
 </head>
 
 <body>
@@ -164,13 +204,14 @@
 
   <span class="note" id="print">
     <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory 
-        <span><i class="fa fa-print" aria-hidden="true" onclick="printDiv('printMe')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
+        <span><i class="fa fa-print" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
   
 
   <!-- form starts -->
   <div class="container">
-    <div id="printMe">
+    <div id="container12">
+      <form>
     <form action="" class="form1">
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
@@ -709,6 +750,7 @@
       punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <br>
+      </form>
     </div>
       <div class="captcha-container"
         style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
