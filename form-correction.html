@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
   <title> Voter Registration Portal</title>
   <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
@@ -768,9 +770,9 @@ chk.addEventListener('change', () => {
       console.log(nickname);
       console.log(relative);
       if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
-        alert("Please fill all the required details⚠️");
+        swal("Please fill all the required details","","info");
       } else {
-        alert("Form successfully submitted");
+        swal("Form successfully submitted","","success");
       }
     });
   </script>
@@ -1451,6 +1453,7 @@ chk.addEventListener('change', () => {
       let code = a + b + c + d + e + f + g;
       return code;
     }
+
     submitBtn.addEventListener('click', () => {
       let val = input.value;
       if (val == '') {
@@ -1463,6 +1466,7 @@ chk.addEventListener('change', () => {
         alert('invalid input !');
       }
     })
+
     readTextBtn.addEventListener('click', () => {
       let text = code.textContent;
       responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });

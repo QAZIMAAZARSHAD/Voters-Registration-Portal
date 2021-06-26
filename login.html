@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
@@ -115,8 +117,8 @@
                                 <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>
                             <div id="newuser" class="form-text">New User? <a href="sign-up.html">Register here</a></div>
-                            <button type="submit" class="btn btn-success" onClick="login()">Login</button>
-                            <button type="submit" class="btn btn-info" onClick="clearFunc()">Reset</button>
+                            <button type="button" class="btn btn-success" onClick="login()">Login</button>
+                            <button type="button" class="btn btn-info" onClick="clearFunc()">Reset</button>
 
                           </form>
                      </div>
@@ -137,6 +139,14 @@ chk.addEventListener('change', () => {
 
 
     <script>
+      function giveAlert(title_,icon_)
+       {
+            swal({
+              title: title_,
+              icon: icon_,
+              });
+       }
+
         function login()
         {
           var uname = document.getElementById("Email1").value;
@@ -144,23 +154,23 @@ chk.addEventListener('change', () => {
           var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
           if(uname =='')
           {
-            alert("please enter user name.");
+            giveAlert("please enter user name.","info");
           }
           else if(pwd=='')
           {
-                alert("enter the password");
+            giveAlert("enter the password","info");
           }
           else if(!filter.test(uname))
           {
-            alert("Enter valid email id.");
+            giveAlert("Enter valid email id.","info");
           }
           else if(pwd.length < 6 || pwd.length > 6)
           {
-            alert("Password min and max length is 6.");
+            giveAlert("Password min and max length is 6.","info");
           }
           else
           {
-          alert('Thank You for Login & You are Redirecting to Home page');
+            giveAlert('Thank You for Login & You are Redirecting to Home page','success');
             setTimeout(function() {window.location = "Home.html" });
           }
         }
