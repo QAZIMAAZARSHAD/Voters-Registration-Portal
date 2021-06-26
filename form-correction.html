@@ -300,27 +300,27 @@
         <sup style="color:rgb(255, 8, 8)"> *
         </sup> <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="nameregional" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
-        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        Surname (if any) <input type="text" name="" id="surname" class="zoomeffect" placeholder="(In English)">
+        <input type="text" name="surnameregional" id="surnameregional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <hr>
         <br>
         (C) Details of registration with electoral roll<br><br>
         Name of Assembly/ Parliamentary Constituency :<br><br>
         Part number of electoral roll
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="number" name="" id="relative" class="zoomeffect"
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="number" name="partNo" id="partNo" class="zoomeffect"
           placeholder="" required>
         <br><br>
                 
         Serial No. of Electoral Roll
-        <sup style="color:rgb(255, 8, 8)"> * </sup><input type="number" name="" id="nickname" class="zoomeffect" placeholder="" required>
+        <sup style="color:rgb(255, 8, 8)"> * </sup><input type="number" name="serialNo" id="serialNo" class="zoomeffect" placeholder="" required>
         <br><br>
 
-        (D) Elector's Photo Identity Card Number <input type="text" name="" id="relative" class="zoomeffect"
+        (D) Elector's Photo Identity Card Number <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="picNo" id="picNo" class="zoomeffect"
         placeholder="" required>
       <br><br>
 
@@ -356,53 +356,48 @@
 
       <div class="descrip">(F) The correct particulars in entry to be corrected are as below</div><br>
       <div class="conatinerFluid">
-        (A) Name
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        (A) Name 
+        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)">
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
-        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)">
+        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>       
         <hr>
 
-        House/Door Number<br>House No & House Name
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        House/Door Number 
+        <input type="text" name="" class="zoomeffect" id="houseNo" placeholder="(In English)"> 
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+      
+        Street/Area/Locality/ Mohalla/Road 
+        <input type="text" name="" class="zoomeffect" id="address" placeholder="(In English)"> 
+        <input type="text" name="" id="addressReg" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+     
+        Village / Town 
+        <input type="text" name="" class="zoomeffect" id="vill" placeholder="(In English)">
 
-        Street/Area/Locality/ Mohalla/Road
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="villRegional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
-        
-        Street/Area/Locality/ Mohalla/Road
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        Post Office 
+        <input type="text" name="" class="zoomeffect" id="postOf" placeholder="(In English)">
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="postOfRegional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
-        Village / Town
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
-
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
-        <button><i class="far fa-keyboard"></i></button><br>
-        <br>
-
-        Post Office
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
-
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
-        <button><i class="far fa-keyboard"></i></button><br>
-        <br>
-
-        Pin Code
-        <input type="number" name="" class="zoomeffect" id="name" placeholder="" required>
+        Pin Code 
+        <input type="number" name="" class="zoomeffect" id="pcode" placeholder="">
 
         <span class="district">
-            District
+            District 
           </span>
           <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
             <option> --Choose District -- </option>
@@ -411,10 +406,10 @@
         </select><br><br><hr>
 
         Elector's Photo Identity Card Number(if issued)
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="" required>
+        <input type="text" name="" class="zoomeffect" id="" placeholder="">
        
         <br><br>
-        Date of Birth
+        Date of Birth 
         <input class="zoomeffect" type="date" name="" id=""><br>
         
         <br>
@@ -423,17 +418,17 @@
        
         <br><br>
         Relative's Name
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        <input type="text" name="" class="zoomeffect" id="RelativeName" placeholder="(In English)" required>
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="RelativeNameReg" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
         
         Relative's Surname
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        <input type="text" name="" class="zoomeffect" id="RelativeSurname" placeholder="(In English)" required>
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="RelativeSurnameReg" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
@@ -449,7 +444,7 @@
         </select>
 
         <br><br>
-        Gender
+        Gender 
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="" id="">
             <option>Select</option>
             <option>Male</option>
@@ -458,12 +453,12 @@
         </select>
         <br><br><hr><br>
 
-        Email
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        Email <sup style="color:rgb(255, 8, 8)"> *</sup>
+        <input type="text" name="" class="zoomeffect" id="email" placeholder="(In English)" required>
         <br><br>
 
-        Mobile Number
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
+        Mobile Number <sup style="color:rgb(255, 8, 8)"> *</sup>
+        <input type="text" name="" class="zoomeffect" id="MobNo" placeholder="(In English)" required>
     
         <br><br>
     </div>
@@ -760,16 +755,14 @@ chk.addEventListener('change', () => {
   <script>
     $("input#submitButton").click(function () {
       const name = document.querySelector("#name");
-      const surname = document.querySelector("#surname");
-      const nickname = document.querySelector("#nickname");
-      const relative = document.querySelector("#relative");
-      const relativeregional = document.querySelector("#relativeregional");
+      const partNumber = document.querySelector("#partNo");
+      const serialNumber = document.querySelector("#serialNo");
+      const picNumber = document.querySelector("#picNo");
       const nameregional = document.querySelector("#nameregional");
-      const nicknameregional = document.querySelector("#nicknameregional");
-      console.log(name);
-      console.log(nickname);
-      console.log(relative);
-      if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+      const mobile = document.querySelector("#MobNo");
+      const email = document.querySelector("#email");
+       
+      if(name.value.length == 0 | nameregional.value.length==0 | partNumber.value.length == 0|serialNumber.value.length == 0|picNumber.value.length == 0|email.value.length == 0|mobile.value.length == 0) {
         swal("Please fill all the required details","","info");
       } else {
         swal("Form successfully submitted","","success");
