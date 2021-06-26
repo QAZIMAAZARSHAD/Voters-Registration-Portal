@@ -1270,3 +1270,7 @@ h1 {
 
 
 }
+.required-field::before {
+  content: "*";
+  color: red;
+}
