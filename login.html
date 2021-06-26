@@ -117,8 +117,8 @@
                                 <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>
                             <div id="newuser" class="form-text">New User? <a href="sign-up.html">Register here</a></div>
-                            <button type="submit" class="btn btn-success" onClick="login()">Login</button>
-                            <button type="submit" class="btn btn-info" onClick="clearFunc()">Reset</button>
+                            <button type="button" class="btn btn-success" onClick="login()">Login</button>
+                            <button type="button" class="btn btn-info" onClick="clearFunc()">Reset</button>
 
                           </form>
                      </div>
@@ -139,7 +139,7 @@ chk.addEventListener('change', () => {
 
 
     <script>
-        function giveAlert(title_,icon_)
+      function giveAlert(title_,icon_)
        {
             swal({
               title: title_,
