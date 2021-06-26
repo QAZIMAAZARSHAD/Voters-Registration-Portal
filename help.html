@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
@@ -78,9 +79,9 @@
             </div>
 
             <script>
-              const chk = document.getElementById('chk');
+              const chkk = document.getElementById('chk');
 
-          chk.addEventListener('change', () => {
+          chkk.addEventListener('change', () => {
             document.body.classList.toggle('dark');
           });
           </script>
@@ -94,21 +95,50 @@
                     <h2>Details</h2>
                     <br>
                     <br>
-                    <form>
+                    <form id="form1">
                         <div class="input-row">
                             <div class="input-group">
-                                <label><h4>Name</h4></label>
-                                <input type="text" placeholder="Fill your name">
+                                <label><h4>Name<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
+                                <input type="text" id="name" placeholder="Fill your name">
                             </div>
                             <div class="input-group">
-                                <label><h4>Email ID</h4></label>
-                                <input type="email" placeholder="xyz@abc.com">
+                                <label><h4>Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
+                                <input type="email" id="email" placeholder="xyz@abc.com">
                             </div>
                         </div>
-                        <label><h4>Message</h4></label>
-                        <textarea rows="5">Your message</textarea>
-                        <button type="submit">Submit</button>
+                        <label><h4>Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
+                        <textarea rows="5" id="mess" placeholder="Your Message Here..."></textarea>
+                        <button type="button" onclick="check()">Submit</button>
                     </form>
+                    <script>
+                         function check()
+                         {
+                              var name = document.getElementById("name").value;
+                              var email= document.getElementById("email").value;
+                              var mess=  document.getElementById("mess").value;
+                              var filter =  /^([a-zA-Z0-9_\.\-]+)\@([a-zA-Z0-9]+\.*[a-zA-Z0-9]+)\.([a-zA-Z0-9]{2,4})$/;
+
+                              if(name.length==0)
+                              {
+                                swal("Please enter your name","","info");
+                              } else if(email.length==0 | !filter.test(email))
+                              {
+                                swal("Please enter a valid email","","info");
+                              } else if(mess.length==0)
+                              {
+                                swal("Please enter a message","","info");
+                              } else
+                              {
+                                swal('Thank you for contacting us! We will reach you soon!','','success');
+                                $("#form1")[0].reset();
+                                
+                              }
+                              
+
+
+                         }
+
+                    </script>
                 </div>
                 <div class="help-right">
                     <h2>Reach us</h2>
