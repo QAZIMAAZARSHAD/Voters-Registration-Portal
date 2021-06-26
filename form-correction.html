@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="fonts.googleapis.com/css?family=Hind">
@@ -15,27 +15,29 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
   <title> Voter Registration Portal</title>
   <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
   <style>
     #scrollToTopButton{
-  position: fixed;
-  bottom: 15px;
-  right: 10px;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  box-shadow: 0 6px 10px 0px gray;
-}
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+        font-size: 25px;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 6px;
+        border-radius: 50%;
+        box-shadow: 0 6px 10px 0px gray;
+    }
 
     .goog-logo-link {
       display: none !important;
@@ -136,13 +138,13 @@
 <body>
   <!-- navbar starts -->
   <header>
-    <div class="navbar">
+    <div class="navbar"> 
       <div class="main-heading">
 
         <div class="logo">
           <a href="#" class="endlogo">
             <img src="./Images/flag.png">
-
+           
           </a>
         </div>
 
@@ -151,8 +153,8 @@
             <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
             <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
-
-
+      
+  
       </div>
 
 
@@ -164,12 +166,12 @@
           <div class="ball"></div>
         </label>
       </div>
-
+      
     </div>
 
     <script>
       const chk = document.getElementById('chk');
-
+  
   chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
   });
@@ -203,10 +205,10 @@
 
 
   <span class="note" id="print">
-    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory
+    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory 
         <span><i class="fa fa-print" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
-
+  
 
   <!-- form starts -->
   <div class="container">
@@ -214,14 +216,11 @@
       <form>
     <form action="" class="form1">
       <div class="formheading">
-        Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
+        Form 8<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
       </div>
 
       <!-- form part 1 starts -->
-      <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the
-        transfer of voter or any other constituency from any one constituency</div><br><br> In service <br><br>
-      Electoral Registration Officer,<br><br>
-
+      <div class="descrip">Application for correction to particulars entered in electoral roll</div><br><br> To, <br>
       <!-- -->
       <div class="conatinerFluid">
 
@@ -286,22 +285,14 @@
         <br>
 
       </div>
-      I request that my name be included in electoral rolls for all the aforesaid areas. <br><br>
-      <div class="conatinerFluid">
-
-        <ul class="radio">
-          <li><input type="radio" name="select" id=""> First time voter<br></li>
-          <li><input type="radio" name="select" id=""> Due to transfer from other
-            meeting areas.</li>
-        </ul>
-      </div>
-      <!-- fprm part 1 ends -->
+      I request that entry relating to myself appearing in the electoral roll the above constituency is not correct and it should be corrected. Correct particulars in support of my request are given below: <br><br>
+      
+      <!-- form part 1 ends -->
 
 
       <!-- form part 2 starts -->
-      <br> Below are specifications in support of my claim to be included in the electoral rolls. <br><br>
-
-      <div class="descrip">Mandatory specifications</div><br>
+      <br> 
+      <div class="descrip">Applicant's Details</div><br>
       <br>
       <div class="conatinerFluid">
 
@@ -309,208 +300,169 @@
         <sup style="color:rgb(255, 8, 8)"> *
         </sup> <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="nameregional" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
         (B)
-        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
+        Surname (if any) <input type="text" name="" id="surname" class="zoomeffect" placeholder="(In English)">
+        <input type="text" name="surnameregional" id="surnameregional" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>
+        <hr>
+        <br>
+        (C) Details of registration with electoral roll<br><br>
+        Name of Assembly/ Parliamentary Constituency :<br><br>
+        Part number of electoral roll
+        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="number" name="partNo" id="partNo" class="zoomeffect"
+          placeholder="" required>
+        <br><br>
+                
+        Serial No. of Electoral Roll
+        <sup style="color:rgb(255, 8, 8)"> * </sup><input type="number" name="serialNo" id="serialNo" class="zoomeffect" placeholder="" required>
+        <br><br>
 
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-        (C) Name
-        of the applicant's relative
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="relative" class="zoomeffect"
-          placeholder="(In English)" required>
-
-        <input type="text" name="" id="relativeregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        (D)Nickname of the applicant's relative
-        <input type="text" name="" id="nickname" class="zoomeffect" placeholder="(In English)" required>
-
-        <input type="text" name="" id="nicknameregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        (E)
-        Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-          <option value="null">Select</option>
-          <option>Father</option>
-          <option>Mother</option>
-          <option>Husband</option>
-          <option>Wife</option>
-          <option>Other</option>
-        </select><br><br>
-
-
-        <ul class="radio">
-          <li>
-            <input type="radio" name="select" id="" checked="checked">
-            (F) Age [on
-            January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup>
-
-
-            <input type="text" value="Age" class="zoomeffect field left" readonly></input>
-            <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-              <option value="null">Year</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-              <option>32</option>
-              <option>33</option>
-            </select>
-            <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-              <option value="null">Month</option>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-            </select><br><br>
-          </li>
-          <xml style="font-size:20px">Or</xml><br><br>
-          <li>
-
-            <input type="radio" name="select" id="">
-
-            (G) Date of birth (in the
-            form of day/ month/ year)
-
-            <input type="date" class="zoomeffect" name="" id="">
-            <br>(if known)<sup style="color:rgb(255, 8, 8)"> * </sup>
-          </li>
-        </ul><br><br>
-
-
-        (H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> *
-        </sup>
-
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>Select</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Transgender</option>
-        </select><br><br>
-
+        (D) Elector's Photo Identity Card Number <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="picNo" id="picNo" class="zoomeffect"
+        placeholder="" required>
+      <br><br>
 
       </div>
       <!-- form part 2 ends -->
 
       <!-- form part 3 starts -->
       <div class="descrip">
-        Current address where applicant is ordinarily resident
+        (E) Please tick the entry which is to be corrected
       </div><br>
 
       <div class="conatinerFluid">
 
-        <br>House no.
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-
-        Street /
-        area / location
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        City /
-        Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)"><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-
-        Post Office:
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)"><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="pincode"
-          required onkeypress="return isNumberKey(event);"><br><br>
-
-        State / Union Territory
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <input class="zoomeffect" type="text" name="" id="state" required>
+        <br>
+        <fieldset>
+          <input type="checkbox" name="" id=""> Name<br>
+          <input type="checkbox" name="" id=""> My photograph<br>
+          <input type="checkbox" name="" id=""> Elector's Photo Identity Card Number(if issued)<br>
+          <input type="checkbox" name="" id=""> Address<br>
+          <input type="checkbox" name="" id=""> Date of Birth<br>
+          <input type="checkbox" name="" id=""> Gender<br>
+          <input type="checkbox" name="" id=""> Type of Relation<br>
+          <input type="checkbox" name="" id=""> Name of Relative<br>
+          <input type="checkbox" name="" id=""> Age<br>
+        </fieldset>
         <br><br>
-
-        <span class="district">
-          District
-        </span>
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <input class="zoomeffect" type="text" name="" id="district" required>
-        <br><br>
-        <hr><br>
-
-        Family / Neighbour Epic No. <input class="zoomeffect" type="text" name="" id="" required><br><br>
-        <hr><br>
-
       </div>
+
       <!-- form part 3 ends -->
 
 
       <!-- form part 4 starts -->
 
-      <div class="descrip">Optional specialties</div><br>
+      <div class="descrip">(F) The correct particulars in entry to be corrected are as below</div><br>
       <div class="conatinerFluid">
+        (A) Name 
+        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)">
 
+        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+        (B)
+        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)">
+        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>       
+        <hr>
 
-        Disability (if
-        any)<br><br>
-        <fieldset>
-          <input type="checkbox" name="" id=""> Visual impairment
-          <input type="checkbox" name="" id=""> Speech & hearing disability
-          <input type="checkbox" name="" id=""> Locomotor disability
-          <input type="checkbox" name="" id=""> other
-          <input class="zoomeffect" type="text" required>
-        </fieldset>
+        House/Door Number 
+        <input type="text" name="" class="zoomeffect" id="houseNo" placeholder="(In English)"> 
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+      
+        Street/Area/Locality/ Mohalla/Road 
+        <input type="text" name="" class="zoomeffect" id="address" placeholder="(In English)"> 
+        <input type="text" name="" id="addressReg" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+     
+        Village / Town 
+        <input type="text" name="" class="zoomeffect" id="vill" placeholder="(In English)">
 
+        <input type="text" name="" id="villRegional" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
-        Email ID (optional) <input class="zoomeffect" type="text" name="" id="" required><br><br>
+        Post Office 
+        <input type="text" name="" class="zoomeffect" id="postOf" placeholder="(In English)">
 
-        Mobile No. (optional)
+        <input type="text" name="" id="postOfRegional" class="zoomeffect" placeholder="(In Regional)">
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
 
-        <span>+91</span>
+        Pin Code 
+        <input type="number" name="" class="zoomeffect" id="pcode" placeholder="">
 
+        <span class="district">
+            District 
+          </span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
+            <option> --Choose District -- </option>
+  
+  
+        </select><br><br><hr>
 
-        <input class="zoomeffect" type="text" name="input" required><br><br>
+        Elector's Photo Identity Card Number(if issued)
+        <input type="text" name="" class="zoomeffect" id="" placeholder="">
+       
+        <br><br>
+        Date of Birth 
+        <input class="zoomeffect" type="date" name="" id=""><br>
+        
+        <br>
+        Age
+        <input type="number" name="" class="zoomeffect" id="name" placeholder="" required>
+       
+        <br><br>
+        Relative's Name
+        <input type="text" name="" class="zoomeffect" id="RelativeName" placeholder="(In English)" required>
 
-      </div>
+        <input type="text" name="" id="RelativeNameReg" class="zoomeffect" placeholder="(In Regional)" required>
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+
+        
+        Relative's Surname
+        <input type="text" name="" class="zoomeffect" id="RelativeSurname" placeholder="(In English)" required>
+
+        <input type="text" name="" id="RelativeSurnameReg" class="zoomeffect" placeholder="(In Regional)" required>
+        <button><i class="far fa-keyboard"></i></button><br>
+        <br>
+
+        <br>
+        Relation
+        <select class="btn btn-secondary btn-sm dropdown-toggle" name="" id="">
+            <option>Select</option>
+            <option>Father</option>
+            <option>Mother</option>
+            <option>Husband</option>
+            <option>Wife</option>
+            <option>Other</option>
+        </select>
+
+        <br><br>
+        Gender 
+        <select class="btn btn-secondary btn-sm dropdown-toggle" name="" id="">
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female </option>
+            <option>Third Gender</option>
+        </select>
+        <br><br><hr><br>
+
+        Email <sup style="color:rgb(255, 8, 8)"> *</sup>
+        <input type="text" name="" class="zoomeffect" id="email" placeholder="(In English)" required>
+        <br><br>
+
+        Mobile Number <sup style="color:rgb(255, 8, 8)"> *</sup>
+        <input type="text" name="" class="zoomeffect" id="MobNo" placeholder="(In English)" required>
+    
+        <br><br>
+    </div>
       <!-- form part 4 ends -->
-
-      <!-- form part 5 starts -->
 
       <div class="descrip">
         Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
@@ -585,169 +537,17 @@
       <div class="descrip">Declaration</div><br><br>
 
 
-      I hereby declare that to the best of knowledge and belief <br>
-
-      (i) I
-      am a citizen of India and place of my birth is; <br>
-
-      <div class="conatinerFluid">
-        <div class="declaration_city">
-
-          City /
-          Village:
-
-          <input class="zoomeffect" type="text" name="" id="" required><br>
-        </div>
-        Select state
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct1" id="slct1"
-          onchange="populate(this.id,'slct2')" style="width:156px !important; padding-left:9px; font-size: 15px;">
-          <option> --Choose State -- </option>
-          <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-          <option value="andhra pradesh"> ANDHRA PRADESH</option>
-          <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-          <option value="assam"> ASSAM</option>
-          <option value="bihar"> BIHAR</option>
-          <option value="chandigarh"> CHANDIGARH</option>
-          <option value="chattisgarh"> CHATTISGARH</option>
-          <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-          <option value="daman and diu"> DAMAN AND DIU</option>
-          <option value="delhi"> DELHI</option>
-          <option value="goa"> GOA</option>
-          <option value="gujarat"> GUJARAT</option>
-          <option value="haryana"> HARYANA</option>
-          <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-          <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-          <option value="jharkhand"> JHARKHAND</option>
-          <option value="karnataka"> KARNATAKA</option>
-          <option value="kerala"> KERALA</option>
-          <option value="ladakh"> LADAKH</option>
-          <option value="lakshadweep"> LAKSHADWEEP</option>
-          <option value="madhya pradesh"> MADHYA PRADESH</option>
-          <option value="maharashtra"> MAHARASHTRA</option>
-          <option value="manipur"> MANIPUR</option>
-          <option value="meghalaya"> MEGHALAYA</option>
-          <option value="mizoram">MIZORAM</option>
-          <option value="nagaland"> NAGALAND</option>
-          <option value="odisha"> ODISHA</option>
-          <option value="puducherry">PUDUCHERRY </option>
-          <option value="punjab"> PUNJAB</option>
-          <option value="rajasthan"> RAJASTHAN</option>
-
-          <option value="sikkim"> SIKKIM</option>
-          <option value="tamil nadu"> TAMIL NADU</option>
-          <option value="telangana"> TELANGANA</option>
-          <option value="tripura"> TRIPURA</option>
-          <option value="uttar pradesh"> UTTAR PRADESH</option>
-          <option value="uttarakhand"> UTTARAKHAND</option>
-          <option value="west bengal">WEST BENGAL</option>
-
-        </select>
-
-
-
-
-        <span class="district">
-          District
-        </span>
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct2" id="slct2">
-          <option> --Choose District -- </option>
-
-        </select>
-      </div>
-
-
-      <br><br>
-      (ii) I am ordinarily resident at the address given above since Date
-      <sup style="color:rgb(255, 8, 8);"> * </sup>
-
-      <input class="zoomeffect" type="date" name="" id=""><br><br>
-
-      (iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency<br><br>
-
+      Note – Any person who makes a statement or declaration which is false and which he either knows or believes to be false or does not believe to be true, is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).<br>
+      
       <div class="conatinerFluid">
 
-        <ul class="radio">
-          <li>
-            <input type="radio" name="select" id=""> My name has not already
-            been included in the electoral roll for this or any other assembly/ parliamentary constituency
-          </li><br>
-          <xml>Or</xml> <br><br>
-          <li>
-            <input type="radio" name="select" id="">My name may have been
-            included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
-            <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct4" id="slct4">
-              <option> --Choose District -- </option>
-            </select>
-
-            Constituency in
-            <sup style="color:rgb(255, 8, 8)"> * </sup>
-            <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct3" id="slct3"
-              onchange="populate(this.id,'slct4')" style="width:156px !important; padding-left:9px; font-size: 15px;">
-              <option> --Choose State -- </option>
-              <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-              <option value="andhra pradesh"> ANDHRA PRADESH</option>
-              <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-              <option value="assam"> ASSAM</option>
-              <option value="bihar"> BIHAR</option>
-              <option value="chandigarh"> CHANDIGARH</option>
-              <option value="chattisgarh"> CHATTISGARH</option>
-              <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-              <option value="daman and diu"> DAMAN AND DIU</option>
-              <option value="delhi"> DELHI</option>
-              <option value="goa"> GOA</option>
-              <option value="gujarat"> GUJARAT</option>
-              <option value="haryana"> HARYANA</option>
-              <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-              <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-              <option value="jharkhand"> JHARKHAND</option>
-              <option value="karnataka"> KARNATAKA</option>
-              <option value="kerala"> KERALA</option>
-              <option value="ladakh"> LADAKH</option>
-              <option value="lakshadweep"> LAKSHADWEEP</option>
-              <option value="madhya pradesh"> MADHYA PRADESH</option>
-              <option value="maharashtra"> MAHARASHTRA</option>
-              <option value="manipur"> MANIPUR</option>
-              <option value="meghalaya"> MEGHALAYA</option>
-              <option value="mizoram">MIZORAM</option>
-              <option value="nagaland"> NAGALAND</option>
-              <option value="odisha"> ODISHA</option>
-              <option value="puducherry">PUDUCHERRY </option>
-              <option value="punjab"> PUNJAB</option>
-              <option value="rajasthan"> RAJASTHAN</option>
-
-              <option value="sikkim"> SIKKIM</option>
-              <option value="tamil nadu"> TAMIL NADU</option>
-              <option value="telangana"> TELANGANA</option>
-              <option value="tripura"> TRIPURA</option>
-              <option value="uttar pradesh"> UTTAR PRADESH</option>
-              <option value="uttarakhand"> UTTARAKHAND</option>
-              <option value="west bengal">WEST BENGAL</option>
-
-            </select>
-            <br>
-            State in which I was ordinarily resident earlier at the address mentioned below and if so, I request that
-            the
-            same may be deleted from that
-            electoral roll.
-          </li>
-        </ul>
-        <br>
-        <hr>
-
+        
         Location
         <sup style="color:rgb(255, 8, 8)"> * </sup>
         <input class="zoomeffect" type="text" name="" id="" required>
         date <input class="zoomeffect" type="date" name="" id=""><br>
       </div>
 
-      <br><input type="radio" name="select" id=""> I am aware that making a statement or declaration which
-      is false and which I
-      know or believe to be false or do not believe to be true, is
-      punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
       <br>
       <br>
       </form>
@@ -803,13 +603,13 @@
   <!-- footer starts -->
 
   <footer id="ft">
-
-
+    
+  
   <div id="footer">
     <div class="one">
       <div class="contact">
       <h2>Contact Us</h2>
-      <h3>
+      <h3> 
         <i class="fas fa-phone-alt phonei"></i>
         Toll free: 1947
       </h3>
@@ -851,7 +651,7 @@
       <h3>unique identification authority of india</h3>
       <h3>government of india</h3>
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
-
+      
       <h2>Regional Offices</h2>
       <select name="place" id="place">
         <option value="delhi">Delhi</option>
@@ -875,45 +675,45 @@
 
     <div class="four">
       <h2>Government of India</h2>
-      <h4>Integrity Pledge
+      <h4>Integrity Pledge  
         <i class="fas fa-external-link-alt"></i>
       </h4>
         <ul>
           <li>
-
+         
             <a href="#">
               My Gov <i class="fas fa-external-link-alt"></i>
             </a>
-
+       
           </li>
           <li>
-
+          
             <a href="#">
-              National Voter Portal
+              National Voter Portal  
               <i class="fas fa-external-link-alt"></i>
             </a>
-
+          
           </li>
           <li>
-
+           
             <a href="#">
               Digital India <i class="fas fa-external-link-alt"></i>
             </a>
-
+       
           </li>
           <li>
-
+           
             <a href="#">
               GST.gov.in <i class="fas fa-external-link-alt"></i>
             </a>
-
+       
           </li>
           <li>
-
+          
             <a href="#">
               DBT Bharatpur <i class="fas fa-external-link-alt"></i>
             </a>
-
+          
           </li>
         </ul>
     </div>
@@ -926,11 +726,11 @@
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
-  </div>
+  </div> 
   </footer>
 
 
-
+ 
 
     <script>
 
@@ -943,8 +743,8 @@
 		window.open('home_hindi.html',"_self");
 		}
 	});
-
-	</script>
+                                         
+	</script> 
   <script>
     const chk = document.getElementById('chk');
 
@@ -952,20 +752,17 @@ chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
 </script>
-
   <script>
     $("input#submitButton").click(function () {
       const name = document.querySelector("#name");
-      const surname = document.querySelector("#surname");
-      const nickname = document.querySelector("#nickname");
-      const relative = document.querySelector("#relative");
-      const relativeregional = document.querySelector("#relativeregional");
+      const partNumber = document.querySelector("#partNo");
+      const serialNumber = document.querySelector("#serialNo");
+      const picNumber = document.querySelector("#picNo");
       const nameregional = document.querySelector("#nameregional");
-      const nicknameregional = document.querySelector("#nicknameregional");
-      console.log(name);
-      console.log(nickname);
-      console.log(relative);
-      if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+      const mobile = document.querySelector("#MobNo");
+      const email = document.querySelector("#email");
+       
+      if(name.value.length == 0 | nameregional.value.length==0 | partNumber.value.length == 0|serialNumber.value.length == 0|picNumber.value.length == 0|email.value.length == 0|mobile.value.length == 0) {
         swal("Please fill all the required details","","info");
       } else {
         swal("Form successfully submitted","","success");
@@ -1649,6 +1446,7 @@ chk.addEventListener('change', () => {
       let code = a + b + c + d + e + f + g;
       return code;
     }
+
     submitBtn.addEventListener('click', () => {
       let val = input.value;
       if (val == '') {
@@ -1661,6 +1459,7 @@ chk.addEventListener('change', () => {
         alert('invalid input !');
       }
     })
+
     readTextBtn.addEventListener('click', () => {
       let text = code.textContent;
       responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });
@@ -1673,7 +1472,7 @@ chk.addEventListener('change', () => {
     $(document).ready(function(){
       var scrollTopButton = document.getElementById("scrollToTopButton");
       window.onscroll = function () { scrollFunction() };
-
+  
       function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollTopButton.style.display = "block";
@@ -1681,11 +1480,11 @@ chk.addEventListener('change', () => {
         scrollTopButton.style.display = "none";
       }
     }
-
+  
     $("#scrollToTopButton").click(function(){
     $('html ,body').animate({scrollTop : 0},800)
   });
-  });
+  }); 
   </script>
   <script src="js/video.js"></script>
   <script>

@@ -388,76 +388,6 @@ tr td{
     justify-content: center;
   }
 }
-.faq{
-    margin-left: 0px;
-}
-.FAQ{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: xxx-large;
-    font-style: initial;
-}
-.container1{
-    width: 50%;
-    max-width: 80rem;
-    margin: 0px auto;
-    padding: 0px 1.5rem;
-    margin-left: auto;
-    margin-top: -26px;
-}
-.accordian-item{
-    background-color: #ccc;
-    border-radius: .4rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    box-shadow: .5rem 2px .5rem rgba(lightgrey);
-}
-.accordian-link{
-    font-size: -0.6rem;
-    color: rgba(black);
-    text-decoration: none;
-    background-color: #ccc;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-.accordian-link i{
-    color: black;
-    padding: .5rem;
-}
-.accordian-link .ion-md-remove{
-    display: none;
-}
-.answer{
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    background-color:white;
-    transition: max-height 650ms;
-}
-.answer::before{
-    content: "";
-    position: absolute;
-    width: 0.6rem;
-    height: 90%;
-    background-color: lightslategrey;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-.answer p{
-    font-size: -0.6rem;
-    padding: 2rem;
-}
-.accordian-item:target .answer{
-    max-height: 20rem;
-}
-.accordian-item:target .accordian-link .ion-md-remove{
-    display: block;
-}
 
 @media screen and (max-width: 786px){
   .faq{
@@ -881,4 +811,61 @@ h3 {
   .three h4{
     text-align: left;
   }
+}
+
+
+ 
+.accordion{
+  max-width: 80rem;
+ } 
+ .accordion-item{ 
+  border-radius: 2px;
+  margin-bottom: 1rem; 
+  border: none;
+  box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
+} 
+
+.accordion-link{
+  color: rgb(0, 0, 0);
+  width: 100%;
+  background-color: rgb(253, 155, 116);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem .7rem;
+  position: relative;
+
+}
+.accordion-link:hover{
+    text-decoration: none;
+    color: black;
+}
+.accordion-link::after{
+  content: "\002B";
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s ease-in-out;
+
+
+}
+
+.accordion-link.active::after{
+transform: rotate(45deg);
+}
+
+
+
+.accordion-link i{
+  color: #e7d5ff;
+  padding: .3rem;
+}
+
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.2s ease-out;
+  
 }

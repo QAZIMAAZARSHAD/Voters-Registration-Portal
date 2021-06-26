@@ -1284,4 +1284,7 @@ ol, ul{
 
 
 }
-
+.required-field::before {
+  content: "*";
+  color: red;
+}
