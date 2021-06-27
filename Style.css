@@ -42,8 +42,8 @@ body.dark {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 0.6px;
-  left: 1px;
+  top: 0px;
+  left: 0px;
   height: 22px;
   width: 22px;
   transform: translateX(0px);
