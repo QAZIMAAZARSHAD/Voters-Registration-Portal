@@ -275,9 +275,9 @@
         </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
           <option> --Choose District -- </option>
-
-
-        </select><br><br>
+        </select>
+        <br>
+        <br>
         <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
           <option value="null">Select</option>
@@ -356,13 +356,12 @@
 
       <div class="descrip">(F) The correct particulars in entry to be corrected are as below</div><br>
       <div class="conatinerFluid">
-        (A) Name 
+        Name 
         <input type="text" name="" class="nameI zoomeffect" id="" placeholder="(In English)">
 
         <input type="text" name="" id="" class="nameI zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
-        (B)
         Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)">
         <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>       
@@ -395,13 +394,65 @@
 
         Pin Code 
         <input type="number" name="" class="AddressI zoomeffect" id="" placeholder="">
+        <br>
+        <br>
 
-        <span class="district">
-            District 
-          </span>
-          <select class="AddressI btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
-            <option> --Choose District -- </option>
+          <span>State</span>
+          <select class="" name="slct2" id="slct2"
+            onchange="populate(this.id,'slctc')" style="width:156px !important;  font-size: 15px;">
   
+            <option> --Choose State -- </option>
+            <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+            <option value="andhra pradesh"> ANDHRA PRADESH</option>
+            <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+            <option value="assam"> ASSAM</option>
+            <option value="bihar"> BIHAR</option>
+            <option value="chandigarh"> CHANDIGARH</option>
+            <option value="chattisgarh"> CHATTISGARH</option>
+            <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+            <option value="daman and diu"> DAMAN AND DIU</option>
+            <option value="delhi"> DELHI</option>
+            <option value="goa"> GOA</option>
+            <option value="gujarat"> GUJARAT</option>
+            <option value="haryana"> HARYANA</option>
+            <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+            <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+            <option value="jharkhand"> JHARKHAND</option>
+            <option value="karnataka"> KARNATAKA</option>
+            <option value="kerala"> KERALA</option>
+            <option value="ladakh"> LADAKH</option>
+            <option value="lakshadweep"> LAKSHADWEEP</option>
+            <option value="madhya pradesh"> MADHYA PRADESH</option>
+            <option value="maharashtra"> MAHARASHTRA</option>
+            <option value="manipur"> MANIPUR</option>
+            <option value="meghalaya"> MEGHALAYA</option>
+            <option value="mizoram">MIZORAM</option>
+            <option value="nagaland"> NAGALAND</option>
+            <option value="odisha"> ODISHA</option>
+            <option value="puducherry">PUDUCHERRY </option>
+            <option value="punjab"> PUNJAB</option>
+            <option value="rajasthan"> RAJASTHAN</option>
+  
+            <option value="sikkim"> SIKKIM</option>
+            <option value="tamil nadu"> TAMIL NADU</option>
+            <option value="telangana"> TELANGANA</option>
+            <option value="tripura"> TRIPURA</option>
+            <option value="uttar pradesh"> UTTAR PRADESH</option>
+            <option value="uttarakhand"> UTTARAKHAND</option>
+            <option value="west bengal">WEST BENGAL</option>
+  
+          </select>
+
+          <br>
+          <br>
+  
+          <span class="district">
+            District
+          </span>
+          <select class="" name="slctc" id="slctc">
+            <option> --Choose District -- </option>
+          </select><br><br>
+
   
         </select><br><br><hr>
 
@@ -1140,7 +1191,8 @@
         var optionArray = ['alipurduar district|Alipurduar District', 'bankura|Bankura', 'basirhat hd(north 24 parganas)|Basirhat HD(North 24 Pargana)', 'birbhum|Birbhum', 'bishnupur hd(bankura)|Bishnupur HD(Bankura)', 'coochbehar|Coochbehar', 'dakshin dinajpur|Dakshin DInajpur', 'darjeeling|Darjeeling', 'diamond harbor hd(south 24 pargana)|Diamond Harbor HD(South 24 Pargana)', 'east bardhaman|East Bardhaman', 'hoogly|Hoogly', 'howrah|Howrah', 'jalpaiguri|Jalpaiguri', 'jhargram|Jhargram', 'kalimpong|Kalimpong', 'kolkata|Kolkata', 'malda|Malda', 'murshidabad|Murshidabad', 'nadia|Nadia', 'nandigram hd(east medinipore)|Nandigram HD(East Medinipore)', 'north 24 parganas|North 24 Parganas', 'paschim medinipore|Paschim MEdinipore', 'purba medinipore|Purba Medinipore', 'purulia|Purulia', 'rampurhat hd(birbhum)|Rampurhat HD(Birbhum)', 'south 24 parganas|South 24 Parganas', 'uttar dinajpur|Uttar Dinajpur', 'west bardhaman|West Bardhaman'];
       }
 
-      for (var option in optionArray) {
+      for (var option in optionArray) 
+      {
         var pair = optionArray[option].split("|");
         var newoption = document.createElement("option");
 
