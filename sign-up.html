@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="Email" class="form-label required-field">Email address</label>
-                                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                  <input type="email" class="form-control" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
                                   <label for="password1" class="form-label required-field">Password</label>
@@ -209,6 +209,9 @@ chk.addEventListener('change', () => {
             else if(l_name == ''){
               giveAlert('Please enter your LastName!','info');
             }
+            else if(email == ''){
+              giveAlert('Please enter your Email address!','info');
+            }
             else if(pwd1==''){
               giveAlert('Please enter your Password!','info');
             }
@@ -225,7 +228,7 @@ chk.addEventListener('change', () => {
               giveAlert('Please enter your valid mobile number!','info');
             }
             else if(zip ==''){
-              giveAlert('Please enter your valid mobile number!','info');
+              giveAlert('Please enter your valid Zip Code!','info');
             }
             else if(mob_num =='' || mob_num >= 10000000000 || mob_num <= 999999999){
               giveAlert('Please enter your valid mobile number!','info');
