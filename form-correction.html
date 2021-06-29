@@ -275,9 +275,9 @@
         </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
           <option> --Choose District -- </option>
-
-
-        </select><br><br>
+        </select>
+        <br>
+        <br>
         <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
           <option value="null">Select</option>
@@ -292,6 +292,7 @@
 
       <!-- form part 2 starts -->
       <br> 
+
       <div class="descrip">Applicant's Details</div><br>
       <br>
       <div class="conatinerFluid">
@@ -332,19 +333,18 @@
         (E) Please tick the entry which is to be corrected
       </div><br>
 
-      <div class="conatinerFluid">
+      <div class="conatinerFluid" >
 
         <br>
-        <fieldset>
-          <input type="checkbox" name="" id=""> Name<br>
-          <input type="checkbox" name="" id=""> My photograph<br>
-          <input type="checkbox" name="" id=""> Elector's Photo Identity Card Number(if issued)<br>
-          <input type="checkbox" name="" id=""> Address<br>
-          <input type="checkbox" name="" id=""> Date of Birth<br>
-          <input type="checkbox" name="" id=""> Gender<br>
-          <input type="checkbox" name="" id=""> Type of Relation<br>
-          <input type="checkbox" name="" id=""> Name of Relative<br>
-          <input type="checkbox" name="" id=""> Age<br>
+        <fieldset id="boxes">
+          <input type="checkbox" name="" id="nmC"> Name<br>
+          <input type="checkbox" name="" id="pgC"> My photograph<br>
+          <input type="checkbox" name="" id="adC"> Address<br>
+          <input type="checkbox" name="" id="dbC"> Date of Birth<br>
+          <input type="checkbox" name="" id="gC"> Gender<br>
+          <input type="checkbox" name="" id="rC"> Type of Relation<br>
+          <input type="checkbox" name="" id="RelC"> Name of Relative<br>
+          <input type="checkbox" name="" id="AgeC"> Age<br>
         </fieldset>
         <br><br>
       </div>
@@ -356,52 +356,103 @@
 
       <div class="descrip">(F) The correct particulars in entry to be corrected are as below</div><br>
       <div class="conatinerFluid">
-        (A) Name 
-        <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)">
+        Name 
+        <input type="text" name="" class="nameI zoomeffect" id="" placeholder="(In English)">
 
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
+        <input type="text" name="" id="" class="nameI zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
-        (B)
         Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)">
         <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>       
         <hr>
 
         House/Door Number 
-        <input type="text" name="" class="zoomeffect" id="houseNo" placeholder="(In English)"> 
+        <input type="text" name="" class="AddressI zoomeffect" id="" placeholder="(In English)"> 
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
       
         Street/Area/Locality/ Mohalla/Road 
-        <input type="text" name="" class="zoomeffect" id="address" placeholder="(In English)"> 
-        <input type="text" name="" id="addressReg" class="zoomeffect" placeholder="(In Regional)">
+        <input type="text" name="" class="AddressI zoomeffect" id="" placeholder="(In English)"> 
+        <input type="text" name="" id="" class="AddressI zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
      
         Village / Town 
-        <input type="text" name="" class="zoomeffect" id="vill" placeholder="(In English)">
+        <input type="text" name="" class="AddressI zoomeffect" id="" placeholder="(In English)">
 
-        <input type="text" name="" id="villRegional" class="zoomeffect" placeholder="(In Regional)">
+        <input type="text" name="" id="" class="AddressI zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
         Post Office 
-        <input type="text" name="" class="zoomeffect" id="postOf" placeholder="(In English)">
+        <input type="text" name="" class="AddressI zoomeffect" id="" placeholder="(In English)">
 
-        <input type="text" name="" id="postOfRegional" class="zoomeffect" placeholder="(In Regional)">
+        <input type="text" name="" id="" class="AddressI zoomeffect" placeholder="(In Regional)">
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
         Pin Code 
-        <input type="number" name="" class="zoomeffect" id="pcode" placeholder="">
+        <input type="number" name="" class="AddressI zoomeffect" id="" placeholder="">
+        <br>
+        <br>
 
-        <span class="district">
-            District 
-          </span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
-            <option> --Choose District -- </option>
+          <span>State</span>
+          <select class="" name="slct2" id="slct2"
+            onchange="populate(this.id,'slctc')" style="width:156px !important;  font-size: 15px;">
   
+            <option> --Choose State -- </option>
+            <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+            <option value="andhra pradesh"> ANDHRA PRADESH</option>
+            <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+            <option value="assam"> ASSAM</option>
+            <option value="bihar"> BIHAR</option>
+            <option value="chandigarh"> CHANDIGARH</option>
+            <option value="chattisgarh"> CHATTISGARH</option>
+            <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+            <option value="daman and diu"> DAMAN AND DIU</option>
+            <option value="delhi"> DELHI</option>
+            <option value="goa"> GOA</option>
+            <option value="gujarat"> GUJARAT</option>
+            <option value="haryana"> HARYANA</option>
+            <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+            <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+            <option value="jharkhand"> JHARKHAND</option>
+            <option value="karnataka"> KARNATAKA</option>
+            <option value="kerala"> KERALA</option>
+            <option value="ladakh"> LADAKH</option>
+            <option value="lakshadweep"> LAKSHADWEEP</option>
+            <option value="madhya pradesh"> MADHYA PRADESH</option>
+            <option value="maharashtra"> MAHARASHTRA</option>
+            <option value="manipur"> MANIPUR</option>
+            <option value="meghalaya"> MEGHALAYA</option>
+            <option value="mizoram">MIZORAM</option>
+            <option value="nagaland"> NAGALAND</option>
+            <option value="odisha"> ODISHA</option>
+            <option value="puducherry">PUDUCHERRY </option>
+            <option value="punjab"> PUNJAB</option>
+            <option value="rajasthan"> RAJASTHAN</option>
+  
+            <option value="sikkim"> SIKKIM</option>
+            <option value="tamil nadu"> TAMIL NADU</option>
+            <option value="telangana"> TELANGANA</option>
+            <option value="tripura"> TRIPURA</option>
+            <option value="uttar pradesh"> UTTAR PRADESH</option>
+            <option value="uttarakhand"> UTTARAKHAND</option>
+            <option value="west bengal">WEST BENGAL</option>
+  
+          </select>
+
+          <br>
+          <br>
+  
+          <span class="district">
+            District
+          </span>
+          <select class="" name="slctc" id="slctc">
+            <option> --Choose District -- </option>
+          </select><br><br>
+
   
         </select><br><br><hr>
 
@@ -410,31 +461,31 @@
        
         <br><br>
         Date of Birth 
-        <input class="zoomeffect" type="date" name="" id=""><br>
+        <input class="DoBI zoomeffect" type="date" name="" id=""><br>
         
         <br>
         Age
-        <input type="number" name="" class="zoomeffect" id="name" placeholder="" required>
+        <input type="number" name="" class="AgeI zoomeffect" id="" placeholder="" required>
        
         <br><br>
         Relative's Name
-        <input type="text" name="" class="zoomeffect" id="RelativeName" placeholder="(In English)" required>
+        <input type="text" name="" class="RelI zoomeffect" id="" placeholder="(In English)" required>
 
-        <input type="text" name="" id="RelativeNameReg" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="" class="RelI zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
         
         Relative's Surname
-        <input type="text" name="" class="zoomeffect" id="RelativeSurname" placeholder="(In English)" required>
+        <input type="text" name="" class="RelativeSurname zoomeffect" id="" placeholder="(In English)" required>
 
-        <input type="text" name="" id="RelativeSurnameReg" class="zoomeffect" placeholder="(In Regional)" required>
+        <input type="text" name="" id="" class="RelativeSurname zoomeffect" placeholder="(In Regional)" required>
         <button><i class="far fa-keyboard"></i></button><br>
         <br>
 
         <br>
         Relation
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="" id="">
+        <select class="btn btn-secondary btn-sm dropdown-toggle TypeofRelI" name="" id="">
             <option>Select</option>
             <option>Father</option>
             <option>Mother</option>
@@ -445,7 +496,7 @@
 
         <br><br>
         Gender 
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="" id="">
+        <select class="GenderI btn btn-secondary btn-sm dropdown-toggle" name="" id="">
             <option>Select</option>
             <option>Male</option>
             <option>Female </option>
@@ -474,7 +525,7 @@
 
         <br><br> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
 
-        <input type="file" name="" class="docs" onchange="loadFile1(event)">
+        <input type="file" name="" id="pic1" class="docs" onchange="loadFile1(event)">
         Document type
         <sup style="color:rgb(255, 8, 8)"> * </sup>
 
@@ -621,25 +672,25 @@
       </h3>
     </div>
     <div class="helpdeskDiv">
-    <a class="helpdesk" href="help.html" target="">Help
+    <a class="helpdesk" href="help.html" target="_blank">Help
       Desk</a>
     </div>
     <div class="follow-us">
       <h2>Follow Us</h2>
       <div class="icons">
-        <a href="https://www.facebook.com/NationalPortalIndia/">
+        <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
           <i class="fab fa-facebook-f fbi"></i>
         </a>
-        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
           <i class="fab fa-twitter twi"></i>
         </a>
-        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU">
+        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
           <i class="fab fa-youtube yti"></i>
         </a>
-        <a href="https://www.instagram.com/mygovindia/?hl=en">
+        <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
           <i class="fab fa-instagram igi"></i>
         </a>
-        <a href="https://www.linkedin.com/company/government-of-india">
+        <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
           <i class="fab fa-linkedin-in li"></i>
         </a>
       </div>
@@ -745,14 +796,147 @@
 	});
                                          
 	</script> 
+
   <script>
     const chk = document.getElementById('chk');
+    chk.addEventListener('change', () => {
+	    document.body.classList.toggle('dark');
+    });
+  </script>
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
   <script>
+     // function to make & validate MandatoryFields Dynamically
+     function checkMandatoryFieldsDynamically()
+     {
+      // get all fields checkboxes as array
+      const nmc = document.getElementById("boxes").getElementsByTagName("input");
+
+       // Field input Values
+       const nameI = document.getElementsByClassName("nameI");
+       const AddressI = document.getElementsByClassName("AddressI");
+       const DoBI = document.getElementsByClassName("DoBI");
+       const GenderI = document.getElementsByClassName("GenderI");
+       const TypeofRelI = document.getElementsByClassName("TypeofRelI");
+       const RelI = document.getElementsByClassName("RelI");
+       const AgeI = document.getElementsByClassName("AgeI");
+       const photoI = document.getElementById("pic1");
+ 
+       fields=true;
+       if(nmc[0].checked)
+       {
+         for(i=0;i<nameI.length;i++)
+         {
+            if(nameI[i].value.length==0)
+            {
+               fields=false;
+               swal("Please fill the name for Correction in both Regional & English","","info");
+               break;
+            }
+         }
+         
+       }
+ 
+       if(fields & nmc[1].checked)
+       {
+         if(photoI.files.length==0)
+         {
+             fields=false;
+             swal("Please choose a photograph","","info");
+             
+         }
+       }
+ 
+       if(fields & nmc[2].checked)
+       {
+         const v=AddressI.length;
+         for(i=0;i<v.length-1;i++)
+         {
+            if(AddressI[i].value.length==0)
+            {
+               fields=false;
+               swal("Please fill all Address Fields in both Regional & English for correction","","info");
+               break;
+            }
+         }
+ 
+         if(AddressI[v.length-1].value == '--Choose District --')
+         {
+           fields=false;
+           swal("Please fill all Address Fields in both Regional & English for correction","","info");
+         }
+       }
+ 
+       if(fields & nmc[3].checked)
+       {
+         for(i=0;i<DoBI.length;i++)
+         {
+            if(DoBI[i].value.length==0)
+            {
+               fields=false;
+               swal("Please fill the DoB for Correction","","info");
+               break;
+            }
+         }
+       }
+      
+       if(fields & nmc[4].checked)
+       {
+         for(i=0;i<GenderI.length;i++)
+         {
+            console.log(GenderI[i].value);
+            if(GenderI[i].value=='Select')
+            {
+               fields=false;
+               swal("Please fill the Gender for Correction","","info");
+               break;
+            }
+         }
+       }
+       if(fields & nmc[5].checked)
+       {
+         for(i=0;i<TypeofRelI.length;i++)
+         {
+            if(TypeofRelI[i]=='Select')
+            {
+               fields=false;
+               swal("Please fill the type of Relation for Correction","","info");
+               break;
+            }
+         }
+       }
+       if(fields & nmc[6].checked)
+       {
+         for(i=0;i<RelI.length;i++)
+         {
+            if(RelI[i].value.length==0)
+            {
+               fields=false;
+               swal("Please fill the relative name for Correction in both Regional & English","","info");
+               break;
+            }
+         }
+       }
+ 
+       if(fields & nmc[7].checked)
+       {
+         for(i=0;i<AgeI.length;i++)
+         {
+            if(AgeI[i].value.length==0)
+            {
+               fields=false;
+               swal("Please fill the Age for correction","","info");
+               break;
+            }
+         }
+       }
+       
+       return fields;
+
+     }
+  </script>
+
+  <script>
+  
     $("input#submitButton").click(function () {
       const name = document.querySelector("#name");
       const partNumber = document.querySelector("#partNo");
@@ -761,11 +945,18 @@ chk.addEventListener('change', () => {
       const nameregional = document.querySelector("#nameregional");
       const mobile = document.querySelector("#MobNo");
       const email = document.querySelector("#email");
-       
-      if(name.value.length == 0 | nameregional.value.length==0 | partNumber.value.length == 0|serialNumber.value.length == 0|picNumber.value.length == 0|email.value.length == 0|mobile.value.length == 0) {
-        swal("Please fill all the required details","","info");
-      } else {
+
+      const fields = checkMandatoryFieldsDynamically();   
+      
+      if(fields)
+      { 
+        if(name.value.length == 0 | nameregional.value.length==0 | partNumber.value.length == 0|serialNumber.value.length == 0|picNumber.value.length == 0|email.value.length == 0|mobile.value.length == 0)
+        {
+          swal("Please fill all the required fields in Applicant's details","","info");
+        } else
+        {
         swal("Form successfully submitted","","success");
+        }
       }
     });
   </script>
@@ -1000,7 +1191,8 @@ chk.addEventListener('change', () => {
         var optionArray = ['alipurduar district|Alipurduar District', 'bankura|Bankura', 'basirhat hd(north 24 parganas)|Basirhat HD(North 24 Pargana)', 'birbhum|Birbhum', 'bishnupur hd(bankura)|Bishnupur HD(Bankura)', 'coochbehar|Coochbehar', 'dakshin dinajpur|Dakshin DInajpur', 'darjeeling|Darjeeling', 'diamond harbor hd(south 24 pargana)|Diamond Harbor HD(South 24 Pargana)', 'east bardhaman|East Bardhaman', 'hoogly|Hoogly', 'howrah|Howrah', 'jalpaiguri|Jalpaiguri', 'jhargram|Jhargram', 'kalimpong|Kalimpong', 'kolkata|Kolkata', 'malda|Malda', 'murshidabad|Murshidabad', 'nadia|Nadia', 'nandigram hd(east medinipore)|Nandigram HD(East Medinipore)', 'north 24 parganas|North 24 Parganas', 'paschim medinipore|Paschim MEdinipore', 'purba medinipore|Purba Medinipore', 'purulia|Purulia', 'rampurhat hd(birbhum)|Rampurhat HD(Birbhum)', 'south 24 parganas|South 24 Parganas', 'uttar dinajpur|Uttar Dinajpur', 'west bardhaman|West Bardhaman'];
       }
 
-      for (var option in optionArray) {
+      for (var option in optionArray) 
+      {
         var pair = optionArray[option].split("|");
         var newoption = document.createElement("option");
 

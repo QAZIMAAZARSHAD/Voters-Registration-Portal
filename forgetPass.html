@@ -115,7 +115,7 @@
                               <div class="showPwd">
                                 <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
                               </div>
-                              <div id="passwordhelp" class="form-text">Go back <a href="login.html">Login</a></div>
+                              <div id="passwordhelp" class="form-text">Go back <a href="login.html" target="_blank">Login</a></div>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -151,7 +151,7 @@
         {
           var uname = document.getElementById("Email1").value;
           var pwd = document.getElementById("Password1").value;
-          var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          var filter =  /^([a-zA-Z0-9_\.\-]+)\@([a-zA-Z0-9]+\.*[a-zA-Z0-9]+)\.([a-zA-Z0-9]{2,4})$/;
           if(uname =='')
           {
             giveAlert("please enter email address.","info");
@@ -170,7 +170,7 @@
           }
           else
           {
-            giveAlert,('Your password is reset now You can Redirecting to Login page','success');
+            giveAlert('Your password is reset now You can Redirecting to Login page','success');
             setTimeout(function() {window.location = "login.html" });
           }
         }
@@ -195,25 +195,25 @@
       </h3>
     </div>
     <div class="helpdeskDiv">
-    <a class="helpdesk" href="help.html" target="">Help
+    <a class="helpdesk" href="help.html" target="_blank">Help
       Desk</a>
     </div>
     <div class="follow-us">
       <h2>Follow Us</h2>
       <div class="icons">
-        <a href="https://www.facebook.com/NationalPortalIndia/">
+        <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
           <i class="fab fa-facebook-f fbi"></i>
         </a>
-        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
           <i class="fab fa-twitter twi"></i>
         </a>
-        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU">
+        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
           <i class="fab fa-youtube yti"></i>
         </a>
-        <a href="https://www.instagram.com/mygovindia/?hl=en">
+        <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
           <i class="fab fa-instagram igi"></i>
         </a>
-        <a href="https://www.linkedin.com/company/government-of-india">
+        <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
           <i class="fab fa-linkedin-in li"></i>
         </a>
       </div>

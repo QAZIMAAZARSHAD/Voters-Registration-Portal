@@ -514,8 +514,53 @@
 
       <div class="descrip">
         Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
-        <span">
-          <a href="">List of supported documents</a></span>
+        <span>
+          <button style="display: contents"><u id="myBtn">List of supported documents</u>
+          <div id="myModal" class="modal" style="width:84%;">
+
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4 class="head1">List of Acceptable Supporting Documents For Verification</h4>
+
+                <p><ol class="ol">
+                  <li>Recent passport size photographs</li>
+                  <li>Address proof (any one of the following)</li>
+                    <ul class="ul">
+                      <li>Copy of your Passport</li>
+                      <li>Gas bill</li>
+                      <li>Water bill</li>
+                      <li>Ration Card</li>
+                      <li>Bank Passbook</li>
+                      <li>Aadhaar Card</li>
+                    </ul>
+                  <li>Copy of proof of age</li>
+                    <ul class="ul">
+                        <li>10th Standard Certificate</li>
+                        <li>Birth Certificate</li>
+                        <li>Pan Card</li>
+                        <li>Aadhaar Card</li>
+                        <li>Driving Licence</li>
+                        <li>Copy of Passport</li>
+                        <li>Kisan Card</li>
+                    </ul class="ul">
+                  <li>Identity proof (any one of the following)</li>
+                    <ul class="ul">
+                        <li>Pan Card</li>
+                        <li>Driving Licence</li>
+                        <li>Ration Card</li>
+                        <li>Passport Copy</li>
+                        <li>Bank Passbook with Photograph</li>
+                        <li>SSLC Certificate</li>
+                        <li>Student ID Card</li>
+                        <li>Aadhaar Card</li>
+                    </ul>
+
+                </ol></p>
+              </div>
+
+            </div>
+          </a>&nbsp;&nbsp;&nbsp;</span>
+
       </div>
 
       <div class="conatinerFluid">
@@ -821,25 +866,25 @@
       </h3>
     </div>
     <div class="helpdeskDiv">
-    <a class="helpdesk" href="help.html" target="">Help
+    <a class="helpdesk" href="help.html" target="_blank">Help
       Desk</a>
     </div>
     <div class="follow-us">
       <h2>Follow Us</h2>
       <div class="icons">
-        <a href="https://www.facebook.com/NationalPortalIndia/">
+        <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
           <i class="fab fa-facebook-f fbi"></i>
         </a>
-        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
           <i class="fab fa-twitter twi"></i>
         </a>
-        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU">
+        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
           <i class="fab fa-youtube yti"></i>
         </a>
-        <a href="https://www.instagram.com/mygovindia/?hl=en">
+        <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
           <i class="fab fa-instagram igi"></i>
         </a>
-        <a href="https://www.linkedin.com/company/government-of-india">
+        <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
           <i class="fab fa-linkedin-in li"></i>
         </a>
       </div>
@@ -1701,6 +1746,7 @@ chk.addEventListener('change', () => {
 
 		}
 	</script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
