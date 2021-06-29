@@ -200,8 +200,9 @@ chk.addEventListener('change', () => {
             var mob_num = document.getElementById('number').value;
             var city = document.getElementById('city').value;
             var add1 = document.getElementById('address').value;
-            var zip = document.getElementById('zip_code').value;
-
+            var zip = document.getElementById('zip_code').value;    
+         let emailregx = new
+      RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
             if(f_name == ''){
               //alert("Ghj");
               giveAlert('Please enter your FirstName!','info');
@@ -211,6 +212,9 @@ chk.addEventListener('change', () => {
             }
             else if(email == ''){
               giveAlert('Please enter your Email address!','info');
+            }
+            else if (emailregx.test(email) == false) {
+              giveAlert('Invalid Email Address!', 'info');
             }
             else if(pwd1==''){
               giveAlert('Please enter your Password!','info');
