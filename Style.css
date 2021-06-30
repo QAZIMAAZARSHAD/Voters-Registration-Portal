@@ -971,7 +971,7 @@ ol, ul{
   background-repeat: no-repeat;
   /* height: 540px; */
   opacity: 0.7;
-  height: 87vh;
+  height: fit-content;
   flex: 1 1 auto;
   margin-top: 30px;
 }
@@ -1010,7 +1010,7 @@ ol, ul{
 }
 
 #footer {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 4em;

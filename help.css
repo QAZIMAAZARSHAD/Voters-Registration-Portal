@@ -503,7 +503,7 @@ tr td{
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7;
-  height: 87vh;
+ /* height: 87vh;*/
   flex: 1 1 auto;
   margin-top: 30px;
 }
@@ -543,7 +543,7 @@ tr td{
 }
 
 #footer {
-  padding-top: 60px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 4em;
@@ -814,16 +814,16 @@ h3 {
 }
 
 
- 
+
 .accordion{
   max-width: 80rem;
- } 
- .accordion-item{ 
+ }
+ .accordion-item{
   border-radius: 2px;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   border: none;
   box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
-} 
+}
 
 .accordion-link{
   color: rgb(0, 0, 0);
@@ -867,5 +867,5 @@ transform: rotate(45deg);
   overflow: hidden;
   position: relative;
   transition: max-height 0.2s ease-out;
-  
+
 }

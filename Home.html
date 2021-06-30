@@ -102,7 +102,6 @@
         $(this).attr('checked', $(this).prop("checked"));
       });
     }
-
     function PrintElem(elem) {
       Popup($(elem).html());
     }
@@ -142,20 +141,14 @@
         <div class="logo">
           <a href="#" class="endlogo">
             <img src="./Images/flag.png">
-
           </a>
         </div>
-
         <div class="heading">
           <img class="emblem"  src="./Images/emblem.png"></img>
             <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
             <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
-
-
       </div>
-
-
       <div>
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
@@ -164,21 +157,15 @@
           <div class="ball"></div>
         </label>
       </div>
-
     </div>
-
     <script>
       const chk = document.getElementById('chk');
-
   chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');
   });
   </script>
   </header>
-
   <!-- navbar ends -->
-
-
   <div class="fontsetting">
     <!-- <div class="row"> -->
     <!-- <div class="col col-md-6 col-sm-6"> -->
@@ -188,26 +175,16 @@
     <!-- <div class="col col-md-6 col-sm-6"> -->
     <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
       <!-- </div> -->
-
     </span>
     <br>
     <br>
     <!-- </div> -->
   </div>
-
-
   <!-- font ends -->
-
-
-  <!-- font ends -->
-
-
   <span class="note" id="print">
     <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory
         <span><i class="fa fa-print" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
-
-
   <!-- form starts -->
   <div class="container">
     <div id="container12">
@@ -216,19 +193,15 @@
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
       </div>
-
       <!-- form part 1 starts -->
       <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the
         transfer of voter or any other constituency from any one constituency</div><br><br> In service <br><br>
       Electoral Registration Officer,<br><br>
-
       <!-- -->
       <div class="conatinerFluid">
-
         <span>State</span> <sup style="color:rgb(255, 8, 8)">* </sup>
         <select class="zoomeffect btn btn-secondary btn-sm dropdown-toggle" name="slct7" id="slct7"
           onchange="populate(this.id,'slct8')" style="width:156px !important; padding-left:9px; font-size: 15px;">
-
           <option> --Choose State -- </option>
           <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
           <option value="andhra pradesh"> ANDHRA PRADESH</option>
@@ -260,7 +233,6 @@
           <option value="puducherry">PUDUCHERRY </option>
           <option value="punjab"> PUNJAB</option>
           <option value="rajasthan"> RAJASTHAN</option>
-
           <option value="sikkim"> SIKKIM</option>
           <option value="tamil nadu"> TAMIL NADU</option>
           <option value="telangana"> TELANGANA</option>
@@ -268,27 +240,21 @@
           <option value="uttar pradesh"> UTTAR PRADESH</option>
           <option value="uttarakhand"> UTTARAKHAND</option>
           <option value="west bengal">WEST BENGAL</option>
-
         </select>
-
         <span class="district">
           District
         </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
           <option> --Choose District -- </option>
-
-
         </select><br><br>
         <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
           <option value="null">Select</option>
         </select>
         <br>
-
       </div>
       I request that my name be included in electoral rolls for all the aforesaid areas. <br><br>
       <div class="conatinerFluid">
-
         <ul class="radio">
           <li><input type="radio" name="select" id=""> First time voter<br></li>
           <li><input type="radio" name="select" id=""> Due to transfer from other
@@ -296,11 +262,8 @@
         </ul>
       </div>
       <!-- fprm part 1 ends -->
-
-
       <!-- form part 2 starts -->
       <br> Below are specifications in support of my claim to be included in the electoral rolls. <br><br>
-
       <div class="descrip">Mandatory specifications</div><br>
       <br>
       <div class="conatinerFluid">
@@ -341,15 +304,11 @@
           <option>Wife</option>
           <option>Other</option>
         </select><br><br>
-
-
         <ul class="radio">
           <li>
             <input type="radio" name="select" id="" checked="checked">
             (F) Age [on
             January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup>
-
-
             <input type="text" value="Age" class="zoomeffect field left" readonly></input>
             <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
               <option value="null">Year</option>
@@ -402,25 +361,19 @@
 
         (H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> *
         </sup>
-
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
           <option>Select</option>
           <option>Male</option>
           <option>Female</option>
           <option>Transgender</option>
         </select><br><br>
-
-
       </div>
       <!-- form part 2 ends -->
-
       <!-- form part 3 starts -->
       <div class="descrip">
         Current address where applicant is ordinarily resident
       </div><br>
-
       <div class="conatinerFluid">
-
         <br>House no.
         <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
           placeholder="(In English)" required>
@@ -478,10 +431,7 @@
 
       </div>
       <!-- form part 3 ends -->
-
-
       <!-- form part 4 starts -->
-
       <div class="descrip">Optional specialties</div><br>
       <div class="conatinerFluid">
 
@@ -509,9 +459,7 @@
 
       </div>
       <!-- form part 4 ends -->
-
       <!-- form part 5 starts -->
-
       <div class="descrip">
         Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
         <span>
@@ -560,17 +508,12 @@
 
             </div>
           </a>&nbsp;&nbsp;&nbsp;</span>
-
       </div>
-
       <div class="conatinerFluid">
-
         <br><br> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
-
         <input type="file" name="" class="docs" onchange="loadFile1(event)">
         Document type
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
           <option> .jpg </option>
           <option> .png </option>
@@ -579,11 +522,9 @@
         </select>
         <br> Age proof
         <sup style="color:rgb(255, 8, 8)"> * </sup><br>
-
         <input type="file" name="" class="docs" onchange="loadFile2(event)"> Document type<sup
           style="color:rgb(255, 8, 8)"> *
         </sup>
-
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
           <option> .jpg </option>
           <option> .png </option>
@@ -599,7 +540,6 @@
         Document
         type
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-
         <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
           <option> .jpg </option>
           <option> .png </option>
@@ -607,7 +547,6 @@
           <option> .jpeg </option>
         </select>
         <br><br>
-
         <!-- <div class="row"> -->
         <!-- <div class="col-lg-4 col-md-4"> -->
         <img style="padding: 5px;" id="output1" width="200" height="230" />
@@ -622,9 +561,6 @@
 
       </div>
       <!-- form part 5 ends -->
-
-
-
       <!-- form part 6 starts -->
 
       <div class="descrip">Declaration</div><br><br>
@@ -645,7 +581,6 @@
         </div>
         Select state
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct1" id="slct1"
           onchange="populate(this.id,'slct2')" style="width:156px !important; padding-left:9px; font-size: 15px;">
           <option> --Choose State -- </option>
@@ -687,24 +622,15 @@
           <option value="uttar pradesh"> UTTAR PRADESH</option>
           <option value="uttarakhand"> UTTARAKHAND</option>
           <option value="west bengal">WEST BENGAL</option>
-
         </select>
-
-
-
-
         <span class="district">
           District
         </span>
         <sup style="color:rgb(255, 8, 8)"> * </sup>
-
         <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct2" id="slct2">
           <option> --Choose District -- </option>
-
         </select>
       </div>
-
-
       <br><br>
       (ii) I am ordinarily resident at the address given above since Date
       <sup style="color:rgb(255, 8, 8);"> * </sup>
@@ -763,7 +689,6 @@
               <option value="puducherry">PUDUCHERRY </option>
               <option value="punjab"> PUNJAB</option>
               <option value="rajasthan"> RAJASTHAN</option>
-
               <option value="sikkim"> SIKKIM</option>
               <option value="tamil nadu"> TAMIL NADU</option>
               <option value="telangana"> TELANGANA</option>
@@ -771,7 +696,6 @@
               <option value="uttar pradesh"> UTTAR PRADESH</option>
               <option value="uttarakhand"> UTTARAKHAND</option>
               <option value="west bengal">WEST BENGAL</option>
-
             </select>
             <br>
             State in which I was ordinarily resident earlier at the address mentioned below and if so, I request that
@@ -782,13 +706,11 @@
         </ul>
         <br>
         <hr>
-
         Location
         <sup style="color:rgb(255, 8, 8)"> * </sup>
         <input class="zoomeffect" type="text" name="" id="" required>
         date <input class="zoomeffect" type="date" name="" id=""><br>
       </div>
-
       <br><input type="radio" name="select" id=""> I am aware that making a statement or declaration which
       is false and which I
       know or believe to be false or do not believe to be true, is
@@ -804,16 +726,13 @@
           <div class="icons">
             <span class="readText" style="align-items: center;">
               <i class="fas fa-headphones"></i>
-
             </span>
             <span class="changeText">
               <i class="fas fa-sync-alt"></i>
             </span>
-
             <input type="text" placeholder="Type the text here">
           </div>
         </div>
-
       </div>
       <br>
       <br>
@@ -837,19 +756,13 @@
 
       </div> -->
       <div class="myBtn">
-
         <input type="reset" class="btn btn-success" value="Reset">
         <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
       </div>
     </form>
   </div>
-
-
   <!-- footer starts -->
-
   <footer id="ft">
-
-
   <div id="footer">
     <div class="one">
       <div class="contact">
@@ -890,7 +803,6 @@
       </div>
     </div>
     </div>
-
     <div class="two">
       <h2>NATIONAL VOTER PORTAL Head Office</h2>
       <h3>unique identification authority of india</h3>
@@ -904,8 +816,6 @@
       <h3>National Voter Portal Regional Office, Delhi</h3>
       <h3>Ground floor, pragati maidan metro station, new delhi - 110001</h3>
     </div>
-
-
     <div class="three">
       <h4>Website Policy</h4>
       <h4>terms and conditions</h4>
@@ -917,7 +827,6 @@
       <h4>feedback</h4>
       <h4>sitemap</h4>
     </div>
-
     <div class="four">
       <h2>Government of India</h2>
       <h4>Integrity Pledge
@@ -925,59 +834,42 @@
       </h4>
         <ul>
           <li>
-
             <a href="#">
               My Gov <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="#">
               National Voter Portal
               <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="#">
               Digital India <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="#">
               GST.gov.in <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="#">
               DBT Bharatpur <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
         </ul>
     </div>
   </div>
-
-
-
   <div class="footer-down">
-  <div class="copyright">
+  <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
   </div>
   </footer>
-
-
-
-
-    <script>
+  <script>
 
 	$('#lang-switch').change(function () { // put onchange event when user select option from select
 		var lang = $(this).val(); // decide which language to display using if else.
@@ -1017,9 +909,6 @@ chk.addEventListener('change', () => {
       }
     });
   </script>
-
-
-
   <script>
     var loadFile1 = function (event) {
       var image1 = document.getElementById('output1');
@@ -1034,7 +923,6 @@ chk.addEventListener('change', () => {
       image.src = URL.createObjectURL(event.target.files[0]);
     };
   </script>
-
   <script>
     $(document).ready(function () {
       $('#pincode').focusout(function () {
@@ -1055,14 +943,11 @@ chk.addEventListener('change', () => {
       });
     });
   </script>
-
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
   </script>
-
-
   <script>
 
     function populate(s3, s4) {
@@ -1257,11 +1142,7 @@ chk.addEventListener('change', () => {
         s4.options.add(newoption);
       }
     }
-
-
-
   </script>
-
   <script>
 
     function populate(s7, s8) {
@@ -1456,15 +1337,8 @@ chk.addEventListener('change', () => {
         s8.options.add(newoption);
       }
     }
-
-
-
   </script>
-
-
-
   <script>
-
     function populate(s1, s2) {
       var s1 = document.getElementById(s1);
       var s2 = document.getElementById(s2);
@@ -1657,14 +1531,9 @@ chk.addEventListener('change', () => {
         s2.options.add(newoption);
       }
     }
-
-
-
   </script>
 
   <!-- script for captcha and speaker -->
-
-
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script>
