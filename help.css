@@ -503,6 +503,7 @@ tr td{
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7;
+ /* height: 87vh;*/
   flex: 1 1 auto;
   margin-top: 30px;
 }
@@ -542,7 +543,7 @@ tr td{
 }
 
 #footer {
-  padding-top: 60px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 4em;
@@ -598,6 +599,13 @@ tr td{
 .twi:hover {
   background-color: #1da1f2;
   color: white;
+}
+
+h3 {
+  color: brown;
+  /* margin-left: 4px; Blocked for the footer*/
+  font-weight: 1;
+  padding-top: 10px;
 }
 
 .yti {
@@ -726,8 +734,9 @@ tr td{
   color: black;
 }
 
-@media(max-width: 1240px) {
-  #footer {
+@media (max-width: 1240px) {
+
+  #footer{
     margin: 30px 50px;
   }
 }
@@ -773,6 +782,8 @@ tr td{
 @media(max-width: 620px) {
   #footer {
     grid-template-columns: 1fr;
+    padding-top: 30px;
+    grid-gap: 2rem;
   }
   #ft {
     height: fit-content;
@@ -787,20 +798,32 @@ tr td{
 @media(max-width: 411px) {
   #footer {
     margin: 30px 50px;
+    padding-top: 30px;
+    grid-gap: 2rem;
+  }
+
+  .two select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 2px;
+  }
+
+  .three h4{
+    text-align: left;
   }
 }
 
 
- 
+
 .accordion{
   max-width: 80rem;
- } 
- .accordion-item{ 
+ }
+ .accordion-item{
   border-radius: 2px;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   border: none;
   box-shadow: .5rem 2px .5rem rgba(179, 63, 63, 0.1);
-} 
+}
 
 .accordion-link{
   color: rgb(0, 0, 0);
@@ -844,5 +867,5 @@ transform: rotate(45deg);
   overflow: hidden;
   position: relative;
   transition: max-height 0.2s ease-out;
-  
+
 }
