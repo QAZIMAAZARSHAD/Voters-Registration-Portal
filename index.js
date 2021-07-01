@@ -11,29 +11,6 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// Get current title and icon
-var title = $('title').text();
-var favicon = $('link[rel=icon]').attr('href');
-var newtitle = 'Please Visit Again!';
-
-// Active
-window.addEventListener('focus', resetTitleicon);
-
-// Inactive
-window.addEventListener('blur', changeTitleicon);
-
-// Change page title and icon
-function changeTitleicon(){
- $("title").text(newtitle); 
- $('link[rel=icon]').attr('href', 'folded.png');
-}
-
-// Reset the page title and icon
-function resetTitleicon(){
- $('title').text(title);
- $('link[rel=icon]').attr('href', 'fav');
-}
 //
 // alert(<div id="myModal" class="modal" style="width:84%;">
 //
