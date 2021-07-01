@@ -286,7 +286,7 @@ body.dark {
   font-size: min(4vw, 90px);
   font-weight: bolder;
   color: white;
-  animation: typing 2.3s steps(28, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(28, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -294,7 +294,7 @@ body.dark {
     width: 0px;
   }
   to {
-    width: 100%;
+    width: 35%;
   }
 }
 @keyframes blink-caret {
