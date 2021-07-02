@@ -5,7 +5,6 @@
   /* border: 1px solid red; Debuggin code*/
 }
 
-
 body {
   background-color: #fafafa;
   margin: 0;
@@ -84,11 +83,10 @@ body.dark {
     width: 20px;
   }
 
-  .icons input{
+  .icons input {
     position: relative;
     left: 30px;
   }
-
 }
 @media screen and (max-width: 575px) {
   .label {
@@ -116,8 +114,9 @@ body.dark {
   }
 }
 
-@media screen and (max-width: 500px){
-  .fa-moon, .fa-sun{
+@media screen and (max-width: 500px) {
+  .fa-moon,
+  .fa-sun {
     font-size: 4px;
   }
 }
@@ -286,7 +285,7 @@ body.dark {
   font-size: min(4vw, 90px);
   font-weight: bolder;
   color: white;
-  animation: typing 2.3s steps(28, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(28, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -294,7 +293,7 @@ body.dark {
     width: 0px;
   }
   to {
-    width: 100%;
+    width: 35%;
   }
 }
 @keyframes blink-caret {
@@ -606,25 +605,25 @@ ul {
   display: block;
 }
 
-@media screen and (max-width: 625px){
-  .conatinerFluid select{
+@media screen and (max-width: 625px) {
+  .conatinerFluid select {
     margin-top: 5px;
     margin-right: 20px;
   }
 
-  .conatinerFluid span{
-    display:block;
-    white-space:normal;
+  .conatinerFluid span {
+    display: block;
+    white-space: normal;
   }
 }
 
-@media screen and (max-width: 425px){
-  .conatinerFluid span{
-    display:block;
-    white-space:normal;
+@media screen and (max-width: 425px) {
+  .conatinerFluid span {
+    display: block;
+    white-space: normal;
   }
 
-  .icons input{
+  .icons input {
     left: -30px;
   }
 }
@@ -754,50 +753,50 @@ textarea {
   border-radius: 50% !important;
 }
 
-.showPwd{
+.showPwd {
   position: relative;
   left: 269px;
   bottom: -7px;
 }
 
-#newuser{
-  text-align:right;
-  font-size:15px;
+#newuser {
+  text-align: right;
+  font-size: 15px;
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 992px){
-  .showPwd{
+@media screen and (max-width: 992px) {
+  .showPwd {
     left: 20px;
     padding-bottom: 20px;
   }
-  #newuser{
+  #newuser {
     text-align: left;
     padding-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 768px){
-  .showPwd{
+@media screen and (max-width: 768px) {
+  .showPwd {
     left: 20px;
     padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .showPwd{
+  .showPwd {
     left: 20px;
     padding-bottom: 10px;
   }
 
-  #newuser{
+  #newuser {
     text-align: left;
     padding-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .showPwd{
+  .showPwd {
     left: 20px;
   }
 }
@@ -911,7 +910,7 @@ h1 {
     display: block;
   }
 
-  .icons input{
+  .icons input {
     left: -30px;
   }
 }
@@ -939,7 +938,6 @@ h1 {
   color: black;
 }
 
-
 #scrollToTopButton {
   position: fixed;
   bottom: 40px;
@@ -960,7 +958,8 @@ h1 {
 
 /* **********Footer style************ */
 
-ol, ul{
+ol,
+ul {
   padding-left: 0rem;
 }
 
@@ -981,7 +980,6 @@ ol, ul{
   width: 90%;
   border-radius: 1px;
 }
-
 
 .footer-down {
   text-align: center;
@@ -1156,7 +1154,7 @@ ol, ul{
   color: white;
 }
 
-.four ul{
+.four ul {
   padding-left: 0rem;
 }
 
@@ -1178,7 +1176,7 @@ ol, ul{
   display: flex;
 }
 
-.showPwd1{
+.showPwd1 {
   position: relative;
   left: 164px;
   bottom: -7px;
@@ -1190,17 +1188,17 @@ ol, ul{
   }
 }
 
-@media(max-width: 1074px) {
+@media (max-width: 1074px) {
   #footer {
     grid-template-columns: 1fr 2fr 1fr 1fr;
   }
 
-  .showPwd1{
+  .showPwd1 {
     left: 90px;
   }
 }
 
-@media(max-width: 990px) {
+@media (max-width: 990px) {
   #footer {
     grid-template-columns: 1fr 1fr;
   }
@@ -1213,7 +1211,8 @@ ol, ul{
   .icons {
     margin-top: 10px;
   }
-  .two h2, .four h2 {
+  .two h2,
+  .four h2 {
     margin-bottom: 0px;
     font-size: 19px;
   }
@@ -1221,13 +1220,12 @@ ol, ul{
     margin-bottom: 5px;
   }
 
-  .showPwd1{
+  .showPwd1 {
     left: 20px;
   }
-
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   #ft {
     /* height: 105vh; */
     height: fit-content;
@@ -1235,7 +1233,7 @@ ol, ul{
   }
 }
 
-@media(max-width: 620px) {
+@media (max-width: 620px) {
   #footer {
     grid-template-columns: 1fr;
     padding-top: 30px;
@@ -1249,12 +1247,12 @@ ol, ul{
     display: flex;
     justify-content: space-between;
   }
-  .showPwd1{
+  .showPwd1 {
     left: 20px;
   }
 }
 
-@media(max-width: 411px) {
+@media (max-width: 411px) {
   #footer {
     margin: 30px 50px;
     padding-top: 30px;
@@ -1267,7 +1265,7 @@ ol, ul{
     padding: 5px 2px;
   }
 
-  .three h4{
+  .three h4 {
     text-align: left;
   }
 }
@@ -1281,21 +1279,18 @@ ol, ul{
   .note {
     display: none;
   }
-
-
 }
 .required-field::before {
   content: "*";
   color: red;
 }
 
-
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
   padding-top: 0px;
-  margin-left: 110px!important;
+  margin-left: 110px !important;
   height: 110%;
   overflow: auto;
   /* background-color: rgb(0,0,0); */
@@ -1308,7 +1303,7 @@ ol, ul{
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid #888;
-  width: 65%!important;
+  width: 65% !important;
   overflow: auto;
 }
 
@@ -1326,20 +1321,19 @@ ol, ul{
   cursor: pointer;
 }
 
-#myBtn{
-   font-size: 20px;
-   margin: 1% 0%;
-   text-underline: none;
-   color: blue;
-   display: contents;
+#myBtn {
+  font-size: 20px;
+  margin: 1% 0%;
+  text-underline: none;
+  color: blue;
+  display: contents;
 }
-
 
 /* *, ::after, ::before{
   margin-left: 0.6em;
 } */
 
-.head1{
+.head1 {
   text-align: center;
   background-color: red;
   color: white;
@@ -1348,7 +1342,7 @@ ol, ul{
   padding: 0.6em 0em;
 }
 
-.ol{
+.ol {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
@@ -1362,3 +1356,7 @@ ol, ul{
   margin-left: 10px;
 }
 
+
+#header-image {
+  width: 110px;
+}
