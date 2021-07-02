@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Help Desk</title>
-    <link rel="shortcut icon" href="./Images/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="help.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,6 +20,30 @@
     crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  // Get current title and icon
+var title = $('title').text();
+var favicon = $('link[rel=icon]').attr('href');
+var newtitle = 'Please Visit Again!';
+
+// Active
+window.addEventListener('focus', resetTitleicon);
+
+// Inactive
+window.addEventListener('blur', changeTitleicon);
+
+// Change page title and icon
+function changeTitleicon(){
+ $("title").text(newtitle); 
+ $('link[rel=icon]').attr('href', './Images/folded.png');
+}
+
+// Reset the page title and icon
+function resetTitleicon(){
+ $('title').text(title);
+ $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+}
+</script>
 </head>
 <style>
     #scrollToTopButton{
