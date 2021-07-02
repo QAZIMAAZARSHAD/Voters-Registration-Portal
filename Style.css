@@ -69,55 +69,57 @@ body.dark {
 }
 
 @media screen and (max-width: 768px) {
-    .label {
-        position: absolute;
-        right: 2rem;
-        top: 6rem;
-        height: 20px;
-        width: 42px;
-    }
-    .label .ball {
-        position: absolute;
-        top: 0.2px;
-        left: 0.8px;
-        height: 20px;
-        width: 20px;
-    }
-    .icons input {
-        position: relative;
-        left: 30px;
-    }
-}
+  .label {
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    height: 20px;
+    width: 42px;
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
 
+  .icons input {
+    position: relative;
+    left: 30px;
+  }
+}
 @media screen and (max-width: 575px) {
-    .label {
-        position: absolute;
-        right: 1rem;
-        top: 4.5rem;
-        height: 10px;
-        width: 22px;
-    }
-    .label .ball {
-        position: absolute;
-        top: 0.2px;
-        left: 0.6px;
-        height: 10px;
-        width: 10px;
-    }
-    .fa-moon,
-    .fa-sun {
-        font-size: 8px;
-    }
-    .checkbox:checked+.label .ball {
-        transform: translateX(12px);
-    }
+  .label {
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    height: 10px;
+    width: 22px;
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon,
+  .fa-sun {
+    font-size: 8px;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .fa-moon,
-    .fa-sun {
-        font-size: 4px;
-    }
+  .fa-moon,
+  .fa-sun {
+    font-size: 4px;
+  }
 }
 
 .loader_bg {
@@ -286,24 +288,24 @@ body.dark {
 }
 
 .head h1 {
-    overflow: hidden;
-    border-right: 0.15em solid #f6b1c3;
-    white-space: nowrap;
-    letter-spacing: 0.15em;
-    font-family: "Open Sans";
-    font-size: min(4vw, 90px);
-    font-weight: bolder;
-    color: white;
-    animation: typing 2.3s steps(28, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  border-right: 0.15em solid #f6b1c3;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  font-family: "Open Sans";
+  font-size: min(4vw, 90px);
+  font-weight: bolder;
+  color: white;
+  animation: typing 2s steps(28, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-    from {
-        width: 0px;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0px;
+  }
+  to {
+    width: 35%;
+  }
 }
 
 @keyframes blink-caret {
@@ -617,24 +619,26 @@ ul {
 }
 
 @media screen and (max-width: 625px) {
-    .conatinerFluid select {
-        margin-top: 5px;
-        margin-right: 20px;
-    }
-    .conatinerFluid span {
-        display: block;
-        white-space: normal;
-    }
+  .conatinerFluid select {
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+
+  .conatinerFluid span {
+    display: block;
+    white-space: normal;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .conatinerFluid span {
-        display: block;
-        white-space: normal;
-    }
-    .icons input {
-        left: -30px;
-    }
+  .conatinerFluid span {
+    display: block;
+    white-space: normal;
+  }
+
+  .icons input {
+    left: -30px;
+  }
 }
 
 body {
@@ -778,50 +782,51 @@ textarea {
 }
 
 .showPwd {
-    position: relative;
-    left: 269px;
-    bottom: -7px;
+  position: relative;
+  left: 269px;
+  bottom: -7px;
 }
 
 #newuser {
-    text-align: right;
-    font-size: 15px;
-    padding-bottom: 10px;
+  text-align: right;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 992px) {
-    .showPwd {
-        left: 20px;
-        padding-bottom: 20px;
-    }
-    #newuser {
-        text-align: left;
-        padding-bottom: 10px;
-    }
+  .showPwd {
+    left: 20px;
+    padding-bottom: 20px;
+  }
+  #newuser {
+    text-align: left;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .showPwd {
-        left: 20px;
-        padding-bottom: 20px;
-    }
+  .showPwd {
+    left: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .showPwd {
-        left: 20px;
-        padding-bottom: 10px;
-    }
-    #newuser {
-        text-align: left;
-        padding-bottom: 10px;
-    }
+  .showPwd {
+    left: 20px;
+    padding-bottom: 10px;
+  }
+
+  #newuser {
+    text-align: left;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .showPwd {
-        left: 20px;
-    }
+  .showPwd {
+    left: 20px;
+  }
 }
 
 .voter-img {
@@ -901,40 +906,43 @@ h1 {
 }
 
 @media (max-width: 500px) {
-    .h1,
-    h1 {
-        font-size: 1rem !important;
-    }
-    h1 {
-        margin: 0rem;
-    }
-    .icon img {
-        margin: 8px;
-        width: 68px;
-        height: 34px;
-    }
-    span {
-        margin-left: 10px;
-    }
-    .district {
-        margin: 15px;
-    }
-    .select {
-        margin-top: 5px;
-    }
-    .docs {
-        font-size: x-small;
-    }
-    .conatinerFluid {
-        /* border: 2px solid black; */
-        width: 63vw;
-        padding: 9px;
-        margin: auto;
-        display: block;
-    }
-    .icons input {
-        left: -30px;
-    }
+  .h1,
+  h1 {
+    font-size: 1rem !important;
+  }
+  h1 {
+    margin: 0rem;
+  }
+  .icon img {
+    margin: 8px;
+    width: 68px;
+    height: 34px;
+  }
+  span {
+    margin-left: 10px;
+  }
+
+  .district {
+    margin: 15px;
+  }
+  .select {
+    margin-top: 5px;
+  }
+
+  .docs {
+    font-size: x-small;
+  }
+  .conatinerFluid {
+    /* border: 2px solid black; */
+    width: 63vw;
+    padding: 9px;
+    margin: auto;
+    display: block;
+  }
+
+  .icons input {
+    left: -30px;
+  }
 }
 
 .helpdesk {
@@ -983,7 +991,7 @@ h1 {
 
 ol,
 ul {
-    padding-left: 0rem;
+  padding-left: 0rem;
 }
 
 #ft {
@@ -1178,7 +1186,7 @@ ul {
 }
 
 .four ul {
-    padding-left: 0rem;
+  padding-left: 0rem;
 }
 
 .footer-index {
@@ -1200,9 +1208,9 @@ ul {
 }
 
 .showPwd1 {
-    position: relative;
-    left: 164px;
-    bottom: -7px;
+  position: relative;
+  left: 164px;
+  bottom: -7px;
 }
 
 @media (max-width: 1240px) {
@@ -1211,93 +1219,97 @@ ul {
     }
 }
 
-@media(max-width: 1074px) {
-    #footer {
-        grid-template-columns: 1fr 2fr 1fr 1fr;
-    }
-    .showPwd1 {
-        left: 90px;
-    }
+@media (max-width: 1074px) {
+  #footer {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+  }
+
+  .showPwd1 {
+    left: 90px;
+  }
 }
 
-@media(max-width: 990px) {
-    #footer {
-        grid-template-columns: 1fr 1fr;
-    }
-    .contact h3 {
-        padding: 5px;
-    }
-    .follow-us h2 {
-        margin-top: 20px;
-    }
-    .icons {
-        margin-top: 10px;
-    }
-    .two h2,
-    .four h2 {
-        margin-bottom: 0px;
-        font-size: 19px;
-    }
-    .three h4 {
-        margin-bottom: 5px;
-    }
-    .showPwd1 {
-        left: 20px;
-    }
+@media (max-width: 990px) {
+  #footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact h3 {
+    padding: 5px;
+  }
+  .follow-us h2 {
+    margin-top: 20px;
+  }
+  .icons {
+    margin-top: 10px;
+  }
+  .two h2,
+  .four h2 {
+    margin-bottom: 0px;
+    font-size: 19px;
+  }
+  .three h4 {
+    margin-bottom: 5px;
+  }
+
+  .showPwd1 {
+    left: 20px;
+  }
 }
 
-@media(max-width: 1000px) {
-    #ft {
-        /* height: 105vh; */
-        height: fit-content;
-        padding-bottom: 15px;
-    }
+@media (max-width: 1000px) {
+  #ft {
+    /* height: 105vh; */
+    height: fit-content;
+    padding-bottom: 15px;
+  }
 }
 
-@media(max-width: 620px) {
-    #footer {
-        grid-template-columns: 1fr;
-        padding-top: 30px;
-        grid-gap: 2rem;
-    }
-    #ft {
-        height: fit-content;
-        padding-bottom: 15px;
-    }
-    .flex {
-        display: flex;
-        justify-content: space-between;
-    }
-    .showPwd1 {
-        left: 20px;
-    }
+@media (max-width: 620px) {
+  #footer {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    grid-gap: 2rem;
+  }
+  #ft {
+    height: fit-content;
+    padding-bottom: 15px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .showPwd1 {
+    left: 20px;
+  }
 }
 
-@media(max-width: 411px) {
-    #footer {
-        margin: 30px 50px;
-        padding-top: 30px;
-        grid-gap: 2rem;
-    }
-    .two select {
-        width: 100%;
-        margin-top: 10px;
-        padding: 5px 2px;
-    }
-    .three h4 {
-        text-align: left;
-    }
+@media (max-width: 411px) {
+  #footer {
+    margin: 30px 50px;
+    padding-top: 30px;
+    grid-gap: 2rem;
+  }
+
+  .two select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 2px;
+  }
+
+  .three h4 {
+    text-align: left;
+  }
 }
 
 @media print {
-    #ft,
-    header,
-    .securityCode,
-    .myBtn,
-    .fontsetting,
-    .note {
-        display: none;
-    }
+  #ft,
+  header,
+  .securityCode,
+  .myBtn,
+  .fontsetting,
+  .note {
+    display: none;
+  }
 }
 
 .required-field::before {
@@ -1306,25 +1318,25 @@ ul {
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 0px;
-    margin-left: 110px!important;
-    height: 110%;
-    overflow: auto;
-    /* background-color: rgb(0,0,0); */
-    background-color: none;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0px;
+  margin-left: 110px !important;
+  height: 110%;
+  overflow: auto;
+  /* background-color: rgb(0,0,0); */
+  background-color: none;
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid #888;
-    width: 65%!important;
-    overflow: auto;
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #888;
+  width: 65% !important;
+  overflow: auto;
 }
 
 .close {
@@ -1342,37 +1354,40 @@ ul {
 }
 
 #myBtn {
-    font-size: 20px;
-    margin: 1% 0%;
-    text-underline: none;
-    color: blue;
-    display: contents;
+  font-size: 20px;
+  margin: 1% 0%;
+  text-underline: none;
+  color: blue;
+  display: contents;
 }
-
 
 /* *, ::after, ::before{
   margin-left: 0.6em;
 } */
 
 .head1 {
-    text-align: center;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-    padding: 0.6em 0em;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 0.6em 0em;
 }
 
 .ol {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 13px;
-    margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 13px;
+  margin-left: 10px;
 }
 
 .ul {
-    font-size: 13px;
-    font-weight: normal;
-    margin-left: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+#header-image {
+  width: 110px;
 }

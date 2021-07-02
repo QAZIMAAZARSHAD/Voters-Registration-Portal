@@ -5,7 +5,31 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Help Desk</title>
-    <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+    <script>
+      // Get current title and icon
+    var title = $('title').text();
+    var favicon = $('link[rel=icon]').attr('href');
+    var newtitle = 'Please Visit Again!';
+    
+    // Active
+    window.addEventListener('focus', resetTitleicon);
+    
+    // Inactive
+    window.addEventListener('blur', changeTitleicon);
+    
+    // Change page title and icon
+    function changeTitleicon(){
+     $("title").text(newtitle); 
+     $('link[rel=icon]').attr('href', './Images/folded.png');
+    }
+    
+    // Reset the page title and icon
+    function resetTitleicon(){
+     $('title').text(title);
+     $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+    }
+    </script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="help.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -51,7 +75,7 @@
 
                 <div class="logo">
                   <a href="#" class="endlogo">
-                    <img src="./Images/flag.png">
+                    <img src="./Images/Logo/logo1.jpg" id="header-image">
 
                   </a>
                 </div>
@@ -304,14 +328,14 @@
               <ul>
                 <li>
 
-                  <a href="#">
+                  <a href="https://www.mygov.in/" target="_blank">
                     My Gov <i class="fas fa-external-link-alt"></i>
                   </a>
 
                 </li>
                 <li>
 
-                  <a href="#">
+                  <a href="https://www.nvsp.in/" target="_blank">
                     National Voter Portal
                     <i class="fas fa-external-link-alt"></i>
                   </a>
@@ -319,21 +343,21 @@
                 </li>
                 <li>
 
-                  <a href="#">
+                  <a href="https://www.digitalindia.gov.in/" target="_blank">
                     Digital India <i class="fas fa-external-link-alt"></i>
                   </a>
 
                 </li>
                 <li>
 
-                  <a href="#">
+                  <a href="https://cbic-gst.gov.in/#" target="_blank">
                     GST.gov.in <i class="fas fa-external-link-alt"></i>
                   </a>
 
                 </li>
                 <li>
 
-                  <a href="#">
+                  <a href="http://dbtindia.gov.in/"  target="_blank">
                     DBT Bharatpur <i class="fas fa-external-link-alt"></i>
                   </a>
 
