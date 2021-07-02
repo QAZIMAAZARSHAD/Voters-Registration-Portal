@@ -17,7 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title> Voter Registration Portal</title>
-  <link rel="shortcut icon" href="./Images/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
   <style>
     #scrollToTopButton{
   position: fixed;
@@ -106,8 +106,7 @@
       Popup($(elem).html());
     }
 
-    function Popup(data) {
-      var mywindow = window.open('', 'my div', 'height=800,width=1000');
+    function Popup(data) {var mywindow = window.open('', 'my div', 'height=800,width=1000');
     mywindow.document.write('<html><head><title>Voter Registration</title>');
     mywindow.document.write('<link rel="stylesheet" href="css/main.css" type="text/css" />');
     mywindow.document.write('</head><body >');
@@ -130,7 +129,6 @@
 
     return true;
     }
-  
   </script>
 </head>
 
