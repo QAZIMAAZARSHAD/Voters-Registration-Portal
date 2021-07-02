@@ -11,8 +11,12 @@
 
   <link href="fonts.googleapis.com/css?family=Hind">
   <title>Welcome To Voters Registration Portal</title>
-  <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+
+<link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="Style.css">
+ 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -35,7 +39,30 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  // Get current title and icon
+var title = $('title').text();
+var favicon = $('link[rel=icon]').attr('href');
+var newtitle = 'Please Visit Again!';
 
+// Active
+window.addEventListener('focus', resetTitleicon);
+
+// Inactive
+window.addEventListener('blur', changeTitleicon);
+
+// Change page title and icon
+function changeTitleicon(){
+ $("title").text(newtitle); 
+ $('link[rel=icon]').attr('href', './Images/folded.png');
+}
+
+// Reset the page title and icon
+function resetTitleicon(){
+ $('title').text(title);
+ $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+}
+</script>
   <title> Voter Registration Portal</title>
 </head>
 <script>
