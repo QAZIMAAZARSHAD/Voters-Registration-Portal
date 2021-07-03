@@ -1,0 +1,82 @@
+body{
+    background-image: url('Images/bg.jpg');
+    background-repeat: no-repeat;
+
+}
+.box{
+    background-color: #121212;
+	padding: 10px 0px;
+	border-radius: 5px;
+	width: 100%;
+	height: 560px;
+	overflow: hidden;
+    background-color: rgba(224, 171, 157, 0.452);
+    text-align: center;
+    color: #fff;
+}
+h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+h4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.button {
+    background-color: rgb(247, 161, 138);; 
+    border: none;
+    color: #ffff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .icons{
+      margin-top: 40px;
+  }
+
+  .fa {
+    padding: 13px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius : 70px;
+    justify-content: space-between;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
