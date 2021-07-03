@@ -784,7 +784,7 @@
         <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
       </div>
     </form>
-  </div>
+  </div> 
   <!-- footer starts -->
   <footer id="ft">
   <div id="footer">
@@ -930,6 +930,7 @@ chk.addEventListener('change', () => {
         swal("Please fill all the required details","","info");
       } else {
         swal("Form successfully submitted","","success");
+        window.location.href = "submitted.html";
       }
     });
   </script>
