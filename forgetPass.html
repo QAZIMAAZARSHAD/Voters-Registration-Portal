@@ -13,9 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
     crossorigin="anonymous">
@@ -72,30 +70,6 @@
   border-radius: 50%;
   box-shadow: 0 6px 10px 0px gray;
 }
-.container{
-  border-radius: 5rem;
-  transition: 0.2s ease-in-out ;
-transition-property:all; 
-font-family: 'Baloo 2', cursive;
-font-size: 18px;
-box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
-
-}
-.container:hover{
-  transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem rgba(245, 159, 46, 0.671);
-  background: rgba(245, 159, 46, 0.199);
-}
-#votingimage{
-  padding-left: 2rem;
-  padding-top: 4rem;
-}
-@media (min-width:320px) and (max-width:991px){
-    #votingimage{
-      margin-right: 1.2rem;
-    }
-}
-
 
   </style>
 
@@ -156,11 +130,11 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
 
       <div class="main-section">
 
-        <div class="container" style="height:auto;width:65%;">
+        <div class="container" style="height:auto;width:65%;box-shadow: 0 15px 15px 0px gray;">
             <div class="row" style="height: auto;">
                 <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
 
-                    <div class="row" id="votingimage"><img src="./Images/forget.jpg"></div>
+                    <div class="row"><img src="./Images/forget.jpg" style="width: 600px;height: 430px;"></div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="padding-top:50px;padding-bottom:50px;">
                     <div class="col-lg-12">
