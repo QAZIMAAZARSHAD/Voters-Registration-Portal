@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
     crossorigin="anonymous">
@@ -87,6 +89,70 @@
           color: #357fc9;
           cursor: pointer;
         }
+        .container{
+  border-radius: 5rem;
+  box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
+  transition: 0.2s ease-in-out ;
+transition-property:all; 
+font-family: 'Baloo 2', cursive;
+font-size: 18px;
+
+}
+.container:hover{
+  transform:translateY(.2rem);
+  box-shadow: 0 0 .2rem .2rem rgb(148, 255, 145);
+  background: rgba(70, 252, 146, 0.199);
+}
+#votingimage{
+  padding-left: 2rem;
+  padding-top: .6rem;
+  padding-bottom: 2rem;
+
+}
+#welcometopage{
+  margin-left: 2rem;
+ margin-top: 1rem;
+ background-image: linear-gradient(#B2FEFA,#0ED2F7);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: rgb(45, 44, 49);
+ font-size: 1.5rem;
+}
+
+
+@media (min-width:320px) and (max-width:991px){
+  #welcometopage{
+    margin-right: 1.6rem;
+  }
+    #votingimage{
+      margin-right: 1.2rem;
+    }
+}
+@media (min-width:320px) and (max-width:375px){
+  #signupbutton{
+margin-right: .1rem;
+position: relative;
+}
+}
+@media (min-width:376px) and (max-width:1439px){
+  #signupbutton{
+margin-right: 1rem;
+position: relative;
+}
+}
+@media (min-width:320px) and (max-width:1024px){
+    #typethetext{
+      margin-left: -2rem;
+    }
+   
+
+}
+@media (min-width:320px) and (max-width:575px){
+.container{
+  margin-left: 2px;
+}
+}
+
+
       </style>
   </head>
 
@@ -148,8 +214,8 @@
         <div class="container" style="height:auto;">
             <div class="row" style="height: auto;">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
-                    <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;">Welcome to Voter's Registration Portal</p>
-                    <div class="row"><img src="./Images/voting.jpg"></div>
+                    <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;" id="welcometopage">Welcome to Voter's Registration Portal</p>
+                    <div class="row" id="votingimage"><img src="./Images/voting.jpg"></div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="padding:20px;">
                     <form>
@@ -249,13 +315,13 @@
                               <span class="changeText">
                                 <i class="fas fa-sync-alt"></i>
                               </span>
-                              <input type="text" placeholder="Type the text here"><br>
+                              <input type="text" id="typethetext" placeholder="Type the text here" ><br>
                             </div>
                           </div>
                         </div>
                         <br>
                         <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-                        <button type="button" class="btn btn-success" onclick="signup()" style="float: right;">Sign Up</button>
+                        <button type="button" class="btn btn-success" onclick="signup()" style="float: right;" id="signupbutton">Sign Up</button>
                     </form>
                 </div>
             </div>
