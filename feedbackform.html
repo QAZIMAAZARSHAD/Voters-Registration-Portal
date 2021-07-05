@@ -56,6 +56,9 @@
   </head>
 
   <style>
+    * {    
+  box-sizing: border-box;    
+}  
     #scrollToTopButton{
   position: fixed;
   bottom: 15px;
@@ -80,25 +83,82 @@
 transition-property:all; 
 font-family: 'Baloo 2', cursive;
 font-size: 18px;
+border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;   
 
 }
 .container:hover{
   transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem  rgb(168, 235, 255);
-  background: rgba(136, 255, 235, 0.199);
+  box-shadow: 0 0 .2rem .2rem  rgb(183, 0, 255);
+  background: rgba(245, 220, 255, 0.651);
 }
-#votingimage{
-  padding-left: 2rem;
-  padding-top: 1rem;
+
+  
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+#submit{
+  width: 7rem;
+  margin: 0 auto;
 }
-#welcomeback{
+#expgood{
+  margin-top: .5rem;
+}
+.cba1{
   margin-left: 2rem;
- margin-top: 1rem;
- background-image: linear-gradient(#B2FEFA,#0ED2F7);
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- color: rgb(45, 44, 49);
- font-size: 1.5rem;
 }
+
 
 @media (min-width:320px) and (max-width:991px){
   #welcomeback{
@@ -106,6 +166,9 @@ font-size: 18px;
   }
     #votingimage{
       margin-right: 1.2rem;
+    }
+    #checkbox3{
+      margin-left: 5rem;
     }
 }
 
@@ -163,12 +226,87 @@ font-size: 18px;
     </header>
 
     <div class="main-section">
-
-        <div class="container" style="height:auto;width:65%;">
+    <div class="container">
+      <form>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="fname">First Name</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+          </div>    
+        </div>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="lname">Last Name</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="lname" name="lastname" placeholder="Your Last name..">    
+          </div>    
+        </div>    
+        <div class="row">    
+            <div class="col-25">    
+              <label for="email">Email</label>    
+            </div>    
+            <div class="col-75">    
+              <input type="email" id="email" name="mailid" placeholder="Your Email Id..">    
+            </div>    
+          </div>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="country">Country</label>    
+          </div>    
+          <div class="col-75">    
+            <select id="country" name="country">    
+                <option value="none">Select Country</option>    
+              <option value="australia">Australia</option>    
+              <option value="canada">Canada</option>    
+              <option value="usa">USA</option>    
+              <option value="russia">Russia</option>    
+              <option value="japan">Japan</option>    
+              <option value="india">India</option>    
+              <option value="china">China</option>    
+            </select>    
+          </div>    
+        </div>    
+        <div class="row">   
+          <div class="col-10" id="expgood"> 
+            Was Your Overall Experience Good?
+            <input type="radio" id="checkbox1" name="Option1" value="Yes" class="cba1">
+           <label for="checkbox1">Yes</label>
+           <input type="radio" id="checkbox2" name="Option1" value="No">
+            <label for="checkbox2">No</label>
+            </div>
             
+            <div class="col-10" id="expgood"> 
+              Did You Face Any Difficulty?
+              <input type="radio" id="checkbox3" name="Option2" value="Yes" class="cba1">
+           <label for="checkbox1">Yes</label>
+           <input type="radio" id="checkbox4" name="Option2" >
+            <label for="checkbox2">No</label>
+              </div>
+              <div class="col-10" id="expgood"> 
+                <div class="col-10"> 
+                Any Feature Missing? If Yes! Please Mention It
+                </div>
+                <textarea name="" id="" cols="3" rows="1"></textarea>
+                </div>
+            <br>
+          <div class="col-25">    
+            <label for="feed_back">FeedBack</label>    
+          </div>    
+          <div class="col-75">    
+            <textarea id="subject" name="subject" placeholder="Write Something.." style="height:200px"></textarea>    
+          </div>    
+          <div class="row">    
+            <input type="submit" id="submit" value="Submit">    
+          </div>  
+
+          </div>
+        </div>    
+         
+      </form> 
         </div>
-
-
     </div>
 <script>
     const chk = document.getElementById('chk');
