@@ -347,7 +347,7 @@ body.dark {
   }
   .emblem {
     width: 90px;
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 8%;
   }
@@ -1357,6 +1357,7 @@ ul {
 }
 
 #header-image {
+  position: relative;
   width: 110px;
 }
 
