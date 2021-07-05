@@ -1357,6 +1357,7 @@ ul {
 }
 
 #header-image {
+  position: absolute;
   width: 110px;
 }
 
