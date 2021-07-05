@@ -156,13 +156,17 @@
   </script>
 </head>
 
+
 <body>
+
+
+
   <!-- navbar starts -->
   <header>
     <div class="navbar">
       <div class="main-heading">
 
-        
+       
         <div class="logo">
           <div class="flip">
             <div class="flip-inner">
@@ -178,12 +182,19 @@
               </div>
             </div>
           </div>
+            </div> 
+
         <div class="heading">
-          <img class="emblem"  src="./Images/emblem.png"></img>
-            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
-            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+          <img class="emblem" src="./Images/emblem.png"></img>
+          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
+            डेमो पोर्टल</p>
+          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
+
+
       </div>
+
+
       <div>
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
@@ -192,15 +203,28 @@
           <div class="ball"></div>
         </label>
       </div>
-    </div>
-    <script>
-      const chk = document.getElementById('chk');
-  chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-  });
-  </script>
+
+
+
+
+      <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+        });
+      </script>
   </header>
+
   <!-- navbar ends -->
+  <script>
+    const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+  
   <div class="fontsetting">
     <!-- <div class="row"> -->
     <!-- <div class="col col-md-6 col-sm-6"> -->
@@ -217,6 +241,7 @@
   </div>
   <!-- font ends -->
   <span class="note" id="print">
+    
     <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory
         <span><i class="fa fa-print" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
