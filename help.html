@@ -67,59 +67,72 @@
 </style>
 
 <body>
-    <div class="scroll-bar">
+  
 
-        <header>
-            <div class="navbar">
-              <div class="main-heading">
+  <!-- navbar starts -->
+  <header>
+    <div class="navbar">
+      <div class="main-heading">
 
-               
+       
         <div class="logo">
           <div class="flip">
             <div class="flip-inner">
               <div class="flip-front">
                 <a href="#" class="endlogo">
-                  <img src="./Images/Logo/logo1.jpg" style="height: 110px; width: 110px;" id="header-image">
+                  <img src="./Images/Logo/logo1.jpg" id="header-image">
                 </a>
               </div>
               <div class="flip-back">
                 <a href="#" class="endlogo">
-                  <img src="./Images/Logo/logo2.jpg" style="height: 110px; width: 110px;" id="header-image">
+                  <img src="./Images/Logo/logo2.jpg" id="header-image">
                 </a>
               </div>
             </div>
           </div>
+            </div> 
 
-                <div class="heading">
-                  <img class="emblem"  src="./Images/emblem.png">
-                    <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
-                    <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
-                </div>
-
-
-              </div>
-
-
-              <div>
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                  <div class="ball"></div>
-                </label>
-              </div>
+        <div class="heading">
+          <img class="emblem" src="./Images/emblem.png"></img>
+          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
+            डेमो पोर्टल</p>
+          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+        </div>
 
 
-            </div>
+      </div>
 
-            <script>
-              const chkk = document.getElementById('chk');
 
-          chkk.addEventListener('change', () => {
-            document.body.classList.toggle('dark');
-          });
-          </script>
-          </header>
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+
+
+
+      <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+        });
+      </script>
+  </header>
+
+  <!-- navbar ends -->
+  <script>
+    const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+  
 
     <section class="body">
         <div class="container">
