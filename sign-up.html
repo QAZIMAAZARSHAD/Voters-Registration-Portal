@@ -218,111 +218,111 @@ position: relative;
                     <div class="row" id="votingimage"><img src="./Images/voting.jpg"></div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="padding:20px;">
-                    <form>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <label for="fname" class="form-label required-field">FirstName</label>
-                                    <input class="form-control" type="text" placeholder="FirstName" id="fname" >
-                                </div>
-                                <div class="mb-3">
-                                    <label for="lname" class="form-label required-field">LastName</label>
-                                    <input class="form-control" type="text" placeholder="LastName" id="lname" >
-                                </div>
-                                <div class="mb-3">
-                                  <label for="Email" class="form-label required-field">Email address</label>
-                                  <input type="email" class="form-control" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="password1" class="form-label required-field">Password</label>
-                                  <input type="password" class="form-control" id="password1">
-                                  <div class="showPwd1">
-                                  <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
-                                  </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword1">
-                                    <div class="showPwd1">
-                                    <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
-                                    </div>
-                               </div>
+                  <form  name="form1" method="post"  onsubmit="return signup();">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="fname" class="form-label required-field">FirstName</label>
+                                <input class="form-control" type="text" placeholder="FirstName" id="fname" required >
                             </div>
-                            <div class="col-lg-6">
-
-                                <div class="mb-3">
-                                    <label for="number" class="form-label required-field">Mobile Number</label>
-                                    <input type="number" class="form-control" id="number" placeholder="Mobile Number" >
-                                </div>
-                                <div class="mb-3">
-                                    <label for="address" class="form-label required-field">Address</label>
-                                    <textarea class="form-control" id="address" rows="3"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="State" class="form-label required-field">State</label>
-                                    <select class="form-select" id="state" aria-label="Default select example">
-                                        <option value="0">Select</option>
-                                        <option value="1">ANDHRA PRADESH</option>
-                                        <option value="2">ARUNACHAL PRADESH</option>
-                                        <option value="3">ASSAM</option>
-                                        <option value="4">BIHAR</option>
-                                        <option value="5">CHATTISGARH</option>
-                                        <option value="6">GOA</option>
-                                        <option value="7">GUJRAT</option>
-                                        <option value="8">HARYANA</option>
-                                        <option value="9">HIMACHAL PRADESH</option>
-                                        <option value="10">JAMMU AND KASHMIR</option>
-                                        <option value="11">JHARKHAND</option>
-                                        <option value="12">KARNATAKA</option>
-                                        <option value="13">KERALA</option>
-                                        <option value="14">MADHYA PRADESH</option>
-                                        <option value="15">MAHARASHTRA</option>
-                                        <option value="16">MANIPUR</option>
-                                        <option value="17">MEGHALAYA</option>
-                                        <option value="18">MIZORAM</option>
-                                        <option value="18">NAGALAND</option>
-                                        <option value="20">ODISHA</option>
-                                        <option value="21">PUNJAB</option>
-                                        <option value="22">RAJASTHAN</option>
-                                        <option value="23">SIKKIM</option>
-                                        <option value="24">TAMIL NADU</option>
-                                        <option value="25">TELANGANA</option>
-                                        <option value="26">TRIPURA</option>
-                                        <option value="27">UTTAR PRADESH</option>
-                                        <option value="28">UTTARAKHAND</option>
-                                        <option value="29">WEST BENGAL</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="city" class="form-label required-field">City</label>
-                                    <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="zip_code" class="form-label required-field">Zip Code</label>
-                                    <input type="number" class="form-control" id="zip_code" placeholder="zip Code">
-                                </div>
-                                <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div><br>
+                            <div class="mb-3">
+                                <label for="lname" class="form-label required-field">LastName</label>
+                                <input class="form-control" type="text" placeholder="LastName" id="lname"  >
                             </div>
+                            <div class="mb-3">
+                              <label for="Email" class="form-label required-field" >Email address</label>
+                              <input type="email" class="form-control" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="password1" class="form-label required-field">Password</label>
+                              <input type="password" class="form-control" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain at least one number and one uppercase and one lower case letter, and at least 8 digits"required>
+                              <div class="showPwd1">
+                              <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword1" required>
+                                <div class="showPwd1">
+                                <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
+                                </div>
+                           </div>
                         </div>
-                        <div class="captcha-container" style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
-                          <div class="securityCode">
-                            <p id="code"></p>
-                            <div class="icons">
-                              <span class="readText" style="align-items: center;">
-                                <i class="fas fa-headphones"></i>
-                              </span>
-                              <span class="changeText">
-                                <i class="fas fa-sync-alt"></i>
-                              </span>
-                              <input type="text" id="typethetext" placeholder="Type the text here" ><br>
+                        <div class="col-lg-6">
+
+                            <div class="mb-3">
+                                <label for="number" class="form-label required-field">Mobile Number</label>
+                                <input type="number" class="form-control" id="number" placeholder="Mobile Number" required>
                             </div>
-                          </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label required-field">Address</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="State" class="form-label required-field">State</label>
+                                <select class="form-select" id="state" aria-label="Default select example" required>
+                                    <option value="0">Select</option>
+                                    <option value="1">ANDHRA PRADESH</option>
+                                    <option value="2">ARUNACHAL PRADESH</option>
+                                    <option value="3">ASSAM</option>
+                                    <option value="4">BIHAR</option>
+                                    <option value="5">CHATTISGARH</option>
+                                    <option value="6">GOA</option>
+                                    <option value="7">GUJRAT</option>
+                                    <option value="8">HARYANA</option>
+                                    <option value="9">HIMACHAL PRADESH</option>
+                                    <option value="10">JAMMU AND KASHMIR</option>
+                                    <option value="11">JHARKHAND</option>
+                                    <option value="12">KARNATAKA</option>
+                                    <option value="13">KERALA</option>
+                                    <option value="14">MADHYA PRADESH</option>
+                                    <option value="15">MAHARASHTRA</option>
+                                    <option value="16">MANIPUR</option>
+                                    <option value="17">MEGHALAYA</option>
+                                    <option value="18">MIZORAM</option>
+                                    <option value="18">NAGALAND</option>
+                                    <option value="20">ODISHA</option>
+                                    <option value="21">PUNJAB</option>
+                                    <option value="22">RAJASTHAN</option>
+                                    <option value="23">SIKKIM</option>
+                                    <option value="24">TAMIL NADU</option>
+                                    <option value="25">TELANGANA</option>
+                                    <option value="26">TRIPURA</option>
+                                    <option value="27">UTTAR PRADESH</option>
+                                    <option value="28">UTTARAKHAND</option>
+                                    <option value="29">WEST BENGAL</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label required-field">City</label>
+                                <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="zip_code" class="form-label required-field">Zip Code</label>
+                                <input type="number" class="form-control" id="zip_code" placeholder="zip Code" pattern="[1-9]{1}[0-9]{5}|[1-9]{1}[0-9]{3}\\s[0-9]{3}" title="Invalid" required>
+                            </div>
+                            <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div><br>
                         </div>
-                        <br>
-                        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-                        <button type="button" class="btn btn-success" onclick="signup()" style="float: right;" id="signupbutton">Sign Up</button>
-                    </form>
+                    </div>
+                    <div class="captcha-container" style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
+                      <div class="securityCode">
+                        <p id="code"></p>
+                        <div class="icons">
+                          <span class="readText" style="align-items: center;">
+                            <i class="fas fa-headphones"></i>
+                          </span>
+                          <span class="changeText">
+                            <i class="fas fa-sync-alt"></i>
+                          </span>
+                          <input type="text" id="typethetext" placeholder="Type the text here" ><br>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+                    <button type="submit" class="btn btn-success"  style="float: right;" id="signupbutton">Sign Up</button>
+                </form>
                 </div>
             </div>
 
