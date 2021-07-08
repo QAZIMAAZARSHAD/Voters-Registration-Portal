@@ -870,11 +870,6 @@ transform: rotate(45deg);
 
 }
 
-#header-image {
-  position: absolute;
-  width: 110px;
-}
-
 .flip {
   background-color: transparent;
   width: 200px;
