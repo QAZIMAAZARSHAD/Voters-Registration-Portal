@@ -190,6 +190,7 @@ font-size: 18px;
                                 <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>
                             <div id="newuser" class="form-text">New User? <a href="sign-up.html">Register here</a></div>
+                            <button type="button" class="btn btn-success" onClick="guest()">Guest Login</button>
                             <button type="button" class="btn btn-success" onClick="login()">Login</button>
                             <button type="button" class="btn btn-info" onClick="clearFunc()">Reset</button>
 
@@ -219,6 +220,11 @@ chk.addEventListener('change', () => {
               icon: icon_,
               });
        }
+
+        function guest() {
+          giveAlert('You are logging in as a Guest: You are being redirected to the Home page','success');
+          setTimeout(function() {window.location = "Home.html" });
+        }
 
         function login()
         {
