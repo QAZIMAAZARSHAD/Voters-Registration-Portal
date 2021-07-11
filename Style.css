@@ -1104,11 +1104,14 @@ ul {
 
 .icons {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 20px;  	
 }
 
 .icons i {
-  margin-right: 8px;
+  margin-right: 8px;	
+}
+.icons a{
+  text-decoration: none;
 }
 
 .two h2,
