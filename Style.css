@@ -1126,6 +1126,9 @@ ul {
 .icons a{
   text-decoration: none;
 }
+.icons a:hover{
+  text-decoration: none;
+}
 
 .icons a:hover{
   text-decoration: none;
