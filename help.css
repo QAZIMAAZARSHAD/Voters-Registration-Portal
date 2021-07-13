@@ -406,31 +406,23 @@ tr td{
 	height: auto;
 	width: auto;
 	margin: auto;
-  overflow-y:auto;
+  overflow-y:scroll;
   overflow-x: hidden;
 	max-width: 100%;
 }
 
-::-webkit-scrollbar-track
-{
-	border: 5px solid whitesmoke;
-	background-color:whitesmoke;
+
+::-webkit-scrollbar{
+background-color: whitesmoke;
 }
-
-::-webkit-scrollbar
-{
-	width: 0px;
-	background-color:whitesmoke;
+::-webkit-scrollbar-thumb {
+background-color: #E0AB9D;
+border-radius: 10px;
 }
-
-::-webkit-scrollbar-thumb
-{ width:0px;
-	background-color:transparent;
-	border-radius: 10px;
-
+::-webkit-scrollbar-track {
+border: 5px solid whitesmoke;
+background-color: whitesmoke;
 }
-
-
 
 * {
     margin: 0;

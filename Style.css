@@ -828,7 +828,7 @@ textarea {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+
   background-color: whitesmoke;
 }
 
