@@ -18,19 +18,20 @@ body.dark {
 .checkbox {
   opacity: 0;
   position: absolute;
+  bottom:0px;
 }
 
 .label {
-  background-color: #111;
+  background-color: rgb(217 217 217);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  left:60px;
   padding: 5px;
-  position: absolute;
-  right: 5rem;
-  top: 8.5rem;
+  position: relative;
+  bottom:0px;
   height: 22px;
   width: 45px;
 
@@ -38,10 +39,10 @@ body.dark {
 }
 
 .label .ball {
-  background-color: #fff;
+  background-color: rgb(199, 30, 30);
   border-radius: 50%;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
   height: 22px;
   width: 22px;
@@ -261,6 +262,7 @@ body.dark {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .h1 {
   position: relative;
@@ -269,6 +271,7 @@ body.dark {
   color: white;
   text-transform: capitalize;
   font-weight: bolder;
+  
 }
 .span1 {
   color: orangered;

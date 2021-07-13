@@ -74,6 +74,7 @@
     <div class="loader"></div>
     <div class="loader2"></div>
     <div class="head">
+      
       <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better
         <span class="span1">IN</span>D<span class="span2">IA</span>
         <span class="span1">.</span>.<span class="span2">.</span>
@@ -114,25 +115,7 @@
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
 
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
   </header>
 
   <!-- navbar ends -->
@@ -152,11 +135,35 @@
   </header>
 
  <footer class="footer-index">
-   
+ 
+  
     <div class="copyright" style="background-color: black; margin-top: -5px;">
     Copyright ©
   <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad 
-    </div>
+
+       
+  </div>
+
+  <div>
+
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+   </div>
+
+  
+
+  <script>
+    const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
   </footer>
   
   
