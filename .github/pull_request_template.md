@@ -1,8 +1,9 @@
-#### Issue Number
-fixes #
-<!-- Please Mention the issue number as  ISSUE #(Issue Number)
-Example:
-ISSUE #5
+#### Fixes #(issue number)
+ 
+<!--  Please Mention the issue number as  Fixes #(issue number) instead of ISSUE #(issue number)
+      Example:
+      Fixes #5 
+      (so that the issue automatically gets closed on successful merging of PR)
 -->
 
 #### Describe the changes you've made
@@ -23,11 +24,10 @@ How someone can test your code?
 Example how to mark a checkbox :-
 - [x] My code follows the code style of this project.
 -->
-- [ ] I have added my name in the contributors list at the end of README.md file.
+- [ ] I have mentioned related issue number in PR description.
+- [ ] I have added screenshots and related demo links of my changes..
+- [ ] The title of my pull request is a short description of the requested changes.
 - [ ] My code follows the code style of this project.
 - [ ] My change requires a change to the documentation.
 - [ ] I have updated the documentation accordingly.
-- [ ] I have added tests to cover my changes.
-- [ ] All new and existing tests passed.
-- [ ] The title of my pull request is a short description of the requested changes.
 - [ ] Open Source Program names(OPTIONAL: If you participated in any open-source program then please mention the program name here)

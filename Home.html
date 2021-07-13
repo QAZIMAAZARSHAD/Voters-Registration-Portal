@@ -9,12 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="fonts.googleapis.com/css?family=Hind">
   <link rel="stylesheet" href="Style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
 
   <title> Voter Registration Portal</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
@@ -114,6 +113,27 @@
     }
   </style>
 
+  <!-- Footer CSS -->
+  <style>
+    .three{
+      padding-left: 32px;
+    }
+    .three ul li a{
+      text-decoration: none;
+    }
+    .three ul li a:hover {
+      text-decoration: none;
+    }
+    .three ul li a h4:hover {
+      color: #037AE2;
+    }
+    .four ul li a{
+      text-decoration: underline;
+    }
+
+  </style>
+
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <script type="text/javascript">
@@ -156,23 +176,45 @@
   </script>
 </head>
 
+
 <body>
+
+
+
   <!-- navbar starts -->
   <header>
     <div class="navbar">
       <div class="main-heading">
 
+       
         <div class="logo">
-          <a href="#" class="endlogo">
-            <img src="./Images/Logo/logo1.jpg" id="header-image">
-          </a>
-        </div>
+          <div class="flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo1.jpg" id="header-image">
+                </a>
+              </div>
+              <div class="flip-back">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo2.jpg" id="header-image">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div> 
+
         <div class="heading">
-          <img class="emblem"  src="./Images/emblem.png"></img>
-            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;" >राष्ट्रीय मतदान सेवा डेमो पोर्टल</p>
-            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+          <img class="emblem" src="./Images/emblem.png"></img>
+          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
+            डेमो पोर्टल</p>
+          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
+
+
       </div>
+
+
       <div>
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk">
@@ -181,15 +223,21 @@
           <div class="ball"></div>
         </label>
       </div>
-    </div>
-    <script>
-      const chk = document.getElementById('chk');
-  chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-  });
-  </script>
+
+
+
+
+      <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+        });
+      </script>
   </header>
+
   <!-- navbar ends -->
+  
   <div class="fontsetting">
     <!-- <div class="row"> -->
     <!-- <div class="col col-md-6 col-sm-6"> -->
@@ -206,6 +254,7 @@
   </div>
   <!-- font ends -->
   <span class="note" id="print">
+    
     <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory
         <span><i class="fa fa-print" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
   </span>
@@ -772,7 +821,7 @@
         <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
       </div>
     </form>
-  </div>
+  </div> 
   <!-- footer starts -->
   <footer id="ft">
   <div id="footer">
@@ -824,20 +873,62 @@
       <h2>Regional Offices</h2>
       <select name="place" id="place">
         <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="lucknow">Lucknow</option>
+        <option value="chennai">Chennai</option>
+        <option value="bengaluru">Bengaluru</option>
+        <option value="hyderabad">Hyderabad</option>
       </select>
-      <h3>National Voter Portal Regional Office, Delhi</h3>
-      <h3>Ground floor, pragati maidan metro station, new delhi - 110001</h3>
     </div>
     <div class="three">
-      <h4>Website Policy</h4>
-      <h4>terms and conditions</h4>
-      <h4>privacy policy</h4>
-      <h4>hyperlinking policy</h4>
-      <h4>copyright policy</h4>
-      <h4>disclaimer</h4>
-      <h4>help</h4>
-      <h4>feedback</h4>
-      <h4>sitemap</h4>
+      <ul>
+        <li>
+          <a href="">
+            <h4>Website Policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Terms and conditions</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Privacy policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Hyperlinking policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Copyright policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Disclaimer</h4>
+          </a>
+        </li>
+        <li>
+          <a href="help.html">
+            <h4>Help</h4>
+          </a>
+        </li>
+        <li>
+          <a href="feedbackform.html">
+            <h4>Feedback</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Sitemap</h4>
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="four">
       <h2>Government of India</h2>
@@ -918,6 +1009,7 @@ chk.addEventListener('change', () => {
         swal("Please fill all the required details","","info");
       } else {
         swal("Form successfully submitted","","success");
+        window.location.href = "submitted.html";
       }
     });
   </script>

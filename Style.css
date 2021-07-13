@@ -1134,12 +1134,18 @@ ul {
 }
 
 .icons {
-    text-align: left;
-    margin-top: 20px;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .icons i {
-    margin-right: 8px;
+  margin-right: 8px;
+}
+.icons a{
+  text-decoration: none;
+}
+.icons a:hover{
+  text-decoration: none;
 }
 
 .two h2,
@@ -1356,7 +1362,7 @@ ul {
 #myBtn {
   font-size: 20px;
   margin: 1% 0%;
-  text-underline: none;
+
   color: blue;
   display: contents;
 }
@@ -1389,5 +1395,47 @@ ul {
 }
 
 #header-image {
+  position: absolute;
   width: 110px;
+}
+
+.flip {
+  background-color: transparent;
+  width: 200px;
+  height: 100px;
+  perspective: 1000px;
+  left: 10px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-front {
+  color: black;
+}
+
+
+.flip-back {
+  color: white;
+  transform: rotateY(180deg);
 }

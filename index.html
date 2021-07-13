@@ -11,6 +11,9 @@
   <link href="fonts.googleapis.com/css?family=Hind">
   <title>Welcome To Voters Registration Portal</title>
   <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -69,7 +72,7 @@
     <div class="loader"></div>
     <div class="loader2"></div>
     <div class="head">
-      <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better
+      <h1 data-text="Vote for a better INDIA..." class="h1" style=" font-family: 'Lato', sans-serif;">Vote for a better
         <span class="span1">IN</span>D<span class="span2">IA</span>
         <span class="span1">.</span>.<span class="span2">.</span>
       </h1>
@@ -79,12 +82,25 @@
   <header>
     <div class="navbar">
       <div class="main-heading">
-        <div class="logo">
-          <a href="#" class="endlogo">
-            <img src="./Images/Logo/logo1.jpg" id="header-image">
 
-          </a>
-        </div>
+
+        <div class="logo">
+          <div class="flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo1.jpg" id="header-image">
+                </a>
+              </div>
+              <div class="flip-back">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo2.jpg" id="header-image">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+
         <div class="heading">
           <img class="emblem" src="./Images/emblem.png"></img>
           <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
@@ -109,13 +125,7 @@
       </script>
   </header>
   <!-- navbar ends -->
-  <script>
-    const chk = document.getElementById('chk');
 
-    chk.addEventListener('change', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
   <header class="header" id="header">
     <div class="banner">
       <p class="banner_title "> Start Your Voting Contribution</p>
