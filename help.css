@@ -912,7 +912,7 @@ transform: rotate(45deg);
   transform: rotateY(180deg);
 }
 .labelnew {
-  background-color: rgb(217 217 217);
+  background-color: rgb(237,232,232);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
