@@ -3,17 +3,24 @@
 * {
 	box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
 
 body {
+ 
 	background-color: #fafafa;
-	margin: 0;
 	transition: background 0.2s linear;
 }
 
 body.dark {
 	background: #292C35;
 }
-
+.container{
+  border: 2px solid black;
+  background-color: rgb(238, 238, 238);
+  padding:18px 15px 10px 30px;
+}
 .checkbox {
 	opacity: 0;
 	position: absolute;
@@ -195,7 +202,7 @@ body.dark {
 {
   position: absolute;
   top: 8%;
-  left: 10%;
+  left: 0px;;
   width: 150px;
 }
 
@@ -279,7 +286,7 @@ body{
 
 .container{
     width: 80%;
-    margin: 100px;
+    margin: 50px;
 }
 .help-box{
     background: cornsilk;
@@ -889,6 +896,7 @@ transform: rotate(45deg);
   position: absolute;
   width: 100%;
   height: 100%;
+  left:60px;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
