@@ -7,19 +7,170 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
     crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <title> Voter Sign-Up</title>
-      <link rel="shortcut icon" href="./Images/flag.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+    <script>
+      // Get current title and icon
+    var title = $('title').text();
+    var favicon = $('link[rel=icon]').attr('href');
+    var newtitle = 'Please Visit Again!';
+    
+    // Active
+    window.addEventListener('focus', resetTitleicon);
+    
+    // Inactive
+    window.addEventListener('blur', changeTitleicon);
+    
+    // Change page title and icon
+    function changeTitleicon(){
+     $("title").text(newtitle); 
+     $('link[rel=icon]').attr('href', './Images/folded.png');
+    }
+    
+    // Reset the page title and icon
+    function resetTitleicon(){
+     $('title').text(title);
+     $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+    }
+    </script>
+      <style>
+        .captcha-container {
+          min-width: 48%;
+          max-width: 55%;
+          display: block;
+          background: #d5d5d5;
+          font-family: 'poppins', sans-serif;
+        }
+    
+        .header9 {
+          background: #037AE2;
+          color: #FFF;
+          font-size: 1.5rem;
+          width: 100%;
+          text-align: center;
+          border-radius: 20px 20px 0 0;
+          padding: 15px;
+        }
+    
+        .securityCode {
+          width: 99%;
+          height: 74px;
+        }
+    
+        #code {
+          text-align: center;
+          letter-spacing: 5px;
+          user-select: none;
+        }
+    
+        .securityCode p {
+          line-height: 63px;
+          color: rgb(36, 36, 36);
+          font-family: "Montserrat";
+          font-size: 3vw;
+          font-weight: bold;
+        }
+    
+        .securityCode .icons .fas:hover {
+          color: #357fc9;
+          cursor: pointer;
+        }
+        .container{
+  border-radius: 5rem;
+  box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
+  transition: 0.2s ease-in-out ;
+transition-property:all; 
+font-family: 'Baloo 2', cursive;
+font-size: 18px;
+
+}
+.container:hover{
+  transform:translateY(.2rem);
+  box-shadow: 0 0 .2rem .2rem rgb(148, 255, 145);
+  background: rgba(70, 252, 146, 0.199);
+}
+#votingimage{
+  padding-left: 2rem;
+  padding-top: .6rem;
+  padding-bottom: 2rem;
+
+}
+#welcometopage{
+  margin-left: 2rem;
+ margin-top: 1rem;
+ background-image: linear-gradient(#B2FEFA,#0ED2F7);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: rgb(45, 44, 49);
+ font-size: 1.5rem;
+}
+
+
+@media (min-width:320px) and (max-width:991px){
+  #welcometopage{
+    margin-right: 1.6rem;
+  }
+    #votingimage{
+      margin-right: 1.2rem;
+    }
+}
+@media (min-width:320px) and (max-width:375px){
+  #signupbutton{
+margin-right: .1rem;
+position: relative;
+}
+}
+@media (min-width:376px) and (max-width:1439px){
+  #signupbutton{
+margin-right: 1rem;
+position: relative;
+}
+}
+@media (min-width:320px) and (max-width:1024px){
+    #typethetext{
+      margin-left: -2rem;
+    }
+   
+
+}
+@media (min-width:320px) and (max-width:575px){
+.container{
+  margin-left: 2px;
+}
+}
+
+
+      </style>
+
+  <!-- Footer CSS -->
+  <style>
+    .three ul li a{
+      text-decoration: none;
+    }
+    .three ul li a:hover {
+      text-decoration: none;
+    }
+    .three ul li a h4:hover {
+      color: #037AE2;
+    }
+    .helpdesk{
+      text-decoration: none;
+    }
+  </style>
+
   </head>
 
   <body>
@@ -27,12 +178,24 @@
       <div class="navbar">
       <div class="main-heading">
 
+      
         <div class="logo">
-          <a href="#" class="endlogo">
-            <img src="./Images/flag.png">
-
-          </a>
-        </div>
+          <div class="flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo1.jpg" id="header-image">
+                </a>
+              </div>
+              <div class="flip-back">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo2.jpg" id="header-image">
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+	      
 
         <div class="heading">
           <img class="emblem"  src="./Images/emblem.png"></img>
@@ -68,34 +231,34 @@
         <div class="container" style="height:auto;">
             <div class="row" style="height: auto;">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
-                    <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;">Welcome to Voter's Registration Portal</p>
-                    <div class="row"><img src="./Images/voting.jpg"></div>
+                    <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;" id="welcometopage">Welcome to Voter's Registration Portal</p>
+                    <div class="row" id="votingimage"><img src="./Images/voting.jpg"></div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="padding:20px;">
                     <form>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="fname" class="form-label">FirstName</label>
+                                    <label for="fname" class="form-label required-field">FirstName</label>
                                     <input class="form-control" type="text" placeholder="FirstName" id="fname" >
                                 </div>
                                 <div class="mb-3">
-                                    <label for="lname" class="form-label">LastName</label>
+                                    <label for="lname" class="form-label required-field">LastName</label>
                                     <input class="form-control" type="text" placeholder="LastName" id="lname" >
                                 </div>
                                 <div class="mb-3">
-                                  <label for="Email" class="form-label">Email address</label>
-                                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                                  <label for="Email" class="form-label required-field">Email address</label>
+                                  <input type="email" class="form-control" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="password1" class="form-label">Password</label>
+                                  <label for="password1" class="form-label required-field">Password</label>
                                   <input type="password" class="form-control" id="password1">
                                   <div class="showPwd1">
                                   <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
                                   </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="confirmPassword1" class="form-label">Confirm Password</label>
+                                    <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
                                     <input type="password" class="form-control" id="confirmPassword1">
                                     <div class="showPwd1">
                                     <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
@@ -105,15 +268,15 @@
                             <div class="col-lg-6">
 
                                 <div class="mb-3">
-                                    <label for="number" class="form-label">Mobile Number</label>
+                                    <label for="number" class="form-label required-field">Mobile Number</label>
                                     <input type="number" class="form-control" id="number" placeholder="Mobile Number" >
                                 </div>
                                 <div class="mb-3">
-                                    <label for="address" class="form-label">Address</label>
+                                    <label for="address" class="form-label required-field">Address</label>
                                     <textarea class="form-control" id="address" rows="3"></textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="State" class="form-label">State</label>
+                                    <label for="State" class="form-label required-field">State</label>
                                     <select class="form-select" id="state" aria-label="Default select example">
                                         <option value="0">Select</option>
                                         <option value="1">ANDHRA PRADESH</option>
@@ -148,20 +311,34 @@
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="city" class="form-label">City</label>
+                                    <label for="city" class="form-label required-field">City</label>
                                     <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="zip_code" class="form-label">Zip Code</label>
+                                    <label for="zip_code" class="form-label required-field">Zip Code</label>
                                     <input type="number" class="form-control" id="zip_code" placeholder="zip Code">
                                 </div>
-                                <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div>
+                                <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div><br>
                             </div>
                         </div>
-
-
-                        <button type="submit" class="btn btn-success" onclick="signup()">Sign Up</button>
+                        <div class="captcha-container" style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
+                          <div class="securityCode">
+                            <p id="code"></p>
+                            <div class="icons">
+                              <span class="readText" style="align-items: center;">
+                                <i class="fas fa-headphones"></i>
+                              </span>
+                              <span class="changeText">
+                                <i class="fas fa-sync-alt"></i>
+                              </span>
+                              <input type="text" id="typethetext" placeholder="Type the text here" ><br>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+                        <button type="button" class="btn btn-success" onclick="signup()" style="float: right;" id="signupbutton">Sign Up</button>
                     </form>
                 </div>
             </div>
@@ -177,6 +354,17 @@ chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
 </script>
+
+<script>
+       function giveAlert(title_,icon_)
+       {
+            swal({
+              title: title_,
+              icon: icon_,
+              });
+       }
+
+</script>
     <script>
         function signup(){
             var f_name = document.getElementById('fname').value;
@@ -189,52 +377,57 @@ chk.addEventListener('change', () => {
             var city = document.getElementById('city').value;
             var add1 = document.getElementById('address').value;
             var zip = document.getElementById('zip_code').value;
-
+         let emailregx = new
+      RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
             if(f_name == ''){
-              alert('Please enter your FirstName!');
+              //alert("Ghj");
+              giveAlert('Please enter your FirstName!','info');
             }
             else if(l_name == ''){
-              alert('Plese enter your LastName!');
+              giveAlert('Please enter your LastName!','info');
+            }
+            else if(email == ''){
+              giveAlert('Please enter your Email address!','info');
+            }
+            else if (emailregx.test(email) == false) {
+              giveAlert('Invalid Email Address!', 'info');
             }
             else if(pwd1==''){
-              alert('Plese enter your Password!');
+              giveAlert('Please enter your Password!','info');
             }
             else if(pwd2==''){
-              alert('Plese enter your Password twice!');
-            }
-            else if(pwd2==''){
-              alert('Plese enter your Password twice!');
+              giveAlert('Please enter your Password twice!','info');
             }
             else if(city =='' ){
-              alert('Plese enter your city!');
+              giveAlert('Please enter your city!','info');
             }
             else if(add1 == ''){
-              alert('Plese enter your address!');
+              giveAlert('Please enter your address!','info');
             }
             else if(mob_num ==''){
-              alert('Plese enter your valid mobile number!');
+              giveAlert('Please enter your valid mobile number!','info');
             }
             else if(zip ==''){
-              alert('Plese enter your valid mobile number!');
+              giveAlert('Please enter your valid Zip Code!','info');
             }
             else if(mob_num =='' || mob_num >= 10000000000 || mob_num <= 999999999){
-              alert('Plese enter your valid mobile number!');
+              giveAlert('Please enter your valid mobile number!','info');
             }
             else if(pwd1 != pwd2){
-              alert("Your passwords are not matching!");
+              giveAlert("Your passwords are not matching!",'info');
             }
             else if(pwd1.length < 6 || pwd1.length > 6 )
             {
-              alert("Password min and max length is 6.");
+              giveAlert("Password min and max length is 6.",'info');
             }
 
             else if(st == 0)
             {
-               alert("Please select your State !");
+              giveAlert("Please select your State !",'info');
             }
             else
             {
-            alert('Thank You for Registering! & You are Redirecting to Home page');
+              giveAlert('Thank You for Registering! & You are Redirecting to Home page','success');
               setTimeout(function() {window.location = "Home.html" });
             }
 
@@ -262,25 +455,25 @@ chk.addEventListener('change', () => {
       </h3>
     </div>
     <div class="helpdeskDiv">
-    <a class="helpdesk" href="help.html" target="">Help
+    <a class="helpdesk" href="help.html" target="_blank">Help
       Desk</a>
     </div>
     <div class="follow-us">
       <h2>Follow Us</h2>
       <div class="icons">
-        <a href="https://www.facebook.com/NationalPortalIndia/">
+        <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
           <i class="fab fa-facebook-f fbi"></i>
         </a>
-        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
           <i class="fab fa-twitter twi"></i>
         </a>
-        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU">
+        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
           <i class="fab fa-youtube yti"></i>
         </a>
-        <a href="https://www.instagram.com/mygovindia/?hl=en">
+        <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
           <i class="fab fa-instagram igi"></i>
         </a>
-        <a href="https://www.linkedin.com/company/government-of-india">
+        <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
           <i class="fab fa-linkedin-in li"></i>
         </a>
       </div>
@@ -296,21 +489,63 @@ chk.addEventListener('change', () => {
       <h2>Regional Offices</h2>
       <select name="place" id="place">
         <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="lucknow">Lucknow</option>
+        <option value="chennai">Chennai</option>
+        <option value="bengaluru">Bengaluru</option>
+        <option value="hyderabad">Hyderabad</option>
       </select>
-      <h3>National Voter Portal Regional Office, Delhi</h3>
-      <h3>Ground floor, pragati maidan metro station, new delhi - 110001</h3>
     </div>
 
     <div class="three">
-      <h4>Website Policy</h4>
-      <h4>terms and conditions</h4>
-      <h4>privacy policy</h4>
-      <h4>hyperlinking policy</h4>
-      <h4>copyright policy</h4>
-      <h4>disclaimer</h4>
-      <h4>help</h4>
-      <h4>feedback</h4>
-      <h4>sitemap</h4>
+      <ul>
+        <li>
+          <a href="">
+            <h4>Website Policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Terms and conditions</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Privacy policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Hyperlinking policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Copyright policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Disclaimer</h4>
+          </a>
+        </li>
+        <li>
+          <a href="help.html">
+            <h4>Help</h4>
+          </a>
+        </li>
+        <li>
+          <a href="feedbackform.html">
+            <h4>Feedback</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Sitemap</h4>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="four">
@@ -321,14 +556,14 @@ chk.addEventListener('change', () => {
         <ul>
           <li>
 
-            <a href="#">
+            <a href="https://www.mygov.in/" target="_blank">
               My Gov <i class="fas fa-external-link-alt"></i>
             </a>
 
           </li>
           <li>
 
-            <a href="#">
+            <a href="https://www.nvsp.in/" target="_blank">
               National Voter Portal
               <i class="fas fa-external-link-alt"></i>
             </a>
@@ -336,21 +571,21 @@ chk.addEventListener('change', () => {
           </li>
           <li>
 
-            <a href="#">
+            <a href="https://www.digitalindia.gov.in/" target="_blank">
               Digital India <i class="fas fa-external-link-alt"></i>
             </a>
 
           </li>
           <li>
 
-            <a href="#">
+            <a href="https://cbic-gst.gov.in/#" target="_blank">
               GST.gov.in <i class="fas fa-external-link-alt"></i>
             </a>
 
           </li>
           <li>
 
-            <a href="#">
+            <a href="http://dbtindia.gov.in/"  target="_blank">
               DBT Bharatpur <i class="fas fa-external-link-alt"></i>
             </a>
 
@@ -362,7 +597,7 @@ chk.addEventListener('change', () => {
 
 
   <div class="footer-down">
-  <div class="copyright">
+  <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
@@ -414,6 +649,53 @@ chk.addEventListener('change', () => {
       x.type = "password";
     }
   }
+</script>
+ <!-- script for captcha and speaker -->
+ <script type="text/javascript"
+ src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+ const changeTextBtn = document.querySelector('.changeText');
+ const readTextBtn = document.querySelector('.readText');
+ const code = document.querySelector('#code');
+ const input = document.querySelector('.userInput input');
+ const submitBtn = document.querySelector('.btn');
+
+ changeTextBtn.addEventListener('click', () => {
+   code.textContent = createCaptcha();
+ });
+ window.addEventListener('load', () => {
+   code.textContent = createCaptcha();
+ });
+
+ function createCaptcha() {
+   let letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+   let a = letters[Math.floor(Math.random() * letters.length)];
+   let b = letters[Math.floor(Math.random() * letters.length)];
+   let c = letters[Math.floor(Math.random() * letters.length)];
+   let d = letters[Math.floor(Math.random() * letters.length)];
+   let e = letters[Math.floor(Math.random() * letters.length)];
+   let f = letters[Math.floor(Math.random() * letters.length)];
+   let g = letters[Math.floor(Math.random() * letters.length)];
+   let code = a + b + c + d + e + f + g;
+   return code;
+ }
+ submitBtn.addEventListener('click', () => {
+   let val = input.value;
+   if (val == '') {
+     alert('Please Enter The code');
+   }
+   else if (val === code.textContent) {
+     alert('Valid input');
+   }
+   else {
+     alert('invalid input !');
+   }
+ })
+ readTextBtn.addEventListener('click', () => {
+   let text = code.textContent;
+   responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });
+ })
 </script>
    </body>
 </html>
