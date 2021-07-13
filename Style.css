@@ -28,10 +28,11 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  left:60px;
+  
   padding: 5px;
   position: relative;
   bottom:0px;
+  right:13rem;
   height: 22px;
   width: 45px;
 
