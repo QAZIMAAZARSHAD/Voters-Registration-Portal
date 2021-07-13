@@ -419,13 +419,13 @@ tr td{
 
 ::-webkit-scrollbar
 {
-	width: 15px;
+	width: 0px;
 	background-color:whitesmoke;
 }
 
 ::-webkit-scrollbar-thumb
-{
-	background-color:#E0AB9D;
+{ width:0px;
+	background-color:transparent;
 	border-radius: 10px;
 
 }
@@ -912,7 +912,7 @@ transform: rotate(45deg);
   transform: rotateY(180deg);
 }
 .labelnew {
-  background-color: rgb(237,232,232);
+  background-color: #111;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -931,7 +931,7 @@ transform: rotate(45deg);
 }
 
 .labelnew .ball {
-  background-color: rgb(199, 30, 30);
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   bottom: 0px;

@@ -5,10 +5,12 @@
   /* border: 1px solid red; Debuggin code*/
 }
 
+
 body {
   background-color: #fafafa;
   margin: 0;
   transition: background 0.2s linear;
+ 
 }
 
 body.dark {
@@ -22,7 +24,7 @@ body.dark {
 }
 
 .label {
-  background-color: rgb(237 232 232);
+  background-color: #111;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -40,7 +42,7 @@ body.dark {
 }
 
 .label .ball {
-  background-color: rgb(199, 30, 30);
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   bottom: 0px;
@@ -826,7 +828,7 @@ textarea {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 0px;
   background-color: whitesmoke;
 }
 
@@ -1414,7 +1416,7 @@ ul {
 
 
 .labelnew {
-  background-color:rgb(237 232 232);
+  background-color: #111;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -1432,7 +1434,7 @@ ul {
 }
 
 .labelnew .ball {
-  background-color: rgb(199, 30, 30);
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   bottom: 0px;
@@ -1507,4 +1509,7 @@ ul {
   .fa-sun {
     font-size: 4px;
   }
+}
+.dark {
+  background-color: #030303;
 }

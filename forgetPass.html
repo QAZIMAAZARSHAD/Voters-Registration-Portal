@@ -419,13 +419,7 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
 
 
 
-  <script>
-    const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
-});
-</script>
+  
 
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
@@ -475,5 +469,16 @@ chk.addEventListener('change', () => {
         }
       }
     </script>
+   
+    <script>
+       window.onload = function(){
+      var chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+}
+  </script>
+ 
 </body>
 </html>
