@@ -338,6 +338,13 @@ body.dark {
   width: 150px;
 }
 
+@media screen and (max-width: 1310px) {
+  .mobile_view {
+    display: block;
+    transform: scale(1.4);
+  }
+
+}
 @media screen and (max-width: 1240px) {
   .hindi-heading {
     font-size: 1.8rem;
