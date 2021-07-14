@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,27 +39,27 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
   <script>
     // Get current title and icon
-  var title = $('title').text();
-  var favicon = $('link[rel=icon]').attr('href');
-  var newtitle = 'Please Visit Again!';
+    var title = $('title').text();
+    var favicon = $('link[rel=icon]').attr('href');
+    var newtitle = 'Please Visit Again!';
 
-  // Active
-  window.addEventListener('focus', resetTitleicon);
+    // Active
+    window.addEventListener('focus', resetTitleicon);
 
-  // Inactive
-  window.addEventListener('blur', changeTitleicon);
+    // Inactive
+    window.addEventListener('blur', changeTitleicon);
 
-  // Change page title and icon
-  function changeTitleicon(){
-   $("title").text(newtitle);
-   $('link[rel=icon]').attr('href', './Images/folded.png');
-  }
+    // Change page title and icon
+    function changeTitleicon() {
+      $("title").text(newtitle);
+      $('link[rel=icon]').attr('href', './Images/folded.png');
+    }
 
-  // Reset the page title and icon
-  function resetTitleicon(){
-   $('title').text(title);
-   $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
-  }
+    // Reset the page title and icon
+    function resetTitleicon() {
+      $('title').text(title);
+      $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+    }
   </script>
 </head>
 <script>
@@ -66,6 +67,7 @@
     $('.loader_bg').fadeToggle();
   }, 2500);
 </script>
+
 <body>
   <div class="loader_bg">
     <div class="loader1"></div>
@@ -99,7 +101,7 @@
               </div>
             </div>
           </div>
-            </div>
+        </div>
 
         <div class="heading">
           <img class="emblem" src="./Images/emblem.png"></img>
@@ -139,10 +141,10 @@
       </video>
     </article>
   </header>
- <footer class="footer-index">
+  <footer class="footer-index">
     <div class="copyright" style="background-color: black; margin-top: -5px;">
-    Copyright ©
-  <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+      Copyright ©
+      <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
   </footer>
   <button id="scrollToTopButton" title="Go to top" class="ml-5">
@@ -168,4 +170,5 @@
   </script>
   <script src="js/video.js"></script>
 </body>
+
 </html>

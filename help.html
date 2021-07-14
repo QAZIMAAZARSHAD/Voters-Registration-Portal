@@ -2,516 +2,525 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Help Desk</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
-    <script>
-      // Get current title and icon
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Help Desk</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+  <script>
+    // Get current title and icon
     var title = $('title').text();
     var favicon = $('link[rel=icon]').attr('href');
     var newtitle = 'Please Visit Again!';
-    
+
     // Active
     window.addEventListener('focus', resetTitleicon);
-    
+
     // Inactive
     window.addEventListener('blur', changeTitleicon);
-    
+
     // Change page title and icon
-    function changeTitleicon(){
-     $("title").text(newtitle); 
-     $('link[rel=icon]').attr('href', './Images/folded.png');
+    function changeTitleicon() {
+      $("title").text(newtitle);
+      $('link[rel=icon]').attr('href', './Images/folded.png');
     }
-    
+
     // Reset the page title and icon
-    function resetTitleicon(){
-     $('title').text(title);
-     $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+    function resetTitleicon() {
+      $('title').text(title);
+      $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
     }
-    </script>
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="help.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+  </script>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="help.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
     integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
     crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <style>
-    #scrollToTopButton{
-  position: fixed;
-  bottom: 15px;
-  right: 10px;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  box-shadow: 0 6px 10px 0px gray;
-}
-
+  #scrollToTopButton {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0px gray;
+  }
 </style>
 <!-- Footer CSS -->
 <style>
-  .three{
-      padding-left: 32px;
-    }
-  ul{
+  .three {
+    padding-left: 32px;
+  }
+
+  ul {
     list-style-type: none;
   }
+
   .three ul li a:hover {
     text-decoration: none;
   }
+
   .three ul li a h4:hover {
     color: #037AE2;
   }
-  .four ul li a{
+
+  .four ul li a {
     text-decoration: underline;
   }
 </style>
 
 
 <body>
-    <div class="scroll-bar">
+  <div class="scroll-bar">
 
-  <!-- navbar starts -->
-  <header>
-    <div class="navbar">
-      <div class="main-heading">
+    <!-- navbar starts -->
+    <header>
+      <div class="navbar">
+        <div class="main-heading">
 
-       
-        <div class="logo">
-          <div class="flip">
-            <div class="flip-inner">
-              <div class="flip-front">
-                <a href="#" class="endlogo">
-                  <img src="./Images/Logo/logo1.jpg" id="header-image">
-                </a>
-              </div>
-              <div class="flip-back">
-                <a href="#" class="endlogo">
-                  <img src="./Images/Logo/logo2.jpg" id="header-image">
-                </a>
+
+          <div class="logo">
+            <div class="flip">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <a href="#" class="endlogo">
+                    <img src="./Images/Logo/logo1.jpg" id="header-image">
+                  </a>
+                </div>
+                <div class="flip-back">
+                  <a href="#" class="endlogo">
+                    <img src="./Images/Logo/logo2.jpg" id="header-image">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-            </div> 
 
-        <div class="heading">
-          <img class="emblem" src="./Images/emblem.png"></img>
-          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
-            डेमो पोर्टल</p>
-          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+          <div class="heading">
+            <img class="emblem" src="./Images/emblem.png"></img>
+            <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
+              डेमो पोर्टल</p>
+            <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
+          </div>
+
+
         </div>
 
 
-      </div>
-
-
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
 
 
 
 
-      <script>
-        const chk = document.getElementById('chk');
+        <script>
+          const chk = document.getElementById('chk');
 
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
-  </header>
+          chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+          });
+        </script>
+    </header>
 
-  <!-- navbar ends -->
+    <!-- navbar ends -->
     <section class="body">
-        <div class="container">
-            <h1>How can we help you?</h1>
-            <div class="help-box">
-                <div class="help-left">
-                    <h2>Details</h2>
-                    <br>
-                    <br>
-                    <form id="form1">
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label><h4>Name<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="text" id="name" placeholder="Fill your name">
-                            </div>
-                            <div class="input-group">
-                                <label><h4>Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="email" id="email" placeholder="xyz@abc.com">
-                            </div>
-                        </div>
-                        <label><h4>Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                        <textarea rows="5" id="mess" placeholder="Your Message Here..."></textarea>
-                        <button type="button" onclick="check()">Submit</button>
-                    </form>
-                    <script>
-                         function check()
-                         {
-                              var name = document.getElementById("name").value;
-                              var email= document.getElementById("email").value;
-                              var mess=  document.getElementById("mess").value;
-                              var filter =  /^([a-zA-Z0-9_\.\-]+)\@([a-zA-Z0-9]+\.*[a-zA-Z0-9]+)\.([a-zA-Z0-9]{2,4})$/;
-
-                              if(name.length==0)
-                              {
-                                swal("Please enter your name","","info");
-                              } else if(email.length==0 | !filter.test(email))
-                              {
-                                swal("Please enter a valid email","","info");
-                              } else if(mess.length==0)
-                              {
-                                swal("Please enter a message","","info");
-                              } else
-                              {
-                                swal('Thank you for contacting us! We will reach you soon!','','success');
-                                $("#form1")[0].reset();
-
-                              }
-
-
-
-                         }
-
-                    </script>
+      <div class="container">
+        <h1>How can we help you?</h1>
+        <div class="help-box">
+          <div class="help-left">
+            <h2>Details</h2>
+            <br>
+            <br>
+            <form id="form1">
+              <div class="input-row">
+                <div class="input-group">
+                  <label>
+                    <h4>Name<sup style="color:rgb(255, 8, 8)"> *</sup></h4>
+                  </label>
+                  <input type="text" id="name" placeholder="Fill your name">
                 </div>
-                <div class="help-right">
-                    <h2>Reach us</h2>
-                    <table>
-                        <tr>
-                            <td><b>Email</b></td>
-                            <td style="color: rgb(58, 52, 52); font-weight: bold;">help@Voterregistrationportal.com</td>
-                        </tr>
-                        <tr>
-                            <td><b>Phone</b></td>
-                            <td style="color: rgb(58, 52, 52); font-weight: bold;">123456789</td>
-                        </tr>
-                        <tr>
-                            <td><b>Address</b></td>
-                            <td style="color: rgb(58, 52, 52); font-weight: bold;">114 abc buiding, near xyz road</td>
-                        </tr>
-                    </table>
-
-
+                <div class="input-group">
+                  <label>
+                    <h4>Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4>
+                  </label>
+                  <input type="email" id="email" placeholder="xyz@abc.com">
                 </div>
-            </div>
+              </div>
+              <label>
+                <h4>Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4>
+              </label>
+              <textarea rows="5" id="mess" placeholder="Your Message Here..."></textarea>
+              <button type="button" onclick="check()">Submit</button>
+            </form>
+            <script>
+              function check() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var mess = document.getElementById("mess").value;
+                var filter = /^([a-zA-Z0-9_\.\-]+)\@([a-zA-Z0-9]+\.*[a-zA-Z0-9]+)\.([a-zA-Z0-9]{2,4})$/;
+
+                if (name.length == 0) {
+                  swal("Please enter your name", "", "info");
+                } else if (email.length == 0 | !filter.test(email)) {
+                  swal("Please enter a valid email", "", "info");
+                } else if (mess.length == 0) {
+                  swal("Please enter a message", "", "info");
+                } else {
+                  swal('Thank you for contacting us! We will reach you soon!', '', 'success');
+                  $("#form1")[0].reset();
+
+                }
+
+
+
+              }
+
+            </script>
+          </div>
+          <div class="help-right">
+            <h2>Reach us</h2>
+            <table>
+              <tr>
+                <td><b>Email</b></td>
+                <td style="color: rgb(58, 52, 52); font-weight: bold;">help@Voterregistrationportal.com</td>
+              </tr>
+              <tr>
+                <td><b>Phone</b></td>
+                <td style="color: rgb(58, 52, 52); font-weight: bold;">123456789</td>
+              </tr>
+              <tr>
+                <td><b>Address</b></td>
+                <td style="color: rgb(58, 52, 52); font-weight: bold;">114 abc buiding, near xyz road</td>
+              </tr>
+            </table>
+
+
+          </div>
         </div>
+      </div>
 
     </section>
 
-<!-- faq  -->
-<div class="container">
+    <!-- faq  -->
+    <div class="container">
 
-  <div class="row">
-    <div class="col-md-6">
-  <div class="accordion">
-    <div class="accordion-item" id="question1">
-      <a class="accordion-link " href="#question1"> Q. Is the application also available in android playstore?
-      </a>
-      <div class="answer">
-        Android phone based users can install an application from the website of the Government.
-      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="accordion">
+            <div class="accordion-item" id="question1">
+              <a class="accordion-link " href="#question1"> Q. Is the application also available in android playstore?
+              </a>
+              <div class="answer">
+                Android phone based users can install an application from the website of the Government.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion">
+            <div class="accordion-item" id="question2">
+              <a class="accordion-link" href="#question2"> Q. Who can access the service?
+              </a>
+              <div class="answer">
+                A user can access the service by sending the SMS.
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="accordion">
+            <div class="accordion-item" id="question3">
+              <a class="accordion-link" href="#question3"> Q. How can we access the server from operators?
+              </a>
+              <div class="answer">
+                A special five digit code is provided for accessing the service by operators such as Aircel, Airtel,
+                BSNL, Idea, MTS, Reliance, Tata Docomo, Tata Indicom, Uninor, Videocon and Vodafone. </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item" id="question4">
+              <a class="accordion-link" href="#question4"> Q. How can we access the service from sms?
+              </a>
+              <div class="answer">
+                In order to access the services through SMS, Voters must send a pre-formatted SMS with a word “ECI”
+                followed by details such as name, name of father/husband, locality, age or date of birth and gender
+                separated by commas. As an example, an SMS “ECI Sumit Bhattacharjee” would fetch the details of a voter
+                by name “Sumit bhattacharjee” on a nation-wide search of voters.
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
       </div>
     </div>
 
+    <!-- faq  -->
 
-   <div class="accordion">
-    <div class="accordion-item" id="question2">
-      <a class="accordion-link" href="#question2"> Q. Who can access the service?
-      </a>
-      <div class="answer">
-        A user can access the service by sending the SMS.
-      </div>
-    </div>
   </div>
 
+  <!-- footer starts -->
 
-</div>
-
-
-  <div class="col-md-6">
-<div class="accordion">
-  <div class="accordion-item" id="question3">
-    <a class="accordion-link" href="#question3"> Q. How can we access the server from operators?
-    </a>
-    <div class="answer">
-    A special five digit code is provided for accessing the service by operators such as Aircel, Airtel, BSNL, Idea, MTS, Reliance, Tata Docomo, Tata Indicom, Uninor, Videocon and Vodafone.               </div>
-  </div>
-</div>
-
-<div class="accordion">
-  <div class="accordion-item" id="question4">
-    <a class="accordion-link" href="#question4"> Q. How can we access the service from sms?
-    </a>
-    <div class="answer">
-    In order to access the services through SMS, Voters must send a pre-formatted SMS with a word “ECI” followed by details such as name, name of father/husband, locality, age or date of birth and gender separated by commas. As an example, an SMS “ECI Sumit Bhattacharjee” would fetch the details of a voter by name “Sumit bhattacharjee” on a nation-wide search of voters.
-    </div>
-  </div>
-</div>
+  <footer id="ft">
 
 
-</div>
-
-</div>
-</div>
-
-<!-- faq  -->
-
-    </div>
-
-    <!-- footer starts -->
-
-    <footer id="ft">
-
-
-        <div id="footer">
-          <div class="one">
-            <div class="contact">
-            <h2>Contact Us</h2>
-            <h3>
-              <i class="fas fa-phone-alt phonei"></i>
-              Toll free: 1947
-            </h3>
-            <h3>
-                <div class="envelope">
+    <div id="footer">
+      <div class="one">
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <h3>
+            <i class="fas fa-phone-alt phonei"></i>
+            Toll free: 1947
+          </h3>
+          <h3>
+            <div class="envelope">
               <i class="fas fa-envelope envelopei"></i>
               help@nationalvoterportal.gov.in
             </div>
-            </h3>
-          </div>
-          <div class="helpdeskDiv">
+          </h3>
+        </div>
+        <div class="helpdeskDiv">
           <a class="helpdesk" href="help.html" target="_blank">Help
             Desk</a>
+        </div>
+        <div class="follow-us">
+          <h2>Follow Us</h2>
+          <div class="icons">
+            <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
+              <i class="fab fa-facebook-f fbi"></i>
+            </a>
+            <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank">
+              <i class="fab fa-twitter twi"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
+              <i class="fab fa-youtube yti"></i>
+            </a>
+            <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
+              <i class="fab fa-instagram igi"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
+              <i class="fab fa-linkedin-in li"></i>
+            </a>
           </div>
-          <div class="follow-us">
-            <h2>Follow Us</h2>
-            <div class="icons">
-              <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
-                <i class="fab fa-facebook-f fbi"></i>
-              </a>
-              <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                <i class="fab fa-twitter twi"></i>
-              </a>
-              <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
-                <i class="fab fa-youtube yti"></i>
-              </a>
-              <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
-                <i class="fab fa-instagram igi"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
-                <i class="fab fa-linkedin-in li"></i>
-              </a>
-            </div>
-          </div>
-          </div>
+        </div>
+      </div>
 
-          <div class="two">
-            <h2>NATIONAL VOTER PORTAL Head Office</h2>
-            <h3>unique identification authority of india</h3>
-            <h3>government of india</h3>
-            <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
+      <div class="two">
+        <h2>NATIONAL VOTER PORTAL Head Office</h2>
+        <h3>unique identification authority of india</h3>
+        <h3>government of india</h3>
+        <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
-            <h2>Regional Offices</h2>
-            <select name="place" id="place">
-              <option value="delhi">Delhi</option>
-              <option value="mumbai">Mumbai</option>
-              <option value="kolkata">Kolkata</option>
-              <option value="lucknow">Lucknow</option>
-              <option value="chennai">Chennai</option>
-              <option value="bengaluru">Bengaluru</option>
-              <option value="hyderabad">Hyderabad</option>
-            </select>
-          </div>
+        <h2>Regional Offices</h2>
+        <select name="place" id="place">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="chennai">Chennai</option>
+          <option value="bengaluru">Bengaluru</option>
+          <option value="hyderabad">Hyderabad</option>
+        </select>
+      </div>
 
-          <div class="three">
-            <ul>
-              <li>
-                <a href="">
-                  <h4>Website Policy</h4>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <h4>Terms and conditions</h4>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <h4>Privacy policy</h4>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <h4>Hyperlinking policy</h4>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <h4>Copyright policy</h4>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <h4>Disclaimer</h4>
-                </a>
-              </li>
-              <li>
-                <a href="help.html">
-                  <h4>Help</h4>
-                </a>
-              </li>
-              <li>
-                <a href="feedbackform.html">
-                  <h4>Feedback</h4>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <h4>Sitemap</h4>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="three">
+        <ul>
+          <li>
+            <a href="">
+              <h4>Website Policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Terms and conditions</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Privacy policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Hyperlinking policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Copyright policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Disclaimer</h4>
+            </a>
+          </li>
+          <li>
+            <a href="help.html">
+              <h4>Help</h4>
+            </a>
+          </li>
+          <li>
+            <a href="feedbackform.html">
+              <h4>Feedback</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Sitemap</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-          <div class="four">
-            <h2>Government of India</h2>
-            <h4>Integrity Pledge
+      <div class="four">
+        <h2>Government of India</h2>
+        <h4>Integrity Pledge
+          <i class="fas fa-external-link-alt"></i>
+        </h4>
+        <ul>
+          <li>
+
+            <a href="https://www.mygov.in/" target="_blank">
+              My Gov <i class="fas fa-external-link-alt"></i>
+            </a>
+
+          </li>
+          <li>
+
+            <a href="https://www.nvsp.in/" target="_blank">
+              National Voter Portal
               <i class="fas fa-external-link-alt"></i>
-            </h4>
-              <ul>
-                <li>
+            </a>
 
-                  <a href="https://www.mygov.in/" target="_blank">
-                    My Gov <i class="fas fa-external-link-alt"></i>
-                  </a>
+          </li>
+          <li>
 
-                </li>
-                <li>
+            <a href="https://www.digitalindia.gov.in/" target="_blank">
+              Digital India <i class="fas fa-external-link-alt"></i>
+            </a>
 
-                  <a href="https://www.nvsp.in/" target="_blank">
-                    National Voter Portal
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
+          </li>
+          <li>
 
-                </li>
-                <li>
+            <a href="https://cbic-gst.gov.in/#" target="_blank">
+              GST.gov.in <i class="fas fa-external-link-alt"></i>
+            </a>
 
-                  <a href="https://www.digitalindia.gov.in/" target="_blank">
-                    Digital India <i class="fas fa-external-link-alt"></i>
-                  </a>
+          </li>
+          <li>
 
-                </li>
-                <li>
+            <a href="http://dbtindia.gov.in/" target="_blank">
+              DBT Bharatpur <i class="fas fa-external-link-alt"></i>
+            </a>
 
-                  <a href="https://cbic-gst.gov.in/#" target="_blank">
-                    GST.gov.in <i class="fas fa-external-link-alt"></i>
-                  </a>
-
-                </li>
-                <li>
-
-                  <a href="http://dbtindia.gov.in/"  target="_blank">
-                    DBT Bharatpur <i class="fas fa-external-link-alt"></i>
-                  </a>
-
-                </li>
-              </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
 
 
-        <div class="footer-down">
-        <div class="copyright" style="padding-bottom:20px">
-          Copyright ©
-          <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
-          </div>
-        </div>
-        </footer>
+    <div class="footer-down">
+      <div class="copyright" style="padding-bottom:20px">
+        Copyright ©
+        <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+      </div>
+    </div>
+  </footer>
 
 
 
 
-    <!-- footer ends -->
+  <!-- footer ends -->
 
 
-<script>
+  <script>
     const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
-<button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+  <button id="scrollToTopButton" title="Go to top" class="ml-5">
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
-</button>
-<script>
-  $(document).ready(function(){
-    var scrollTopButton = document.getElementById("scrollToTopButton");
-    window.onscroll = function () { scrollFunction() };
+  </button>
+  <script>
+    $(document).ready(function () {
+      var scrollTopButton = document.getElementById("scrollToTopButton");
+      window.onscroll = function () { scrollFunction() };
 
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollTopButton.style.display = "block";
-    } else {
-      scrollTopButton.style.display = "none";
-    }
-  }
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
 
-  $("#scrollToTopButton").click(function(){
-  $('html ,body').animate({scrollTop : 0},800)
-});
-});
-</script>
-<script>
+      $("#scrollToTopButton").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 800)
+      });
+    });
+  </script>
+  <script>
 
-var accordionlinks = document.querySelectorAll(".accordion-link")
-var header= document.querySelector(".header")
-accordionlinks.forEach((accordionlink)=>{
-  accordionlink.addEventListener('click',event=>{
-    const anyActiveLinks = document.querySelector(".accordion-link.active")
-    if(anyActiveLinks && anyActiveLinks!==accordionlink)
-    {
-      anyActiveLinks.classList.toggle("active")
-      anyActiveLinks.nextElementSibling.style.maxHeight=0;
+    var accordionlinks = document.querySelectorAll(".accordion-link")
+    var header = document.querySelector(".header")
+    accordionlinks.forEach((accordionlink) => {
+      accordionlink.addEventListener('click', event => {
+        const anyActiveLinks = document.querySelector(".accordion-link.active")
+        if (anyActiveLinks && anyActiveLinks !== accordionlink) {
+          anyActiveLinks.classList.toggle("active")
+          anyActiveLinks.nextElementSibling.style.maxHeight = 0;
 
-    }
+        }
 
-    accordionlink.classList.toggle("active")
-    const answer = accordionlink.nextElementSibling;
-    if(accordionlink.classList.contains("active")){
-      answer.style.maxHeight = answer.scrollHeight + "px";
-      // header.classList.add("header-color-white")
+        accordionlink.classList.toggle("active")
+        const answer = accordionlink.nextElementSibling;
+        if (accordionlink.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          // header.classList.add("header-color-white")
 
-    }
-    else{
-      answer.style.maxHeight = 0;
-    }
-  })
+        }
+        else {
+          answer.style.maxHeight = 0;
+        }
+      })
 
-})
-</script>
+    })
+  </script>
 </body>
 
 </html>
