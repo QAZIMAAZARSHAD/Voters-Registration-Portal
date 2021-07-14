@@ -910,3 +910,9 @@ transform: rotate(45deg);
   color: white;
   transform: rotateY(180deg);
 }
+
+.footer-img{
+  margin : 15px;
+  width : 150px;
+  display: block;
+}
