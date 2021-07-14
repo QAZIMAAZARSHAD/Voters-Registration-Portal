@@ -142,25 +142,7 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
-
-
-
-    <script>
-      const chk = document.getElementById('chk');
-
-  chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-  });
-  </script>
+      
   </header>
 
 
@@ -420,6 +402,20 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
 
 
   <div class="footer-down">
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+
+
+
+  
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -468,5 +464,16 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
         }
       }
     </script>
+   
+    <script>
+       window.onload = function(){
+      var chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+}
+  </script>
+ 
 </body>
 </html>

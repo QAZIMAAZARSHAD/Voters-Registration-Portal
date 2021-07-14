@@ -153,25 +153,7 @@ font-size: 18px;
         </div>
 
 
-        <div>
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
-        </div>
-
-
-
-
-      <script>
-          const chk = document.getElementById('chk');
-
-      chk.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-      });
-      </script>
+       
     </header>
 
     <div class="main-section">
@@ -433,18 +415,25 @@ chk.addEventListener('change', () => {
     </div>
   </div>
 
-
+ 
 
   <div class="footer-down">
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+     
+ 
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
   </div>
   </footer>
-
-
-
 
 
   <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
@@ -478,5 +467,17 @@ chk.addEventListener('change', () => {
     }
   }
 </script>
+
+<script>
+  window.onload = function(){
+ var chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+document.body.classList.toggle('dark');
+});
+}
+</script>
+
+
    </body>
 </html>
