@@ -916,3 +916,36 @@ transform: rotate(45deg);
   transform: rotateY(180deg);
 }
 
+.labelnew {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 5px;
+  position: relative;
+  bottom:0px;
+  top:22px;
+  right:32rem;
+  height: 22px;
+  width: 45px;
+
+  transform: scale(1.5);
+}
+
+.labelnew .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .labelnew .ball {
+  transform: translateX(24px);
+}
