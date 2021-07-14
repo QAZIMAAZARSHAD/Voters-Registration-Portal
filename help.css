@@ -916,8 +916,3 @@ transform: rotate(45deg);
   transform: rotateY(180deg);
 }
 
-.footer-img{
-  margin : 15px;
-  width : 150px;
-  display: block;
-}
