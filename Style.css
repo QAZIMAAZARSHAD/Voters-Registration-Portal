@@ -338,6 +338,16 @@ body.dark {
   width: 150px;
 }
 
+@media screen and (max-width: 1310px) {
+  .mobile_view {
+    display: block;
+    transform: scale(1.4);
+  }
+
+}
+
+
+
 @media screen and (max-width: 1240px) {
   .hindi-heading {
     font-size: 1.8rem;
@@ -482,14 +492,15 @@ body.dark {
 }
 
 .video_container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 100% ;
+  height: 100% ;
   z-index: -1;
   opacity: 0.6;
 }
+
 .video_item {
   width: 100%;
   height: 100%;
@@ -1113,6 +1124,10 @@ ul {
 .icons a{
   text-decoration: none;
 }
+.icons a:hover{
+  text-decoration: none;
+}
+
 .icons a:hover{
   text-decoration: none;
 }
