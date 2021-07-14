@@ -1164,6 +1164,12 @@ ul {
   padding-left: 0rem;
 }
 
+.four img{
+  margin : 15px;
+  width : 150px;
+  display: block;
+}
+
 .footer-index {
   display: flex;
   justify-content: center;
@@ -1408,8 +1414,4 @@ ul {
   transform: rotateY(180deg);
 }
 
-.footer-img{
-  margin : 15px;
-  width : 150px;
-  display: block;
-}
+

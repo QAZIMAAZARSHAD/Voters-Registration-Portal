@@ -709,6 +709,11 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.four img{
+  margin : 15px;
+  width : 150px;
+  display: block;
+}
 
 
 .helpdesk {
