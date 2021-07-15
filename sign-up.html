@@ -98,11 +98,7 @@ font-family: 'Baloo 2', cursive;
 font-size: 18px;
 
 }
-.container:hover{
-  transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem rgb(148, 255, 145);
-  background: rgba(70, 252, 146, 0.199);
-}
+
 #votingimage{
   padding-left: 2rem;
   padding-top: .6rem;
@@ -116,6 +112,12 @@ font-size: 18px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  color: rgb(45, 44, 49);
  font-size: 1.5rem;
+}
+#address {
+  resize: none;
+}
+.showPwd1 {
+  margin-left: -140px;
 }
 
 
@@ -152,6 +154,17 @@ position: relative;
 }
 }
 
+@media(max-width: 1085px) {
+  .showPwd1 {
+    margin-left: -70px;
+}
+}
+
+@media (max-width : 995px) {
+  .showPwd1 {
+    margin-left: 0;
+}
+}
 
       </style>
 
@@ -205,24 +218,7 @@ position: relative;
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-    chk.addEventListener('change', () => {
-      document.body.classList.toggle('dark');
-    });
-    </script>
+     
 
     </header>
 
@@ -598,6 +594,17 @@ chk.addEventListener('change', () => {
 
 
   <div class="footer-down">
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk" >
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -698,5 +705,16 @@ chk.addEventListener('change', () => {
    responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });
  })
 </script>
+
+<script>
+  window.onload = function(){
+ var chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+document.body.classList.toggle('dark');
+});
+}
+</script>
+
    </body>
 </html>
