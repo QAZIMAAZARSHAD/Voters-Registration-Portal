@@ -683,7 +683,7 @@ h3 {
 
 .four h4 {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .two select {
@@ -709,6 +709,15 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.four img{
+  margin : 15px;
+  margin-top: 70px;
+  width : 150px;
+  display: block;
+  border-radius: 15px;
+}
+
+
 
 
 .helpdesk {
@@ -911,6 +920,7 @@ transform: rotate(45deg);
   color: white;
   transform: rotateY(180deg);
 }
+
 .labelnew {
   background-color: #111;
   border-radius: 50px;
