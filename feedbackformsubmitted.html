@@ -8,10 +8,10 @@
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
@@ -197,6 +197,23 @@ margin-left: -50%;
 }
 
   </style>
+
+  <!-- Footer CSS -->
+  <style>
+    .three ul li a{
+      text-decoration: none;
+    }
+    .three ul li a:hover {
+      text-decoration: none;
+    }
+    .three ul li a h4:hover {
+      color: #037AE2;
+    }
+    .helpdesk{
+      text-decoration: none;
+    }
+  </style>
+
   <body>
     <header>
       <div class="navbar">
@@ -228,25 +245,7 @@ margin-left: -50%;
         </div>
 
 
-        <div>
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
-        </div>
-
-
-
-
-      <script>
-          const chk = document.getElementById('chk');
-
-      chk.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-      });
-      </script>
+   
     </header>
 
     <div class="main-section">
@@ -382,32 +381,53 @@ chk.addEventListener('change', () => {
     </div>
 
     <div class="three">
-      <a href="">
-        <h4>Website Policy</h4>
-      </a>
-      <a href="">
-        <h4>Terms and conditions</h4>
-      </a>
-      <a href="">
-        <h4>Privacy policy</h4>
-      </a>
-      <a href="">
-        <h4>Hyperlinking policy</h4>
-      </a>
-      <a href="">
-        <h4>Copyright policy</h4>
-      </a>
-      <a href="">
-        <h4>Disclaimer</h4>
-      </a>
-      <a href="./help.html">
-        <h4>Help</h4>
-      </a>
-      <a href="./feedbackform.html">
-        <h4>Feedback</h4></a>
-      <a href="">
-        <h4>Sitemap</h4>
-      </a>
+      <ul>
+        <li>
+          <a href="">
+            <h4>Website Policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Terms and conditions</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Privacy policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Hyperlinking policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Copyright policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Disclaimer</h4>
+          </a>
+        </li>
+        <li>
+          <a href="help.html">
+            <h4>Help</h4>
+          </a>
+        </li>
+        <li>
+          <a href="feedbackform.html">
+            <h4>Feedback</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Sitemap</h4>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="four">
@@ -460,6 +480,15 @@ chk.addEventListener('change', () => {
 
 
   <div class="footer-down">
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -502,5 +531,16 @@ chk.addEventListener('change', () => {
     }
   }
 </script>
+
+<script>
+  window.onload = function(){
+ var chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+document.body.classList.toggle('dark');
+});
+}
+</script>
+
    </body>
 </html>

@@ -3,20 +3,28 @@
 * {
 	box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
 
 body {
+ 
 	background-color: #fafafa;
-	margin: 0;
 	transition: background 0.2s linear;
 }
 
 body.dark {
 	background: #292C35;
 }
-
+.container{
+  border: 2px solid black;
+  background-color: rgb(238, 238, 238);
+  padding:18px 15px 10px 30px;
+}
 .checkbox {
 	opacity: 0;
 	position: absolute;
+  bottom: 0px;
 }
 
 .label {
@@ -194,7 +202,7 @@ body.dark {
 {
   position: absolute;
   top: 8%;
-  left: 10%;
+  left: 0px;;
   width: 150px;
 }
 
@@ -278,7 +286,7 @@ body{
 
 .container{
     width: 80%;
-    margin: 100px;
+    margin: 50px;
 }
 .help-box{
     background: cornsilk;
@@ -405,31 +413,23 @@ tr td{
 	height: auto;
 	width: auto;
 	margin: auto;
-  overflow-y:auto;
+  overflow-y:scroll;
   overflow-x: hidden;
 	max-width: 100%;
 }
 
-::-webkit-scrollbar-track
-{
-	border: 5px solid whitesmoke;
-	background-color:whitesmoke;
+
+::-webkit-scrollbar{
+background-color: whitesmoke;
 }
-
-::-webkit-scrollbar
-{
-	width: 15px;
-	background-color:whitesmoke;
+::-webkit-scrollbar-thumb {
+background-color: #E0AB9D;
+border-radius: 10px;
 }
-
-::-webkit-scrollbar-thumb
-{
-	background-color:#E0AB9D;
-	border-radius: 10px;
-
+::-webkit-scrollbar-track {
+border: 5px solid whitesmoke;
+background-color: whitesmoke;
 }
-
-
 
 * {
     margin: 0;
@@ -901,6 +901,7 @@ transform: rotate(45deg);
   position: absolute;
   width: 100%;
   height: 100%;
+  left:60px;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }

@@ -12,6 +12,9 @@
   <link href="fonts.googleapis.com/css?family=Hind">
   <title>Welcome To Voters Registration Portal</title>
   <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -67,14 +70,13 @@
     $('.loader_bg').fadeToggle();
   }, 2500);
 </script>
-
 <body>
   <div class="loader_bg">
     <div class="loader1"></div>
     <div class="loader"></div>
     <div class="loader2"></div>
     <div class="head">
-      <h1 data-text="Vote for a better INDIA..." class="h1">Vote for a better
+      <h1 data-text="Vote for a better INDIA..." class="h1" style=" font-family: 'Lato', sans-serif;">Vote for a better
         <span class="span1">IN</span>D<span class="span2">IA</span>
         <span class="span1">.</span>.<span class="span2">.</span>
       </h1>
@@ -114,25 +116,7 @@
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
 
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
   </header>
 
   <!-- navbar ends -->
@@ -145,18 +129,34 @@
       </div>
     </div>
     <article class="video_container">
-      <video class="video_item" autoplay muted loop>
-        <source src="video/vote.mp4" type="video/mp4">
+      <video class="video_item mobile_view" autoplay muted loop>
+        <source src="video/vote.mp4" type="video/mp4" >
       </video>
     </article>
   </header>
 
  <footer class="footer-index">
+ 
+  <div>
+
    
+
+
     <div class="copyright" style="background-color: black; margin-top: -5px;">
     Copyright ©
   <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad 
-    </div>
+
+       
+  </div>
+
+ 
+  
+
+ 
+ 
+ 
+  </script>
+
   </footer>
   
   

@@ -8,10 +8,10 @@
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,11 +81,6 @@ font-size: 18px;
 box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
 
 }
-.container:hover{
-  transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem rgba(245, 159, 46, 0.671);
-  background: rgba(245, 159, 46, 0.199);
-}
 #votingimage{
   padding-left: 2rem;
   padding-top: 4rem;
@@ -97,6 +92,21 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
 }
 
 
+  </style>
+  <!-- Footer CSS -->
+  <style>
+    .three ul li a{
+      text-decoration: none;
+    }
+    .three ul li a:hover {
+      text-decoration: none;
+    }
+    .three ul li a h4:hover {
+      color: #037AE2;
+    }
+    .helpdesk{
+      text-decoration: none;
+    }
   </style>
 
 <body>
@@ -132,25 +142,7 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
-
-
-
-    <script>
-      const chk = document.getElementById('chk');
-
-  chk.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-  });
-  </script>
+      
   </header>
 
 
@@ -311,33 +303,55 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
     </div>
 
     <div class="three">
-      <a href="">
-        <h4>Website Policy</h4>
-      </a>
-      <a href="">
-        <h4>Terms and conditions</h4>
-      </a>
-      <a href="">
-        <h4>Privacy policy</h4>
-      </a>
-      <a href="">
-        <h4>Hyperlinking policy</h4>
-      </a>
-      <a href="">
-        <h4>Copyright policy</h4>
-      </a>
-      <a href="">
-        <h4>Disclaimer</h4>
-      </a>
-      <a href="help.html">
-        <h4>Help</h4>
-      </a>
-      <a href="feedbackform.html">
-        <h4>Feedback</h4></a>
-      <a href="">
-        <h4>Sitemap</h4>
-      </a>
+      <ul>
+        <li>
+          <a href="">
+            <h4>Website Policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Terms and conditions</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Privacy policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Hyperlinking policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Copyright policy</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Disclaimer</h4>
+          </a>
+        </li>
+        <li>
+          <a href="help.html">
+            <h4>Help</h4>
+          </a>
+        </li>
+        <li>
+          <a href="feedbackform.html">
+            <h4>Feedback</h4>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <h4>Sitemap</h4>
+          </a>
+        </li>
+      </ul>
     </div>
+
 
     <div class="four">
       <h2>Government of India</h2>
@@ -389,6 +403,20 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
 
 
   <div class="footer-down">
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+
+
+
+  
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -437,5 +465,16 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
         }
       }
     </script>
+   
+    <script>
+       window.onload = function(){
+      var chk = document.getElementById('chk');
+  
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+}
+  </script>
+ 
 </body>
 </html>
