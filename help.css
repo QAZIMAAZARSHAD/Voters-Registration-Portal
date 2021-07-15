@@ -711,9 +711,13 @@ h3 {
 }
 .four img{
   margin : 15px;
+  margin-top: 70px;
   width : 150px;
   display: block;
+  border-radius: 15px;
 }
+
+
 
 
 .helpdesk {

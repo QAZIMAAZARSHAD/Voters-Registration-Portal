@@ -5,12 +5,10 @@
   /* border: 1px solid red; Debuggin code*/
 }
 
-
 body {
   background-color: #fafafa;
   margin: 0;
   transition: background 0.2s linear;
- 
 }
 
 body.dark {
@@ -20,7 +18,6 @@ body.dark {
 .checkbox {
   opacity: 0;
   position: absolute;
-  bottom:0px;
 }
 
 .label {
@@ -30,11 +27,10 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
   padding: 5px;
-  position: relative;
-  bottom:0px;
-  right:22rem;
+  position: absolute;
+  right: 5rem;
+  top: 8.5rem;
   height: 22px;
   width: 45px;
 
@@ -45,7 +41,7 @@ body.dark {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   left: 0px;
   height: 22px;
   width: 22px;
@@ -265,7 +261,6 @@ body.dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .h1 {
   position: relative;
@@ -274,7 +269,6 @@ body.dark {
   color: white;
   text-transform: capitalize;
   font-weight: bolder;
-  
 }
 .span1 {
   color: orangered;
@@ -343,16 +337,6 @@ body.dark {
   left: 10%;
   width: 150px;
 }
-
-@media screen and (max-width: 1310px) {
-  .mobile_view {
-    display: block;
-    transform: scale(1.4);
-  }
-
-}
-
-
 
 @media screen and (max-width: 1240px) {
   .hindi-heading {
@@ -498,15 +482,14 @@ body.dark {
 }
 
 .video_container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100% ;
-  height: 100% ;
+  width: 100%;
+  height: 100vh;
   z-index: -1;
   opacity: 0.6;
 }
-
 .video_item {
   width: 100%;
   height: 100%;
@@ -839,7 +822,7 @@ textarea {
 }
 
 ::-webkit-scrollbar {
-
+  width: 15px;
   background-color: whitesmoke;
 }
 
@@ -1134,10 +1117,6 @@ ul {
   text-decoration: none;
 }
 
-.icons a:hover{
-  text-decoration: none;
-}
-
 .two h2,
 .four h2 {
   font-size: 21px;
@@ -1187,9 +1166,12 @@ ul {
 
 .four img{
   margin : 15px;
+  margin-top: 70px;
   width : 150px;
   display: block;
+  border-radius: 15px;
 }
+
 
 .footer-index {
   display: flex;
@@ -1435,6 +1417,7 @@ ul {
   transform: rotateY(180deg);
 }
 
+
 .labelnew {
   background-color: #111;
   border-radius: 50px;
@@ -1533,3 +1516,4 @@ ul {
 .dark {
   background-color: #030303;
 }
+
