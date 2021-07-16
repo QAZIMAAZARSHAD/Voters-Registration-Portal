@@ -3,9 +3,12 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #fafafa;
-  margin: 0;
   transition: background 0.2s linear;
 }
 
@@ -13,9 +16,16 @@ body.dark {
   background: #292C35;
 }
 
+.container {
+  border: 2px solid black;
+  background-color: rgb(238, 238, 238);
+  padding: 18px 15px 10px 30px;
+}
+
 .checkbox {
   opacity: 0;
   position: absolute;
+  bottom: 0px;
 }
 
 .label {
@@ -173,7 +183,8 @@ body.dark {
 .emblem {
   position: absolute;
   top: 8%;
-  left: 10%;
+  left: 0px;
+  ;
   width: 150px;
 }
 
@@ -241,7 +252,7 @@ body {
 
 .container {
   width: 80%;
-  margin: 100px;
+  margin: 50px;
 }
 
 .help-box {
@@ -380,18 +391,12 @@ tr td {
   height: auto;
   width: auto;
   margin: auto;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   max-width: 100%;
 }
 
-::-webkit-scrollbar-track {
-  border: 5px solid whitesmoke;
-  background-color: whitesmoke;
-}
-
 ::-webkit-scrollbar {
-  width: 15px;
   background-color: whitesmoke;
 }
 
@@ -400,33 +405,9 @@ tr td {
   border-radius: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border-radius: 3px;
-  outline: none;
-  /* border: 1px solid red; Debugging code*/
-}
-
-.navbar {
-  background-color: rgb(42, 43, 43);
-  /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, rgb(253, 86, 9), white, rgb(3, 134, 3));
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-top: 3px;
-  color: rgb(4, 40, 71);
-  text-align: center;
-  border-bottom: 2px solid rgb(4, 29, 49);
-}
-
-.heading {
-  text-align: center;
-}
-
-.navbar .row {
-  display: flex;
-  align-items: center;
+::-webkit-scrollbar-track {
+  border: 5px solid whitesmoke;
+  background-color: whitesmoke;
 }
 
 .icon img {
@@ -842,6 +823,7 @@ h3 {
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 60px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -853,4 +835,37 @@ h3 {
 .flip-back {
   color: white;
   transform: rotateY(180deg);
+}
+
+.labelnew {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  bottom: 0px;
+  top: 22px;
+  right: 32rem;
+  height: 22px;
+  width: 45px;
+  transform: scale(1.5);
+}
+
+.labelnew .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.labelnew .ball {
+  transform: translateX(24px);
 }

@@ -110,24 +110,8 @@
           <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
         </div>
       </div>
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-      <script>
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
   </header>
   <!-- navbar ends -->
-
   <header class="header" id="header">
     <div class="banner">
       <p class="banner_title "> Start Your Voting Contribution</p>
@@ -136,16 +120,17 @@
       </div>
     </div>
     <article class="video_container">
-      <video class="video_item" autoplay muted loop>
+      <video class="video_item mobile_view" autoplay muted loop>
         <source src="video/vote.mp4" type="video/mp4">
       </video>
     </article>
   </header>
   <footer class="footer-index">
-    <div class="copyright" style="background-color: black; margin-top: -5px;">
-      Copyright ©
-      <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
-    </div>
+    <div>
+      <div class="copyright" style="background-color: black; margin-top: -5px;">
+        Copyright ©
+        <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+      </div>
   </footer>
   <button id="scrollToTopButton" title="Go to top" class="ml-5">
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>

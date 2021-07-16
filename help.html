@@ -29,6 +29,7 @@
       $('title').text(title);
       $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
     }
+
   </script>
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="help.css">
@@ -39,9 +40,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-    crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"=======</script>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="help.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://kit.fontawesome.com/2cdc036eb4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  >>>>>> upstream/master
+  integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+  crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -125,26 +139,29 @@
         </div>
 
 
-        <div>
+        <<<<<<< HEAD <div>
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
             <div class="ball"></div>
           </label>
-        </div>
+      </div>
 
 
 
 
-        <script>
-          const chk = document.getElementById('chk');
+      <script>
+        const chk = document.getElementById('chk');
 
-          chk.addEventListener('change', () => {
-            document.body.classList.toggle('dark');
-          });
-        </script>
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+        });
+      </script>
     </header>
+    =======
+    </header>
+    >>>>>>> upstream/master
 
     <!-- navbar ends -->
     <section class="body">
@@ -452,13 +469,43 @@
 
 
 
-    <div class="footer-down">
+    <<<<<<< HEAD <div class="footer-down">
       <div class="copyright" style="padding-bottom:20px">
         Copyright ©
         <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
       </div>
-    </div>
+      </div>
   </footer>
+  =======
+  <div class="footer-down">
+
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+
+
+
+    <script>
+      const chk = document.getElementById('chk');
+
+      chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+      });
+    </script>
+
+    <div class="copyright" style="padding-bottom:20px">
+      Copyright ©
+      <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+    </div>
+  </div>
+  </footer>
+  >>>>>>> upstream/master
 
 
 

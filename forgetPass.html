@@ -92,12 +92,6 @@
 
   }
 
-  .container:hover {
-    transform: translateY(.2rem);
-    box-shadow: 0 0 .2rem .2rem rgba(245, 159, 46, 0.671);
-    background: rgba(245, 159, 46, 0.199);
-  }
-
   #votingimage {
     padding-left: 2rem;
     padding-top: 4rem;
@@ -162,25 +156,7 @@
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
 
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
   </header>
 
 
@@ -433,11 +409,24 @@
 
 
     <div class="footer-down">
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="labelnew" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+
+
+
+
+
       <div class="copyright" style="padding-bottom:20px">
         Copyright ©
         <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
       </div>
-    </div>
   </footer>
 
 
@@ -479,8 +468,18 @@
       } else {
         y.type = "password";
       }
-    }
   </script>
+
+  <script>
+      window.onload = function () {
+        var chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+          document.body.classList.toggle('dark');
+        });
+      }
+  </script>
+
 </body>
 
 </html>

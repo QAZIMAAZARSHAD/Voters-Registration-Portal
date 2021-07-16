@@ -217,8 +217,6 @@
   <header>
     <div class="navbar">
       <div class="main-heading">
-
-
         <div class="logo">
           <div class="flip">
             <div class="flip-inner">
@@ -235,35 +233,6 @@
             </div>
           </div>
         </div>
-
-        <div class="heading">
-          <img class="emblem" src="./Images/emblem.png"></img>
-          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
-            डेमो पोर्टल</p>
-          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
-        </div>
-      </div>
-
-
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
   </header>
 
   <div class="main-section">
@@ -295,7 +264,6 @@
         </div>
 
         <div class="row">
-
           <div class="col-10" id="expgood">
             Was Your Overall Experience Good?
             <input type="radio" id="checkbox1" name="Option1" value="Yes" class="cba1">
@@ -311,6 +279,7 @@
               <input type="radio" id="checkbox4" name="Option2">
               <label for="checkbox4">No</label>
           </div>
+
           <div class="col-10" id="expgood2">
             Would You Suggest This Website To Your Friends & Family?
             <input type="radio" id="checkbox5" name="Option3" value="Yes" class="cba1">
@@ -328,9 +297,11 @@
           </div>
 
           <br>
+
           <div class="col-25">
             <label for="feed_back">FeedBack</label>
           </div>
+
           <div class="col-75">
             <textarea id="subject" name="subject" placeholder="Write Something.."
               style="height:200px;resize: none;"></textarea>
@@ -387,11 +358,7 @@
 
   </script>
 
-
-
   <footer id="ft">
-
-
     <div id="footer">
       <div class="one">
         <div class="contact">
@@ -439,7 +406,6 @@
         <h3>unique identification authority of india</h3>
         <h3>government of india</h3>
         <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
-
         <h2>Regional Offices</h2>
         <select name="place" id="place">
           <option value="delhi">Delhi</option>
@@ -510,58 +476,50 @@
         </h4>
         <ul>
           <li>
-
             <a href="https://www.mygov.in/" target="_blank">
               My Gov <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="https://www.nvsp.in/" target="_blank">
               National Voter Portal
               <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="https://www.digitalindia.gov.in/" target="_blank">
               Digital India <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="https://cbic-gst.gov.in/#" target="_blank">
               GST.gov.in <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
           <li>
-
             <a href="http://dbtindia.gov.in/" target="_blank">
               DBT Bharatpur <i class="fas fa-external-link-alt"></i>
             </a>
-
           </li>
         </ul>
       </div>
     </div>
 
-
-
     <div class="footer-down">
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="labelnew" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
       <div class="copyright" style="padding-bottom:20px">
         Copyright ©
         <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
       </div>
-    </div>
   </footer>
-
-
-
-
 
   <button id="scrollToTopButton" title="Go to top" class="ml-5">
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
@@ -594,6 +552,15 @@
       }
     }
   </script>
-</body>
 
+  <script>
+    window.onload = function () {
+      var chk = document.getElementById('chk');
+
+      chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+      });
+    }
+  </script>
+</body>
 </html>

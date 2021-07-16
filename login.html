@@ -61,6 +61,7 @@
     }
   </script>
 </head>
+
 <style>
   #scrollToTopButton {
     position: fixed;
@@ -90,12 +91,6 @@
 
   }
 
-  .container:hover {
-    transform: translateY(.2rem);
-    box-shadow: 0 0 .2rem .2rem rgb(168, 235, 255);
-    background: rgba(136, 255, 235, 0.199);
-  }
-
   #votingimage {
     padding-left: 2rem;
     padding-top: 1rem;
@@ -115,8 +110,44 @@
       margin-right: 1.6rem;
     }
 
+    .container {
+      border-radius: 5rem;
+      box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
+      transition: 0.2s ease-in-out;
+      transition-property: all;
+      font-family: 'Baloo 2', cursive;
+      font-size: 18px;
+
+    }
+
+    .container:hover {
+      transform: translateY(.2rem);
+      box-shadow: 0 0 .2rem .2rem rgb(168, 235, 255);
+      background: rgba(136, 255, 235, 0.199);
+    }
+
     #votingimage {
-      margin-right: 1.2rem;
+      padding-left: 2rem;
+      padding-top: 1rem;
+    }
+
+    #welcomeback {
+      margin-left: 2rem;
+      margin-top: 1rem;
+      background-image: linear-gradient(#B2FEFA, #0ED2F7);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(45, 44, 49);
+      font-size: 1.5rem;
+    }
+
+    @media (min-width:320px) and (max-width:991px) {
+      #welcomeback {
+        margin-right: 1.6rem;
+      }
+
+      #votingimage {
+        margin-right: 1.2rem;
+      }
     }
   }
 </style>
@@ -164,30 +195,12 @@
           </div>
         </div>
 
-        <div class="heading">
-          <img class="emblem" src="./Images/emblem.png"></img>
-          <p class="hindi-heading" style="font-family: 'Hind', sans-serif; font-weight: bolder;">राष्ट्रीय मतदान सेवा
-            डेमो पोर्टल</p>
-          <p class="english-heading" style="font-weight: bold;">NATIONAL VOTER'S SERVICES DEMO PORTAL</p>
-        </div>
-      </div>
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-      <script>
-        const chk = document.getElementById('chk');
 
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
+
   </header>
+
   <div class="main-section">
+
     <div class="container" style="height:auto;width:65%;">
       <div class="row" style="height: auto;">
         <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
@@ -222,9 +235,23 @@
             </form>
           </div>
         </div>
+        <div id="passwordhelp" class="form-text">Forgot Password? <a href="forgetPass.html">click here</a></div>
       </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+      </div>
+      <div id="newuser" class="form-text">New User? <a href="sign-up.html">Register here</a></div>
+      <button type="button" class="btn btn-success" onClick="guest()">Guest Login</button>
+      <button type="button" class="btn btn-success" onClick="login()">Login</button>
+      <button type="button" class="btn btn-info" onClick="clearFunc()">Reset</button>
 
+      </form>
     </div>
+  </div>
+  </div>
+
+  </div>
 
 
   </div>
@@ -425,13 +452,28 @@
         </ul>
       </div>
     </div>
-    <div class="footer-down">
-      <div class="copyright" style="padding-bottom:20px">
-        Copyright ©
-        <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
-      </div>
     </div>
+
+
+
+    <div class="footer-down">
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+
+
+
+        <div class="copyright" style="padding-bottom:20px">
+          Copyright ©
+          <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+        </div>
   </footer>
+
+
   <button id="scrollToTopButton" title="Go to top" class="ml-5">
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
   </button>
@@ -463,6 +505,18 @@
       }
     }
   </script>
+
+  <script>
+    window.onload = function () {
+      var chk = document.getElementById('chk');
+
+      chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+      });
+    }
+  </script>
+
+
 </body>
 
 </html>
