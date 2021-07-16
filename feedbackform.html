@@ -155,6 +155,7 @@ input[type=submit]:hover {
   margin-left: 2rem;
 }
 
+
 @media (min-width:320px) and (max-width:991px){
   #welcomeback{
     margin-right: 1.6rem;
@@ -165,6 +166,10 @@ input[type=submit]:hover {
     #checkbox3{
       margin-left: 5rem;
     }
+    #feedbacktext{
+      margin-left: -10px;
+    }
+
 }
 
   </style>
@@ -183,6 +188,7 @@ input[type=submit]:hover {
     .helpdesk{
       text-decoration: none;
     }
+
   </style>
 
   <body>
@@ -278,7 +284,7 @@ input[type=submit]:hover {
               </div>
                </div>
               <div class="col-25">    
-                <label for="feed_back">FeedBack</label>    
+                <label for="feed_back" id="feedbacktext">FeedBack</label>    
               </div>    
               <div class="col-75">    
                 <textarea id="subject" name="subject" placeholder="Write Something.." style="height:200px;resize: none;"></textarea>    
@@ -292,7 +298,10 @@ input[type=submit]:hover {
             </label>
           </div>
         </div>
-       <button type="submit" class="btn btn-outline-primary px-4" style="margin: 0 40%;">Submit</button>
+   <button type="submit" class="btn btn-outline-primary px-4" style="
+  display: block;
+  margin-left: auto;
+  margin-right: auto;">Submit</button>
       </form>
 
 
