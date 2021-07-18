@@ -934,6 +934,7 @@ h1 {
   border: 2px solid white;
   font-weight: 500;
   cursor: pointer;
+  min-height: 47px;
   transition: 0.3s;
   padding: 9px 18px;
   margin-bottom: 20px;
