@@ -564,6 +564,26 @@ background-color: whitesmoke;
   font-size: 18px;
 }
 
+.contactUsButton {
+  display: block;
+  font-size: 1.0625em;
+  border: 2px solid white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 9px 18px;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contactUsButton:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
 .contact h3 {
   color: rgb(252, 248, 248);
   font-size: 16px;
