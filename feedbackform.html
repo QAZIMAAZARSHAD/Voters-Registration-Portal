@@ -85,12 +85,11 @@ font-family: 'Baloo 2', cursive;
 font-size: 18px;
 border-radius: 5px; 
   padding: 20px;   
+  background-color: rgb(255, 253, 248);
 
 }
 .container:hover{
-  transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem rgba(255, 81, 23, 0.651);
-  background: rgba(255, 225, 215, 0.651);
+  transform:translateY(.2rem); 
 }
 
   
@@ -222,8 +221,9 @@ input[type=submit]:hover {
 
 
     </header>
-
+   
     <div class="main-section">
+      <h1 style="text-align: center; text-decoration: underline; text-transform: uppercase; margin-bottom: 2%;">Feedback Form</h1>
     <div class="container">
       <form action="./feedbackformsubmitted.html">
         <div class="form-row">
@@ -239,7 +239,7 @@ input[type=submit]:hover {
         </div>
         <div class="mb-3">
           <label for="validationDefault02">Email</label>
-          <input type="text" class="form-control" id="validationDefault02" placeholder="Your Email Id.." required>
+          <input type="email" class="form-control" id="validationDefault02" placeholder="Your Email Id.." required>
         </div>
         
         <div class="mb-3">
@@ -255,7 +255,9 @@ input[type=submit]:hover {
           </div>
           <div class="col-md-3 mb-3">
             <label for="validationDefault05">Zip Code</label>
-            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip Code" required>
+            <input type="text" class="form-control"  id="validationDefault05" placeholder="Zip Code" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  required/>
+           
+    
           </div>
         </div>
         <div class="form-row">
