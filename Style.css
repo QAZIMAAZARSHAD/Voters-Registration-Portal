@@ -593,6 +593,12 @@ body.dark {
   right: 3%;
 }
 
+/* .logo-footer{
+  position: absolute;
+  top: 900px;
+  right: 170px;
+} */
+
 ul {
   list-style-type: none;
 }
@@ -1379,8 +1385,7 @@ ul {
 }
 
 #header-image {
-  position: absolute;
-  width: 110px;
+  width: 150px;
 }
 
 .flip {
