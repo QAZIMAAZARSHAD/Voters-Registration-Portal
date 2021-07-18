@@ -670,10 +670,6 @@ h3 {
   margin-top: 20px;
 }
 
-.envelope {
-  display: flex;
-}
-
 .envelopei {
   padding-right: 6px;
 }
@@ -736,32 +732,6 @@ h3 {
   width : 150px;
   display: block;
   border-radius: 15px;
-}
-
-
-
-
-.helpdesk {
-  color: white;
-  font-size: 1.0625em;
-  border: 2px solid white;
-  font-weight: 500;
-  height: 35px;
-  width: 120px;
-  cursor: pointer;
-  transition: 0.3s;
-  padding: 9px 18px;
-  margin-bottom: 20px;
-}
-
-.helpdeskDiv {
-  text-align: left;
-  margin-top: 30px;
-}
-
-.helpdesk:hover {
-  background-color: white;
-  color: black;
 }
 
 @media (max-width: 1240px) {

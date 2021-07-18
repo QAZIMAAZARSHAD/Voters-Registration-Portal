@@ -948,28 +948,6 @@ h1 {
   text-decoration: none;
 }
 
-.helpdesk {
-  color: white;
-  font-size: 1.0625em;
-  border: 2px solid white;
-  font-weight: 500;
-  height: 35px;
-  width: 120px;
-  cursor: pointer;
-  transition: 0.3s;
-  padding: 9px 18px;
-  margin-bottom: 20px;
-}
-
-.helpdeskDiv {
-  text-align: left;
-  margin-top: 30px;
-}
-
-.helpdesk:hover {
-  background-color: white;
-  color: black;
-}
 
 #scrollToTopButton {
   position: fixed;
@@ -1212,9 +1190,6 @@ ul {
   align-items: center;
 }
 
-.envelope {
-  display: flex;
-}
 
 .envelopei {
   padding-right: 6px;
