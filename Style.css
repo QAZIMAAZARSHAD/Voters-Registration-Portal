@@ -928,6 +928,25 @@ h1 {
   }
 }
 
+.contactUsButton {
+  display: block;
+  font-size: 1.0625em;
+  border: 2px solid white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 9px 18px;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.contactUsButton:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
 .helpdesk {
   color: white;
   font-size: 1.0625em;
