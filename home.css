@@ -1,0 +1,181 @@
+input[type=text]{
+  border: 0px solid;
+  background-color: whitesmoke;
+  padding: 0 5px;
+  width: 20vw;
+}
+
+input[type=text]::placeholder{
+  color: gray;
+  font-size: 0.8rem;
+}
+
+input[type=text].ageInput{
+  text-align: center;
+  width: 10vw;
+}
+
+input[type=date]{
+  background-color: #95E1D3; 
+  border: 0px solid;
+  color: black; 
+  font-size: 0.9rem; 
+  width:fit-content !important; 
+}
+
+input[type=file]{
+  background-color: whitesmoke;
+  border: 0px solid;
+  font-size: 0.8rem;
+}
+
+/*classes*/
+.head1{
+  background-color: #F38181;
+}
+
+button{
+  background-color: transparent;
+  border: 0px solid;
+  width: fit-content;
+}
+
+.material-icons{
+  margin: auto;
+  padding: auto;
+  width: 20px;
+}
+
+.close:hover{
+  color: red;
+}
+
+.container{
+  background-color: #EAFFD0;
+  border: 0px solid;
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 80vw;
+}
+
+.conatinerFluid{
+  font-size: 0.9rem;
+}
+
+.conatinerFluid div{
+  margin: 4vh 0;
+}
+
+.district span,
+.state span{
+  display: inline-block;
+}
+
+.descrip{
+  background-color: #FCE38A;
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 2vw;
+  text-align: justify;
+}
+
+.formheading{
+  border-radius: 0;
+  background-color: #F38181;  
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 2vw;
+}
+
+.note{
+  margin: 0 auto;
+  padding: 0 5vw;
+  width: 80vw;
+}
+
+.note h3{
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.part1,
+.part2,
+.part3,
+.part4,
+.part5,
+.part6{
+  margin: 0;
+  padding: 0 2vw;
+  width: 100%;
+}
+
+.part2 button .material-icons,
+.part3 button .material-icons{
+  width: fit-content;
+}
+
+.part2 .longerspan{
+  width: 40vw;
+}
+
+.part2 span,
+.part3 span,
+.part4 span{
+  display: inline-block;
+  width: 20vw;
+}
+
+.part5 span,
+.part6 span{
+  display: inline-block;
+  width: 10vw;
+}
+
+.part6 .longerspan{
+  width: fit-content;
+}
+
+.request{
+  text-align: justify;
+}
+
+.resetBtn{
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10vw;
+}
+
+.resetBtn:hover{
+  background-color: red;
+  border: 2px solid white;
+}
+
+.submitBtn{
+  background-color: white;
+  border: 2px solid yellowgreen;
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10vw;
+}
+
+.submitBtn:hover{
+  background-color: yellowgreen;
+  border: 2px solid white;
+}
+
+/*
+@media screen and (max-width:) {
+  
+}
+
+*/
+
