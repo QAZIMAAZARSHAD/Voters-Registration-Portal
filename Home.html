@@ -186,7 +186,7 @@
     <!--home.css-->
     <style>
       input[type=text]{
-    border: 0px solid;
+    border: 1px solid gray;
     background-color: whitesmoke;
     padding: 0 5px;
     width: 20vw;
@@ -195,11 +195,6 @@
   input[type=text]::placeholder{
     color: gray;
     font-size: 0.8rem;
-  }
-  
-  input[type=text].ageInput{
-    text-align: center;
-    width: 10vw;
   }
   
   input[type=date]{
@@ -280,12 +275,15 @@
   }
   
   .note{
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    padding: 0 5vw;
-    width: 80vw;
+    padding: 0;
+    width: 76.5vw;
   }
   
   .note h3{
+    margin: 0;
+    padding: 20px 0;
     display: inline-block;
     font-size: 1rem;
   }
@@ -320,7 +318,7 @@
   }
   
   .part2 .longerspan{
-    width: 60vw;
+    width: 35vw;
   }
   
   .part2 .gender{
@@ -341,13 +339,19 @@
     margin-left: 0;
   }
   
+.part2 .yearmonth{
+  margin-left: 0;
+}
+
   .part2 .year,
   .part2 .month{
+    display: inline-block;
     width:fit-content; 
     font-size: 0.9rem; 
     background-color: #95E1D3; 
     color: black; 
     border: 0px solid;
+    margin-left: 0;
   }
   
   .part2 .date
@@ -422,10 +426,34 @@
     background-color: yellowgreen;
     border: 2px solid white;
   }
+
+  @media screen and (max-width:1181px) {
+    .part2 .longerspan{
+      width: 40vw;
+    }
+  }
+
+  @media screen and (max-width:1031px) {
+    .part2 .longerspan{
+      width: 45vw;
+    }
+  }
   
   @media screen and (max-width:991px) {
     .part4 span{
       width: 25vw;
+    }
+  }
+
+  @media screen and (max-width:921px) {
+    .part2 .longerspan{
+      width: fit-content;
+    }
+
+    .part2 .yearmonth,
+    .part2 .date{
+      display: block;
+      margin: 5px 0 0 20px;
     }
   }
   
@@ -668,7 +696,7 @@
   <!-- font ends -->
   <div class="note" id="print">    
     <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3>
-    <span class="material-icons" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="cursor: pointer; float: right; margin-top: 10px; color: yellowgreen;">&#xe8ad;</span>
+    <span class="material-icons" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="cursor: pointer; float: right; margin-top: 20px; color: yellowgreen;">&#xe8ad;</span>
   </div>
   
   <!-- form starts -->
@@ -687,7 +715,7 @@
           <!--remove zoomeffect-->
           <select class=" btn btn-secondary btn-sm dropdown-toggle state" name="slct7" id="slct7"
             onchange="populate(this.id,'slct8')">
-            <option> --Choose State -- </option>
+            <option>Choose State</option>
             <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
             <option value="andhra pradesh"> ANDHRA PRADESH</option>
             <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
@@ -730,7 +758,7 @@
         <div>
           <span>District</span>
           <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct8" id="slct8">
-            <option> --Choose District -- </option>
+            <option>Choose District</option>
           </select>
         </div>
         <div>
@@ -801,9 +829,7 @@
             <li>
               <input type="radio" name="select" id="" checked>
               <span class="longerspan">(F) Age [on January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <div style="display: block; margin: 5px 0 0 15px;">
-                <!--remove zoomeffect-->
-                <input type="text" value="Age" class=" field left ageInput" readonly></input>
+              <span class="yearmonth">
                 <select class="btn btn-secondary btn-sm dropdown-toggle select year" name="Select" id="">
                   <option value="null">Year</option>
                   <option>18</option>
@@ -825,7 +851,6 @@
                 </select>
                 <select class="btn btn-secondary btn-sm dropdown-toggle select month" name="Select" id="">
                   <option value="null">Month</option>
-                  <option>0</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -837,8 +862,9 @@
                   <option>9</option>
                   <option>10</option>
                   <option>11</option>
+                  <option>12</option>
                 </select>
-              </div>
+              </span>
             </li>
             <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
             <li>
@@ -937,7 +963,7 @@
           </div>
           <div>
             <input type="checkbox" name="" id="">
-            <span class="longerspan">other</span><br>
+            <span class="longerspan">other</span>
             <!--remove zoomeffect-->
             <input class="" type="text" style="margin-left: 20px;" required>
           </div>
@@ -948,7 +974,7 @@
           <input class="" type="text" name="" id="" required>
         </div>
         <div>
-          <span>Mobile No. (optional) &ThickSpace; &ThickSpace; &ThickSpace; &ThickSpace;+91</span>
+          <span>Mobile No. (optional) <b style="float: right; font-weight: normal;">+91</b></span>
           <!--remove zoomeffect-->
           <input class="" type="text" name="input" required>
         </div>
@@ -1078,7 +1104,7 @@
               <span>State: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
               <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct1" id="slct1"
               onchange="populate(this.id,'slct2')">
-                <option> --Choose State -- </option>
+                <option>Choose State</option>
                 <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
                 <option value="andhra pradesh"> ANDHRA PRADESH</option>
                 <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
@@ -1121,7 +1147,7 @@
             <div>
               <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
               <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="slct2">
-                <option> --Choose District -- </option>
+                <option>Choose District</option>
               </select>
             </div>
           </div>
@@ -1144,13 +1170,13 @@
                 <span  class="longerspan" style="display: block;">
                   My name may have been included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
                   <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct4" id="slct4">
-                    <option> --Choose District -- </option>
+                    <option>Choose District</option>
                   </select>
                   Constituency in
                   <sup style="color:rgb(255, 8, 8)"> * </sup>
                   <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct3" id="slct3"
                     onchange="populate(this.id,'slct4')">
-                    <option> --Choose State -- </option>
+                    <option>Choose State</option>
                     <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
                     <option value="andhra pradesh"> ANDHRA PRADESH</option>
                     <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
