@@ -59,6 +59,7 @@
     * {    
   box-sizing: border-box;     
 }  
+
     #scrollToTopButton{
   position: fixed;
   bottom: 15px;
@@ -95,14 +96,17 @@ border-radius: 5px;
 }
 
 .container h1{
-margin-left: 30%;
-margin-right: 30%;
+text-align: center;
+margin-left: 25%;
+margin-right: 25%;
 }  
 #f1{
-margin-left: 33%;
+  text-align: center;
+margin-left: 20%;
 margin-right: 20%;
 }  
 #f2{
+text-align: center;
 margin-left: 18%;
 margin-right: 18%;
 }  
@@ -152,7 +156,10 @@ input[type=submit]:hover {
   width: 75%;    
   margin-top: 6px;    
 }    
-    
+
+.noHover{
+  pointer-events: none;
+}
   
 .row:after {    
   content: "";    
@@ -180,19 +187,57 @@ input[type=submit]:hover {
     #checkbox3{
       margin-left: 5rem;
     }
+    .container h1{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }  
+  #f1{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  }  
+  #f2{
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+ } 
+
 }
+
+@media (min-width:501px) and (max-width:768px){
+  #thumbsup{
+  margin-left: -7%;
+  }
+}
+
+@media (min-width:320px) and (max-width:430px){
+  #thumbsup{
+  margin-left: -10%;
+  }
+}
+
 @media (min-width:320px) and (max-width:501px){
+
   .container h1{
-margin: 0;
+    font-size: larger;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }  
 #f1{
-  margin: 0;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }  
 #f2{
-  margin: 0;
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
 }  
+
 #thumbsup{
-margin-left: -50%;
+  margin-left: -10%;
 }
 }
 
@@ -248,15 +293,16 @@ margin-left: -50%;
    
     </header>
 
-    <div class="main-section">
+    <div class="main-section noHover">
     <div class="container">
       <div id="thumbsup">
 
-        <img src="./Images/thumbsup.png" alt="done"  style="height: 150px;width: 150px;margin-left: 40%; margin-bottom: 2%;">
+        <img src="./Images/thumbsup.png" alt="done"  style="height: 150px;width: 150px;margin-left: 40%; margin-bottom: 2%; text-align: center;" class="main-image">
       </div>
      <h1>
        Thank You For Your Feedback!
      </h1>
+     <br>
      <h4 id="f1">
        Your Feedback Has Been Received!
      </h4>
