@@ -875,11 +875,17 @@
   </div>
 
   <script>
-    const chk = document.getElementById('chk');
+    window.onload = function(){
+      const chk = document.getElementById('chk');
+      const mode = JSON.parse(localStorage.getItem("Mode"));
+      mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
 
-chk.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
-});
+      chk.addEventListener('change', (e) => {
+        document.body.classList.toggle('dark');
+        const mode = e.target.checked;
+        localStorage.setItem("Mode",mode);
+      });
+    }
 </script>
 
   <div class="copyright" style="padding-bottom: 20px; color: rgb(243, 242, 242); font-weight: bold;">
@@ -906,12 +912,6 @@ chk.addEventListener('change', () => {
 
 	</script>
 
-  <script>
-    const chk = document.getElementById('chk');
-    chk.addEventListener('change', () => {
-	    document.body.classList.toggle('dark');
-    });
-  </script>
 
   <script>
      // function to make & validate MandatoryFields Dynamically

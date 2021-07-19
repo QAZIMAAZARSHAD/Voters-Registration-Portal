@@ -197,13 +197,6 @@ font-size: 18px;
 
 
     </div>
-<script>
-    const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
 
 
     <script>
@@ -487,12 +480,16 @@ chk.addEventListener('change', () => {
 
 <script>
   window.onload = function(){
- var chk = document.getElementById('chk');
+    const chk = document.getElementById('chk');
+    const mode = JSON.parse(localStorage.getItem("Mode"));
+    mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
 
-chk.addEventListener('change', () => {
-document.body.classList.toggle('dark');
-});
-}
+    chk.addEventListener('change', (e) => {
+      document.body.classList.toggle('dark');
+      const mode = e.target.checked;
+      localStorage.setItem("Mode",mode);
+    });
+  }
 </script>
 
 
