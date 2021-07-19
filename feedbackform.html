@@ -83,15 +83,13 @@
 transition-property:all; 
 font-family: 'Baloo 2', cursive;
 font-size: 18px;
-border-radius: 5px;    
-  background-color: #f2f2f2;    
+border-radius: 5px; 
   padding: 20px;   
+  background-color: rgb(255, 253, 248);
 
 }
 .container:hover{
-  transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem  rgb(255, 178, 90);
-  background: rgba(255, 238, 232, 0.651);
+  transform:translateY(.2rem); 
 }
 
   
@@ -148,16 +146,13 @@ input[type=submit]:hover {
   display: table;    
   clear: both;    
 }    
-#submit{
-  width: 7rem;
-  margin: 0 auto;
-}
 #expgood{
   margin-top: .5rem;
 }
 .cba1{
   margin-left: 2rem;
 }
+
 
 @media (min-width:320px) and (max-width:991px){
   #welcomeback{
@@ -169,6 +164,10 @@ input[type=submit]:hover {
     #checkbox3{
       margin-left: 5rem;
     }
+    #feedbacktext{
+      margin-left: -10px;
+    }
+
 }
 
   </style>
@@ -187,6 +186,7 @@ input[type=submit]:hover {
     .helpdesk{
       text-decoration: none;
     }
+
   </style>
 
   <body>
@@ -221,83 +221,117 @@ input[type=submit]:hover {
 
 
     </header>
-
+   
     <div class="main-section">
+      <h1 style="text-align: center; text-decoration: underline; text-transform: uppercase; margin-bottom: 2%;">Feedback Form</h1>
     <div class="container">
-      <form>    
-        <div class="row">    
-          <div class="col-25">    
-            <label for="fname">First Name</label>    
-          </div>    
-          <div class="col-75">    
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">    
-          </div>    
-        </div>    
-        <div class="row">    
-          <div class="col-25">    
-            <label for="lname">Last Name</label>    
-          </div>    
-          <div class="col-75">    
-            <input type="text" id="lname" name="lastname" placeholder="Your Last name..">    
-          </div>    
-        </div>    
-        <div class="row">    
-            <div class="col-25">    
-              <label for="email">Email</label>    
-            </div>    
-            <div class="col-75">    
-              <input type="email" id="email" name="mailid" placeholder="Your Email Id..">    
-            </div>    
-          </div>    
-         
-        <div class="row">   
-
-          <div class="col-10" id="expgood"> 
-            Was Your Overall Experience Good?
-            <input type="radio" id="checkbox1" name="Option1" value="Yes" class="cba1">
-           <label for="checkbox1">Yes</label>
-           <input type="radio" id="checkbox2" name="Option1" value="No">
-            <label for="checkbox2">No</label>
-            </div>
-            
-            <div class="col-10" id="expgood1"> 
-              Did You Face Any Difficulty?
-              <input type="radio" id="checkbox3" name="Option2" value="Yes" class="cba1">
-           <label for="checkbox3">Yes</label>
-           <input type="radio" id="checkbox4" name="Option2">
-            <label for="checkbox4">No</label>
-              </div>
-              <div class="col-10" id="expgood2"> 
-                Would You Suggest This Website To Your Friends & Family?
-                <input type="radio" id="checkbox5" name="Option3" value="Yes" class="cba1">
-             <label for="checkbox5">Yes</label>
-             <input type="radio" id="checkbox6" name="Option3" >
-              <label for="checkbox6">No</label>
-                </div>
-
-                <div class="col-10" id="expgood3"> 
-        Do You Agree The Code Of Conduct?
-                  <input type="radio" id="checkbox7" name="Option4" value="Yes" style="margin-left: 1rem;">
-               <label for="checkbox7">Yes</label>
-               <input type="radio" id="checkbox8" name="Option4" >
-                <label for="checkbox8">No</label>
-                  </div>
-            
-            <br>
-          <div class="col-25">    
-            <label for="feed_back">FeedBack</label>    
-          </div>    
-          <div class="col-75">    
-            <textarea id="subject" name="subject" placeholder="Write Something.." style="height:200px;resize: none;"></textarea>    
-          </div>   
-          
-         <a href="./feedbackformsubmitted.html" id="submit"><button type="button" class="btn btn-outline-primary">Submit</button></a> 
-
+      <form action="./feedbackformsubmitted.html">
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">First Name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Your First Name.." required>
           </div>
-        </div>    
-      </form> 
+    
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Last Name</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Your Last Name.." required>
+          </div>
         </div>
+        <div class="mb-3">
+          <label for="validationDefault02">Email</label>
+          <input type="email" class="form-control" id="validationDefault02" placeholder="Your Email Id.." required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+          </div>
+
+
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Zip Code</label>
+            <input type="text" class="form-control"  id="validationDefault05" placeholder="Zip Code" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  required/>
+           
+    
+          </div>
+        </div>
+        <div class="form-row">
+        <div class="col-10" id="expgood"> 
+          Was Your Overall Experience Good?
+          <input type="radio" id="checkbox1" name="Option1" value="Yes" class="cba1" required>
+           <label for="checkbox1">Yes</label>
+           <input type="radio" id="checkbox2" name="Option1" value="No" required>
+            <label for="checkbox2">No</label>
+          </div>
+          
+          <div class="col-10" id="expgood1"> 
+            Did You Face Any Difficulty?
+            <input type="radio" id="checkbox3" name="Option2" value="Yes" class="cba1" required>
+           <label for="checkbox3">Yes</label>
+           <input type="radio" id="checkbox4" name="Option2" required>
+            <label for="checkbox4">No</label>
+            </div>
+            <div class="col-10" id="expgood2"> 
+              Would You Suggest This Website To Your Friends & Family?
+              <input type="radio" id="checkbox5" name="Option3" value="Yes" class="cba1" required>
+           <label for="checkbox5">Yes</label>
+           <input type="radio" id="checkbox6" name="Option3" required>
+            <label for="checkbox6">No</label>
+              </div>
+               </div>
+              <div class="col-25">    
+                <label for="feed_back12" id="feedbacktext">FeedBack</label>    
+              </div>    
+                <textarea id="feed_back12" placeholder="Write Something.." style="height:200px;resize: none;" required></textarea>    
+   
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input mt-3" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+   <button type="submit" class="btn btn-outline-primary px-4" style="
+  display: block;
+  margin-left: auto;
+  margin-right: auto;">Submit</button>
+      </form>
+
+
+
+
+
+
+
     </div>
+    </div>
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
 <script>
     const chk = document.getElementById('chk');
 
