@@ -174,6 +174,464 @@
     return true;
     }
   </script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <!--home.css-->
+    <style>
+      input[type=text]{
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    padding: 0 5px;
+    width: 20vw;
+  }
+  
+  input[type=text]::placeholder{
+    color: gray;
+    font-size: 0.8rem;
+  }
+  
+  input[type=date]{
+    background-color: #95E1D3; 
+    border: 0px solid;
+    color: black; 
+    font-size: 0.9rem; 
+    width:fit-content !important; 
+  }
+  
+  input[type=file]{
+    background-color: whitesmoke;
+    border: 0px solid;
+    font-size: 0.8rem;
+  }
+  
+  /*classes*/
+  .head1{
+    background-color: #F38181;
+  }
+  
+  button{
+    background-color: transparent;
+    border: 0px solid;
+    width: fit-content;
+  }
+  
+  .material-icons{
+    margin: auto;
+    padding: auto;
+    width: 20px;
+  }
+  
+  .close:hover{
+    color: red;
+  }
+  
+  .container{
+    background-color: #EAFFD0;
+    border: 0px solid;
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 80vw;
+  }
+  
+  .conatinerFluid{
+    font-size: 0.9rem;
+  }
+  
+  .conatinerFluid div{
+    margin: 15px 0;
+  }
+  
+  .district span,
+  .state span{
+    display: inline-block;
+  }
+  
+  .descrip{
+    background-color: #FCE38A;
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2vw;
+    text-align: justify;
+  }
+  
+  .formheading{
+    border-radius: 0;
+    background-color: #F38181;  
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 2vw;
+  }
+  
+  .note{
+    background-color: white;
+  }
+  
+  .note h3{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  .part1,
+  .part2,
+  .part3,
+  .part4,
+  .part5,
+  .part6{
+    margin: 0;
+    padding: 0 2vw;
+    width: 100%;
+  }
+  
+  .part1 .state,
+  .part1 .district,
+  .part1 .legislative,
+  .part6 .state,
+  .part6 .district{
+    width: fit-content; 
+    font-size: 0.9rem; 
+    background-color: #95E1D3; 
+    color: black; 
+    border: 0px solid; 
+    margin-left: 0;
+  }
+  
+  .part2 button .material-icons,
+  .part3 button .material-icons{
+    width: fit-content;
+  }
+  
+  .part2 .longerspan{
+    width: 35vw;
+  }
+  
+  .part2 .gender{
+    width: fit-content; 
+    font-size: 0.9rem; 
+    background-color: #95E1D3; 
+    color: black; 
+    border: 0px solid; 
+    margin-left: 0;
+  }
+  
+  .part2 .relationship{
+    width: fit-content; 
+    font-size: 0.9rem; 
+    background-color: #95E1D3; 
+    color: black; 
+    border: 0px solid; 
+    margin-left: 0;
+  }
+  
+.part2 .yearmonth{
+  margin-left: 0;
+}
+
+  .part2 .year,
+  .part2 .month{
+    display: inline-block;
+    width:fit-content; 
+    font-size: 0.9rem; 
+    background-color: #95E1D3; 
+    color: black; 
+    border: 0px solid;
+    margin-left: 0;
+  }
+  
+  .part2 .date
+  .part6 .date{
+    display: block; 
+    margin: 5px 0 0 15px;
+  }
+  
+  .part5 .image{
+    width:fit-content; 
+    font-size: 0.9rem; 
+    background-color: #95E1D3; 
+    color: black; 
+    border: 0px solid;
+    margin-left: 0;
+  }
+  
+  .part1 span,
+  .part2 span,
+  .part3 span,
+  .part4 span{
+    display: inline-block;
+    width: 20vw;
+  }
+  
+  .part5 span,
+  .part6 span{
+    display: inline-block;
+    width: 15vw;
+  }
+  
+  .part1 .longerspan,
+  .part4 .longerspan,
+  .part6 .longerspan{
+    width: fit-content;
+  }
+  
+  .part2 .breaksection,
+  .part5 .breaksection{
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .request{
+    text-align: justify;
+  }
+  
+  .resetBtn{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30vw;
+  }
+  
+  .resetBtn:hover{
+    background-color: red;
+    border: 2px solid white;
+  }
+  
+  .submitBtn{
+    background-color: white;
+    border: 2px solid yellowgreen;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30vw;
+  }
+  
+  .submitBtn:hover{
+    background-color: yellowgreen;
+    border: 2px solid white;
+  }
+
+  @media screen and (max-width:1181px) {
+    .part2 .longerspan{
+      width: 40vw;
+    }
+  }
+
+  @media screen and (max-width:1031px) {
+    .part2 .longerspan{
+      width: 45vw;
+    }
+  }
+  
+  @media screen and (max-width:991px) {
+    .part4 span{
+      width: 25vw;
+    }
+  }
+
+  @media screen and (max-width:921px) {
+    .part2 .longerspan{
+      width: fit-content;
+    }
+
+    .part2 .yearmonth,
+    .part2 .date{
+      display: block;
+      margin: 5px 0 0 20px;
+    }
+  }
+  
+  @media screen and (max-width:901px) {
+    .part2 span,
+    .part3 span{
+      width: 70vw;
+    }
+  
+    .part2 .relationship,
+    .part2 .gender{
+      margin: 5px 0 0 20px;
+    }
+  
+    .part2 .date{
+      display: block;
+      margin: 5px 0 0 20px;
+    }
+  }
+  
+  @media screen and (max-width:841px) {
+    .part5 img{
+      height: 190px;
+      width: 190px;
+    }
+  }
+  
+  @media screen and (max-width:801px) {
+    .part1 span{
+      width: fit-content;
+      display: block;
+    }
+  
+    .part5 .eachimage{
+      display: block;
+      margin-bottom: 50px;
+    }
+  
+    .part5 .eachimage .breaksection{
+      display: block;
+    }
+  
+    .part5 img{
+      height: 180px;
+      width: 180px;
+    }
+  }
+  
+  @media screen and (max-width:791px) {
+    .part4 span{
+      width: 30vw;
+    }
+  }
+  
+  @media screen and (max-width:771px) {
+    .part5 img{
+      height: 150px;
+      width: 150px;
+    }
+  }
+  
+  @media screen and (max-width:701px) {
+    .part4 span{
+      width: 35vw;
+    }
+  
+    .part5 span{
+      width: 25vw;
+    }
+  }
+  
+  @media screen and (max-width:641px) {
+    .container{
+      margin: 0;
+      width: 100vw;
+      max-width: fit-content;
+    }
+  
+    .part2 span,
+    .part3 span{
+      width: 90vw;
+    }
+  }
+  
+  @media screen and (max-width:571px) {
+    .part4 span{
+      width: 40vw;
+    }
+  }
+  
+  @media screen and (max-width:511px) {
+    .part4 span{
+      width: 45vw;
+    }
+  
+    .part5 img{
+      height: 130px;
+      width: 130px;
+    }
+  }
+  
+  @media screen and (max-width:481px) {
+    .descrip{
+      font-size: 0.8rem;
+    }
+  
+    .formheading{
+      font-size: 0.9rem;
+    }
+  
+    .conatinerFluid *{
+      font-size: 0.7rem;
+    }
+  
+    .part1 .state,
+    .part1 .district,
+    .part1 .legislative,
+    .part2 input[type=text],
+    .part2 input[type=text]::placeholder,
+    .part2 .relationship,
+    .part2 .year,
+    .part2 .month,
+    .part2 .date,
+    .part2 .gender,
+    .part3 input[type=text],
+    .part3 input[type=text]::placeholder,
+    .part4 input[type=text],
+    .part4 input[type=text]::placeholder,
+    .part5 input[type=file],
+    .part5 .image,
+    .part6 .state,
+    .part6 .district,
+    .part6 .date,
+    .part6 input[type=text],
+    .part6 input[type=text]::placeholder{
+      font-size: 0.7rem;
+    }
+  
+    input[type=text]{
+      width: 30vw;
+    }
+  
+    .part2 .longerspan{
+      width: fit-content;
+    }
+  
+  }
+  
+  @media screen and (max-width:451px) {
+    .part5 img{
+      height: 100px;
+      width: 100px;
+    }
+  }
+  
+  @media screen and (max-width:351px) {
+    .part5 span{
+      width: 25vw;
+    }
+  
+    .part5 img{
+      height: 90px;
+      width: 90px;
+    }
+  
+    .part6 span{
+      width: 70vw;
+    }
+  }
+  
+  @media screen and (max-width:321px) {
+    .part4 span{
+      width: 50vw;
+    }
+  
+    .part5 span{
+      width: 20vw;
+    }
+  }
+    </style>
 </head>
 
 
@@ -234,299 +692,303 @@
     <!-- </div> -->
   </div>
   <!-- font ends -->
-  <span class="note" id="print">
-    
-    <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory
-        <span><i class="fa fa-print" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="float: right; color: black;cursor: pointer;" ></i></span></h3>
-  </span>
+  
+  
   <!-- form starts -->
   <div class="container">
-    <div id="container12">
+    <div class="note" id="print">    
+      <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3>
+      <span class="material-icons" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="cursor: pointer; float: right; margin: 20px 10px 0 0; color: yellowgreen;">&#xe8ad;</span>
+    </div>
       <form>
     <form action="" class="form1">
       <div class="formheading">
         Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
       </div>
       <!-- form part 1 starts -->
-      <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the
-        transfer of voter or any other constituency from any one constituency</div><br><br> In service <br><br>
-      Electoral Registration Officer,<br><br>
-      <!-- -->
-      <div class="conatinerFluid">
-        <span>State</span> <sup style="color:rgb(255, 8, 8)">* </sup>
-        <select class="zoomeffect btn btn-secondary btn-sm dropdown-toggle" name="slct7" id="slct7"
-          onchange="populate(this.id,'slct8')" style="width:156px !important; padding-left:9px; font-size: 15px;">
-          <option> --Choose State -- </option>
-          <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-          <option value="andhra pradesh"> ANDHRA PRADESH</option>
-          <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-          <option value="assam"> ASSAM</option>
-          <option value="bihar"> BIHAR</option>
-          <option value="chandigarh"> CHANDIGARH</option>
-          <option value="chattisgarh"> CHATTISGARH</option>
-          <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-          <option value="daman and diu"> DAMAN AND DIU</option>
-          <option value="delhi"> DELHI</option>
-          <option value="goa"> GOA</option>
-          <option value="gujarat"> GUJARAT</option>
-          <option value="haryana"> HARYANA</option>
-          <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-          <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-          <option value="jharkhand"> JHARKHAND</option>
-          <option value="karnataka"> KARNATAKA</option>
-          <option value="kerala"> KERALA</option>
-          <option value="ladakh"> LADAKH</option>
-          <option value="lakshadweep"> LAKSHADWEEP</option>
-          <option value="madhya pradesh"> MADHYA PRADESH</option>
-          <option value="maharashtra"> MAHARASHTRA</option>
-          <option value="manipur"> MANIPUR</option>
-          <option value="meghalaya"> MEGHALAYA</option>
-          <option value="mizoram">MIZORAM</option>
-          <option value="nagaland"> NAGALAND</option>
-          <option value="odisha"> ODISHA</option>
-          <option value="puducherry">PUDUCHERRY </option>
-          <option value="punjab"> PUNJAB</option>
-          <option value="rajasthan"> RAJASTHAN</option>
-          <option value="sikkim"> SIKKIM</option>
-          <option value="tamil nadu"> TAMIL NADU</option>
-          <option value="telangana"> TELANGANA</option>
-          <option value="tripura"> TRIPURA</option>
-          <option value="uttar pradesh"> UTTAR PRADESH</option>
-          <option value="uttarakhand"> UTTARAKHAND</option>
-          <option value="west bengal">WEST BENGAL</option>
-        </select>
-        <span class="district">
-          District
-        </span>
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct8" id="slct8">
-          <option> --Choose District -- </option>
-        </select><br><br>
-        <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-          <option value="null">Select</option>
-        </select>
-        <br>
-      </div>
-      I request that my name be included in electoral rolls for all the aforesaid areas. <br><br>
-      <div class="conatinerFluid">
-        <ul class="radio">
-          <li><input type="radio" name="select" id=""> First time voter<br></li>
-          <li><input type="radio" name="select" id=""> Due to transfer from other
-            meeting areas.</li>
-        </ul>
+      <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</div>
+      <div class="conatinerFluid part1">
+        <div>In service<br>Electoral Registration Officer,</div>
+        <div>
+          <span>State<sup style="color:rgb(255, 8, 8)">* </sup></span>
+          <!--remove zoomeffect-->
+          <select class=" btn btn-secondary btn-sm dropdown-toggle state" name="slct7" id="slct7"
+            onchange="populate(this.id,'slct8')">
+            <option>Choose State</option>
+            <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+            <option value="andhra pradesh"> ANDHRA PRADESH</option>
+            <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+            <option value="assam"> ASSAM</option>
+            <option value="bihar"> BIHAR</option>
+            <option value="chandigarh"> CHANDIGARH</option>
+            <option value="chattisgarh"> CHATTISGARH</option>
+            <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+            <option value="daman and diu"> DAMAN AND DIU</option>
+            <option value="delhi"> DELHI</option>
+            <option value="goa"> GOA</option>
+            <option value="gujarat"> GUJARAT</option>
+            <option value="haryana"> HARYANA</option>
+            <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+            <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+            <option value="jharkhand"> JHARKHAND</option>
+            <option value="karnataka"> KARNATAKA</option>
+            <option value="kerala"> KERALA</option>
+            <option value="ladakh"> LADAKH</option>
+            <option value="lakshadweep"> LAKSHADWEEP</option>
+            <option value="madhya pradesh"> MADHYA PRADESH</option>
+            <option value="maharashtra"> MAHARASHTRA</option>
+            <option value="manipur"> MANIPUR</option>
+            <option value="meghalaya"> MEGHALAYA</option>
+            <option value="mizoram">MIZORAM</option>
+            <option value="nagaland"> NAGALAND</option>
+            <option value="odisha"> ODISHA</option>
+            <option value="puducherry">PUDUCHERRY </option>
+            <option value="punjab"> PUNJAB</option>
+            <option value="rajasthan"> RAJASTHAN</option>
+            <option value="sikkim"> SIKKIM</option>
+            <option value="tamil nadu"> TAMIL NADU</option>
+            <option value="telangana"> TELANGANA</option>
+            <option value="tripura"> TRIPURA</option>
+            <option value="uttar pradesh"> UTTAR PRADESH</option>
+            <option value="uttarakhand"> UTTARAKHAND</option>
+            <option value="west bengal">WEST BENGAL</option>
+          </select>
+        </div>
+        <div>
+          <span>District</span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct8" id="slct8">
+            <option>Choose District</option>
+          </select>
+        </div>
+        <div>
+          <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle select legislative" name="Select" id="">
+            <option value="null">Select</option>
+          </select>
+        </div>
+        <div class="request">
+          <span class="longerspan">I request that my name be included in electoral rolls for all the aforesaid areas.</span>
+          <ul class="radio">
+            <li><input type="radio" name="select" id=""> First time voter<br></li>
+            <li><input type="radio" name="select" id=""> Due to transfer from other meeting areas.</li>
+          </ul>
+        </div>
       </div>
       <!-- fprm part 1 ends -->
+
       <!-- form part 2 starts -->
-      <br> Below are specifications in support of my claim to be included in the electoral rolls. <br><br>
-      <div class="descrip">Mandatory specifications</div><br>
-      <br>
-      <div class="conatinerFluid">
-
-        (A) Name
-        <sup style="color:rgb(255, 8, 8)"> *
-        </sup> <input type="text" name="" class="zoomeffect" id="name" placeholder="(In English)" required>
-
-        <input type="text" name="" id="nameregional" class="zoomeffect" placeholder="(In Regional)" required>
-        <button><i class="far fa-keyboard"></i></button><br>
-        <br>
-        (B)
-        Surname (if any) <input type="text" name="" id="" class="zoomeffect" placeholder="(In English)" required>
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-        (C) Name
-        of the applicant's relative
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="relative" class="zoomeffect"
-          placeholder="(In English)" required>
-
-        <input type="text" name="" id="relativeregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        (D)Nickname of the applicant's relative
-        <input type="text" name="" id="nickname" class="zoomeffect" placeholder="(In English)" required>
-
-        <input type="text" name="" id="nicknameregional" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        (E)
-        Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-          <option value="null">Select</option>
-          <option>Father</option>
-          <option>Mother</option>
-          <option>Husband</option>
-          <option>Wife</option>
-          <option>Other</option>
-        </select><br><br>
-        <ul class="radio">
-          <li>
-            <input type="radio" name="select" id="" checked="checked">
-            (F) Age [on
-            January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup>
-            <input type="text" value="Age" class="zoomeffect field left" readonly></input>
-            <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-              <option value="null">Year</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-              <option>32</option>
-              <option>33</option>
-            </select>
-            <select class="btn btn-secondary btn-sm dropdown-toggle select" name="Select" id="">
-              <option value="null">Month</option>
-              
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-            </select><br><br>
-          </li>
-          <xml style="font-size:20px">Or</xml><br><br>
-          <li>
-
-            <input type="radio" name="select" id="">
-
-            (G) Date of birth (in the
-            form of day/ month/ year)
-
-            <input type="date" class="zoomeffect" name="" id="">
-            <br>(if known)<sup style="color:rgb(255, 8, 8)"> * </sup>
-          </li>
-        </ul><br><br>
-
-
-        (H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> *
-        </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option>Select</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Transgender</option>
-        </select><br><br>
+      <div class="descrip">Mandatory specifications</div>
+      <div class="conatinerFluid part2">
+        <div> Below are specifications in support of my claim to be included in the electoral rolls.</div>
+        <div>
+          <span>(A) Name <sup style="color:rgb(255, 8, 8)"> *</sup> </span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" class="" id="name" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="nameregional" class="" placeholder="(In Regional)" required>
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>(B) Surname (if any)</span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>(C) Name of the applicant's relative <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="relative" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="relativeregional" class="" placeholder="(In Regional)" required>
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>(D) Nickname of the applicant's relative</span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="nickname" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="nicknameregional" class="" placeholder="(In Regional)" required>
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>(E) Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle select relationship" name="Select" id="">
+            <option value="null">Select</option>
+            <option>Father</option>
+            <option>Mother</option>
+            <option>Husband</option>
+            <option>Wife</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <ul class="radio">
+            <li>
+              <input type="radio" name="select" id="" checked>
+              <span class="longerspan">(F) Age [on January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <span class="yearmonth">
+                <select class="btn btn-secondary btn-sm dropdown-toggle select year" name="Select" id="">
+                  <option value="null">Year</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                  <option>32</option>
+                  <option>33</option>
+                </select>
+                <select class="btn btn-secondary btn-sm dropdown-toggle select month" name="Select" id="">
+                  <option value="null">Month</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </span>
+            </li>
+            <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
+            <li>
+              <input type="radio" name="select" id="">
+              <span class="longerspan">(G) Date of birth (in the form of day/ month/ year) (if known) <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="date" class="date" name="" id=""">
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span>(H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> *</sup></span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle select gender" name="" id="">
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Transgender</option>
+          </select>
+        </div>
       </div>
       <!-- form part 2 ends -->
+
       <!-- form part 3 starts -->
-      <div class="descrip">
-        Current address where applicant is ordinarily resident
-      </div><br>
-      <div class="conatinerFluid">
-        <br>House no.
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-
-        Street /
-        area / location
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)" required><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        City /
-        Village: <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)"><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-
-        Post Office:
-        <sup style="color:rgb(255, 8, 8)"> * </sup> <input type="text" name="" id="" class="zoomeffect"
-          placeholder="(In English)" required>
-
-
-        <input type="text" name="" id="" class="zoomeffect" placeholder="(In Regional)"><button><i
-            class="far fa-keyboard"></i></button><br><br>
-
-        Pin Code <sup style="color:rgb(255, 8, 8)"> * </sup> <input class="zoomeffect" type="text" name="" id="pincode"
-          required onkeypress="return isNumberKey(event);"><br><br>
-
-        State / Union Territory
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <input class="zoomeffect" type="text" name="" id="state" required>
-        <br><br>
-
-        <span class="district">
-          District
-        </span>
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-
-        <input class="zoomeffect" type="text" name="" id="district" required>
-        <br><br>
-        <hr><br>
-
-        Family / Neighbour Epic No. <input class="zoomeffect" type="text" name="" id="" required><br><br>
-        <hr><br>
-
+      <div class="descrip">Current address where applicant is ordinarily resident</div>
+      <div class="conatinerFluid part3">
+        <div>
+          <span>House no. <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>Street / area / location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In Regional)">
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>Post Office: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <!--remove zoomeffect-->
+          <input type="text" name="" id="" class="" placeholder="(In Regional)">
+          <button><span class="material-icons">&#xe312;</span></button>
+        </div>
+        <div>
+          <span>Pin Code: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+          <!--remove zoomeffect-->
+          <input class="" type="text" name="" id="pincode" required onkeypress="return isNumberKey(event);">
+        </div>
+        <div>
+          <span>State / Union Territory: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <!--remove zoomeffect-->
+          <input class="" type="text" name="" id="state" required>
+        </div>
+        <div>
+          <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <!--remove zoomeffect-->
+          <input class="" type="text" name="" id="district" required>
+        </div>
+        <div>
+          <span>Family / Neighbour Epic No.: </span>
+          <!--remove zoomeffect-->
+          <input class="" type="text" name="" id="" required>
+        </div>
       </div>
       <!-- form part 3 ends -->
+      
       <!-- form part 4 starts -->
-      <div class="descrip">Optional specialties</div><br>
-      <div class="conatinerFluid">
-
-
-        Disability (if
-        any)<br><br>
+      <div class="descrip">Optional specialties</div>
+      <div class="conatinerFluid part4">
         <fieldset>
-          <input type="checkbox" name="" id=""> Visual impairment
-          <input type="checkbox" name="" id=""> Speech & hearing disability
-          <input type="checkbox" name="" id=""> Locomotor disability
-          <input type="checkbox" name="" id=""> other
-          <input class="zoomeffect" type="text" required>
+          <div>Disability (if any)</div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <span class="longerspan">Visual impairment</span>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <span class="longerspan">Speech & hearing disability</span>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <span class="longerspan">Locomotor disability</span>
+          </div>
+          <div>
+            <input type="checkbox" name="" id="">
+            <span class="longerspan">other</span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" style="margin-left: 20px;" required>
+          </div>
         </fieldset>
-
-        <br>
-
-        Email ID (optional) <input class="zoomeffect" type="text" name="" id="" required><br><br>
-
-        Mobile No. (optional)
-
-        <span>+91</span>
-
-
-        <input class="zoomeffect" type="text" name="input" required><br><br>
-
+        <div>
+          <span>Email ID (optional) </span>
+          <!--remove zoomeffect-->
+          <input class="" type="text" name="" id="" required>
+        </div>
+        <div>
+          <span>Mobile No. (optional) <b style="float: right; font-weight: normal;">+91</b></span>
+          <!--remove zoomeffect-->
+          <input class="" type="text" name="input" required>
+        </div>
       </div>
       <!-- form part 4 ends -->
+
       <!-- form part 5 starts -->
       <div class="descrip">
         Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
         <span>
-          <button style="display: contents" ><u id="myBtn">List of supported documents</u>
-          
-           
-            <div id="myModal" class="modal" style="width:84%;">
-
+          <button style="display: contents"><u id="myBtn"><br><span style="font-size: 0.8rem;">List of supported documents</span></u>
+          <div id="myModal" class="modal" style="width:90vw; font-family: 'Open Sans', sans-serif;">
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <h4 class="head1">List of Acceptable Supporting Documents For Verification</h4>
-
                 <p><ol class="ol">
                   <li>Recent passport size photographs</li>
                   <li>Address proof (any one of the following)</li>
@@ -559,264 +1021,254 @@
                         <li>Student ID Card</li>
                         <li>Aadhaar Card</li>
                     </ul>
-
                 </ol></p>
               </div>
-
             </div>
           </a>&nbsp;&nbsp;&nbsp;</span>
       </div>
-      <div class="conatinerFluid">
-        <br><br> Your photo<sup style="color:rgb(255, 8, 8)"> * </sup><br>
-        <input type="file" name="" class="docs" onchange="loadFile1(event)">
-        Document type
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option> .jpg </option>
-          <option> .png </option>
-          <option> .bmp </option>
-          <option> .jpeg </option>
-        </select>
-        <br> Age proof
-        <sup style="color:rgb(255, 8, 8)"> * </sup><br>
-        <input type="file" name="" class="docs" onchange="loadFile2(event)"> Document type<sup
-          style="color:rgb(255, 8, 8)"> *
-        </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option> .jpg </option>
-          <option> .png </option>
-          <option> .bmp </option>
-          <option> .jpeg </option>
-        </select>
-        <br>
-
-        Address proof<sup style="color:rgb(255, 8, 8)"> * </sup><br>
-
-        <input type="file" name="" class="docs" onchange="loadFile3(event)">
-        <!-- <span style="margin-left:100px"></span> -->
-        Document
-        type
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle select" name="" id="">
-          <option> .jpg </option>
-          <option> .png </option>
-          <option> .bmp </option>
-          <option> .jpeg </option>
-        </select>
-        <br><br>
-        <!-- <div class="row"> -->
-        <!-- <div class="col-lg-4 col-md-4"> -->
-        <img style="padding: 5px;" id="output1" width="200" height="230" />
-        <!-- </div> -->
-        <!-- <div class="col-lg-4 col-md-4"> -->
-        <img style="padding: 5px;" id="output2" width="200" height="230" />
-        <!-- </div> -->
-        <!-- <div class="col-lg-4 col-md-4"> -->
-        <img style="padding: 5px;" id="output3" width="200" height="230" />
-        <!-- </div> -->
-        <!-- </div> -->
+      <div class="conatinerFluid part5">
+        <div class="eachimage">
+          <div class="breaksection">
+            <span>Your photo<sup style="color:rgb(255, 8, 8)"> * </sup></span> 
+            <input type="file" name="" class="docs" onchange="loadFile1(event)">
+          </div>
+          <div class="breaksection">
+            <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>         
+          <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+            <option> .jpg </option>
+            <option> .png </option>
+            <option> .bmp </option>
+            <option> .jpeg </option>
+          </select>
+          </div>
+          
+        </div>
+        <div class="eachimage">
+          <div class="breaksection">
+            <span>Age proof <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <input type="file" name="" class="docs" onchange="loadFile2(event)">
+          </div>
+          <div class="breaksection">
+            <span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+            <option> .jpg </option>
+            <option> .png </option>
+            <option> .bmp </option>
+            <option> .jpeg </option>
+          </select>
+          </div>
+          
+          
+        </div>
+        <div class="eachimage">
+          <div class="breaksection">
+            <span>Address proof<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <input type="file" name="" class="docs" onchange="loadFile3(event)">
+          </div>
+          <div class="breaksection">
+            <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+          <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+            <option> .jpg </option>
+            <option> .png </option>
+            <option> .bmp </option>
+            <option> .jpeg </option>
+          </select>
+          </div>
+          
+          
+        </div>
+        <div>
+          <img style="background-color: white; margin-right: 10px;" id="output1" width="200px" height="200px" />
+          <img style="background-color: white; margin-right: 10px;" id="output2" width="200px" height="200px" />
+          <img style="background-color: white; margin-right: 10px;" id="output3" width="200px" height="200px" />
+        </div>
+        
 
       </div>
       <!-- form part 5 ends -->
+
       <!-- form part 6 starts -->
-
-      <div class="descrip">Declaration</div><br><br>
-
-
-      I hereby declare that to the best of knowledge and belief <br>
-
-      (i) I
-      am a citizen of India and place of my birth is; <br>
-
-      <div class="conatinerFluid">
-        <div class="declaration_city">
-
-          City /
-          Village:
-
-          <input class="zoomeffect" type="text" name="" id="" required><br>
+      <div class="descrip">Declaration</div>
+      <div class="conatinerFluid part6">
+        <div>I hereby declare that to the best of knowledge and belief</div>
+        <div>
+          <span class="longerspan">(i) I am a citizen of India and place of my birth is</span>
+          <div style="margin-left: 20px;">
+            <div>
+              <span>City / Village: </span>
+              <!--remove zoomeffect-->
+              <input class="" type="text" name="" id="" required><br>
+            </div>
+            <div>
+              <span>State: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct1" id="slct1"
+              onchange="populate(this.id,'slct2')">
+                <option>Choose State</option>
+                <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+                <option value="andhra pradesh"> ANDHRA PRADESH</option>
+                <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+                <option value="assam"> ASSAM</option>
+                <option value="bihar"> BIHAR</option>
+                <option value="chandigarh"> CHANDIGARH</option>
+                <option value="chattisgarh"> CHATTISGARH</option>
+                <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+                <option value="daman and diu"> DAMAN AND DIU</option>
+                <option value="delhi"> DELHI</option>
+                <option value="goa"> GOA</option>
+                <option value="gujarat"> GUJARAT</option>
+                <option value="haryana"> HARYANA</option>
+                <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+                <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+                <option value="jharkhand"> JHARKHAND</option>
+                <option value="karnataka"> KARNATAKA</option>
+                <option value="kerala"> KERALA</option>
+                <option value="ladakh"> LADAKH</option>
+                <option value="lakshadweep"> LAKSHADWEEP</option>
+                <option value="madhya pradesh"> MADHYA PRADESH</option>
+                <option value="maharashtra"> MAHARASHTRA</option>
+                <option value="manipur"> MANIPUR</option>
+                <option value="meghalaya"> MEGHALAYA</option>
+                <option value="mizoram">MIZORAM</option>
+                <option value="nagaland"> NAGALAND</option>
+                <option value="odisha"> ODISHA</option>
+                <option value="puducherry">PUDUCHERRY </option>
+                <option value="punjab"> PUNJAB</option>
+                <option value="rajasthan"> RAJASTHAN</option>
+                <option value="sikkim"> SIKKIM</option>
+                <option value="tamil nadu"> TAMIL NADU</option>
+                <option value="telangana"> TELANGANA</option>
+                <option value="tripura"> TRIPURA</option>
+                <option value="uttar pradesh"> UTTAR PRADESH</option>
+                <option value="uttarakhand"> UTTARAKHAND</option>
+                <option value="west bengal">WEST BENGAL</option>
+              </select>
+            </div>
+            <div>
+              <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="slct2">
+                <option>Choose District</option>
+              </select>
+            </div>
+          </div>
         </div>
-        Select state
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct1" id="slct1"
-          onchange="populate(this.id,'slct2')" style="width:156px !important; padding-left:9px; font-size: 15px;">
-          <option> --Choose State -- </option>
-          <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-          <option value="andhra pradesh"> ANDHRA PRADESH</option>
-          <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-          <option value="assam"> ASSAM</option>
-          <option value="bihar"> BIHAR</option>
-          <option value="chandigarh"> CHANDIGARH</option>
-          <option value="chattisgarh"> CHATTISGARH</option>
-          <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-          <option value="daman and diu"> DAMAN AND DIU</option>
-          <option value="delhi"> DELHI</option>
-          <option value="goa"> GOA</option>
-          <option value="gujarat"> GUJARAT</option>
-          <option value="haryana"> HARYANA</option>
-          <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-          <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-          <option value="jharkhand"> JHARKHAND</option>
-          <option value="karnataka"> KARNATAKA</option>
-          <option value="kerala"> KERALA</option>
-          <option value="ladakh"> LADAKH</option>
-          <option value="lakshadweep"> LAKSHADWEEP</option>
-          <option value="madhya pradesh"> MADHYA PRADESH</option>
-          <option value="maharashtra"> MAHARASHTRA</option>
-          <option value="manipur"> MANIPUR</option>
-          <option value="meghalaya"> MEGHALAYA</option>
-          <option value="mizoram">MIZORAM</option>
-          <option value="nagaland"> NAGALAND</option>
-          <option value="odisha"> ODISHA</option>
-          <option value="puducherry">PUDUCHERRY </option>
-          <option value="punjab"> PUNJAB</option>
-          <option value="rajasthan"> RAJASTHAN</option>
-
-          <option value="sikkim"> SIKKIM</option>
-          <option value="tamil nadu"> TAMIL NADU</option>
-          <option value="telangana"> TELANGANA</option>
-          <option value="tripura"> TRIPURA</option>
-          <option value="uttar pradesh"> UTTAR PRADESH</option>
-          <option value="uttarakhand"> UTTARAKHAND</option>
-          <option value="west bengal">WEST BENGAL</option>
-        </select>
-        <span class="district">
-          District
-        </span>
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct2" id="slct2">
-          <option> --Choose District -- </option>
-        </select>
-      </div>
-      <br><br>
-      (ii) I am ordinarily resident at the address given above since Date
-      <sup style="color:rgb(255, 8, 8);"> * </sup>
-
-      <input class="zoomeffect" type="date" name="" id=""><br><br>
-
-      (iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency<br><br>
-
-      <div class="conatinerFluid">
-
-        <ul class="radio">
-          <li>
-            <input type="radio" name="select" id=""> My name has not already
-            been included in the electoral roll for this or any other assembly/ parliamentary constituency
-          </li><br>
-          <xml>Or</xml> <br><br>
-          <li>
-            <input type="radio" name="select" id="">My name may have been
-            included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
-            <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct4" id="slct4">
-              <option> --Choose District -- </option>
-            </select>
-
-            Constituency in
-            <sup style="color:rgb(255, 8, 8)"> * </sup>
-            <select class="btn btn-secondary btn-sm dropdown-toggle" name="slct3" id="slct3"
-              onchange="populate(this.id,'slct4')" style="width:156px !important; padding-left:9px; font-size: 15px;">
-              <option> --Choose State -- </option>
-              <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-              <option value="andhra pradesh"> ANDHRA PRADESH</option>
-              <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-              <option value="assam"> ASSAM</option>
-              <option value="bihar"> BIHAR</option>
-              <option value="chandigarh"> CHANDIGARH</option>
-              <option value="chattisgarh"> CHATTISGARH</option>
-              <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-              <option value="daman and diu"> DAMAN AND DIU</option>
-              <option value="delhi"> DELHI</option>
-              <option value="goa"> GOA</option>
-              <option value="gujarat"> GUJARAT</option>
-              <option value="haryana"> HARYANA</option>
-              <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-              <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-              <option value="jharkhand"> JHARKHAND</option>
-              <option value="karnataka"> KARNATAKA</option>
-              <option value="kerala"> KERALA</option>
-              <option value="ladakh"> LADAKH</option>
-              <option value="lakshadweep"> LAKSHADWEEP</option>
-              <option value="madhya pradesh"> MADHYA PRADESH</option>
-              <option value="maharashtra"> MAHARASHTRA</option>
-              <option value="manipur"> MANIPUR</option>
-              <option value="meghalaya"> MEGHALAYA</option>
-              <option value="mizoram">MIZORAM</option>
-              <option value="nagaland"> NAGALAND</option>
-              <option value="odisha"> ODISHA</option>
-              <option value="puducherry">PUDUCHERRY </option>
-              <option value="punjab"> PUNJAB</option>
-              <option value="rajasthan"> RAJASTHAN</option>
-              <option value="sikkim"> SIKKIM</option>
-              <option value="tamil nadu"> TAMIL NADU</option>
-              <option value="telangana"> TELANGANA</option>
-              <option value="tripura"> TRIPURA</option>
-              <option value="uttar pradesh"> UTTAR PRADESH</option>
-              <option value="uttarakhand"> UTTARAKHAND</option>
-              <option value="west bengal">WEST BENGAL</option>
-            </select>
-            <br>
-            State in which I was ordinarily resident earlier at the address mentioned below and if so, I request that
-            the
-            same may be deleted from that
-            electoral roll.
-          </li>
-        </ul>
-        <br>
-        <hr>
-        Location
-        <sup style="color:rgb(255, 8, 8)"> * </sup>
-        <input class="zoomeffect" type="text" name="" id="" required>
-        date <input class="zoomeffect" type="date" name="" id=""><br>
-      </div>
-      <br><input type="radio" name="select" id=""> I am aware that making a statement or declaration which
-      is false and which I
-      know or believe to be false or do not believe to be true, is
-      punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
-      <br>
-      <br>
-      </form>
-    </div>
-      <div class="captcha-container"
-        style="text-align: center;margin-left: auto; margin-right: auto; text-align: center; border: 2px solid black;">
-        <div class="securityCode">
-          <p id="code"></p>
-          <div class="icons">
-            <span class="readText" style="align-items: center;">
-              <i class="fas fa-headphones"></i>
+        <div>
+          <span class="longerspan">(ii) I am ordinarily resident at the address given above since Date <sup style="color:rgb(255, 8, 8);"> * </sup></span>
+          <input class="date" type="date" name="" id="">
+        </div>
+        <div>
+          <span class="longerspan">(iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency</span>
+          <div style="margin-left: 25px;">
+            <ul>
+              <li>
+                <input type="radio" name="select" id="">
+                <span class="longerspan" style="display: block;">My name has not already been included in the electoral roll for this or any other assembly/ parliamentary constituency</span>
+              </li>
+              <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
+              <li>
+                <input type="radio" name="select" id=""">
+                <span  class="longerspan" style="display: block;">
+                  My name may have been included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
+                  <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct4" id="slct4">
+                    <option>Choose District</option>
+                  </select>
+                  Constituency in
+                  <sup style="color:rgb(255, 8, 8)"> * </sup>
+                  <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct3" id="slct3"
+                    onchange="populate(this.id,'slct4')">
+                    <option>Choose State</option>
+                    <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+                    <option value="andhra pradesh"> ANDHRA PRADESH</option>
+                    <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+                    <option value="assam"> ASSAM</option>
+                    <option value="bihar"> BIHAR</option>
+                    <option value="chandigarh"> CHANDIGARH</option>
+                    <option value="chattisgarh"> CHATTISGARH</option>
+                    <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+                    <option value="daman and diu"> DAMAN AND DIU</option>
+                    <option value="delhi"> DELHI</option>
+                    <option value="goa"> GOA</option>
+                    <option value="gujarat"> GUJARAT</option>
+                    <option value="haryana"> HARYANA</option>
+                    <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+                    <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+                    <option value="jharkhand"> JHARKHAND</option>
+                    <option value="karnataka"> KARNATAKA</option>
+                    <option value="kerala"> KERALA</option>
+                    <option value="ladakh"> LADAKH</option>
+                    <option value="lakshadweep"> LAKSHADWEEP</option>
+                    <option value="madhya pradesh"> MADHYA PRADESH</option>
+                    <option value="maharashtra"> MAHARASHTRA</option>
+                    <option value="manipur"> MANIPUR</option>
+                    <option value="meghalaya"> MEGHALAYA</option>
+                    <option value="mizoram">MIZORAM</option>
+                    <option value="nagaland"> NAGALAND</option>
+                    <option value="odisha"> ODISHA</option>
+                    <option value="puducherry">PUDUCHERRY </option>
+                    <option value="punjab"> PUNJAB</option>
+                    <option value="rajasthan"> RAJASTHAN</option>
+                    <option value="sikkim"> SIKKIM</option>
+                    <option value="tamil nadu"> TAMIL NADU</option>
+                    <option value="telangana"> TELANGANA</option>
+                    <option value="tripura"> TRIPURA</option>
+                    <option value="uttar pradesh"> UTTAR PRADESH</option>
+                    <option value="uttarakhand"> UTTARAKHAND</option>
+                    <option value="west bengal">WEST BENGAL</option>
+                  </select>
+                  State in which I was ordinarily resident earlier at the address mentioned below and if so, I request that the same may be deleted from that electoral roll.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="border-bottom: 3px solid white;"></div>
+        <div>
+          <div>
+            <span>Location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <input class="date" type="text" name="" id="" required>
+          </div>
+          <div>
+            <span>Date <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <input class="date" type="date" name="" id=""></div>
+          <div>
+            <input type="radio" name="select" id="">
+            <span class="longerspan">
+              I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, 
+              is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
             </span>
-            <span class="changeText">
-              <i class="fas fa-sync-alt"></i>
-            </span>
-            <input type="text" placeholder="Type the text here">
           </div>
         </div>
       </div>
-      <br>
-      <br>
-      <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-      <script src="./script.js"></script>
       <!-- form part 6 ends -->
-      <!-- <div class="conatinerFluid">
-        <br>
-        Captcha
-        <form action="" name="passGen">
 
-          <div class="input-icons">
-            <input class="zoomeffect myInput text-center" id="out" type="text" name="output1">
-            <!- <i class="fas fa-redo myRelo1 myBtn1" style="cursor: pointer; margin-top: 45px; margin-left: -69px;"></i>  -->
-      <!-- <input type="button" class="myBtn1"  value="Refresh" onclick=printCaptcha(6) >
-
-            <input class="zoomeffect" type="text" name="" id="" required><br><br>
+      <div>
+        <div class="captcha-container"
+          style="text-align: center; margin: 0 auto; text-align: center; border: 0px solid;">
+          <div class="securityCode">
+            <p id="code"></p>
+            <div class="icons">
+              <span class="readText" style="align-items: center;">
+                <i class="fas fa-headphones"></i>
+              </span>
+              <span class="changeText">
+                <i class="fas fa-sync-alt"></i>
+              </span>
+              <input type="text" placeholder="Type the text here" style="width: 50%;">
+            </div>
+          </div>
         </div>
-        </form>
-
-
-      </div> -->
-      <div class="myBtn">
-        <input type="reset" class="btn btn-success" value="Reset">
-        <input type="submit" class="btn btn-success" value="Submit" id="submitButton">
+        <br>
+        <br>
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+        <script src="./script.js"></script>
       </div>
+
+      <div class="myBtn">
+        <input type="reset" class="btn btn-success resetBtn" value="Reset">
+        <input type="submit" class="btn btn-success submitBtn" value="Submit" id="submitButton">
+      </div>
+
     </form>
+
   </div> 
   <!-- footer starts -->
   <footer id="ft">
