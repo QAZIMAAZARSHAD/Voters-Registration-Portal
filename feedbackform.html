@@ -567,6 +567,21 @@ input[type=submit]:hover {
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>
 <script>
+
+  let tag = document.getElementById("tag");
+  function myFunction(selectObject) {
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    var value = selectObject.value;  
+    console.log(value);
+      let text = document.createElement("h3")
+      text.innerHTML = `NVP Regional Office, ${value}
+                        Ground Floor, Pragati Maidan Metro Station,
+                        Pragati Maidan, ${value}-110001`;
+    tag.appendChild(text);
+  }
+
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
