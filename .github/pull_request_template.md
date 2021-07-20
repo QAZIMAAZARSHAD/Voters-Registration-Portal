@@ -12,6 +12,9 @@ A clear and concise description of what you have done to successfully close your
 #### Describe if there is any unusual behaviour of your code(Write `NA` if there isn't)
 A clear and concise description of it.
 
+#### Deploy your changes to github page or netlify and mention deployment link:
+Add the deployment link here.
+
 #### Additional context (OPTIONAL)
 Add any other context or screenshots about the feature request here.
 
