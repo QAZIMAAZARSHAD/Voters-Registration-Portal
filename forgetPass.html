@@ -297,7 +297,7 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
       <h2>Regional Offices</h2>
-      <select name="place" id="place">
+      <select name="place" id="place" onchange="myFunction(this)">
         <option value="delhi">Delhi</option>
         <option value="mumbai">Mumbai</option>
         <option value="kolkata">Kolkata</option>
@@ -306,6 +306,9 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
         <option value="bengaluru">Bengaluru</option>
         <option value="hyderabad">Hyderabad</option>
       </select>
+      <h3 id="tag">NVP Regional Office, Delhi
+        Ground Floor, Pragati Maidan Metro Station,
+        Pragati Maidan, New Delhi-110001</h3>
     </div>
 
     <div class="three">
@@ -451,6 +454,21 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
         <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
     </button>
     <script>
+
+      let tag = document.getElementById("tag");
+  function myFunction(selectObject) {
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    var value = selectObject.value;  
+    console.log(value);
+      let text = document.createElement("h3")
+      text.innerHTML = `NVP Regional Office, ${value}
+                        Ground Floor, Pragati Maidan Metro Station,
+                        Pragati Maidan, ${value}-110001`;
+    tag.appendChild(text);
+  }
+
       $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
