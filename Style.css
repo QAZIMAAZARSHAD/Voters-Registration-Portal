@@ -18,21 +18,19 @@ body.dark {
 .checkbox {
   opacity: 0;
   position: absolute;
-  bottom:0px;
 }
 
 .label {
-  background-color: rgb(217 217 217);
+  background-color: #111;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
   padding: 5px;
-  position: relative;
-  bottom:0px;
-  right:13rem;
+  position: absolute;
+  right: 5rem;
+  top: 8.5rem;
   height: 22px;
   width: 45px;
 
@@ -40,10 +38,10 @@ body.dark {
 }
 
 .label .ball {
-  background-color: rgb(199, 30, 30);
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   left: 0px;
   height: 22px;
   width: 22px;
@@ -263,7 +261,6 @@ body.dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .h1 {
   position: relative;
@@ -272,7 +269,6 @@ body.dark {
   color: white;
   text-transform: capitalize;
   font-weight: bolder;
-  
 }
 .span1 {
   color: orangered;
@@ -340,6 +336,13 @@ body.dark {
   top: 8%;
   left: 10%;
   width: 150px;
+}
+
+@media screen and (max-width: 1310px) {
+  .mobile_view {
+    display: block;
+    transform: scale(1.4);
+  }
 }
 
 @media screen and (max-width: 1240px) {
@@ -486,11 +489,11 @@ body.dark {
 }
 
 .video_container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
   opacity: 0.6;
 }
@@ -589,6 +592,12 @@ body.dark {
   top: 5%;
   right: 3%;
 }
+
+/* .logo-footer{
+  position: absolute;
+  top: 900px;
+  right: 170px;
+} */
 
 ul {
   list-style-type: none;
@@ -882,7 +891,7 @@ h1 {
 @media (max-width: 500px) {
   .h1,
   h1 {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
   h1 {
     margin: 0rem;
@@ -1168,6 +1177,15 @@ ul {
   padding-left: 0rem;
 }
 
+.four img{
+  margin : 15px;
+  margin-top: 70px;
+  width : 150px;
+  display: block;
+  border-radius: 15px;
+}
+
+
 .footer-index {
   display: flex;
   justify-content: center;
@@ -1367,8 +1385,7 @@ ul {
 }
 
 #header-image {
-  position: absolute;
-  width: 110px;
+  width: 150px;
 }
 
 .flip {
@@ -1411,3 +1428,104 @@ ul {
   color: white;
   transform: rotateY(180deg);
 }
+
+
+.labelnew {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top:22px;
+  right:32rem;
+  padding: 5px;
+  position: relative;
+  bottom:0px;
+  height: 22px;
+  width: 45px;
+
+  transform: scale(1.5);
+}
+
+.labelnew .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .labelnew .ball {
+  transform: translateX(24px);
+}
+
+@media screen and (max-width: 1024px) {
+  .labelnew #print {
+    position: absolute;
+    right: 2rem;
+    top: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .labelnew {
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    height: 20px;
+    width: 42px;
+  }
+  .labelnew .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .icons input {
+    position: relative;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .label {
+    position: absolute;
+    right: 1rem;
+    top: 4.5rem;
+    height: 10px;
+    width: 22px;
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon,
+  .fa-sun {
+    font-size: 8px;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fa-moon,
+  .fa-sun {
+    font-size: 4px;
+  }
+}
+.dark {
+  background-color: #030303;
+}
+

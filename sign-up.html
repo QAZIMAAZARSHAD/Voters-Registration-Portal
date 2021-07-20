@@ -24,6 +24,8 @@
     <title> Voter Sign-Up</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
     <script>
+
+
       // Get current title and icon
     var title = $('title').text();
     var favicon = $('link[rel=icon]').attr('href');
@@ -98,11 +100,7 @@ font-family: 'Baloo 2', cursive;
 font-size: 18px;
 
 }
-.container:hover{
-  transform:translateY(.2rem);
-  box-shadow: 0 0 .2rem .2rem rgb(148, 255, 145);
-  background: rgba(70, 252, 146, 0.199);
-}
+
 #votingimage{
   padding-left: 2rem;
   padding-top: .6rem;
@@ -116,6 +114,12 @@ font-size: 18px;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  color: rgb(45, 44, 49);
  font-size: 1.5rem;
+}
+#address {
+  resize: none;
+}
+.showPwd1 {
+  margin-left: -140px;
 }
 
 
@@ -152,7 +156,30 @@ position: relative;
 }
 }
 
+@media(max-width: 1085px) {
+  .showPwd1 {
+    margin-left: -70px;
+}
+}
 
+@media (max-width : 995px) {
+  .showPwd1 {
+    margin-left: 0;
+}
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    
       </style>
 
   <!-- Footer CSS -->
@@ -205,24 +232,7 @@ position: relative;
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-    chk.addEventListener('change', () => {
-      document.body.classList.toggle('dark');
-    });
-    </script>
+     
 
     </header>
 
@@ -269,7 +279,7 @@ position: relative;
 
                                 <div class="mb-3">
                                     <label for="number" class="form-label required-field">Mobile Number</label>
-                                    <input type="number" class="form-control" id="number" placeholder="Mobile Number" >
+                                    <input type="number" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" id="number" placeholder="Mobile Number" >
                                 </div>
                                 <div class="mb-3">
                                     <label for="address" class="form-label required-field">Address</label>
@@ -317,7 +327,7 @@ position: relative;
 
                                 <div class="mb-3">
                                     <label for="zip_code" class="form-label required-field">Zip Code</label>
-                                    <input type="number" class="form-control" id="zip_code" placeholder="zip Code">
+                                    <input type="number" maxlength="6" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" id="zip_code" placeholder="zip Code">
                                 </div>
                                 <div id="olduser" class="form-text" style="text-align:right;font-size:15px;">Already a user? <a href="login.html">Login here</a></div><br>
                             </div>
@@ -347,13 +357,7 @@ position: relative;
 
 
     </div>
-    <script>
-    const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
 
 <script>
        function giveAlert(title_,icon_)
@@ -487,7 +491,7 @@ chk.addEventListener('change', () => {
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
       <h2>Regional Offices</h2>
-      <select name="place" id="place">
+      <select name="place" id="place" onchange="myFunction(this)">
         <option value="delhi">Delhi</option>
         <option value="mumbai">Mumbai</option>
         <option value="kolkata">Kolkata</option>
@@ -496,6 +500,10 @@ chk.addEventListener('change', () => {
         <option value="bengaluru">Bengaluru</option>
         <option value="hyderabad">Hyderabad</option>
       </select>
+      <h3 id="tag">NVP Regional Office, Delhi
+        Ground Floor, Pragati Maidan Metro Station,
+        Pragati Maidan, New Delhi-110001</h3>
+        
     </div>
 
     <div class="three">
@@ -591,12 +599,39 @@ chk.addEventListener('change', () => {
 
           </li>
         </ul>
+        <div class="logo-footer">
+          <div class="flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo1.jpg" id="header-image">
+                </a>
+              </div>
+              <div class="flip-back">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo2.jpg" id="header-image">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div> 
     </div>
   </div>
 
 
 
   <div class="footer-down">
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk" >
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -615,6 +650,21 @@ chk.addEventListener('change', () => {
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>
 <script>
+
+          let tag = document.getElementById("tag");
+          function myFunction(selectObject) {
+          if(tag.innerHTML.length!= 0) {
+              tag.innerHTML = "";
+          }
+          var value = selectObject.value;  
+          console.log(value);
+          let text = document.createElement("h3")
+          text.innerHTML = `NVP Regional Office, ${value}
+                        Ground Floor, Pragati Maidan Metro Station,
+                        Pragati Maidan, ${value}-110001`;
+          tag.appendChild(text);
+  }
+
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
@@ -697,5 +747,21 @@ chk.addEventListener('change', () => {
    responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });
  })
 </script>
+
+<script>
+
+  window.onload = function(){
+    const chk = document.getElementById('chk');
+    const mode = JSON.parse(localStorage.getItem("Mode"));
+    mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
+
+    chk.addEventListener('change', (e) => {
+      document.body.classList.toggle('dark');
+      const mode = e.target.checked;
+      localStorage.setItem("Mode",mode);
+    });
+  }
+</script>
+
    </body>
 </html>

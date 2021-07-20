@@ -220,25 +220,6 @@ input[type=submit]:hover {
         </div>
 
 
-        <div>
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
-        </div>
-
-
-
-
-      <script>
-          const chk = document.getElementById('chk');
-
-      chk.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-      });
-      </script>
     </header>
 
     <div class="main-section">
@@ -318,11 +299,17 @@ input[type=submit]:hover {
         </div>
     </div>
 <script>
+  window.onload = function(){
     const chk = document.getElementById('chk');
+    const mode = JSON.parse(localStorage.getItem("Mode"));
+    mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
+    chk.addEventListener('change', (e) => {
+      document.body.classList.toggle('dark');
+      const mode = e.target.checked;
+      localStorage.setItem("Mode",mode);
+    });
+  }
 </script>
     <script>
       function giveAlert(title_,icon_)
@@ -421,7 +408,7 @@ chk.addEventListener('change', () => {
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
       <h2>Regional Offices</h2>
-      <select name="place" id="place">
+      <select name="place" id="place" onchange="myFunction(this)">
         <option value="delhi">Delhi</option>
         <option value="mumbai">Mumbai</option>
         <option value="kolkata">Kolkata</option>
@@ -430,6 +417,9 @@ chk.addEventListener('change', () => {
         <option value="bengaluru">Bengaluru</option>
         <option value="hyderabad">Hyderabad</option>
       </select>
+      <h3 id="tag">NVP Regional Office, Delhi
+        Ground Floor, Pragati Maidan Metro Station,
+        Pragati Maidan, New Delhi-110001</h3>
     </div>
 
     <div class="three">
@@ -526,12 +516,42 @@ chk.addEventListener('change', () => {
 
           </li>
         </ul>
+        <div class="logo-footer">
+          <div class="flip">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo1.jpg" id="header-image">
+                </a>
+              </div>
+              <div class="flip-back">
+                <a href="#" class="endlogo">
+                  <img src="./Images/Logo/logo2.jpg" id="header-image">
+                </a>
+              </div>
+            </div>
+          </div>
+            </div> 
     </div>
   </div>
 
 
 
   <div class="footer-down">
+    
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="labelnew" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+
+
+
+
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -547,6 +567,21 @@ chk.addEventListener('change', () => {
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>
 <script>
+
+  let tag = document.getElementById("tag");
+  function myFunction(selectObject) {
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    var value = selectObject.value;  
+    console.log(value);
+      let text = document.createElement("h3")
+      text.innerHTML = `NVP Regional Office, ${value}
+                        Ground Floor, Pragati Maidan Metro Station,
+                        Pragati Maidan, ${value}-110001`;
+    tag.appendChild(text);
+  }
+
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
@@ -573,6 +608,9 @@ chk.addEventListener('change', () => {
       x.type = "password";
     }
   }
+
 </script>
+
+
    </body>
 </html>

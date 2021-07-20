@@ -32,6 +32,7 @@
     </script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="help.css">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -121,25 +122,6 @@
       </div>
 
 
-      <div>
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
-
-
-
-      <script>
-        const chk = document.getElementById('chk');
-
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
-      </script>
   </header>
 
   <!-- navbar ends -->
@@ -333,7 +315,7 @@
             <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
             <h2>Regional Offices</h2>
-            <select name="place" id="place">
+            <select name="place" id="place" onchange="myFunction(this)">
               <option value="delhi">Delhi</option>
               <option value="mumbai">Mumbai</option>
               <option value="kolkata">Kolkata</option>
@@ -342,6 +324,9 @@
               <option value="bengaluru">Bengaluru</option>
               <option value="hyderabad">Hyderabad</option>
             </select>
+            <h3 id="tag">NVP Regional Office, Delhi
+              Ground Floor, Pragati Maidan Metro Station,
+              Pragati Maidan, New Delhi-110001</h3>
           </div>
 
           <div class="three">
@@ -437,12 +422,70 @@
 
                 </li>
               </ul>
+              <div class="logo-footer">
+                <div class="flip">
+                  <div class="flip-inner">
+                    <div class="flip-front">
+                      <a href="#" class="endlogo">
+                        <img src="./Images/Logo/logo1.jpg" id="header-image">
+                      </a>
+                    </div>
+                    <div class="flip-back">
+                      <a href="#" class="endlogo">
+                        <img src="./Images/Logo/logo2.jpg" id="header-image">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  </div> 
           </div>
         </div>
 
 
 
         <div class="footer-down">
+          
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="labelnew" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+
+
+
+      <script>
+
+let tag = document.getElementById("tag");
+  function myFunction(selectObject) {
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    var value = selectObject.value;  
+    console.log(value);
+      let text = document.createElement("h3")
+      text.innerHTML = `NVP Regional Office, ${value}
+                        Ground Floor, Pragati Maidan Metro Station,
+                        Pragati Maidan, ${value}-110001`;
+    tag.appendChild(text);
+  }
+
+        window.onload = function(){
+          const chk = document.getElementById('chk');
+          const mode = JSON.parse(localStorage.getItem("Mode"));
+          mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
+
+          chk.addEventListener('change', (e) => {
+            document.body.classList.toggle('dark');
+            const mode = e.target.checked;
+            localStorage.setItem("Mode",mode);
+          });
+        }
+      </script>
+
         <div class="copyright" style="padding-bottom:20px">
           Copyright ©
           <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
@@ -456,13 +499,6 @@
     <!-- footer ends -->
 
 
-<script>
-    const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
 <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>
