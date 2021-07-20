@@ -454,7 +454,19 @@ font-size: 18px;
 </button>
 <script>
 
-  
+  let tag = document.getElementById("tag");
+  function myFunction(selectObject) {
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    var value = selectObject.value;  
+    console.log(value);
+      let text = document.createElement("h3")
+      text.innerHTML = `NVP Regional Office, ${value}
+                        Ground Floor, Pragati Maidan Metro Station,
+                        Pragati Maidan, ${value}-110001`;
+    tag.appendChild(text);
+  }
 
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
