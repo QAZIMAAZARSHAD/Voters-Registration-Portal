@@ -104,6 +104,49 @@ font-size: 18px;
       margin-right: 1.2rem;
     }
 }
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
 
 
   </style>
@@ -175,9 +218,11 @@ font-size: 18px;
                               <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter Your Email">
                             </div>
                             <div class="mb-3">
-                              <label for="Password1" class="form-label">Password</label><br>
-                              <input type="password" name="password" id="Password1" placeholder="Enter Your Password" />
-                              <i class="bi bi-eye-slash" id="togglePassword" style="cursor: pointer;" ></i>
+                              <label for="Password1" class="form-label">Password</label>
+                              <div class="input-container">
+                                <input type="password" class="form-control" name="password" id="Password1" placeholder="Enter Your Password" />
+                                <i class="bi bi-eye-slash" id="togglePassword" style="position: absolute; margin-left: 320px;" ></i>
+                              </div>
                               <div id="passwordhelp" class="form-text">Forgot Password? <a href="forgetPass.html">click here</a></div>
                             </div>
                             <div class="mb-3 form-check">

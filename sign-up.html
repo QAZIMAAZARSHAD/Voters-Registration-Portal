@@ -124,6 +124,49 @@ font-size: 18px;
 .showPwd1 {
   margin-left: -140px;
 }
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
 
 
 @media (min-width:320px) and (max-width:991px){
@@ -264,14 +307,18 @@ input[type=number] {
                                   <input type="email" class="form-control" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
-                                  <label for="password1" class="form-label required-field">Password</label><br>
-                                  <input type="password" id="password1" placeholder="Enter Your Password" />
-                                  <i class="bi bi-eye-slash" id="togglePassword" style="cursor: pointer;" ></i>
+                                  <label for="password1" class="form-label required-field">Password</label>
+                                  <div class="input-container"> 
+                                    <input type="password" class="form-control" id="password1" placeholder="Enter Your Password" />
+                                    <i class="bi bi-eye-slash" id="togglePassword" style="margin-left: -30px; cursor: pointer;" ></i>
+                                  </div>
                                 </div>
                                 <div class="mb-3">
-                                  <label for="confirmPassword1" class="form-label required-field">Confirm Password</label><br>
-                                  <input type="password" id="confirmPassword1" placeholder="Enter Your Password" />
-                                  <i class="bi bi-eye-slash" id="togglePassword" style="cursor: pointer;" ></i>
+                                  <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
+                                  <div class="input-container">
+                                    <input type="password" class="form-control" id="confirmPassword1" placeholder="Enter Your Password" />
+                                    <i class="bi bi-eye-slash" id="togglePassword" style="margin-left: -30px; cursor: pointer;" ></i>
+                                  </div>    
                                </div>
                             </div>
                             <div class="col-lg-6">
