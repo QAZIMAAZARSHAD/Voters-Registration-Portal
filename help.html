@@ -32,7 +32,13 @@
     </script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="help.css">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Exo+2&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -82,6 +88,13 @@
   .four ul li a{
     text-decoration: underline;
   }
+  #form1{
+    border-radius: 40px;
+  }
+  .responsive {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 
 
@@ -127,26 +140,31 @@
   <!-- navbar ends -->
     <section class="body">
         <div class="container">
-            <h1>How can we help you?</h1>
+            <h1 style="text-align: center; font-family: 'Baloo Tammudu 2', cursive; color: rgb(255, 238, 238); -webkit-text-stroke: .01px rgb(56, 56, 56); font-weight: bolder; text-transform:uppercase;">How can we help you?</h1>
+            <center>
+              <img src="./Images/helpnsupport.png" alt="" class="responsive">
+            </center>  
             <div class="help-box">
-                <div class="help-left">
-                    <h2>Details</h2>
+                <div class="help-left" id="div1">
+                    <h2 style="text-align: center; text-decoration: underline; font-family: 'Baloo Tammudu 2', cursive;">DETAILS</h2>
                     <br>
                     <br>
+               
                     <form id="form1">
                         <div class="input-row">
                             <div class="input-group">
-                                <label><h4>Name<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="text" id="name" placeholder="Fill your name">
+                                <label><h4 style="font-family: 'Open Sans', sans-serif;">Name<sup style="color:rgb(255, 8, 8);"> *</sup></h4></label>
+                                <input type="text" id="name" placeholder="Fill your name" style="border-radius: 5px; padding: 2px 5px; text-align: center;">
                             </div>
                             <div class="input-group">
-                                <label><h4>Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="email" id="email" placeholder="xyz@abc.com">
+                                <label><h4 style="font-family: 'Open Sans', sans-serif;">Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
+                                <input type="email" id="email" placeholder="Your Email Id.." style="border-radius: 5px; padding: 2px 5px; text-align: center;">
                             </div>
                         </div>
-                        <label><h4>Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                        <textarea rows="5" id="mess" placeholder="Your Message Here..."></textarea>
-                        <button type="button" onclick="check()">Submit</button>
+                        <label><h4 style="font-family: 'Open Sans', sans-serif;">Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
+                        <textarea rows="5" id="mess" placeholder="Your Message Here..." style="border-radius: 5px; padding: 2px 5px; text-align: center;"></textarea>
+                      
+                       <center><button type="button" class="btn btn-outline-primary" onclick="check()" style="padding:0px ; margin-top: 15px; ">Submit</button> </center> 
                     </form>
                     <script>
                          function check()
@@ -179,19 +197,21 @@
                     </script>
                 </div>
                 <div class="help-right">
-                    <h2>Reach us</h2>
+                    <h2 style="text-align: center; text-decoration: underline; font-family: 'Baloo Tammudu 2', cursive;">REACH US</h2>
                     <table>
                         <tr>
-                            <td><b>Email</b></td>
-                            <td style="color: rgb(58, 52, 52); font-weight: bold;">help@Voterregistrationportal.com</td>
+                            <td><b>Email-</b></td>
+                            <td style="color: rgb(58, 52, 52); font-weight: bold;">
+                              <a href = "mailto:  help@voterregistrationportal.com" style="text-decoration:none;"> help@voterregistrationportal.com</a>
+                            </td>
                         </tr>
                         <tr>
-                            <td><b>Phone</b></td>
-                            <td style="color: rgb(58, 52, 52); font-weight: bold;">123456789</td>
+                            <td><b>Phone-</b></td>
+                            <td style="color: rgb(58, 52, 52); font-weight: bold;">+91 9876543210</td>
                         </tr>
                         <tr>
-                            <td><b>Address</b></td>
-                            <td style="color: rgb(58, 52, 52); font-weight: bold;">114 abc buiding, near xyz road</td>
+                            <td><b>Address-</b></td>
+                            <td style="color: rgb(58, 52, 52); font-weight: bold;">Versova, Mumbai, Maharashtra <br>(400061), India</td>
                         </tr>
                     </table>
 
