@@ -83,7 +83,47 @@
     text-decoration: underline;
   }
 </style>
+<!-- Responsive Text-->
 
+<style>
+  @media (max-width: 1090px) {
+    .body h1, .body h2,.body h3,.body b, .body a{
+    font-size: 5vw;
+  }
+  .body h4,.body h5,.body h6{
+    font-size: 5vw
+  }
+  .body td, .body p{
+    font-size: 3vw
+  }
+  .help-right{
+    font-size: 3vw;
+    margin-right: 2px;
+  }
+  input[type=text],input[type=email]{
+    width: 100%;
+    height: 8vw;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  textarea{
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  input[type=text]:placeholder-shown,input[type=email]:placeholder-shown,textarea:placeholder-shown{
+    font-size:5vw ;
+  }
+  button{
+    width:40%;
+  }
+  
+
+  </style>
 
 <body>
     <div class="scroll-bar">
@@ -130,22 +170,23 @@
             <h1>How can we help you?</h1>
             <div class="help-box">
                 <div class="help-left">
-                    <h2>Details</h2>
-                    <br>
+                    <h2><Strong>Details</Strong></h2>
                     <br>
                     <form id="form1">
-                        <div class="input-row">
+                        <div>
                             <div class="input-group">
                                 <label><h4>Name<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="text" id="name" placeholder="Fill your name">
+                                <input type="text" id="name" placeholder="   Fill your name">
                             </div>
+                            <br>
                             <div class="input-group">
                                 <label><h4>Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="email" id="email" placeholder="xyz@abc.com">
+                                <input type="email" id="email" placeholder="   xyz@abc.com">
                             </div>
                         </div>
+                        <br>
                         <label><h4>Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                        <textarea rows="5" id="mess" placeholder="Your Message Here..."></textarea>
+                        <textarea rows="5" id="mess" placeholder="  Your Message Here..."></textarea>
                         <button type="button" onclick="check()">Submit</button>
                     </form>
                     <script>
@@ -179,7 +220,8 @@
                     </script>
                 </div>
                 <div class="help-right">
-                    <h2>Reach us</h2>
+                    <h2><strong>Reach Us</strong></h2>
+                    <br>
                     <table>
                         <tr>
                             <td><b>Email</b></td>
