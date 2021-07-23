@@ -96,7 +96,47 @@
   height: auto;
 }
 </style>
+<!-- Responsive Text-->
 
+<style>
+  @media (max-width: 1090px) {
+    .body h1, .body h2,.body h3,.body b, .body a{
+    font-size: 5vw;
+  }
+  .body h4,.body h5,.body h6{
+    font-size: 5vw
+  }
+  .body td, .body p{
+    font-size: 3vw
+  }
+  .help-right{
+    font-size: 3vw;
+    margin-right: 2px;
+  }
+  input[type=text],input[type=email]{
+    width: 100%;
+    height: 8vw;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  textarea{
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  input[type=text]:placeholder-shown,input[type=email]:placeholder-shown,textarea:placeholder-shown{
+    font-size:5vw ;
+  }
+  button{
+    width:40%;
+  }
+  
+
+  </style>
 
 <body>
     <div class="scroll-bar">
@@ -145,18 +185,24 @@
               <img src="./Images/helpnsupport.png" alt="" class="responsive">
             </center>  
             <div class="help-box">
+
                 <div class="help-left" id="div1">
                     <h2 style="text-align: center; text-decoration: underline; font-family: 'Baloo Tammudu 2', cursive;">DETAILS</h2>
                     <br>
+
                     <br>
                
                     <form id="form1">
-                        <div class="input-row">
+                        <div>
                             <div class="input-group">
+
                                 <label><h4 style="font-family: 'Open Sans', sans-serif;">Name<sup style="color:rgb(255, 8, 8);"> *</sup></h4></label>
                                 <input type="text" id="name" placeholder="Fill your name" style="border-radius: 5px; padding: 2px 5px; text-align: center;">
+
                             </div>
+                            <br>
                             <div class="input-group">
+
                                 <label><h4 style="font-family: 'Open Sans', sans-serif;">Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
                                 <input type="email" id="email" placeholder="Your Email Id.." style="border-radius: 5px; padding: 2px 5px; text-align: center;">
                             </div>
@@ -197,7 +243,9 @@
                     </script>
                 </div>
                 <div class="help-right">
+
                     <h2 style="text-align: center; text-decoration: underline; font-family: 'Baloo Tammudu 2', cursive;">REACH US</h2>
+
                     <table>
                         <tr>
                             <td><b>Email-</b></td>
@@ -480,18 +528,32 @@
       <script>
 
 let tag = document.getElementById("tag");
-  function myFunction(selectObject) {
+function myFunction(selectObject) {
+    
     if(tag.innerHTML.length!= 0) {
       tag.innerHTML = "";
     }
-    var value = selectObject.value;  
+    let value = selectObject.value;  
     console.log(value);
-      let text = document.createElement("h3")
-      text.innerHTML = `NVP Regional Office, ${value}
-                        Ground Floor, Pragati Maidan Metro Station,
-                        Pragati Maidan, ${value}-110001`;
-    tag.appendChild(text);
+    var address="";
+      if(value === "mumbai") {
+        address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
+      } else if(value === "kolkata") {
+        address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
+      } else if(value === "lucknow") {
+      address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
+      } else if(value === "chennai") {
+      address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
+      } else if(value === "bengaluru") {
+      address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
+      } else if(value === "hyderabad") {
+      address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
+      } else if(value === "delhi") {
+      address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
+      }
+      tag.innerHTML = `${address}`;
   }
+
 
         window.onload = function(){
           const chk = document.getElementById('chk');
