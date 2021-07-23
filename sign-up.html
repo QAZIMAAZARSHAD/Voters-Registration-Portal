@@ -295,14 +295,14 @@ input[type=number] {
                                   <label for="password1" class="form-label required-field">Password</label>
                                   <div class="input-container"> 
                                     <input type="password" class="form-control" id="password1" placeholder="Enter Your Password" />
-                                    <i class="bi bi-eye-slash" id="togglePassword" style="margin-left: -30px; cursor: pointer;" ></i>
+                                    <i class="bi bi-eye-slash" id="togglePassword1" style="margin-left: -30px; cursor: pointer;" ></i>
                                   </div>
                                 </div>
                                 <div class="mb-3">
                                   <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
                                   <div class="input-container">
-                                    <input type="password" class="form-control" id="confirmPassword1" placeholder="Enter Your Password" />
-                                    <i class="bi bi-eye-slash" id="togglePassword" style="margin-left: -30px; cursor: pointer;" ></i>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Enter Your Password" />
+                                    <span toggle="#confirmPassword" class="bi bi-eye-slash field-icon toggle-password" style="margin-left: -30px; cursor: pointer;"></span>
                                   </div>    
                                </div>
                             </div>
@@ -729,8 +729,9 @@ function myFunction(selectObject) {
 });
 </script>
 <script>
-  const togglePassword = document.querySelector('#togglePassword');
-  const password = document.querySelector('#password1');
+  const togglePassword = document.querySelector('#togglePassword1','#togglePassword2');
+  const password = document.querySelector('#password1','#confirmPassword');
+  
  
   togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -738,21 +739,21 @@ function myFunction(selectObject) {
     password.setAttribute('type', type);
     // toggle the eye / eye slash icon
     this.classList.toggle('bi-eye');
+    
+  });
+  $(".toggle-password").click(function() {
+
+  $(this).toggleClass("bi-eye bi-eye-slash");
+  var input = $($(this).attr("toggle"));
+   if (input.attr("type") == "password") {
+   input.attr("type", "text");
+  } else {
+   input.attr("type", "password");
+  }
   });
   </script>
 
-  <script>
-  const togglePassword = document.querySelector('#togglePassword');
-  const password = document.querySelector('#confirmPassword1');
- 
-  togglePassword.addEventListener('click', function (e) {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye / eye slash icon
-    this.classList.toggle('bi-eye');
-  });
-  </script>
+  
  <!-- script for captcha and speaker -->
  <script type="text/javascript"
  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
