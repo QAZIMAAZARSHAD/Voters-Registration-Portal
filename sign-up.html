@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
@@ -120,6 +123,34 @@ font-size: 18px;
 }
 .showPwd1 {
   margin-left: -140px;
+}
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
 }
 
 
@@ -262,17 +293,17 @@ input[type=number] {
                                 </div>
                                 <div class="mb-3">
                                   <label for="password1" class="form-label required-field">Password</label>
-                                  <input type="password" class="form-control" id="password1">
-                                  <div class="showPwd1">
-                                  <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
+                                  <div class="input-container"> 
+                                    <input type="password" class="form-control" id="password1" placeholder="Enter Your Password" />
+                                    <i class="bi bi-eye-slash" id="togglePassword1" style="margin-left: -30px; cursor: pointer;" ></i>
                                   </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword1">
-                                    <div class="showPwd1">
-                                    <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
-                                    </div>
+                                  <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
+                                  <div class="input-container">
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Enter Your Password" />
+                                    <span toggle="#confirmPassword" class="bi bi-eye-slash field-icon toggle-password" style="margin-left: -30px; cursor: pointer;"></span>
+                                  </div>    
                                </div>
                             </div>
                             <div class="col-lg-6">
@@ -698,23 +729,31 @@ function myFunction(selectObject) {
 });
 </script>
 <script>
-  function showPwdToogle() {
-    var x = document.getElementById("confirmPassword1");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
+  const togglePassword = document.querySelector('#togglePassword1','#togglePassword2');
+  const password = document.querySelector('#password1','#confirmPassword');
+  
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+    
+  });
+  $(".toggle-password").click(function() {
+
+  $(this).toggleClass("bi-eye bi-eye-slash");
+  var input = $($(this).attr("toggle"));
+   if (input.attr("type") == "password") {
+   input.attr("type", "text");
+  } else {
+   input.attr("type", "password");
   }
-  function showPwdToogle1() {
-    var x = document.getElementById("password1");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-</script>
+  });
+  </script>
+
+  
  <!-- script for captcha and speaker -->
  <script type="text/javascript"
  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

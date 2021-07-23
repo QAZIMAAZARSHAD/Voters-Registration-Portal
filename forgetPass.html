@@ -8,6 +8,9 @@
     <link href="fonts.googleapis.com/css?family=Hind">
     <link rel="stylesheet" href="Style.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -90,6 +93,35 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
       margin-right: 1.2rem;
     }
 }
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
 
 
   </style>
@@ -161,18 +193,18 @@ box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
                               <label for="Email1" class="form-label">Email address</label>
                               <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
                             </div>
-                            <div class="mb-2">
+                            <div class="mb-3">
                               <label for="Password1" class="form-label">New Password</label>
-                              <input type="password" class="form-control" id="Password1">
-                              <div class="showPwd">
-                                <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
+                              <div class="input-container">
+                                <input type="password" class="form-control" id="Password1" placeholder="Enter Your Password">
+                                <i class="bi bi-eye-slash" id="togglePassword1" style="margin-left: -30px; cursor: pointer;" ></i>
                               </div>
                             </div>
                             <div class="mb-3">
                               <label for="Password2" class="form-label">Confirm Password</label>
-                              <input type="password" class="form-control" id="Password2">
-                              <div class="showPwd">
-                                  <input type="checkbox" class="form-check-input" onclick="showPwdToogle2()">Show Password
+                              <div class="input-container">
+                                <input type="password" class="form-control" id="Password2" placeholder="Enter Your Password">
+                                <span toggle="#Password2" class="bi bi-eye-slash field-icon toggle-password" style="margin-left: -30px; cursor: pointer;"></span>
                               </div>
                               <div id="passwordhelp" class="form-text">Go back <a href="login.html">Login</a></div>
                             </div>
@@ -500,25 +532,30 @@ function myFunction(selectObject) {
     });
     });
     </script>
-    <script>
-      function showPwdToogle() {
-        var x = document.getElementById("Password1");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
-      function showPwdToogle2() {
-        var y = document.getElementById("Password2");
-        if (y.type === "password") {
-          y.type = "text";
-        } else {
-          y.type = "password";
-        }
-      }
-    </script>
-   
+    
+  <script>
+  const togglePassword = document.querySelector('#togglePassword1');
+  const password = document.querySelector('#Password1');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+  });
+
+  $(".toggle-password").click(function() {
+
+  $(this).toggleClass("bi-eye bi-eye-slash");
+  var input = $($(this).attr("toggle"));
+   if (input.attr("type") == "password") {
+   input.attr("type", "text");
+  } else {
+   input.attr("type", "password");
+  }
+  });
+  </script>
  
 </body>
 </html>
