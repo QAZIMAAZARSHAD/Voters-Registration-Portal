@@ -218,6 +218,8 @@
     <button type="button" class="btn btn-primary" id="inc">A+</button>
     <button type="button" class="btn btn-primary" id="dec">A-</button>
     <!-- </div> -->
+    <button type="button" class="btn btn-danger" onclick="logout()">Log Out</button>
+    <br><br>
     <!-- <div class="col col-md-6 col-sm-6"> -->
     <span class="lang">Select Language :<div id='google_translate_element' class="btn "></div>
       <!-- </div> -->
@@ -1820,6 +1822,11 @@ function myFunction(selectObject) {
   });
   </script>
   <script src="js/video.js"></script>
+  <script>
+    function logout(){
+      window.location.replace("login.html");
+    }
+  </script>
   <script>
 		function printDiv(printMe){
 			var printContents = document.getElementById("printMe").innerHTML;
