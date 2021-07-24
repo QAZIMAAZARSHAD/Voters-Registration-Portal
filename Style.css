@@ -11,6 +11,7 @@ body {
   transition: background 0.2s linear;
 }
 
+
 body.dark {
   background: #292c35;
 }
@@ -647,7 +648,10 @@ body {
 .descrip {
   background-color: rgb(224, 171, 157);
 }
-
+.btn-danger{
+  float:right;
+  padding:10px;
+}
 .declaration_city {
   margin-bottom: 20px;
 }
@@ -664,7 +668,7 @@ body {
   padding: 2px;
   float: left;
   margin: 5px;
-  background-color: gray;
+ /* background-color: gray; */
   height: 28px;
 }
 

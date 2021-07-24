@@ -293,12 +293,12 @@ body{
     display: flex;
 }
 .help-left{
-    flex-basis: 60%;
-    padding: 40px 60px;
+    flex-basis: 80%;
+    padding: 30px 60px;
 }
 .help-right{
-    flex-basis: 40%;
-    padding: 40px;
+    flex-basis: 20%;
+    padding: 30px;
     background: rgb(253, 155, 116);
 }
 
@@ -317,7 +317,7 @@ body{
   .help-right{
       max-width: 100%;
       padding: 30px;
-      padding-left: 10px;
+      padding-left: 20px;
       background: rgb(253, 155, 116);
       white-space: nowrap;
   }
@@ -365,7 +365,7 @@ label{
 }
 button{
     background: darkgray;
-    width: 100px;
+    width: 40%;
     border: none;
     outline: none;
     color: black;
@@ -386,7 +386,7 @@ tr td:first-child{
     padding-right: 20px;
 }
 tr td{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 450px){
