@@ -874,7 +874,7 @@
             <li>
               <input type="radio" name="select" id="">
               <span class="longerspan">(G) Date of birth (in the form of day/ month/ year) (if known) <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <input type="date" class="date" name="" id=""">
+              <input type="date" class="date" name="" id="">
             </li>
           </ul>
         </div>
@@ -896,33 +896,33 @@
         <div>
           <span>House no. <sup style="color:rgb(255, 8, 8)"> * </sup></span>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <input type="text" name="" id="hno" class="" placeholder="(In English)" required>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+          <input type="text" name="" id="hnoregional" class="" placeholder="(In Regional)" required>
           <button><span class="material-icons">&#xe312;</span></button>
         </div>
         <div>
           <span>Street / area / location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <input type="text" name="" id="street" class="" placeholder="(In English)" required>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+          <input type="text" name="" id="streetregional" class="" placeholder="(In Regional)" required>
           <button><span class="material-icons">&#xe312;</span></button>
         </div>
         <div>
           <span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <input type="text" name="" id="city" class="" placeholder="(In English)" required>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)">
+          <input type="text" name="" id="cityregional" class="" placeholder="(In Regional)">
           <button><span class="material-icons">&#xe312;</span></button>
         </div>
         <div>
           <span>Post Office: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <input type="text" name="" id="po" class="" placeholder="(In English)" required>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)">
+          <input type="text" name="" id="poregional" class="" placeholder="(In Regional)">
           <button><span class="material-icons">&#xe312;</span></button>
         </div>
         <div>
@@ -973,14 +973,14 @@
           </div>
         </fieldset>
         <div>
-          <span>Email ID (optional) </span>
+          <span>Email ID</span>
           <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="" required>
+          <input class="" type="text" name="" id="email" required>
         </div>
         <div>
-          <span>Mobile No. (optional) <b style="float: right; font-weight: normal;">+91</b></span>
+          <span>Mobile No.<b style="float: right; font-weight: normal;">+91</b></span>
           <!--remove zoomeffect-->
-          <input class="" type="text" name="input" required>
+          <input class="" type="text" name="input" id="mobile" required>
         </div>
       </div>
       <!-- form part 4 ends -->
@@ -1523,16 +1523,46 @@ function myFunction(selectObject) {
       const relativeregional = document.querySelector("#relativeregional");
       const nameregional = document.querySelector("#nameregional");
       const nicknameregional = document.querySelector("#nicknameregional");
+      const hno = document.querySelector("#hno");
+      const hnoregional = document.querySelector("#hnoregional");
+      const street = document.querySelector("#street");
+      const streetregional = document.querySelector("#streetregional");
+      const city = document.querySelector("#city");
+      const cityregional = document.querySelector("#cityregional");
+      const po = document.querySelector("#po");
+      const poregional = document.querySelector("#poregional");
+      const pincode = document.getElementById("pincode");
+      const mobile = document.getElementById("mobile");
+      const email = document.querySelector("#email");
       console.log(name);
       console.log(nickname);
       console.log(relative);
-      if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var pat1=/^\d{6}$/;
+      var pattern=/^\d{10}$/;
+      
+      if(pincode.value.length == 0|poregional.value.length == 0|po.value.length == 0|cityregional.value.length == 0|city.value.length == 0|streetregional.value.length == 0|street.value.length == 0|hnoregional.value.length == 0|hno.value.length == 0|email.value.length == 0|name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
         swal("Please fill all the required details","","info");
-      } else {
+      } 
+      
+      else if(!mailformat.test(email.value)){
+        swal("You have entered an invalid email address!","","info");  
+      }
+      
+      else if(!pat1.test(pincode.value)){
+        swal("Pin code should be 6 digits","","info");
+      }
+      
+      else if(!pattern.test(mobile.value)){
+        swal("Phone number is in 0123456789 format & should be of 10 digits ","","info");
+      }
+      else {
         swal("Form successfully submitted","","success");
         window.location.href = "submitted.html";
       }
     });
+
+
   </script>
   <script>
     var loadFile1 = function (event) {
