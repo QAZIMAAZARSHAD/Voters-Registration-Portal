@@ -569,18 +569,32 @@ input[type=submit]:hover {
 <script>
 
   let tag = document.getElementById("tag");
-  function myFunction(selectObject) {
+function myFunction(selectObject) {
+    
     if(tag.innerHTML.length!= 0) {
       tag.innerHTML = "";
     }
-    var value = selectObject.value;  
+    let value = selectObject.value;  
     console.log(value);
-      let text = document.createElement("h3")
-      text.innerHTML = `NVP Regional Office, ${value}
-                        Ground Floor, Pragati Maidan Metro Station,
-                        Pragati Maidan, ${value}-110001`;
-    tag.appendChild(text);
+    var address="";
+      if(value === "mumbai") {
+        address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
+      } else if(value === "kolkata") {
+        address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
+      } else if(value === "lucknow") {
+      address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
+      } else if(value === "chennai") {
+      address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
+      } else if(value === "bengaluru") {
+      address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
+      } else if(value === "hyderabad") {
+      address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
+      } else if(value === "delhi") {
+      address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
+      }
+      tag.innerHTML = `${address}`;
   }
+
 
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
