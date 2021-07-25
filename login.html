@@ -150,6 +150,63 @@ font-size: 18px;
     .helpdesk{
       text-decoration: none;
     }
+    @media screen and (max-width: 768px) {
+  .labelnew {
+    position:relative;
+    left: 15rem;
+    top: -74rem;
+    height: 20px;
+    width: 42px;
+  }
+  .labelnew .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .icons input {
+    position: relative;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .label {
+    position:relative;
+    left: 15rem;
+    top: -74rem;
+    height: 10px;
+    width: 22px;
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon,
+  .fa-sun {
+    font-size: 8px;
+    
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fa-moon,
+  .fa-sun {
+    font-size: 10px;
+  }
+}
+.dark {
+  background-color: #030
+}
   </style>
 
   <body>
