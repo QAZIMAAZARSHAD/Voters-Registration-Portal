@@ -717,7 +717,7 @@
         <div>
           <span>State<sup style="color:rgb(255, 8, 8)">* </sup></span>
           <!--remove zoomeffect-->
-          <select class=" btn btn-secondary btn-sm dropdown-toggle state" name="slct7" id="slct7"
+          <select class=" btn btn-secondary btn-sm dropdown-toggle state" name="slct7" id="select7"
             onchange="populate(this.id,'slct8')">
             <option>Choose State</option>
             <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
@@ -819,8 +819,8 @@
         </div>
         <div>
           <span>(E) Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select relationship" name="Select" id="">
-            <option value="null">Select</option>
+          <select class="btn btn-secondary btn-sm dropdown-toggle select relationship" name="Select" id="mySelect">
+            <option>Select</option>
             <option>Father</option>
             <option>Mother</option>
             <option>Husband</option>
@@ -834,8 +834,8 @@
               <input type="radio" name="select" id="" checked>
               <span class="longerspan">(F) Age [on January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup></span>
               <span class="yearmonth">
-                <select class="btn btn-secondary btn-sm dropdown-toggle select year" name="Select" id="">
-                  <option value="null">Year</option>
+                <select class="btn btn-secondary btn-sm dropdown-toggle select year" name="Select" id="agedate">
+                  <option>Year</option>
                   <option>18</option>
                   <option>19</option>
                   <option>20</option>
@@ -853,8 +853,8 @@
                   <option>32</option>
                   <option>33</option>
                 </select>
-                <select class="btn btn-secondary btn-sm dropdown-toggle select month" name="Select" id="">
-                  <option value="null">Month</option>
+                <select class="btn btn-secondary btn-sm dropdown-toggle select month" name="Select" id="agedate1">
+                  <option >Month</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -943,7 +943,7 @@
         <div>
           <span>Family / Neighbour Epic No.: </span>
           <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="" required>
+          <input class="" type="text" name="" id="familyno" required>
         </div>
       </div>
       <!-- form part 3 ends -->
@@ -969,7 +969,7 @@
             <input type="checkbox" name="" id="">
             <span class="longerspan">other</span>
             <!--remove zoomeffect-->
-            <input class="" type="text" style="margin-left: 20px;" required>
+            <input class="" type="text" style="margin-left: 20px;">
           </div>
         </fieldset>
         <div>
@@ -1035,7 +1035,7 @@
         <div class="eachimage">
           <div class="breaksection">
             <span>Your photo<sup style="color:rgb(255, 8, 8)"> * </sup></span> 
-            <input type="file" name="" class="docs" onchange="loadFile1(event)">
+            <input type="file" name="" class="docs" id= "file" onchange="loadFile1(event)">
           </div>
           <div class="breaksection">
             <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>         
@@ -1051,7 +1051,7 @@
         <div class="eachimage">
           <div class="breaksection">
             <span>Age proof <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <input type="file" name="" class="docs" onchange="loadFile2(event)">
+          <input type="file" name="" class="docs" id="file1" onchange="loadFile2(event)">
           </div>
           <div class="breaksection">
             <span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup></span>
@@ -1068,7 +1068,7 @@
         <div class="eachimage">
           <div class="breaksection">
             <span>Address proof<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <input type="file" name="" class="docs" onchange="loadFile3(event)">
+          <input type="file" name="" class="docs" id="file2" onchange="loadFile3(event)">
           </div>
           <div class="breaksection">
             <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
@@ -1100,13 +1100,13 @@
           <span class="longerspan">(i) I am a citizen of India and place of my birth is</span>
           <div style="margin-left: 20px;">
             <div>
-              <span>City / Village: </span>
+              <span>City / Village:<sup style="color:rgb(255, 8, 8)"> * </sup></span>
               <!--remove zoomeffect-->
-              <input class="" type="text" name="" id="" required><br>
+              <input class="" type="text" name="" id="city1" required><br>
             </div>
             <div>
               <span>State: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct1" id="slct1"
+              <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct1" id="select1"
               onchange="populate(this.id,'slct2')">
                 <option>Choose State</option>
                 <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
@@ -1150,7 +1150,7 @@
             </div>
             <div>
               <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="slct2">
+              <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="select2">
                 <option>Choose District</option>
               </select>
             </div>
@@ -1165,20 +1165,20 @@
           <div style="margin-left: 25px;">
             <ul>
               <li>
-                <input type="radio" name="select" id="">
-                <span class="longerspan" style="display: block;">My name has not already been included in the electoral roll for this or any other assembly/ parliamentary constituency</span>
+                <input type="radio" name="select" id="A">
+                <span class="longerspan" style="display: block;"><b>[A]</b> My name has not already been included in the electoral roll for this or any other assembly/ parliamentary constituency</span>
               </li>
               <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
               <li>
-                <input type="radio" name="select" id=""">
+                <input type="radio" name="select" id="B">
                 <span  class="longerspan" style="display: block;">
-                  My name may have been included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
-                  <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct4" id="slct4">
+                  <b>[B]</b> My name may have been included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
+                  <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct4" id="">
                     <option>Choose District</option>
                   </select>
                   Constituency in
                   <sup style="color:rgb(255, 8, 8)"> * </sup>
-                  <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct3" id="slct3"
+                  <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct3" id="select4"
                     onchange="populate(this.id,'slct4')">
                     <option>Choose State</option>
                     <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
@@ -1229,13 +1229,13 @@
         <div>
           <div>
             <span>Location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-            <input class="date" type="text" name="" id="" required>
+            <input class="date" type="text" name="" id="loc" required>
           </div>
           <div>
             <span>Date <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-            <input class="date" type="date" name="" id=""></div>
+            <input class="date" type="date" name="" id="valueDate"></div>
           <div>
-            <input type="radio" name="select" id="">
+            <input type="radio" name="select" id="" checked>
             <span class="longerspan">
               I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, 
               is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
@@ -1532,8 +1532,26 @@ function myFunction(selectObject) {
       const po = document.querySelector("#po");
       const poregional = document.querySelector("#poregional");
       const pincode = document.getElementById("pincode");
+      const state = document.getElementById("state");
+      const district = document.getElementById("district");
+      const familyno = document.getElementById("familyno");
+      const select = document.getElementById("mySelect").value;
+      const select1 = document.getElementById("select1").value;
+      const select2 = document.getElementById("select2").value;
+      const file = document.getElementById("file");
+      const file1 = document.getElementById("file1");
+      const file2 = document.getElementById("file2");
+      const agedate = document.getElementById("agedate").value;
+      const agedate1 = document.getElementById("agedate1").value;
       const mobile = document.getElementById("mobile");
       const email = document.querySelector("#email");
+      const B = document.getElementById("B").value;
+      const select4 = document.getElementById("select4").value;
+      const loc = document.querySelector("#loc");
+      const valueDate = document.getElementById("valueDate").value;
+      const select7 = document.getElementById("select7").value;
+      const city1 = document.querySelector("#city1");
+
       console.log(name);
       console.log(nickname);
       console.log(relative);
@@ -1541,10 +1559,67 @@ function myFunction(selectObject) {
       var pat1=/^\d{6}$/;
       var pattern=/^\d{10}$/;
       
-      if(pincode.value.length == 0|poregional.value.length == 0|po.value.length == 0|cityregional.value.length == 0|city.value.length == 0|streetregional.value.length == 0|street.value.length == 0|hnoregional.value.length == 0|hno.value.length == 0|email.value.length == 0|name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+      if(city1.value.length == 0 |loc.value.length == 0|district.value.length == 0 |state.value.length == 0|pincode.value.length == 0|poregional.value.length == 0|po.value.length == 0|cityregional.value.length == 0|city.value.length == 0|streetregional.value.length == 0|street.value.length == 0|hnoregional.value.length == 0|hno.value.length == 0|email.value.length == 0|name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
         swal("Please fill all the required details","","info");
       } 
       
+      else if(name.value.length <2 ){
+        swal("Name can't be less than 2 letters","","info");
+      }
+
+      else if(surname.value.length <2){
+        swal("Surname can't be less than 2 letters","","info");
+      }
+
+      else if(relative.value.length <2){
+        swal("Name of the applicant's relative can't be less than 2 letters","","info");
+      }
+
+      else if(nickname.value.length <2){
+        swal("Nickname of the applicant's relative can't be less than 2 letters","","info");
+      }
+      
+      else if(select == "Select"){
+        swal("Kindly select type of relationship","","info");
+      }
+      
+      else if(agedate == "Year"| agedate1 == "Month"){
+        swal("Fill (F) or (G) information from Mandatory Specifications","","info");
+      }
+      else if(!pattern.test(familyno.value)){
+        swal("Family Neighbour Epic no. must be digits","","info"); 
+      }
+      
+      if(file.files.length == 0){
+        swal("Upload your photo proof in upload documents section","","info");
+      }
+      else if(file1.files.length == 0){
+        swal("Upload your age proof in upload documents section","","info");
+      }
+      
+      else if(file2.files.length == 0){
+        swal("Upload your address proof in upload documents section","","info");
+      }
+      
+      else if(select1 == "Choose State"){
+        swal("Kindly select state in declaration section","","info");
+      }
+      else if(select2 == "Choose District"){
+        swal("Kindly select district in declaration section","","info");
+      }
+     
+      else if(select4 == "Choose State"){
+        swal("Kindly select option (iii[A]) or (iii[B]) in declaration section","","info");
+      }
+       
+       else if (!valueDate) {
+        swal("Kindly select date in declaration section","","info");
+      }
+      
+      else if (select7 == "Choose State"){
+        swal("Kindly select state in the first part of the form","","info");
+      }
+    
       else if(!mailformat.test(email.value)){
         swal("You have entered an invalid email address!","","info");  
       }
@@ -1560,6 +1635,7 @@ function myFunction(selectObject) {
         swal("Form successfully submitted","","success");
         window.location.href = "submitted.html";
       }
+      
     });
 
 
@@ -1569,6 +1645,7 @@ function myFunction(selectObject) {
       var image1 = document.getElementById('output1');
       image1.src = URL.createObjectURL(event.target.files[0]);
     };
+    
     var loadFile2 = function (event) {
       var image = document.getElementById('output2');
       image.src = URL.createObjectURL(event.target.files[0]);
@@ -1577,6 +1654,9 @@ function myFunction(selectObject) {
       var image = document.getElementById('output3');
       image.src = URL.createObjectURL(event.target.files[0]);
     };
+    if(loadFile1.length == 0|loadFile2.length == 0|loadFile3.length == 0){
+      swal("Please upload the required documents","","info");
+    }
   </script>
   <script>
     $(document).ready(function () {
