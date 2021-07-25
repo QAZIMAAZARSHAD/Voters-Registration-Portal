@@ -1529,3 +1529,10 @@ ul {
   background-color: #030303;
 }
 
+@media (max-width: 992px) {
+
+  footer {
+        height: 40px;
+   }
+
+}
