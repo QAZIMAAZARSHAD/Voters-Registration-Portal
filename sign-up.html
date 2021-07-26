@@ -406,14 +406,16 @@ input[type=number] {
             var l_name = document.getElementById('lname').value;
             var email = document.getElementById('Email').value;
             var pwd1 = document.getElementById('password1').value;
-            var pwd2 = document.getElementById('confirmPassword1').value;
+            var pwd2 = document.getElementById('confirmPassword').value;
             var st = document.getElementById('state').value;
             var mob_num = document.getElementById('number').value;
             var city = document.getElementById('city').value;
             var add1 = document.getElementById('address').value;
             var zip = document.getElementById('zip_code').value;
          let emailregx = new
-      RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
+              RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
+              var sc = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
             if(f_name == ''){
               //alert("Ghj");
               giveAlert('Please enter your FirstName!','info');
@@ -448,13 +450,32 @@ input[type=number] {
             else if(mob_num =='' || mob_num >= 10000000000 || mob_num <= 999999999){
               giveAlert('Please enter your valid mobile number!','info');
             }
-            else if(pwd1 != pwd2){
+            else if(pwd1.length < 8 ||pwd1.length > 16)
+          {
+            giveAlert("Password min length: 8 & max length: 16","info");
+          }
+          
+          else if(pwd1.search(/[a-z]/) < 0)
+          {
+            giveAlert("Your password needs a lower case letter","info");
+          } 
+          else if(pwd1.search(/[A-Z]/) < 0)
+          {
+            giveAlert("Your password needs an upper case letter","info");
+          } 
+          else if(pwd1.search(/[0-9]/) < 0)
+          {
+            giveAlert("Your password needs a number","info");
+          }  
+          else if(!sc.test(pwd1))
+          {
+            giveAlert("Your password needs a special character","info");
+            
+          }       
+          else if(pwd1 != pwd2){
               giveAlert("Your passwords are not matching!",'info');
             }
-            else if(pwd1.length < 6 || pwd1.length > 6 )
-            {
-              giveAlert("Password min and max length is 6.",'info');
-            }
+            
 
             else if(st == 0)
             {
