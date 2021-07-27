@@ -83,7 +83,47 @@
     text-decoration: underline;
   }
 </style>
+<!-- Responsive Text-->
 
+<style>
+  @media (max-width: 1090px) {
+    .body h1, .body h2,.body h3,.body b, .body a{
+    font-size: 5vw;
+  }
+  .body h4,.body h5,.body h6{
+    font-size: 5vw
+  }
+  .body td, .body p{
+    font-size: 3vw
+  }
+  .help-right{
+    font-size: 3vw;
+    margin-right: 2px;
+  }
+  input[type=text],input[type=email]{
+    width: 100%;
+    height: 8vw;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  textarea{
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  input[type=text]:placeholder-shown,input[type=email]:placeholder-shown,textarea:placeholder-shown{
+    font-size:5vw ;
+  }
+  button{
+    width:40%;
+  }
+  
+
+  </style>
 
 <body>
     <div class="scroll-bar">
@@ -130,22 +170,23 @@
             <h1>How can we help you?</h1>
             <div class="help-box">
                 <div class="help-left">
-                    <h2>Details</h2>
-                    <br>
+                    <h2><Strong>Details</Strong></h2>
                     <br>
                     <form id="form1">
-                        <div class="input-row">
+                        <div>
                             <div class="input-group">
                                 <label><h4>Name<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="text" id="name" placeholder="Fill your name">
+                                <input type="text" id="name" placeholder="   Fill your name">
                             </div>
+                            <br>
                             <div class="input-group">
                                 <label><h4>Email ID<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                                <input type="email" id="email" placeholder="xyz@abc.com">
+                                <input type="email" id="email" placeholder="   xyz@abc.com">
                             </div>
                         </div>
+                        <br>
                         <label><h4>Message<sup style="color:rgb(255, 8, 8)"> *</sup></h4></label>
-                        <textarea rows="5" id="mess" placeholder="Your Message Here..."></textarea>
+                        <textarea rows="5" id="mess" placeholder="  Your Message Here..."></textarea>
                         <button type="button" onclick="check()">Submit</button>
                     </form>
                     <script>
@@ -179,7 +220,8 @@
                     </script>
                 </div>
                 <div class="help-right">
-                    <h2>Reach us</h2>
+                    <h2><strong>Reach Us</strong></h2>
+                    <br>
                     <table>
                         <tr>
                             <td><b>Email</b></td>
@@ -310,7 +352,7 @@
             <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
             <h2>Regional Offices</h2>
-            <select name="place" id="place">
+            <select name="place" id="place" onchange="myFunction(this)">
               <option value="delhi">Delhi</option>
               <option value="mumbai">Mumbai</option>
               <option value="kolkata">Kolkata</option>
@@ -319,6 +361,9 @@
               <option value="bengaluru">Bengaluru</option>
               <option value="hyderabad">Hyderabad</option>
             </select>
+            <h3 id="tag">NVP Regional Office, Delhi
+              Ground Floor, Pragati Maidan Metro Station,
+              Pragati Maidan, New Delhi-110001</h3>
           </div>
 
           <div class="three">
@@ -450,11 +495,46 @@
 
 
       <script>
-        const chk = document.getElementById('chk');
 
-        chk.addEventListener('change', () => {
-          document.body.classList.toggle('dark');
-        });
+let tag = document.getElementById("tag");
+function myFunction(selectObject) {
+    
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    let value = selectObject.value;  
+    console.log(value);
+    var address="";
+      if(value === "mumbai") {
+        address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
+      } else if(value === "kolkata") {
+        address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
+      } else if(value === "lucknow") {
+      address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
+      } else if(value === "chennai") {
+      address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
+      } else if(value === "bengaluru") {
+      address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
+      } else if(value === "hyderabad") {
+      address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
+      } else if(value === "delhi") {
+      address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
+      }
+      tag.innerHTML = `${address}`;
+  }
+
+
+        window.onload = function(){
+          const chk = document.getElementById('chk');
+          const mode = JSON.parse(localStorage.getItem("Mode"));
+          mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
+
+          chk.addEventListener('change', (e) => {
+            document.body.classList.toggle('dark');
+            const mode = e.target.checked;
+            localStorage.setItem("Mode",mode);
+          });
+        }
       </script>
 
         <div class="copyright" style="padding-bottom:20px">
@@ -470,13 +550,6 @@
     <!-- footer ends -->
 
 
-<script>
-    const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
 <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>

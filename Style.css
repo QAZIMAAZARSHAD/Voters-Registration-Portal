@@ -891,7 +891,7 @@ h1 {
 @media (max-width: 500px) {
   .h1,
   h1 {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
   h1 {
     margin: 0rem;
@@ -1470,9 +1470,9 @@ ul {
 
 @media screen and (max-width: 768px) {
   .labelnew {
-    position: absolute;
-    right: 2rem;
-    top: 6rem;
+    position:relative;
+    left: 9rem;
+    top: -74rem;
     height: 20px;
     width: 42px;
   }
@@ -1491,9 +1491,9 @@ ul {
 }
 @media screen and (max-width: 575px) {
   .label {
-    position: absolute;
-    right: 1rem;
-    top: 4.5rem;
+    position:relative;
+    left: 10rem;
+    top: -74rem;
     height: 10px;
     width: 22px;
   }
@@ -1508,6 +1508,7 @@ ul {
   .fa-moon,
   .fa-sun {
     font-size: 8px;
+    
   }
 
   .checkbox:checked + .label .ball {
@@ -1518,7 +1519,7 @@ ul {
 @media screen and (max-width: 500px) {
   .fa-moon,
   .fa-sun {
-    font-size: 4px;
+    font-size: 10px;
   }
 }
 .dark {

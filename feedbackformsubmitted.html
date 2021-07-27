@@ -59,6 +59,7 @@
     * {    
   box-sizing: border-box;     
 }  
+
     #scrollToTopButton{
   position: fixed;
   bottom: 15px;
@@ -95,14 +96,17 @@ border-radius: 5px;
 }
 
 .container h1{
-margin-left: 30%;
-margin-right: 30%;
+text-align: center;
+margin-left: 25%;
+margin-right: 25%;
 }  
 #f1{
-margin-left: 33%;
+  text-align: center;
+margin-left: 20%;
 margin-right: 20%;
 }  
 #f2{
+text-align: center;
 margin-left: 18%;
 margin-right: 18%;
 }  
@@ -152,7 +156,10 @@ input[type=submit]:hover {
   width: 75%;    
   margin-top: 6px;    
 }    
-    
+
+.noHover{
+  pointer-events: none;
+}
   
 .row:after {    
   content: "";    
@@ -180,19 +187,57 @@ input[type=submit]:hover {
     #checkbox3{
       margin-left: 5rem;
     }
+    .container h1{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }  
+  #f1{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  }  
+  #f2{
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+ } 
+
 }
+
+@media (min-width:501px) and (max-width:768px){
+  #thumbsup{
+  margin-left: -7%;
+  }
+}
+
+@media (min-width:320px) and (max-width:430px){
+  #thumbsup{
+  margin-left: -10%;
+  }
+}
+
 @media (min-width:320px) and (max-width:501px){
+
   .container h1{
-margin: 0;
+    font-size: larger;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }  
 #f1{
-  margin: 0;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }  
 #f2{
-  margin: 0;
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
 }  
+
 #thumbsup{
-margin-left: -50%;
+  margin-left: -10%;
 }
 }
 
@@ -245,15 +290,16 @@ margin-left: -50%;
    
     </header>
 
-    <div class="main-section">
+    <div class="main-section noHover">
     <div class="container">
       <div id="thumbsup">
 
-        <img src="./Images/thumbsup.png" alt="done"  style="height: 150px;width: 150px;margin-left: 40%; margin-bottom: 2%;">
+        <img src="./Images/thumbsup.png" alt="done"  style="height: 150px;width: 150px;margin-left: 40%; margin-bottom: 2%; text-align: center;" class="main-image">
       </div>
      <h1>
        Thank You For Your Feedback!
      </h1>
+     <br>
      <h4 id="f1">
        Your Feedback Has Been Received!
      </h4>
@@ -263,11 +309,17 @@ margin-left: -50%;
         </div>
     </div>
 <script>
+  window.onload = function(){
     const chk = document.getElementById('chk');
+    const mode = JSON.parse(localStorage.getItem("Mode"));
+    mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
+    chk.addEventListener('change', (e) => {
+      document.body.classList.toggle('dark');
+      const mode = e.target.checked;
+      localStorage.setItem("Mode",mode);
+    });
+  }
 </script>
     <script>
       function giveAlert(title_,icon_)
@@ -361,7 +413,7 @@ chk.addEventListener('change', () => {
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
       <h2>Regional Offices</h2>
-      <select name="place" id="place">
+      <select name="place" id="place" onchange="myFunction(this)">
         <option value="delhi">Delhi</option>
         <option value="mumbai">Mumbai</option>
         <option value="kolkata">Kolkata</option>
@@ -370,6 +422,9 @@ chk.addEventListener('change', () => {
         <option value="bengaluru">Bengaluru</option>
         <option value="hyderabad">Hyderabad</option>
       </select>
+      <h3 id="tag">NVP Regional Office, Delhi
+        Ground Floor, Pragati Maidan Metro Station,
+        Pragati Maidan, New Delhi-110001</h3>
     </div>
 
     <div class="three">
@@ -511,6 +566,35 @@ chk.addEventListener('change', () => {
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>
 <script>
+
+  let tag = document.getElementById("tag");
+function myFunction(selectObject) {
+    
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    let value = selectObject.value;  
+    console.log(value);
+    var address="";
+      if(value === "mumbai") {
+        address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
+      } else if(value === "kolkata") {
+        address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
+      } else if(value === "lucknow") {
+      address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
+      } else if(value === "chennai") {
+      address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
+      } else if(value === "bengaluru") {
+      address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
+      } else if(value === "hyderabad") {
+      address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
+      } else if(value === "delhi") {
+      address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
+      }
+      tag.innerHTML = `${address}`;
+  }
+
+
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
@@ -539,15 +623,6 @@ chk.addEventListener('change', () => {
   }
 </script>
 
-<script>
-  window.onload = function(){
- var chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-document.body.classList.toggle('dark');
-});
-}
-</script>
 
    </body>
 </html>

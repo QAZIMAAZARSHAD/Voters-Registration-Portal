@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="fonts.googleapis.com/css?family=Hind">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
@@ -24,6 +27,8 @@
     <title> Voter Sign-Up</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
     <script>
+
+
       // Get current title and icon
     var title = $('title').text();
     var favicon = $('link[rel=icon]').attr('href');
@@ -118,6 +123,34 @@ font-size: 18px;
 }
 .showPwd1 {
   margin-left: -140px;
+}
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
 }
 
 
@@ -257,17 +290,17 @@ input[type=number] {
                                 </div>
                                 <div class="mb-3">
                                   <label for="password1" class="form-label required-field">Password</label>
-                                  <input type="password" class="form-control" id="password1">
-                                  <div class="showPwd1">
-                                  <input type="checkbox" class="form-check-input" onclick="showPwdToogle1()">Show Password
+                                  <div class="input-container"> 
+                                    <input type="password" class="form-control" id="password1" placeholder="Enter Your Password" />
+                                    <i class="bi bi-eye-slash" id="togglePassword1" style="margin-left: -30px; cursor: pointer;" ></i>
                                   </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword1">
-                                    <div class="showPwd1">
-                                    <input type="checkbox" class="form-check-input" onclick="showPwdToogle()">Show Password
-                                    </div>
+                                  <label for="confirmPassword1" class="form-label required-field">Confirm Password</label>
+                                  <div class="input-container">
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Enter Your Password" />
+                                    <span toggle="#confirmPassword" class="bi bi-eye-slash field-icon toggle-password" style="margin-left: -30px; cursor: pointer;"></span>
+                                  </div>    
                                </div>
                             </div>
                             <div class="col-lg-6">
@@ -352,13 +385,7 @@ input[type=number] {
 
 
     </div>
-    <script>
-    const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
-</script>
 
 <script>
        function giveAlert(title_,icon_)
@@ -376,14 +403,16 @@ chk.addEventListener('change', () => {
             var l_name = document.getElementById('lname').value;
             var email = document.getElementById('Email').value;
             var pwd1 = document.getElementById('password1').value;
-            var pwd2 = document.getElementById('confirmPassword1').value;
+            var pwd2 = document.getElementById('confirmPassword').value;
             var st = document.getElementById('state').value;
             var mob_num = document.getElementById('number').value;
             var city = document.getElementById('city').value;
             var add1 = document.getElementById('address').value;
             var zip = document.getElementById('zip_code').value;
          let emailregx = new
-      RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
+              RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
+              var sc = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
             if(f_name == ''){
               //alert("Ghj");
               giveAlert('Please enter your FirstName!','info');
@@ -418,13 +447,32 @@ chk.addEventListener('change', () => {
             else if(mob_num =='' || mob_num >= 10000000000 || mob_num <= 999999999){
               giveAlert('Please enter your valid mobile number!','info');
             }
-            else if(pwd1 != pwd2){
+            else if(pwd1.length < 8 ||pwd1.length > 16)
+          {
+            giveAlert("Password min length: 8 & max length: 16","info");
+          }
+          
+          else if(pwd1.search(/[a-z]/) < 0)
+          {
+            giveAlert("Your password needs a lower case letter","info");
+          } 
+          else if(pwd1.search(/[A-Z]/) < 0)
+          {
+            giveAlert("Your password needs an upper case letter","info");
+          } 
+          else if(pwd1.search(/[0-9]/) < 0)
+          {
+            giveAlert("Your password needs a number","info");
+          }  
+          else if(!sc.test(pwd1))
+          {
+            giveAlert("Your password needs a special character","info");
+            
+          }       
+          else if(pwd1 != pwd2){
               giveAlert("Your passwords are not matching!",'info');
             }
-            else if(pwd1.length < 6 || pwd1.length > 6 )
-            {
-              giveAlert("Password min and max length is 6.",'info');
-            }
+            
 
             else if(st == 0)
             {
@@ -487,7 +535,7 @@ chk.addEventListener('change', () => {
       <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
       <h2>Regional Offices</h2>
-      <select name="place" id="place">
+      <select name="place" id="place" onchange="myFunction(this)">
         <option value="delhi">Delhi</option>
         <option value="mumbai">Mumbai</option>
         <option value="kolkata">Kolkata</option>
@@ -496,6 +544,10 @@ chk.addEventListener('change', () => {
         <option value="bengaluru">Bengaluru</option>
         <option value="hyderabad">Hyderabad</option>
       </select>
+      <h3 id="tag">NVP Regional Office, Delhi
+        Ground Floor, Pragati Maidan Metro Station,
+        Pragati Maidan, New Delhi-110001</h3>
+        
     </div>
 
     <div class="three">
@@ -642,6 +694,36 @@ chk.addEventListener('change', () => {
     <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
 </button>
 <script>
+
+         
+let tag = document.getElementById("tag");
+function myFunction(selectObject) {
+    
+    if(tag.innerHTML.length!= 0) {
+      tag.innerHTML = "";
+    }
+    let value = selectObject.value;  
+    console.log(value);
+    var address="";
+      if(value === "mumbai") {
+        address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
+      } else if(value === "kolkata") {
+        address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
+      } else if(value === "lucknow") {
+      address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
+      } else if(value === "chennai") {
+      address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
+      } else if(value === "bengaluru") {
+      address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
+      } else if(value === "hyderabad") {
+      address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
+      } else if(value === "delhi") {
+      address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
+      }
+      tag.innerHTML = `${address}`;
+  }
+
+
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
@@ -660,23 +742,31 @@ chk.addEventListener('change', () => {
 });
 </script>
 <script>
-  function showPwdToogle() {
-    var x = document.getElementById("confirmPassword1");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
+  const togglePassword = document.querySelector('#togglePassword1','#togglePassword2');
+  const password = document.querySelector('#password1','#confirmPassword');
+  
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye / eye slash icon
+    this.classList.toggle('bi-eye');
+    
+  });
+  $(".toggle-password").click(function() {
+
+  $(this).toggleClass("bi-eye bi-eye-slash");
+  var input = $($(this).attr("toggle"));
+   if (input.attr("type") == "password") {
+   input.attr("type", "text");
+  } else {
+   input.attr("type", "password");
   }
-  function showPwdToogle1() {
-    var x = document.getElementById("password1");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
-</script>
+  });
+  </script>
+
+  
  <!-- script for captcha and speaker -->
  <script type="text/javascript"
  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -726,13 +816,18 @@ chk.addEventListener('change', () => {
 </script>
 
 <script>
-  window.onload = function(){
- var chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-document.body.classList.toggle('dark');
-});
-}
+  window.onload = function(){
+    const chk = document.getElementById('chk');
+    const mode = JSON.parse(localStorage.getItem("Mode"));
+    mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
+
+    chk.addEventListener('change', (e) => {
+      document.body.classList.toggle('dark');
+      const mode = e.target.checked;
+      localStorage.setItem("Mode",mode);
+    });
+  }
 </script>
 
    </body>
