@@ -546,7 +546,7 @@ background-color: whitesmoke;
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 4em;
+  grid-gap: 1em;
   margin: 30px 90px;
   color: rgb(252, 248, 248);
   z-index: 100000;
@@ -560,18 +560,20 @@ background-color: whitesmoke;
 
 .phonei,
 .envelopei {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .contactUsButton {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.0625em;
   border: 2px solid white;
   font-weight: 500;
   cursor: pointer;
   min-height: 47px;
   transition: 0.3s;
-  padding: 9px 18px;
+  padding: 2px 4px;
   margin-bottom: 20px;
   color: white;
   text-decoration: none;
@@ -670,10 +672,6 @@ h3 {
   margin-top: 20px;
 }
 
-.envelopei {
-  padding-right: 6px;
-}
-
 .icons i {
   margin-right: 8px;
 }
@@ -741,9 +739,24 @@ h3 {
   }
 }
 
+@media (max-width: 1120px) {
+  .phonei,
+  .envelopei {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .phonei,
+  .envelopei {
+    font-size: 14px;
+  }
+}
+
+
 @media(max-width: 1074px) {
   #footer {
-    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -783,7 +796,7 @@ h3 {
   #footer {
     grid-template-columns: 1fr;
     padding-top: 30px;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
   #ft {
     height: fit-content;
@@ -799,7 +812,7 @@ h3 {
   #footer {
     margin: 30px 50px;
     padding-top: 30px;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 
   .two select {
