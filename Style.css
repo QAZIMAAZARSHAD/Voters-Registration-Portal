@@ -664,9 +664,15 @@ body {
   padding: 2px;
   float: left;
   margin: 5px;
-  background-color: gray;
+  background-color:red;
   height: 28px;
 }
+ #inc{
+   background-color: #0069d9;
+ }
+ #dec{
+   background-color: #0069d9;;
+ }
 
 .fontsetting select {
   margin: 5px;
