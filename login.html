@@ -150,6 +150,63 @@ font-size: 18px;
     .helpdesk{
       text-decoration: none;
     }
+    @media screen and (max-width: 768px) {
+  .labelnew {
+    position:relative;
+    left: 15rem;
+    top: -74rem;
+    height: 20px;
+    width: 42px;
+  }
+  .labelnew .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .icons input {
+    position: relative;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .label {
+    position:relative;
+    left: 15rem;
+    top: -74rem;
+    height: 10px;
+    width: 22px;
+  }
+  .label .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.6px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .fa-moon,
+  .fa-sun {
+    font-size: 8px;
+    
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(12px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fa-moon,
+  .fa-sun {
+    font-size: 10px;
+  }
+}
+.dark {
+  background-color: #030
+}
   </style>
 
   <body>
@@ -248,6 +305,9 @@ font-size: 18px;
           var uname = document.getElementById("Email1").value;
           var pwd = document.getElementById("Password1").value;
           var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          var sc = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+        
           if(uname =='')
           {
             giveAlert("please enter user name.","info");
@@ -256,14 +316,32 @@ font-size: 18px;
           {
             giveAlert("enter the password","info");
           }
+          else if(pwd.length < 8 ||pwd.length > 16)
+          {
+            giveAlert("Password min length: 8 & max length: 16","info");
+          }
+          else if(pwd.search(/[a-z]/) < 0)
+          {
+            giveAlert("Your password needs a lower case letter","info");
+          } 
+          else if(pwd.search(/[A-Z]/) < 0)
+          {
+            giveAlert("Your password needs an upper case letter","info");
+          } 
+          else if(pwd.search(/[0-9]/) < 0)
+          {
+            giveAlert("Your password needs a number","info");
+          }  
+          else if(!sc.test(pwd))
+          {
+            giveAlert("Your password needs a special character","info");
+            
+          }       
           else if(!filter.test(uname))
           {
             giveAlert("Enter valid email id.","info");
           }
-          else if(pwd.length < 6 || pwd.length > 6)
-          {
-            giveAlert("Password min and max length is 6.","info");
-          }
+          
           else
           {
             giveAlert('Thank You for Login & You are Redirecting to Home page','success');
@@ -286,22 +364,17 @@ font-size: 18px;
   <div id="footer">
     <div class="one">
       <div class="contact">
-      <h2>Contact Us</h2>
-      <h3>
-        <i class="fas fa-phone-alt phonei"></i>
-        Toll free: 1947
-      </h3>
-      <h3>
-        <div class="envelope">
-        <i class="fas fa-envelope envelopei"></i>
-        help@nationalvoterportal.gov.in
+        <h2>Contact Us</h2>
+        <a href="tel:1947" class="contactUsButton">
+          <i class="fas fa-phone-alt phonei"> Toll free: 1947</i>
+        </a>
+        <a href="mailto:help@nationalvoterportal.gov.in" class="contactUsButton">
+          <i class="fas fa-envelope envelopei"> help@nationalvoterportal.gov.in</i>
+        </a>
+        <a href="help.html" target="_blank" class="contactUsButton">
+            Help Desk
+        </a>
       </div>
-      </h3>
-    </div>
-    <div class="helpdeskDiv">
-    <a class="helpdesk" href="help.html" target="_blank">Help
-      Desk</a>
-    </div>
     <div class="follow-us">
       <h2>Follow Us</h2>
       <div class="icons">
@@ -470,11 +543,13 @@ font-size: 18px;
       </label>
      
  
-
+    
   <div class="copyright" style="padding-bottom:20px">
     Copyright ©
     <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
     </div>
+  
+ 
   </div>
   </footer>
 

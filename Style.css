@@ -11,7 +11,6 @@ body {
   transition: background 0.2s linear;
 }
 
-
 body.dark {
   background: #292c35;
 }
@@ -648,10 +647,7 @@ body {
 .descrip {
   background-color: rgb(224, 171, 157);
 }
-.btn-danger{
-  float:right;
-  padding:10px;
-}
+
 .declaration_city {
   margin-bottom: 20px;
 }
@@ -668,7 +664,7 @@ body {
   padding: 2px;
   float: left;
   margin: 5px;
- /* background-color: gray; */
+  background-color: gray;
   height: 28px;
 }
 
@@ -932,28 +928,29 @@ h1 {
   }
 }
 
-.helpdesk {
-  color: white;
+.contactUsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.0625em;
   border: 2px solid white;
   font-weight: 500;
-  height: 35px;
-  width: 120px;
   cursor: pointer;
+  min-height: 47px;
   transition: 0.3s;
-  padding: 9px 18px;
+  padding: 2px 4px;
   margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center
 }
 
-.helpdeskDiv {
-  text-align: left;
-  margin-top: 30px;
-}
-
-.helpdesk:hover {
-  background-color: white;
+.contactUsButton:hover {
   color: black;
+  background-color: white;
+  text-decoration: none;
 }
+
 
 #scrollToTopButton {
   position: fixed;
@@ -1028,7 +1025,7 @@ ul {
   /*padding-top: 60px;*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 4em;
+  grid-gap: 1em;
   margin: 30px 90px;
   color: rgb(252, 248, 248);
   z-index: 100000;
@@ -1042,7 +1039,7 @@ ul {
 
 .phonei,
 .envelopei {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .contact h3 {
@@ -1196,14 +1193,6 @@ ul {
   align-items: center;
 }
 
-.envelope {
-  display: flex;
-}
-
-.envelopei {
-  padding-right: 6px;
-}
-
 .flex {
   display: flex;
 }
@@ -1220,9 +1209,23 @@ ul {
   }
 }
 
+@media (max-width: 1120px) {
+  .phonei,
+  .envelopei {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .phonei,
+  .envelopei {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1074px) {
   #footer {
-    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .showPwd1 {
@@ -1269,7 +1272,7 @@ ul {
   #footer {
     grid-template-columns: 1fr;
     padding-top: 30px;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
   #ft {
     height: fit-content;
@@ -1288,7 +1291,7 @@ ul {
   #footer {
     margin: 30px 50px;
     padding-top: 30px;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 
   .two select {
@@ -1478,9 +1481,9 @@ ul {
 
 @media screen and (max-width: 768px) {
   .labelnew {
-    position: absolute;
-    right: 2rem;
-    top: 6rem;
+    position:relative;
+    left: 9rem;
+    top: -74rem;
     height: 20px;
     width: 42px;
   }
@@ -1499,9 +1502,9 @@ ul {
 }
 @media screen and (max-width: 575px) {
   .label {
-    position: absolute;
-    right: 1rem;
-    top: 4.5rem;
+    position:relative;
+    left: 10rem;
+    top: -74rem;
     height: 10px;
     width: 22px;
   }
@@ -1516,6 +1519,7 @@ ul {
   .fa-moon,
   .fa-sun {
     font-size: 8px;
+    
   }
 
   .checkbox:checked + .label .ball {
@@ -1526,7 +1530,7 @@ ul {
 @media screen and (max-width: 500px) {
   .fa-moon,
   .fa-sun {
-    font-size: 4px;
+    font-size: 10px;
   }
 }
 .dark {

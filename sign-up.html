@@ -224,9 +224,6 @@ input[type=number] {
     .three ul li a h4:hover {
       color: #037AE2;
     }
-    .helpdesk{
-      text-decoration: none;
-    }
   </style>
 
   </head>
@@ -406,14 +403,16 @@ input[type=number] {
             var l_name = document.getElementById('lname').value;
             var email = document.getElementById('Email').value;
             var pwd1 = document.getElementById('password1').value;
-            var pwd2 = document.getElementById('confirmPassword1').value;
+            var pwd2 = document.getElementById('confirmPassword').value;
             var st = document.getElementById('state').value;
             var mob_num = document.getElementById('number').value;
             var city = document.getElementById('city').value;
             var add1 = document.getElementById('address').value;
             var zip = document.getElementById('zip_code').value;
          let emailregx = new
-      RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
+              RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
+              var sc = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
             if(f_name == ''){
               //alert("Ghj");
               giveAlert('Please enter your FirstName!','info');
@@ -448,13 +447,32 @@ input[type=number] {
             else if(mob_num =='' || mob_num >= 10000000000 || mob_num <= 999999999){
               giveAlert('Please enter your valid mobile number!','info');
             }
-            else if(pwd1 != pwd2){
+            else if(pwd1.length < 8 ||pwd1.length > 16)
+          {
+            giveAlert("Password min length: 8 & max length: 16","info");
+          }
+          
+          else if(pwd1.search(/[a-z]/) < 0)
+          {
+            giveAlert("Your password needs a lower case letter","info");
+          } 
+          else if(pwd1.search(/[A-Z]/) < 0)
+          {
+            giveAlert("Your password needs an upper case letter","info");
+          } 
+          else if(pwd1.search(/[0-9]/) < 0)
+          {
+            giveAlert("Your password needs a number","info");
+          }  
+          else if(!sc.test(pwd1))
+          {
+            giveAlert("Your password needs a special character","info");
+            
+          }       
+          else if(pwd1 != pwd2){
               giveAlert("Your passwords are not matching!",'info');
             }
-            else if(pwd1.length < 6 || pwd1.length > 6 )
-            {
-              giveAlert("Password min and max length is 6.",'info');
-            }
+            
 
             else if(st == 0)
             {
@@ -477,22 +495,17 @@ input[type=number] {
   <div id="footer">
     <div class="one">
       <div class="contact">
-      <h2>Contact Us</h2>
-      <h3>
-        <i class="fas fa-phone-alt phonei"></i>
-        Toll free: 1947
-      </h3>
-      <h3>
-        <div class="envelope">
-        <i class="fas fa-envelope envelopei"></i>
-        help@nationalvoterportal.gov.in
+        <h2>Contact Us</h2>
+        <a href="tel:1947" class="contactUsButton">
+          <i class="fas fa-phone-alt phonei"> Toll free: 1947</i>
+        </a>
+        <a href="mailto:help@nationalvoterportal.gov.in" class="contactUsButton">
+          <i class="fas fa-envelope envelopei"> help@nationalvoterportal.gov.in</i>
+        </a>
+        <a href="help.html" target="_blank" class="contactUsButton">
+            Help Desk
+        </a>
       </div>
-      </h3>
-    </div>
-    <div class="helpdeskDiv">
-    <a class="helpdesk" href="help.html" target="_blank">Help
-      Desk</a>
-    </div>
     <div class="follow-us">
       <h2>Follow Us</h2>
       <div class="icons">
