@@ -767,12 +767,12 @@
         </div>
         <div>
           <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select legislative" name="Select" id="">
+          <select class="btn btn-secondary btn-sm dropdown-toggle select legislative" name="Select" id="legislative">
             <option value="null">Select</option>
           </select>
         </div>
         <div class="request">
-          <span class="longerspan">I request that my name be included in electoral rolls for all the aforesaid areas.</span>
+          <span class="longerspan">I request that my name be included in electoral rolls for all the aforesaid areas.<sup style="color:rgb(255, 8, 8)"> * </sup></span>
           <ul class="radio">
             <li><input type="radio" name="select" id=""> First time voter<br></li>
             <li><input type="radio" name="select" id=""> Due to transfer from other meeting areas.</li>
@@ -796,9 +796,9 @@
         <div>
           <span>(B) Surname (if any)</span>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
+          <input type="text" name="" id="surname" class="" placeholder="(In English)">
           <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+          <input type="text" name="" id="" class="" placeholder="(In Regional)" >
           <button><span class="material-icons">&#xe312;</span></button>
         </div>
         <div>
@@ -812,9 +812,9 @@
         <div>
           <span>(D) Nickname of the applicant's relative</span>
           <!--remove zoomeffect-->
-          <input type="text" name="" id="nickname" class="" placeholder="(In English)" required>
+          <input type="text" name="" id="nickname" class="" placeholder="(In English)" >
           <!--remove zoomeffect-->
-          <input type="text" name="" id="nicknameregional" class="" placeholder="(In Regional)" required>
+          <input type="text" name="" id="nicknameregional" class="" placeholder="(In Regional)" >
           <button><span class="material-icons">&#xe312;</span></button>
         </div>
         <div>
@@ -870,7 +870,7 @@
                 </select>
               </span>
             </li>
-            <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
+            <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;"></div>
             <li>
               <input type="radio" name="select" id="">
               <span class="longerspan">(G) Date of birth (in the form of day/ month/ year) (if known) <sup style="color:rgb(255, 8, 8)"> * </sup></span>
@@ -880,7 +880,7 @@
         </div>
         <div>
           <span>(H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> *</sup></span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select gender" name="" id="">
+          <select class="btn btn-secondary btn-sm dropdown-toggle select gender" name="" id="appgender">
             <option>Select</option>
             <option>Male</option>
             <option>Female</option>
@@ -943,7 +943,7 @@
         <div>
           <span>Family / Neighbour Epic No.: </span>
           <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="familyno" required>
+          <input class="" type="text" name="" id="familyno" >
         </div>
       </div>
       <!-- form part 3 ends -->
@@ -975,12 +975,12 @@
         <div>
           <span>Email ID</span>
           <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="email" required>
+          <input class="" type="text" name="" id="email" >
         </div>
         <div>
           <span>Mobile No.<b style="float: right; font-weight: normal;">+91</b></span>
           <!--remove zoomeffect-->
-          <input class="" type="text" name="input" id="mobile" required>
+          <input class="" type="text" name="input" id="mobile" >
         </div>
       </div>
       <!-- form part 4 ends -->
@@ -1158,7 +1158,7 @@
         </div>
         <div>
           <span class="longerspan">(ii) I am ordinarily resident at the address given above since Date <sup style="color:rgb(255, 8, 8);"> * </sup></span>
-          <input class="date" type="date" name="" id="">
+          <input class="date" type="date" name="" id="valueDate1">
         </div>
         <div>
           <span class="longerspan">(iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency</span>
@@ -1257,7 +1257,7 @@
               <span class="changeText">
                 <i class="fas fa-sync-alt"></i>
               </span>
-              <input type="text" placeholder="Type the text here" style="width: 50%;">
+              <input type="text" placeholder="Type the text here" style="width: 50%;" id="captcha">
             </div>
           </div>
         </div>
@@ -1512,12 +1512,15 @@ function myFunction(selectObject) {
   <script>
     $("input#submitButton").click(function () {
       const name = document.querySelector("#name");
+      const nameregional = document.querySelector("#nameregional");
       const surname = document.querySelector("#surname");
-      const nickname = document.querySelector("#nickname");
       const relative = document.querySelector("#relative");
       const relativeregional = document.querySelector("#relativeregional");
-      const nameregional = document.querySelector("#nameregional");
-      const nicknameregional = document.querySelector("#nicknameregional");
+      const nickname = document.querySelector("#nickname");
+      const select = document.getElementById("mySelect").value;
+      const agedate = document.getElementById("agedate").value;
+      const agedate1 = document.getElementById("agedate1").value;
+      const appgender = document.getElementById("appgender").value;
       const hno = document.querySelector("#hno");
       const hnoregional = document.querySelector("#hnoregional");
       const street = document.querySelector("#street");
@@ -1529,24 +1532,35 @@ function myFunction(selectObject) {
       const pincode = document.getElementById("pincode");
       const state = document.getElementById("state");
       const district = document.getElementById("district");
-      const familyno = document.getElementById("familyno");
-      const select = document.getElementById("mySelect").value;
+      const city1 = document.querySelector("#city1");
       const select1 = document.getElementById("select1").value;
+      const loc = document.querySelector("#loc");
+      const valueDate = document.getElementById("valueDate").value;
+      const captcha = document.getElementById("captcha");
+
+      
+      const nicknameregional = document.querySelector("#nicknameregional");
+     
+      
+      
+     
+     
+     
+      const familyno = document.getElementById("familyno");
+     
+     
       const select2 = document.getElementById("select2").value;
       const file = document.getElementById("file");
       const file1 = document.getElementById("file1");
       const file2 = document.getElementById("file2");
-      const agedate = document.getElementById("agedate").value;
-      const agedate1 = document.getElementById("agedate1").value;
+      
       const mobile = document.getElementById("mobile");
       const email = document.querySelector("#email");
       const B = document.getElementById("B").value;
       const select4 = document.getElementById("select4").value;
-      const loc = document.querySelector("#loc");
-      const valueDate = document.getElementById("valueDate").value;
+     
       const select7 = document.getElementById("select7").value;
-      const city1 = document.querySelector("#city1");
-
+      
       console.log(name);
       console.log(nickname);
       console.log(relative);
@@ -1554,38 +1568,38 @@ function myFunction(selectObject) {
       var pat1=/^\d{6}$/;
       var pattern=/^\d{10}$/;
       
-      if(city1.value.length == 0 |loc.value.length == 0|district.value.length == 0 |state.value.length == 0|pincode.value.length == 0|poregional.value.length == 0|po.value.length == 0|cityregional.value.length == 0|city.value.length == 0|streetregional.value.length == 0|street.value.length == 0|hnoregional.value.length == 0|hno.value.length == 0|email.value.length == 0|name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
+      if(select7 == "Choose State"|name.value.length == 0|nameregional.value.length == 0|relative.value.length == 0|relativeregional.value.length == 0|select == "Select"|agedate == "Year"| agedate1 == "Month"|appgender == "Select"|hnoregional.value.length == 0|hno.value.length == 0|streetregional.value.length == 0|street.value.length == 0|cityregional.value.length == 0|city.value.length == 0|poregional.value.length == 0|po.value.length == 0|pincode.value.length == 0|district.value.length == 0 |state.value.length == 0|select1 == "Choose State"|city1.value.length == 0 |loc.value.length == 0) {
         swal("Please fill all the required details","","info");
       } 
       
       else if(name.value.length <2 ){
         swal("Name can't be less than 2 letters","","info");
       }
-
-      else if(surname.value.length <2){
+/*
+      else if (surname && surname.value) {
+      
+      if(surname.value.length<2){
         swal("Surname can't be less than 2 letters","","info");
-      }
-
+  }
+}
+     
       else if(relative.value.length <2){
         swal("Name of the applicant's relative can't be less than 2 letters","","info");
       }
 
-      else if(nickname.value.length <2){
+      else if (nickname && nickname.value) {
+      
+      if(nickname.value.length<2){
         swal("Nickname of the applicant's relative can't be less than 2 letters","","info");
+  }
+}
+     
+
+      else if(!pat1.test(pincode.value)){
+        swal("Pin code should be 6 digits","","info");
       }
-      
-      else if(select == "Select"){
-        swal("Kindly select type of relationship","","info");
-      }
-      
-      else if(agedate == "Year"| agedate1 == "Month"){
-        swal("Fill (F) or (G) information from Mandatory Specifications","","info");
-      }
-      else if(!pattern.test(familyno.value)){
-        swal("Family Neighbour Epic no. must be digits","","info"); 
-      }
-      
-      if(file.files.length == 0){
+
+      else if(file.files.length == 0){
         swal("Upload your photo proof in upload documents section","","info");
       }
       else if(file1.files.length == 0){
@@ -1595,38 +1609,60 @@ function myFunction(selectObject) {
       else if(file2.files.length == 0){
         swal("Upload your address proof in upload documents section","","info");
       }
+      else if (email && email.value) {
       
-      else if(select1 == "Choose State"){
-        swal("Kindly select state in declaration section","","info");
+          if(!mailformat.test(email.value)){
+            swal("You have entered an invalid email address!","","info");  
       }
+    }
+
+    else if (mobile && mobile.value) {
+      
+      if(!pattern.test(mobile.value)){
+        swal("Phone number should be of 10 digits ","","info");
+  }
+}
+    else if (familyno && familyno.value) {
+      
+      if(!pattern.test(familyno.value)){
+        swal("Family Neighbour Epic no. must be digits","","info"); 
+  }
+}
+
+      else if (!valueDate) {
+        swal("Kindly select date in declaration section","","info");
+      }
+      else if (!valueDate1) {
+        swal("Kindly select date in declaration section(ii)","","info");
+      }
+      /*
+      
+      
+      
+      */
+      
       /*
       else if(select2 == "Choose District"){
         swal("Kindly select district in declaration section","","info");
       }
      */
+
+     /*
       else if(select4 == "Choose State"){
         swal("Kindly select option (iii[A]) or (iii[B]) in declaration section","","info");
       }
        
-       else if (!valueDate) {
-        swal("Kindly select date in declaration section","","info");
-      }
-      
-      else if (select7 == "Choose State"){
-        swal("Kindly select state in the first part of the form","","info");
-      }
+       
     
-      else if(!mailformat.test(email.value)){
-        swal("You have entered an invalid email address!","","info");  
+      
+      
+      
+     
+      */
+      else if(captcha.value.length == 0){
+        swal("Kindly enter the captcha","","info");
       }
       
-      else if(!pat1.test(pincode.value)){
-        swal("Pin code should be 6 digits","","info");
-      }
-      
-      else if(!pattern.test(mobile.value)){
-        swal("Phone number is in 0123456789 format & should be of 10 digits ","","info");
-      }
       else {
         swal("Form successfully submitted","","success");
         window.location.href = "submitted.html";
