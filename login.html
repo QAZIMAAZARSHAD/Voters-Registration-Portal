@@ -78,10 +78,11 @@
   border-radius: 5rem;
   box-shadow: 0 0 .2rem .2rem rgb(102, 102, 102);
   transition: 0.2s ease-in-out ;
-transition-property:all; 
-font-family: 'Baloo 2', cursive;
-font-size: 18px;
-
+  transition-property:all; 
+  font-family: 'Baloo 2', cursive;
+  font-size: 18px;
+  height: auto; 
+  width: 65%;
 }
 #votingimage{
   padding-left: 2rem;
@@ -111,6 +112,7 @@ font-size: 18px;
   display: flex;
   width: 100%;
   margin-bottom: 15px;
+  position: relative;
 }
 
 /* Style the form icons */
@@ -207,6 +209,22 @@ font-size: 18px;
 .dark {
   background-color: #030
 }
+
+/* Mobile responsive media queries */
+
+@media screen and (max-width: 540px) { 
+  .container {
+    width: 85%;
+  }
+  #scrollToTopButton {
+    right:30px;
+  }
+  .labelnew {
+    top: -77rem;
+  }
+}
+
+/* Mobile responsive media queries ended */
   </style>
 
   <body>
@@ -245,7 +263,7 @@ font-size: 18px;
 
     <div class="main-section">
 
-        <div class="container" style="height:auto;width:65%;">
+        <div class="container">
             <div class="row" style="height: auto;">
                 <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="text-align: center;font-size:30px;">
                     <p style="background-color:rgb(63, 221, 129);margin-bottom:0px;" id="welcomeback">Welcome Back!</p>
@@ -262,7 +280,7 @@ font-size: 18px;
                               <label for="Password1" class="form-label">Password</label>
                               <div class="input-container">
                                 <input type="password" class="form-control" name="password" id="Password1" placeholder="Enter Your Password" />
-                                <i class="bi bi-eye-slash" id="togglePassword" style="position: absolute; margin-left: 360px;" ></i>
+                                <i class="bi bi-eye-slash" id="togglePassword" style="position: absolute;  right: 20px" ></i>
                               </div>
                               <div id="passwordhelp" class="form-text">Forgot Password? <a href="forgetPass.html">click here</a></div>
                             </div>
