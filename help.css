@@ -6,7 +6,6 @@
 html{
   overflow-x: hidden;
 }
-
 body {
  
 	background-color: #fafafa;
@@ -1019,3 +1018,100 @@ transform: rotate(45deg);
   background-color: #030303;
 }
 
+
+@media screen and (max-width: 768px) {
+  .labelnew {
+    position:relative;
+    left: 5rem;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }
+  .labelnew .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .icons input {
+    position: relative;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 782px) {
+  .labelnew {
+    left: -75px;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 760px) {
+  .labelnew {
+    left: -55px;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 680px) {
+  .labelnew {
+    left: -30px;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 620px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-71rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 525px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-72rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 480px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-73rem;
+    height: 20px;
+    width: 42px;
+  }
+  
+}
+@media screen and (max-width: 430px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-74rem; 
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-76rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-79rem;   
+  }
+  
+}
