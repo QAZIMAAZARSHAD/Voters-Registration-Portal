@@ -138,6 +138,9 @@ font-size: 18px;
   <!-- Footer CSS -->
 
   <style>
+    #togglePassword{
+      margin-left: 360px;
+    }
     .three ul li a{
       text-decoration: none;
     }
@@ -150,11 +153,13 @@ font-size: 18px;
     .helpdesk{
       text-decoration: none;
     }
+      
+  
     @media screen and (max-width: 768px) {
   .labelnew {
     position:relative;
-    left: 15rem;
-    top: -74rem;
+    left: 4rem;
+   top:-40rem;
     height: 20px;
     width: 42px;
   }
@@ -169,6 +174,39 @@ font-size: 18px;
   .icons input {
     position: relative;
     left: 30px;
+  }
+}
+@media screen and (max-width:690px){
+  #togglePassword{
+    margin-left: 335px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .labelnew {
+    left:4rem;
+    top: -42rem;
+    }
+    #togglePassword{
+      margin-left: 315px;
+    }
+ }
+ @media screen and (max-width: 621px) {
+  .labelnew {
+    left:15rem;
+    top: -71rem;
+    }
+  
+ }
+ 
+ @media screen and (max-width: 614px){
+  #togglePassword{
+     margin-left: 300px;
+  }
+}
+@media screen and (max-width: 592px){
+  #togglePassword{
+     margin-left: 280px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -189,7 +227,7 @@ font-size: 18px;
 
   .fa-moon,
   .fa-sun {
-    font-size: 8px;
+    font-size: 10px;
     
   }
 
@@ -197,12 +235,131 @@ font-size: 18px;
     transform: translateX(12px);
   }
 }
-
+@media screen and (max-width: 552px){
+  #togglePassword{
+    margin-left: 260px;
+ }
+}
+@media screen and (max-width: 525px){
+  #togglePassword{
+    margin-left: 243px;
+ }
+}
 @media screen and (max-width: 500px) {
+  #togglePassword{
+    margin-left: 230px;
+ }
+
   .fa-moon,
   .fa-sun {
     font-size: 10px;
   }
+  .labelnew {
+    position:relative;
+    left: 15rem;
+    top: -73rem;
+    height: 20px;
+    width: 42px;
+  }
+  .labelnew .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 486px){
+  #togglePassword{
+    margin-left: 220px;
+ }
+}
+@media screen and (max-width: 468px){
+  #togglePassword{
+    margin-left: 210px;
+ }
+}
+@media screen and (max-width: 444px) {
+  #togglePassword{
+    margin-left: 200px;
+ }
+  .fa-moon,
+  .fa-sun {
+    font-size: 10px;
+  }
+  .labelnew {
+    position:relative;
+    left: 15rem;
+    top: -75rem;
+    height: 20px;
+    width: 42px;
+  }
+  .labelnew .ball {
+    position: absolute;
+    top: 0.2px;
+    left: 0.8px;
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 436px){
+  #togglePassword{
+    margin-left: 190px;
+ }
+}
+@media screen and (max-width: 422px){
+  #togglePassword{
+    margin-left: 180px;
+ }
+}
+@media screen and (max-width: 400px){
+  #togglePassword{
+    margin-left: 170px;
+ }
+}
+@media screen and (max-width: 388px){
+  #togglePassword{
+    margin-left: 163px;
+ }
+}
+@media screen and (max-width: 370px) {
+  #togglePassword{
+    margin-left: 155px;
+ }
+    .labelnew {
+    position:relative;
+    left: 15rem;
+    top: -78rem;
+    height: 20px;
+    width: 42px;
+  }
+}
+@media  screen and (max-width: 350px) {
+  #togglePassword{
+    margin-left: 145px;
+  }
+}
+@media  screen and (max-width: 338px) {
+  #togglePassword{
+    margin-left: 135px;
+  }
+}
+@media  screen and (max-width: 325px) {
+  #togglePassword{
+    margin-left: 130px;
+  }
+  .labelnew{
+    left:13rem;
+  }
+}
+@media screen and (max-width: 306px) {
+  .labelnew {
+  position:relative;
+  left: 15rem;
+  top: -82rem;
+  height: 20px;
+  width: 42px;
+}
 }
 .dark {
   background-color: #030
@@ -262,7 +419,7 @@ font-size: 18px;
                               <label for="Password1" class="form-label">Password</label>
                               <div class="input-container">
                                 <input type="password" class="form-control" name="password" id="Password1" placeholder="Enter Your Password" />
-                                <i class="bi bi-eye-slash" id="togglePassword" style="position: absolute; margin-left: 360px;" ></i>
+                                <i class="bi bi-eye-slash" id="togglePassword" style="position: absolute;" ></i>
                               </div>
                               <div id="passwordhelp" class="form-text">Forgot Password? <a href="forgetPass.html">click here</a></div>
                             </div>

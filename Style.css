@@ -117,7 +117,7 @@ body.dark {
 @media screen and (max-width: 500px) {
   .fa-moon,
   .fa-sun {
-    font-size: 4px;
+    font-size: 10px;
   }
 }
 
@@ -1485,11 +1485,12 @@ ul {
   }
 }
 
+
 @media screen and (max-width: 768px) {
   .labelnew {
     position:relative;
-    left: 9rem;
-    top: -74rem;
+    left: 5rem;
+    top:-40rem;
     height: 20px;
     width: 42px;
   }
@@ -1506,40 +1507,78 @@ ul {
     left: 30px;
   }
 }
-@media screen and (max-width: 575px) {
-  .label {
+@media screen and (max-width: 782px) {
+  .labelnew {
+    left: -75px;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 760px) {
+  .labelnew {
+    left: -55px;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 680px) {
+  .labelnew {
+    left: -30px;
+    top:-40rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 620px) {
+  .labelnew {
     position:relative;
-    left: 10rem;
-    top: -74rem;
-    height: 10px;
-    width: 22px;
+    left:7rem;
+    top:-72rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 525px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-73rem;
+    height: 20px;
+    width: 42px;
+  }  
+}
+@media screen and (max-width: 480px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-74rem;
+    height: 20px;
+    width: 42px;
   }
-  .label .ball {
-    position: absolute;
-    top: 0.2px;
-    left: 0.6px;
-    height: 10px;
-    width: 10px;
-  }
-
-  .fa-moon,
-  .fa-sun {
-    font-size: 8px;
-    
-  }
-
-  .checkbox:checked + .label .ball {
-    transform: translateX(12px);
+  
+}
+@media screen and (max-width: 430px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-74rem; 
   }
 }
 
-@media screen and (max-width: 500px) {
-  .fa-moon,
-  .fa-sun {
-    font-size: 10px;
+@media screen and (max-width: 388px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-76rem;
   }
 }
-.dark {
-  background-color: #030303;
+@media screen and (max-width: 330px) {
+  .labelnew {
+    position:relative;
+    left:7rem;
+    top:-79rem;   
+  }
+  
 }
-
