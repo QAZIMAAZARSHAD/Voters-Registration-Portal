@@ -129,9 +129,11 @@ git push -u origin <your_branch_name>
 
 <p align="center">
 <a href="https://lgmsoc.co/">
-<img  height=30% src="https://i.postimg.cc/2jPGcsqW/logo.png">
+<img height=30% src="https://i.postimg.cc/2jPGcsqW/logo.png"></a>
 <a href="https://devincept.codes/projects.html">
-<img width=30% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif">
+<img width=30% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif"></a>
+<a href="https://hacktoberfest.digitalocean.com/">
+<img width=30% src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg"></a>
 </p>
 
 ## Code of Conduct
