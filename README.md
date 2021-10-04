@@ -11,7 +11,10 @@ Don't worry, now you don't need to circle around government office. All you need
 
 ## A sneak peek into what we have here🙈 :
 
-<p align="center"><img src="Images/snapshot.png" width=100%></p>
+<p align="center"><img src="Images/banner.png" width=100%></p><br/>
+<p align="center"><img src="Images/Loading_Page.jpeg" width=100%></p><br/>
+<p align="center"><img src="Images/Login_Page.jpeg" width=100%></p><br/>
+<p align="center"><img src="Images/Main_Form.jpeg" width=100%></p>
 
 ## About
 
