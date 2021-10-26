@@ -5,10 +5,6 @@
   /* border: 1px solid red; Debuggin code*/
 }
 
-html, body{
-  overflow: hidden;
-}
-
 body {
   background-color: #fafafa;
   margin: 0;
