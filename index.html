@@ -68,9 +68,10 @@
 <script>
   setTimeout(function () {
     $('.loader_bg').fadeToggle();
+    $('.body').css({overflow: 'auto'});
   }, 2500);
 </script>
-<body>
+<body class="body">
   <div class="loader_bg">
     <div class="loader1"></div>
     <div class="loader"></div>

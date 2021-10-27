@@ -11,6 +11,10 @@ body {
   transition: background 0.2s linear;
 }
 
+.body {
+  overflow: hidden;
+}
+
 body.dark {
   background: #292c35;
 }
