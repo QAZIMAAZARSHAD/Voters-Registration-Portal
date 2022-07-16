@@ -137,7 +137,7 @@ git push -u origin <your_branch_name>
 <a href="https://lgmsoc.co/">
 <img height=30% src="https://i.postimg.cc/2jPGcsqW/logo.png"></a>
 <a href="https://devincept.codes/projects.html">
-<img width=30% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif"></a>
+<img width=50% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif"></a>
 <a href="https://hacktoberfest.digitalocean.com/">
 <img width=30% src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg"></a>
 </p>
@@ -145,13 +145,13 @@ git push -u origin <your_branch_name>
 ## Code of Conduct
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/CODE_OF_CONDUCT.md">
-<img width=50% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
+<img width=55% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
 <h5 align="center"><b>Click to read</b></a>  
 
 ## License 
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/LICENSE">
-<img width=50% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
+<img width=55% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
 <h5 align="center"><b>MIT License</b></a> 
 
 
