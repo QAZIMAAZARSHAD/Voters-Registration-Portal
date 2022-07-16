@@ -92,7 +92,7 @@ git checkout -b <your_branch_name>
 
 **8.** Perform your desired changes to the code base.
 
-<p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
+<p align="center"><img width=50% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
 
 **9.** Track your changes:heavy_check_mark: .
 
@@ -120,12 +120,12 @@ git push -u origin <your_branch_name>
 
 **15.** Voila :exclamation: You have made a PR to the National Voters' Registration website :boom:. Sit back patiently and relax while the project maintainers review your PR. Please understand, at times the time taken to review a PR can vary from a few hours to a few days.
 
-<p align="center"><img src="https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif" width=30%></p>
+<p align="center"><img src="https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif" width=50%></p>
 
 ## Project Admin👨‍:
 
 <p align="center">
-<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
+<img width=50% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
 </p>
 
 <a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
@@ -145,13 +145,13 @@ git push -u origin <your_branch_name>
 ## Code of Conduct
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/CODE_OF_CONDUCT.md">
-<img width=35% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
+<img width=50% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
 <h5 align="center"><b>Click to read</b></a>  
 
 ## License 
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Voters-Registration-Portal/blob/master/LICENSE">
-<img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
+<img width=50% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
 <h5 align="center"><b>MIT License</b></a> 
 
 
