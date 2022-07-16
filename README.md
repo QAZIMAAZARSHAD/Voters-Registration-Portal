@@ -1,7 +1,7 @@
 # Voter's Registration Portal 🗳️
 
 Voting is a great power in the hands of citizens. Voting is an opportunity for change. But to contribute to that change you need to register yourself as an eligible voter.
-<p align="center"><img src="https://media0.giphy.com/media/fveKCnZRN7aOrtWNfj/200w.webp?cid=ecf05e47kz4k2qixvi3t7ruoeq3uogqyl1yhmacd88s4n8l2&rid=200w.webp&ct=g" width = 40%></p>
+<p align="center"><img src="https://media0.giphy.com/media/fveKCnZRN7aOrtWNfj/200w.webp?cid=ecf05e47kz4k2qixvi3t7ruoeq3uogqyl1yhmacd88s4n8l2&rid=200w.webp&ct=g" width = 36%></p>
 
 But where and how to register? 
 <p align="center"><img src="https://media.tenor.com/images/ff0b24e5174865d7aa3d280095d4ba51/tenor.gif"></p>
