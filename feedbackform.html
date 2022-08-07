@@ -93,9 +93,7 @@ border-radius: 5px;
   box-shadow: 0 0 .2rem .2rem  rgb(255, 178, 90);
   background: rgba(255, 238, 232, 0.651);
 }
-
-  
-    
+   
 input[type=text], select, textarea {    
   width: 100%;    
   padding: 12px;    
@@ -288,7 +286,8 @@ input[type=submit]:hover {
             <textarea id="subject" name="subject" placeholder="Write Something.." style="height:200px;resize: none;"></textarea>    
           </div>   
           
-         <a href="./feedbackformsubmitted.html" id="submit"><button type="button" class="btn btn-outline-primary">Submit</button></a> 
+         <!-- <a href="./feedbackformsubmitted.html" id="submit"> -->
+          <button type="button" onclick="validfeedback()"class="btn btn-outline-primary" style="width: 100px;position:relative;left:35rem;">Submit</button></a> 
 
           </div>
         </div>    
@@ -307,6 +306,62 @@ input[type=submit]:hover {
       localStorage.setItem("Mode",mode);
     });
   }
+  function validfeedback()
+{
+  var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var email = document.getElementById("email").value;
+  var checkbox1 = document.getElementById("checkbox1").checked;
+  var checkbox2 = document.getElementById("checkbox2").checked;
+  var checkbox3 = document.getElementById("checkbox3").checked;
+  var checkbox4 = document.getElementById("checkbox4").checked;
+  var checkbox5 = document.getElementById("checkbox5").checked;
+  var checkbox6 = document.getElementById("checkbox6").checked;
+  var checkbox7 = document.getElementById("checkbox7").checked;
+  var checkbox8 = document.getElementById("checkbox8").checked;
+  var subject = document.getElementById("subject").value;
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if(fname=='')
+  {
+    giveAlert("please enter first name.","info");
+  }
+  else if(lname=='')
+  {
+    giveAlert("please enter last name.","info");
+  }
+  else if(email==''){
+    giveAlert("please enter email.","info")
+  }
+  else if(!filter.test(email))
+  {
+    giveAlert("Enter valid email id.","info");
+  }
+  else if(checkbox1==false && checkbox2==false)
+  {
+    giveAlert("please click the checkbox.","info");
+    return false;
+  }
+  else if(checkbox3==false && checkbox4==false){
+    giveAlert("please click the checkbox.","info");
+    return false;
+  }
+  else if(checkbox5==false && checkbox6==false){
+    giveAlert("please click the checkbox.","info");
+    return false;
+  }
+  else if(checkbox7==false && checkbox8==false){
+    giveAlert("please click the checkbox.","info");
+    return false;
+  }
+  else if(subject==''){
+    giveAlert("pleae enter message.","info");
+  }
+  else{
+    window.location="feedbackformsubmitted.html"
+    return true;
+  }
+}
+
 </script>
     <script>
       function giveAlert(title_,icon_)
