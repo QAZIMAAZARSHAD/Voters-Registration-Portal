@@ -278,7 +278,7 @@ input[type=number] {
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label for="fname" class="form-label required-field">FirstName</label>
-                                    <input class="form-control" type="text" placeholder="FirstName" id="fname" >
+                                    <input class="form-control" type="text" placeholder="FirstName" id="fname">
                                 </div>
                                 <div class="mb-3">
                                     <label for="lname" class="form-label required-field">LastName</label>
@@ -350,7 +350,7 @@ input[type=number] {
                                 </div>
                                 <div class="mb-3">
                                     <label for="city" class="form-label required-field">City</label>
-                                    <input class="form-control" type="text" id="city" placeholder="city" aria-label="default input example">
+                                    <input class="form-control" type="text" id="city" placeholder="city">
                                 </div>
 
                                 <div class="mb-3">
@@ -412,8 +412,8 @@ input[type=number] {
          let emailregx = new
               RegExp("^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$");
               var sc = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
-
-            if(f_name == ''){
+            var nameregx =  /^[a-zA-Z]+$/; 
+          if(f_name == ''){
               //alert("Ghj");
               giveAlert('Please enter your FirstName!','info');
             }
@@ -425,6 +425,13 @@ input[type=number] {
             }
             else if (emailregx.test(email) == false) {
               giveAlert('Invalid Email Address!', 'info');
+              
+            }
+            else if(nameregx.test(f_name) == false ) {
+              giveAlert('Invalid FirstName!', 'info');
+            }
+            else if(nameregx.test(l_name) == false){
+              giveAlert('Invalid LastName!', 'info');
             }
             else if(pwd1==''){
               giveAlert('Please enter your Password!','info');
@@ -434,6 +441,9 @@ input[type=number] {
             }
             else if(city =='' ){
               giveAlert('Please enter your city!','info');
+            }
+            else if(nameregx.test(city)== false){
+              giveAlert('Invalid CityName!','info');
             }
             else if(add1 == ''){
               giveAlert('Please enter your address!','info');
