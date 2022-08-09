@@ -1,16 +1,19 @@
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="fonts.googleapis.com/css?family=Hind">
   <link rel="stylesheet" href="Style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,46 +23,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
   <script>
     // Get current title and icon
-  var title = $('title').text();
-  var favicon = $('link[rel=icon]').attr('href');
-  var newtitle = 'Please Visit Again!';
-  
-  // Active
-  window.addEventListener('focus', resetTitleicon);
-  
-  // Inactive
-  window.addEventListener('blur', changeTitleicon);
-  
-  // Change page title and icon
-  function changeTitleicon(){
-   $("title").text(newtitle); 
-   $('link[rel=icon]').attr('href', './Images/folded.png');
-  }
-  
-  // Reset the page title and icon
-  function resetTitleicon(){
-   $('title').text(title);
-   $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
-  }
+    var title = $('title').text();
+    var favicon = $('link[rel=icon]').attr('href');
+    var newtitle = 'Please Visit Again!';
+
+    // Active
+    window.addEventListener('focus', resetTitleicon);
+
+    // Inactive
+    window.addEventListener('blur', changeTitleicon);
+
+    // Change page title and icon
+    function changeTitleicon() {
+      $("title").text(newtitle);
+      $('link[rel=icon]').attr('href', './Images/folded.png');
+    }
+
+    // Reset the page title and icon
+    function resetTitleicon() {
+      $('title').text(title);
+      $('link[rel=icon]').attr('href', './Images/favicon-32x32.png');
+    }
   </script>
   <style>
-    #scrollToTopButton{
-  position: fixed;
-  bottom: 15px;
-  right: 10px;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  box-shadow: 0 6px 10px 0px gray;
-}
+    #scrollToTopButton {
+      position: fixed;
+      bottom: 15px;
+      right: 10px;
+      font-size: 25px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 6px;
+      border-radius: 50%;
+      box-shadow: 0 6px 10px 0px gray;
+    }
 
     .goog-logo-link {
       display: none !important;
@@ -116,22 +119,25 @@
 
   <!-- Footer CSS -->
   <style>
-    .three{
+    .three {
       padding-left: 32px;
     }
-    .three ul li a{
+
+    .three ul li a {
       text-decoration: none;
     }
+
     .three ul li a:hover {
       text-decoration: none;
     }
+
     .three ul li a h4:hover {
       color: #037AE2;
     }
-    .four ul li a{
+
+    .four ul li a {
       text-decoration: underline;
     }
-
   </style>
 
 
@@ -151,494 +157,497 @@
       Popup($(elem).html());
     }
 
-    function Popup(data) {var mywindow = window.open('', 'my div', 'height=800,width=1000');
-    mywindow.document.write('<html><head><title>Voter Registration</title>');
-    mywindow.document.write('<link rel="stylesheet" href="css/main.css" type="text/css" />');
-    mywindow.document.write('</head><body >');
-    mywindow.document.write(data);
-    mywindow.document.write('data');
-    mywindow.document.write('</body></html>');
-    mywindow.document.close(); // necessary for IE >= 10
+    function Popup(data) {
+      var mywindow = window.open('', 'my div', 'height=800,width=1000');
+      mywindow.document.write('<html><head><title>Voter Registration</title>');
+      mywindow.document.write('<link rel="stylesheet" href="css/main.css" type="text/css" />');
+      mywindow.document.write('</head><body >');
+      mywindow.document.write(data);
+      mywindow.document.write('data');
+      mywindow.document.write('</body></html>');
+      mywindow.document.close(); // necessary for IE >= 10
 
-    myDelay = setInterval(checkReadyState, 10);
+      myDelay = setInterval(checkReadyState, 10);
 
-    function checkReadyState() {
+      function checkReadyState() {
         if (mywindow.document.readyState == "complete") {
-            clearInterval(myDelay);
-            mywindow.focus(); // necessary for IE >= 10
+          clearInterval(myDelay);
+          mywindow.focus(); // necessary for IE >= 10
 
-            mywindow.print();
-            mywindow.close();
+          mywindow.print();
+          mywindow.close();
         }
-    }
+      }
 
-    return true;
+      return true;
     }
   </script>
 
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  
-    <!--Google Icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
-    <!--home.css-->
-    <style>
-      input[type=text]{
-    border: 1px solid gray;
-    background-color: whitesmoke;
-    padding: 0 5px;
-    width: 20vw;
-  }
-  
-  input[type=text]::placeholder{
-    color: gray;
-    font-size: 0.8rem;
-  }
-  
-  input[type=date]{
-    background-color: #95E1D3; 
-    border: 0px solid;
-    color: black; 
-    font-size: 0.9rem; 
-    width:fit-content !important; 
-  }
-  
-  input[type=file]{
-    background-color: whitesmoke;
-    border: 0px solid;
-    font-size: 0.8rem;
-  }
-  
-  /*classes*/
-  .head1{
-    background-color: #F38181;
-  }
-  
-  button{
-    background-color: transparent;
-    border: 0px solid;
-    width: fit-content;
-  }
-  
-  .material-icons{
-    margin: auto;
-    padding: auto;
-    width: 20px;
-  }
-  
-  .close:hover{
-    color: red;
-  }
-  
-  .container{
-    background-color: #EAFFD0;
-    border: 0px solid;
-    border-radius: 0;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    width: 80vw;
-    padding-bottom: 30px;
-  }
-  
-  .conatinerFluid{
-    font-size: 0.9rem;
-  }
-  
-  .conatinerFluid div{
-    margin: 15px 0;
-  }
-  
-  .district span,
-  .state span{
-    display: inline-block;
-  }
-  
-  .descrip{
-    background-color: #FCE38A;
-    border-radius: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 2vw;
-    text-align: justify;
-  }
-  
-  .formheading{
-    border-radius: 0;
-    background-color: #F38181;  
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 2vw;
-  }
-  
-  .note{
-    background-color: white;
-  }
-  
-  .note h3{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 20px 0;
-    display: inline-block;
-    font-size: 1rem;
-  }
-  
-  .part1,
-  .part2,
-  .part3,
-  .part4,
-  .part5,
-  .part6{
-    margin: 0;
-    padding: 0 2vw;
-    width: 100%;
-  }
-  
-  .part1 .state,
-  .part1 .district,
-  .part1 .legislative,
-  .part6 .state,
-  .part6 .district{
-    width: fit-content; 
-    font-size: 0.9rem; 
-    background-color: #95E1D3; 
-    color: black; 
-    border: 0px solid; 
-    margin-left: 0;
-  }
-  
-  .part2 button .material-icons,
-  .part3 button .material-icons{
-    width: fit-content;
-  }
-  
-  .part2 .longerspan{
-    width: 35vw;
-  }
-  
-  .part2 .gender{
-    width: fit-content; 
-    font-size: 0.9rem; 
-    background-color: #95E1D3; 
-    color: black; 
-    border: 0px solid; 
-    margin-left: 0;
-  }
-  
-  .part2 .relationship{
-    width: fit-content; 
-    font-size: 0.9rem; 
-    background-color: #95E1D3; 
-    color: black; 
-    border: 0px solid; 
-    margin-left: 0;
-  }
-  
-.part2 .yearmonth{
-  margin-left: 0;
-}
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-  .part2 .year,
-  .part2 .month{
-    display: inline-block;
-    width:fit-content; 
-    font-size: 0.9rem; 
-    background-color: #95E1D3; 
-    color: black; 
-    border: 0px solid;
-    margin-left: 0;
-  }
-  
-  .part2 .date
-  .part6 .date{
-    display: block; 
-    margin: 5px 0 0 15px;
-  }
-  
-  .part5 .image{
-    width:fit-content; 
-    font-size: 0.9rem; 
-    background-color: #95E1D3; 
-    color: black; 
-    border: 0px solid;
-    margin-left: 0;
-  }
-  
-  .part1 span,
-  .part2 span,
-  .part3 span,
-  .part4 span{
-    display: inline-block;
-    width: 20vw;
-  }
-  
-  .part5 span,
-  .part6 span{
-    display: inline-block;
-    width: 15vw;
-  }
-  
-  .part1 .longerspan,
-  .part4 .longerspan,
-  .part6 .longerspan{
-    width: fit-content;
-  }
-  
-  .part2 .breaksection,
-  .part5 .breaksection{
-    display: inline-block;
-    width: fit-content;
-  }
-  
-  .request{
-    text-align: justify;
-  }
-  
-  .resetBtn{
-    background-color: white;
-    border: 2px solid red;
-    color: red;
-    font-size: 1rem;
-    font-weight: bold;
-    width: 30vw;
-  }
-  
-  .resetBtn:hover{
-    background-color: red;
-    border: 2px solid white;
-  }
-  
-  .submitBtn{
-    background-color: white;
-    border: 2px solid yellowgreen;
-    color: red;
-    font-size: 1rem;
-    font-weight: bold;
-    width: 30vw;
-  }
-  
-  .submitBtn:hover{
-    background-color: yellowgreen;
-    border: 2px solid white;
-  }
+  <!--Google Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  @media screen and (max-width:1181px) {
-    .part2 .longerspan{
-      width: 40vw;
-    }
-  }
-
-  @media screen and (max-width:1031px) {
-    .part2 .longerspan{
-      width: 45vw;
-    }
-  }
-  
-  @media screen and (max-width:991px) {
-    .part4 span{
-      width: 25vw;
-    }
-  }
-
-  @media screen and (max-width:921px) {
-    .part2 .longerspan{
-      width: fit-content;
+  <!--home.css-->
+  <style>
+    input[type=text] {
+      border: 1px solid gray;
+      background-color: whitesmoke;
+      padding: 0 5px;
+      width: 20vw;
     }
 
-    .part2 .yearmonth,
-    .part2 .date{
-      display: block;
-      margin: 5px 0 0 20px;
-    }
-  }
-  
-  @media screen and (max-width:901px) {
-    .part2 span,
-    .part3 span{
-      width: 70vw;
-    }
-  
-    .part2 .relationship,
-    .part2 .gender{
-      margin: 5px 0 0 20px;
-    }
-  
-    .part2 .date{
-      display: block;
-      margin: 5px 0 0 20px;
-    }
-  }
-  
-  @media screen and (max-width:841px) {
-    .part5 img{
-      height: 190px;
-      width: 190px;
-    }
-  }
-  
-  @media screen and (max-width:801px) {
-    .part1 span{
-      width: fit-content;
-      display: block;
-    }
-  
-    .part5 .eachimage{
-      display: block;
-      margin-bottom: 50px;
-    }
-  
-    .part5 .eachimage .breaksection{
-      display: block;
-    }
-  
-    .part5 img{
-      height: 180px;
-      width: 180px;
-    }
-  }
-  
-  @media screen and (max-width:791px) {
-    .part4 span{
-      width: 30vw;
-    }
-  }
-  
-  @media screen and (max-width:771px) {
-    .part5 img{
-      height: 150px;
-      width: 150px;
-    }
-  }
-  
-  @media screen and (max-width:701px) {
-    .part4 span{
-      width: 35vw;
-    }
-  
-    .part5 span{
-      width: 25vw;
-    }
-  }
-  
-  @media screen and (max-width:641px) {
-    .container{
-      margin: 0;
-      width: 100vw;
-      max-width: fit-content;
-    }
-  
-    .part2 span,
-    .part3 span{
-      width: 90vw;
-    }
-  }
-  
-  @media screen and (max-width:571px) {
-    .part4 span{
-      width: 40vw;
-    }
-  }
-  
-  @media screen and (max-width:511px) {
-    .part4 span{
-      width: 45vw;
-    }
-  
-    .part5 img{
-      height: 130px;
-      width: 130px;
-    }
-  }
-  
-  @media screen and (max-width:481px) {
-    .descrip{
+    input[type=text]::placeholder {
+      color: gray;
       font-size: 0.8rem;
     }
-  
-    .formheading{
+
+    input[type=date] {
+      background-color: #95E1D3;
+      border: 0px solid;
+      color: black;
+      font-size: 0.9rem;
+      width: fit-content !important;
+    }
+
+    input[type=file] {
+      background-color: whitesmoke;
+      border: 0px solid;
+      font-size: 0.8rem;
+    }
+
+    /*classes*/
+    .head1 {
+      background-color: #F38181;
+    }
+
+    button {
+      background-color: transparent;
+      border: 0px solid;
+      width: fit-content;
+    }
+
+    .material-icons {
+      margin: auto;
+      padding: auto;
+      width: 20px;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    .container {
+      background-color: #EAFFD0;
+      border: 0px solid;
+      border-radius: 0;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0 auto;
+      padding: 0;
+      width: 80vw;
+      padding-bottom: 30px;
+    }
+
+    .conatinerFluid {
       font-size: 0.9rem;
     }
-  
-    .conatinerFluid *{
-      font-size: 0.7rem;
+
+    .conatinerFluid div {
+      margin: 15px 0;
     }
-  
+
+    .district span,
+    .state span {
+      display: inline-block;
+    }
+
+    .descrip {
+      background-color: #FCE38A;
+      border-radius: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 2vw;
+      text-align: justify;
+    }
+
+    .formheading {
+      border-radius: 0;
+      background-color: #F38181;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 2vw;
+    }
+
+    .note {
+      background-color: white;
+    }
+
+    .note h3 {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 20px 0;
+      display: inline-block;
+      font-size: 1rem;
+    }
+
+    .part1,
+    .part2,
+    .part3,
+    .part4,
+    .part5,
+    .part6 {
+      margin: 0;
+      padding: 0 2vw;
+      width: 100%;
+    }
+
     .part1 .state,
     .part1 .district,
     .part1 .legislative,
-    .part2 input[type=text],
-    .part2 input[type=text]::placeholder,
-    .part2 .relationship,
-    .part2 .year,
-    .part2 .month,
-    .part2 .date,
-    .part2 .gender,
-    .part3 input[type=text],
-    .part3 input[type=text]::placeholder,
-    .part4 input[type=text],
-    .part4 input[type=text]::placeholder,
-    .part5 input[type=file],
-    .part5 .image,
     .part6 .state,
-    .part6 .district,
-    .part6 .date,
-    .part6 input[type=text],
-    .part6 input[type=text]::placeholder{
-      font-size: 0.7rem;
+    .part6 .district {
+      width: fit-content;
+      font-size: 0.9rem;
+      background-color: #95E1D3;
+      color: black;
+      border: 0px solid;
+      margin-left: 0;
     }
-  
-    input[type=text]{
-      width: 30vw;
-    }
-  
-    .part2 .longerspan{
+
+    .part2 button .material-icons,
+    .part3 button .material-icons {
       width: fit-content;
     }
-  
-  }
-  
-  @media screen and (max-width:451px) {
-    .part5 img{
-      height: 100px;
-      width: 100px;
+
+    .part2 .longerspan {
+      width: 35vw;
     }
-  }
-  
-  @media screen and (max-width:351px) {
-    .part5 span{
-      width: 25vw;
+
+    .part2 .gender {
+      width: fit-content;
+      font-size: 0.9rem;
+      background-color: #95E1D3;
+      color: black;
+      border: 0px solid;
+      margin-left: 0;
     }
-  
-    .part5 img{
-      height: 90px;
-      width: 90px;
+
+    .part2 .relationship {
+      width: fit-content;
+      font-size: 0.9rem;
+      background-color: #95E1D3;
+      color: black;
+      border: 0px solid;
+      margin-left: 0;
     }
-  
-    .part6 span{
-      width: 70vw;
+
+    .part2 .yearmonth {
+      margin-left: 0;
     }
-  }
-  
-  @media screen and (max-width:321px) {
-    .part4 span{
-      width: 50vw;
+
+    .part2 .year,
+    .part2 .month {
+      display: inline-block;
+      width: fit-content;
+      font-size: 0.9rem;
+      background-color: #95E1D3;
+      color: black;
+      border: 0px solid;
+      margin-left: 0;
     }
-  
-    .part5 span{
+
+    .part2 .date .part6 .date {
+      display: block;
+      margin: 5px 0 0 15px;
+    }
+
+    .part5 .image {
+      width: fit-content;
+      font-size: 0.9rem;
+      background-color: #95E1D3;
+      color: black;
+      border: 0px solid;
+      margin-left: 0;
+    }
+
+    .part1 span,
+    .part2 span,
+    .part3 span,
+    .part4 span {
+      display: inline-block;
       width: 20vw;
     }
-  }
-  
-    </style>
+
+    .part5 span,
+    .part6 span {
+      display: inline-block;
+      width: 15vw;
+    }
+
+    .part1 .longerspan,
+    .part4 .longerspan,
+    .part6 .longerspan {
+      width: fit-content;
+    }
+
+    .part2 .breaksection,
+    .part5 .breaksection {
+      display: inline-block;
+      width: fit-content;
+    }
+
+    .request {
+      text-align: justify;
+    }
+
+    .resetBtn {
+      background-color: white;
+      border: 2px solid red;
+      color: red;
+      font-size: 1rem;
+      font-weight: bold;
+      width: 30vw;
+    }
+
+    .resetBtn:hover {
+      background-color: red;
+      border: 2px solid white;
+    }
+
+    .submitBtn {
+      background-color: white;
+      border: 2px solid yellowgreen;
+      color: red;
+      font-size: 1rem;
+      font-weight: bold;
+      width: 30vw;
+    }
+
+    .submitBtn:hover {
+      background-color: yellowgreen;
+      border: 2px solid white;
+    }
+
+    @media screen and (max-width:1181px) {
+      .part2 .longerspan {
+        width: 40vw;
+      }
+    }
+
+    @media screen and (max-width:1031px) {
+      .part2 .longerspan {
+        width: 45vw;
+      }
+    }
+
+    @media screen and (max-width:991px) {
+      .part4 span {
+        width: 25vw;
+      }
+    }
+
+    @media screen and (max-width:921px) {
+      .part2 .longerspan {
+        width: fit-content;
+      }
+
+      .part2 .yearmonth,
+      .part2 .date {
+        display: block;
+        margin: 5px 0 0 20px;
+      }
+    }
+
+    @media screen and (max-width:901px) {
+
+      .part2 span,
+      .part3 span {
+        width: 70vw;
+      }
+
+      .part2 .relationship,
+      .part2 .gender {
+        margin: 5px 0 0 20px;
+      }
+
+      .part2 .date {
+        display: block;
+        margin: 5px 0 0 20px;
+      }
+    }
+
+    @media screen and (max-width:841px) {
+      .part5 img {
+        height: 190px;
+        width: 190px;
+      }
+    }
+
+    @media screen and (max-width:801px) {
+      .part1 span {
+        width: fit-content;
+        display: block;
+      }
+
+      .part5 .eachimage {
+        display: block;
+        margin-bottom: 50px;
+      }
+
+      .part5 .eachimage .breaksection {
+        display: block;
+      }
+
+      .part5 img {
+        height: 180px;
+        width: 180px;
+      }
+    }
+
+    @media screen and (max-width:791px) {
+      .part4 span {
+        width: 30vw;
+      }
+    }
+
+    @media screen and (max-width:771px) {
+      .part5 img {
+        height: 150px;
+        width: 150px;
+      }
+    }
+
+    @media screen and (max-width:701px) {
+      .part4 span {
+        width: 35vw;
+      }
+
+      .part5 span {
+        width: 25vw;
+      }
+    }
+
+    @media screen and (max-width:641px) {
+      .container {
+        margin: 0;
+        width: 100vw;
+        max-width: fit-content;
+      }
+
+      .part2 span,
+      .part3 span {
+        width: 90vw;
+      }
+    }
+
+    @media screen and (max-width:571px) {
+      .part4 span {
+        width: 40vw;
+      }
+    }
+
+    @media screen and (max-width:511px) {
+      .part4 span {
+        width: 45vw;
+      }
+
+      .part5 img {
+        height: 130px;
+        width: 130px;
+      }
+    }
+
+    @media screen and (max-width:481px) {
+      .descrip {
+        font-size: 0.8rem;
+      }
+
+      .formheading {
+        font-size: 0.9rem;
+      }
+
+      .conatinerFluid * {
+        font-size: 0.7rem;
+      }
+
+      .part1 .state,
+      .part1 .district,
+      .part1 .legislative,
+      .part2 input[type=text],
+      .part2 input[type=text]::placeholder,
+      .part2 .relationship,
+      .part2 .year,
+      .part2 .month,
+      .part2 .date,
+      .part2 .gender,
+      .part3 input[type=text],
+      .part3 input[type=text]::placeholder,
+      .part4 input[type=text],
+      .part4 input[type=text]::placeholder,
+      .part5 input[type=file],
+      .part5 .image,
+      .part6 .state,
+      .part6 .district,
+      .part6 .date,
+      .part6 input[type=text],
+      .part6 input[type=text]::placeholder {
+        font-size: 0.7rem;
+      }
+
+      input[type=text] {
+        width: 30vw;
+      }
+
+      .part2 .longerspan {
+        width: fit-content;
+      }
+
+    }
+
+    @media screen and (max-width:451px) {
+      .part5 img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    @media screen and (max-width:351px) {
+      .part5 span {
+        width: 25vw;
+      }
+
+      .part5 img {
+        height: 90px;
+        width: 90px;
+      }
+
+      .part6 span {
+        width: 70vw;
+      }
+    }
+
+    @media screen and (max-width:321px) {
+      .part4 span {
+        width: 50vw;
+      }
+
+      .part5 span {
+        width: 20vw;
+      }
+    }
+  </style>
 </head>
 
 
 <body>
+
+<!-- /*__________________________________________________________________________________*/ -->
+
 
 
 
@@ -647,7 +656,7 @@
     <div class="navbar">
       <div class="main-heading">
 
-       
+
         <div class="logo">
           <div class="flip">
             <div class="flip-inner">
@@ -663,7 +672,7 @@
               </div>
             </div>
           </div>
-            </div> 
+        </div>
 
         <div class="heading">
           <img class="emblem" src="./Images/emblem.png"></img>
@@ -679,7 +688,7 @@
   </header>
 
   <!-- navbar ends -->
-  
+
   <div class="fontsetting">
     <!-- <div class="row"> -->
     <!-- <div class="col col-md-6 col-sm-6"> -->
@@ -687,317 +696,325 @@
     <button type="button" class="btn btn-primary" id="dec">A-</button>
     <!-- </div> -->
     <!-- <div class="col col-md-6 col-sm-6"> -->
-      <button type="button" class="btn btn-danger" onclick="logout()">Log Out</button>
-      
-    <span class="lang"><div id='google_translate_element' class="btn "></div>
+    <button type="button" class="btn btn-danger" onclick="logout()">Log Out</button>
+
+    <span class="lang">
+      <div id='google_translate_element' class="btn "></div>
       <!-- </div> -->
     </span>
     <br>
-    
+
     <br>
     <!-- </div> -->
   </div>
   <!-- font ends -->
-  
-  
+
+
   <!-- form starts -->
   <div class="container">
-    <div class="note" id="print">    
+    <div class="note" id="print">
       <h3>Note: Fields marked with asterisks (<b style="color:rgb(255, 8, 8)"> * </b>) are mandatory</h3>
-      <span class="material-icons" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')" style="cursor: pointer; float: right; margin: 20px 10px 0 0; color: yellowgreen;">&#xe8ad;</span>
+      <span class="material-icons" aria-hidden="true" onclick="CopyElem();PrintElem('#container12')"
+        style="cursor: pointer; float: right; margin: 20px 10px 0 0; color: yellowgreen;">&#xe8ad;</span>
     </div>
-      <form>
-    <form action="" class="form1">
-      <div class="formheading">
-        Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
-      </div>
-      <!-- form part 1 starts -->
-      <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency</div>
-      <div class="conatinerFluid part1">
-        <div>In service<br>Electoral Registration Officer,</div>
-        <div>
-          <span>State<sup style="color:rgb(255, 8, 8)">* </sup></span>
-          <!--remove zoomeffect-->
-          <select class=" btn btn-secondary btn-sm dropdown-toggle state" name="slct7" id="slct7"
-            onchange="populate(this.id,'slct8')">
-            <option>Choose State</option>
-            <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-            <option value="andhra pradesh"> ANDHRA PRADESH</option>
-            <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-            <option value="assam"> ASSAM</option>
-            <option value="bihar"> BIHAR</option>
-            <option value="chandigarh"> CHANDIGARH</option>
-            <option value="chattisgarh"> CHATTISGARH</option>
-            <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-            <option value="daman and diu"> DAMAN AND DIU</option>
-            <option value="delhi"> DELHI</option>
-            <option value="goa"> GOA</option>
-            <option value="gujarat"> GUJARAT</option>
-            <option value="haryana"> HARYANA</option>
-            <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-            <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-            <option value="jharkhand"> JHARKHAND</option>
-            <option value="karnataka"> KARNATAKA</option>
-            <option value="kerala"> KERALA</option>
-            <option value="ladakh"> LADAKH</option>
-            <option value="lakshadweep"> LAKSHADWEEP</option>
-            <option value="madhya pradesh"> MADHYA PRADESH</option>
-            <option value="maharashtra"> MAHARASHTRA</option>
-            <option value="manipur"> MANIPUR</option>
-            <option value="meghalaya"> MEGHALAYA</option>
-            <option value="mizoram">MIZORAM</option>
-            <option value="nagaland"> NAGALAND</option>
-            <option value="odisha"> ODISHA</option>
-            <option value="puducherry">PUDUCHERRY </option>
-            <option value="punjab"> PUNJAB</option>
-            <option value="rajasthan"> RAJASTHAN</option>
-            <option value="sikkim"> SIKKIM</option>
-            <option value="tamil nadu"> TAMIL NADU</option>
-            <option value="telangana"> TELANGANA</option>
-            <option value="tripura"> TRIPURA</option>
-            <option value="uttar pradesh"> UTTAR PRADESH</option>
-            <option value="uttarakhand"> UTTARAKHAND</option>
-            <option value="west bengal">WEST BENGAL</option>
-          </select>
+    <form>
+      <form action="" class="form1">
+        <div class="formheading">
+          Form 6<br> (See Rules 13(1) and 26) of Registration of Electors Rule-1960
         </div>
-        <div>
-          <span>District</span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct8" id="slct8">
-            <option>Choose District</option>
-          </select>
-        </div>
-        <div>
-          <span>Legislative Assembly / Parliamentary constituency<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select legislative" name="Select" id="">
-            <option value="null">Select</option>
-          </select>
-        </div>
-        <div class="request">
-          <span class="longerspan">I request that my name be included in electoral rolls for all the aforesaid areas.</span>
-          <ul class="radio">
-            <li><input type="radio" name="select" id=""> First time voter<br></li>
-            <li><input type="radio" name="select" id=""> Due to transfer from other meeting areas.</li>
-          </ul>
-        </div>
-      </div>
-      <!-- fprm part 1 ends -->
-
-      <!-- form part 2 starts -->
-      <div class="descrip">Mandatory specifications</div>
-      <div class="conatinerFluid part2">
-        <div> Below are specifications in support of my claim to be included in the electoral rolls.</div>
-        <div>
-          <span>(A) Name <sup style="color:rgb(255, 8, 8)"> *</sup> </span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" class="" id="name" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="nameregional" class="" placeholder="(In Regional)" required>
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>(B) Surname (if any)</span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>(C) Name of the applicant's relative <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="relative" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="relativeregional" class="" placeholder="(In Regional)" required>
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>(D) Nickname of the applicant's relative</span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="nickname" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="nicknameregional" class="" placeholder="(In Regional)" required>
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>(E) Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select relationship" name="Select" id="">
-            <option value="null">Select</option>
-            <option>Father</option>
-            <option>Mother</option>
-            <option>Husband</option>
-            <option>Wife</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div>
-          <ul class="radio">
-            <li>
-              <input type="radio" name="select" id="" checked>
-              <span class="longerspan">(F) Age [on January 1 of the current calender]<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <span class="yearmonth">
-                <select class="btn btn-secondary btn-sm dropdown-toggle select year" name="Select" id="">
-                  <option value="null">Year</option>
-                  <option>18</option>
-                  <option>19</option>
-                  <option>20</option>
-                  <option>21</option>
-                  <option>22</option>
-                  <option>23</option>
-                  <option>24</option>
-                  <option>25</option>
-                  <option>26</option>
-                  <option>27</option>
-                  <option>28</option>
-                  <option>29</option>
-                  <option>30</option>
-                  <option>31</option>
-                  <option>32</option>
-                  <option>33</option>
-                </select>
-                <select class="btn btn-secondary btn-sm dropdown-toggle select month" name="Select" id="">
-                  <option value="null">Month</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                </select>
-              </span>
-            </li>
-            <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
-            <li>
-              <input type="radio" name="select" id="">
-              <span class="longerspan">(G) Date of birth (in the form of day/ month/ year) (if known) <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <input type="date" class="date" name="" id=""">
-            </li>
-          </ul>
-        </div>
-        <div>
-          <span>(H) Applicant's gender<sup style="color:rgb(255, 8, 8)"> *</sup></span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select gender" name="" id="">
-            <option>Select</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Transgender</option>
-          </select>
-        </div>
-      </div>
-      <!-- form part 2 ends -->
-
-      <!-- form part 3 starts -->
-      <div class="descrip">Current address where applicant is ordinarily resident</div>
-      <div class="conatinerFluid part3">
-        <div>
-          <span>House no. <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>Street / area / location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)">
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>Post Office: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In English)" required>
-          <!--remove zoomeffect-->
-          <input type="text" name="" id="" class="" placeholder="(In Regional)">
-          <button><span class="material-icons">&#xe312;</span></button>
-        </div>
-        <div>
-          <span>Pin Code: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
-          <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="pincode" required onkeypress="return isNumberKey(event);">
-        </div>
-        <div>
-          <span>State / Union Territory: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="state" required>
-        </div>
-        <div>
-          <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="district" required>
-        </div>
-        <div>
-          <span>Family / Neighbour Epic No.: </span>
-          <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="" required>
-        </div>
-      </div>
-      <!-- form part 3 ends -->
-      
-      <!-- form part 4 starts -->
-      <div class="descrip">Optional specialties</div>
-      <div class="conatinerFluid part4">
-        <fieldset>
-          <div>Disability (if any)</div>
+        <!-- form part 1 starts -->
+        <div class="descrip">Application for inclusion of name in the electoral roll for the first time due to the
+          transfer of voter or any other constituency from any one constituency</div>
+        <div class="conatinerFluid part1">
+          <div>In service<br>Electoral Registration Officer,</div>
           <div>
-            <input type="checkbox" name="" id="">
-            <span class="longerspan">Visual impairment</span>
-          </div>
-          <div>
-            <input type="checkbox" name="" id="">
-            <span class="longerspan">Speech & hearing disability</span>
-          </div>
-          <div>
-            <input type="checkbox" name="" id="">
-            <span class="longerspan">Locomotor disability</span>
-          </div>
-          <div>
-            <input type="checkbox" name="" id="">
-            <span class="longerspan">other</span>
+            <span>State<sup style="color:rgb(255, 8, 8)">* </sup></span>
             <!--remove zoomeffect-->
-            <input class="" type="text" style="margin-left: 20px;" required>
+            <select class=" btn btn-secondary btn-sm dropdown-toggle state" name="slct7" id="slct7"
+              onchange="populate(this.id,'slct8')">
+              <option>Choose State</option>
+              <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+              <option value="andhra pradesh"> ANDHRA PRADESH</option>
+              <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+              <option value="assam"> ASSAM</option>
+              <option value="bihar"> BIHAR</option>
+              <option value="chandigarh"> CHANDIGARH</option>
+              <option value="chattisgarh"> CHATTISGARH</option>
+              <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+              <option value="daman and diu"> DAMAN AND DIU</option>
+              <option value="delhi"> DELHI</option>
+              <option value="goa"> GOA</option>
+              <option value="gujarat"> GUJARAT</option>
+              <option value="haryana"> HARYANA</option>
+              <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+              <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+              <option value="jharkhand"> JHARKHAND</option>
+              <option value="karnataka"> KARNATAKA</option>
+              <option value="kerala"> KERALA</option>
+              <option value="ladakh"> LADAKH</option>
+              <option value="lakshadweep"> LAKSHADWEEP</option>
+              <option value="madhya pradesh"> MADHYA PRADESH</option>
+              <option value="maharashtra"> MAHARASHTRA</option>
+              <option value="manipur"> MANIPUR</option>
+              <option value="meghalaya"> MEGHALAYA</option>
+              <option value="mizoram">MIZORAM</option>
+              <option value="nagaland"> NAGALAND</option>
+              <option value="odisha"> ODISHA</option>
+              <option value="puducherry">PUDUCHERRY </option>
+              <option value="punjab"> PUNJAB</option>
+              <option value="rajasthan"> RAJASTHAN</option>
+              <option value="sikkim"> SIKKIM</option>
+              <option value="tamil nadu"> TAMIL NADU</option>
+              <option value="telangana"> TELANGANA</option>
+              <option value="tripura"> TRIPURA</option>
+              <option value="uttar pradesh"> UTTAR PRADESH</option>
+              <option value="uttarakhand"> UTTARAKHAND</option>
+              <option value="west bengal">WEST BENGAL</option>
+            </select>
           </div>
-        </fieldset>
-        <div>
-          <span>Email ID (optional) </span>
-          <!--remove zoomeffect-->
-          <input class="" type="text" name="" id="" required>
+          <div>
+            <span>District</span>
+            <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct8" id="slct8" onchange="Constituency_Change(this.id,'slct9')">
+              <option>Choose District</option>
+            </select>
+          </div>
+          <div>
+            <span>Legislative Assembly<sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <select class="btn btn-secondary btn-sm dropdown-toggle select legislative" name="slct9" id="slct9" >
+              <option >Choose Assembly</option>
+            </select>
+          </div>
+          <div class="request">
+            <span class="longerspan">I request that my name be included in electoral rolls for all the aforesaid
+              areas.</span>
+            <ul class="radio">
+              <li><input type="radio" name="select" id=""> First time voter<br></li>
+              <li><input type="radio" name="select" id=""> Due to transfer from other meeting areas.</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <span>Mobile No. (optional) <b style="float: right; font-weight: normal;">+91</b></span>
-          <!--remove zoomeffect-->
-          <input class="" type="text" name="input" required>
-        </div>
-      </div>
-      <!-- form part 4 ends -->
+        <!-- fprm part 1 ends -->
 
-      <!-- form part 5 starts -->
-      <div class="descrip">
-        Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
-        <span>
-          <button style="display: contents"><u id="myBtn"><br><span style="font-size: 0.8rem;">List of supported documents</span></u>
-          <div id="myModal" class="modal" style="width:90vw; font-family: 'Open Sans', sans-serif;">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h4 class="head1">List of Acceptable Supporting Documents For Verification</h4>
-                <p><ol class="ol">
-                  <li>Recent passport size photographs</li>
-                  <li>Address proof (any one of the following)</li>
+        <!-- form part 2 starts -->
+        <div class="descrip">Mandatory specifications</div>
+        <div class="conatinerFluid part2">
+          <div> Below are specifications in support of my claim to be included in the electoral rolls.</div>
+          <div>
+            <span>(A) Name <sup style="color:rgb(255, 8, 8)"> *</sup> </span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" class="" id="name" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="nameregional" class="" placeholder="(In Regional)" required>
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>(B) Surname (if any)</span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>(C) Name of the applicant's relative <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="relative" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="relativeregional" class="" placeholder="(In Regional)" required>
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>(D) Nickname of the applicant's relative</span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="nickname" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="nicknameregional" class="" placeholder="(In Regional)" required>
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>(E) Type of the relationship<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <select class="btn btn-secondary btn-sm dropdown-toggle select relationship" name="Select" id="">
+              <option value="null">Select</option>
+              <option>Father</option>
+              <option>Mother</option>
+              <option>Husband</option>
+              <option>Wife</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <ul class="radio">
+              <li>
+                <input type="radio" name="select" id="" checked>
+                <span class="longerspan">(F) Age [on January 1 of the current calender]<sup
+                    style="color:rgb(255, 8, 8)"> * </sup></span>
+                <span class="yearmonth">
+                  <select class="btn btn-secondary btn-sm dropdown-toggle select year" name="Select" id="">
+                    <option value="null">Year</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                  </select>
+                  <select class="btn btn-secondary btn-sm dropdown-toggle select month" name="Select" id="">
+                    <option value="null">Month</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </span>
+              </li>
+              <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
+              <li>
+                <input type="radio" name="select" id="">
+                <span class="longerspan">(G) Date of birth (in the form of day/ month/ year) (if known) <sup
+                    style="color:rgb(255, 8, 8)"> * </sup></span>
+                <input type="date" class="date" name="" id=""">
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span>(H) Applicant's gender<sup style=" color:rgb(255, 8, 8)"> *</sup></span>
+                <select class="btn btn-secondary btn-sm dropdown-toggle select gender" name="" id="">
+                  <option>Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Transgender</option>
+                </select>
+          </div>
+        </div>
+        <!-- form part 2 ends -->
+
+        <!-- form part 3 starts -->
+        <div class="descrip">Current address where applicant is ordinarily resident</div>
+        <div class="conatinerFluid part3">
+          <div>
+            <span>House no. <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>Street / area / location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In Regional)" required>
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>City / Village: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In Regional)">
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>Post Office: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In English)" required>
+            <!--remove zoomeffect-->
+            <input type="text" name="" id="" class="" placeholder="(In Regional)">
+            <button><span class="material-icons">&#xe312;</span></button>
+          </div>
+          <div>
+            <span>Pin Code: <sup style="color:rgb(255, 8, 8)"> * </sup> </span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="pincode" required onkeypress="return isNumberKey(event);">
+          </div>
+          <div>
+            <span>State / Union Territory: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="state" required>
+          </div>
+          <div>
+            <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="district" required>
+          </div>
+          <div>
+            <span>Family / Neighbour Epic No.: </span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="" required>
+          </div>
+        </div>
+        <!-- form part 3 ends -->
+
+        <!-- form part 4 starts -->
+        <div class="descrip">Optional specialties</div>
+        <div class="conatinerFluid part4">
+          <fieldset>
+            <div>Disability (if any)</div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">Visual impairment</span>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">Speech & hearing disability</span>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">Locomotor disability</span>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="">
+              <span class="longerspan">other</span>
+              <!--remove zoomeffect-->
+              <input class="" type="text" style="margin-left: 20px;" required>
+            </div>
+          </fieldset>
+          <div>
+            <span>Email ID (optional) </span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="" id="" required>
+          </div>
+          <div>
+            <span>Mobile No. (optional) <b style="float: right; font-weight: normal;">+91</b></span>
+            <!--remove zoomeffect-->
+            <input class="" type="text" name="input" required>
+          </div>
+        </div>
+        <!-- form part 4 ends -->
+
+        <!-- form part 5 starts -->
+        <div class="descrip">
+          Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+          <span>
+            <button style="display: contents"><u id="myBtn"><br><span style="font-size: 0.8rem;">List of supported
+                  documents</span></u>
+              <div id="myModal" class="modal" style="width:90vw; font-family: 'Open Sans', sans-serif;">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h4 class="head1">List of Acceptable Supporting Documents For Verification</h4>
+                  <p>
+                  <ol class="ol">
+                    <li>Recent passport size photographs</li>
+                    <li>Address proof (any one of the following)</li>
                     <ul class="ul">
                       <li>Copy of your Passport</li>
                       <li>Gas bill</li>
@@ -1006,173 +1023,177 @@
                       <li>Bank Passbook</li>
                       <li>Aadhaar Card</li>
                     </ul>
-                  <li>Copy of proof of age</li>
+                    <li>Copy of proof of age</li>
                     <ul class="ul">
-                        <li>10th Standard Certificate</li>
-                        <li>Birth Certificate</li>
-                        <li>Pan Card</li>
-                        <li>Aadhaar Card</li>
-                        <li>Driving Licence</li>
-                        <li>Copy of Passport</li>
-                        <li>Kisan Card</li>
+                      <li>10th Standard Certificate</li>
+                      <li>Birth Certificate</li>
+                      <li>Pan Card</li>
+                      <li>Aadhaar Card</li>
+                      <li>Driving Licence</li>
+                      <li>Copy of Passport</li>
+                      <li>Kisan Card</li>
                     </ul class="ul">
-                  <li>Identity proof (any one of the following)</li>
+                    <li>Identity proof (any one of the following)</li>
                     <ul class="ul">
-                        <li>Pan Card</li>
-                        <li>Driving Licence</li>
-                        <li>Ration Card</li>
-                        <li>Passport Copy</li>
-                        <li>Bank Passbook with Photograph</li>
-                        <li>SSLC Certificate</li>
-                        <li>Student ID Card</li>
-                        <li>Aadhaar Card</li>
+                      <li>Pan Card</li>
+                      <li>Driving Licence</li>
+                      <li>Ration Card</li>
+                      <li>Passport Copy</li>
+                      <li>Bank Passbook with Photograph</li>
+                      <li>SSLC Certificate</li>
+                      <li>Student ID Card</li>
+                      <li>Aadhaar Card</li>
                     </ul>
-                </ol></p>
+                  </ol>
+                  </p>
+                </div>
+              </div>
+              </a>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="conatinerFluid part5">
+          <div class="eachimage">
+            <div class="breaksection">
+              <span>Your photo<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="file" name="" class="docs" onchange="loadFile1(event)">
+            </div>
+            <div class="breaksection">
+              <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+                <option> .jpg </option>
+                <option> .png </option>
+                <option> .bmp </option>
+                <option> .jpeg </option>
+              </select>
+            </div>
+
+          </div>
+          <div class="eachimage">
+            <div class="breaksection">
+              <span>Age proof <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="file" name="" class="docs" onchange="loadFile2(event)">
+            </div>
+            <div class="breaksection">
+              <span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+                <option> .jpg </option>
+                <option> .png </option>
+                <option> .bmp </option>
+                <option> .jpeg </option>
+              </select>
+            </div>
+
+
+          </div>
+          <div class="eachimage">
+            <div class="breaksection">
+              <span>Address proof<sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input type="file" name="" class="docs" onchange="loadFile3(event)">
+            </div>
+            <div class="breaksection">
+              <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
+                <option> .jpg </option>
+                <option> .png </option>
+                <option> .bmp </option>
+                <option> .jpeg </option>
+              </select>
+            </div>
+
+
+          </div>
+          <div>
+            <img style="background-color: white; margin-right: 10px;" id="output1" width="200px" height="200px" />
+            <img style="background-color: white; margin-right: 10px;" id="output2" width="200px" height="200px" />
+            <img style="background-color: white; margin-right: 10px;" id="output3" width="200px" height="200px" />
+          </div>
+
+
+        </div>
+        <!-- form part 5 ends -->
+
+        <!-- form part 6 starts -->
+        <div class="descrip">Declaration</div>
+        <div class="conatinerFluid part6">
+          <div>I hereby declare that to the best of knowledge and belief</div>
+          <div>
+            <span class="longerspan">(i) I am a citizen of India and place of my birth is</span>
+            <div style="margin-left: 20px;">
+              <div>
+                <span>City / Village: </span>
+                <!--remove zoomeffect-->
+                <input class="" type="text" name="" id="" required><br>
+              </div>
+              <div>
+                <span>State: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+                <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct1" id="slct1"
+                  onchange="populate(this.id,'slct2')">
+                  <option>Choose State</option>
+                  <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
+                  <option value="andhra pradesh"> ANDHRA PRADESH</option>
+                  <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
+                  <option value="assam"> ASSAM</option>
+                  <option value="bihar"> BIHAR</option>
+                  <option value="chandigarh"> CHANDIGARH</option>
+                  <option value="chattisgarh"> CHATTISGARH</option>
+                  <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
+                  <option value="daman and diu"> DAMAN AND DIU</option>
+                  <option value="delhi"> DELHI</option>
+                  <option value="goa"> GOA</option>
+                  <option value="gujarat"> GUJARAT</option>
+                  <option value="haryana"> HARYANA</option>
+                  <option value="himachal pradesh"> HIMACHAL PRADESH</option>
+                  <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
+                  <option value="jharkhand"> JHARKHAND</option>
+                  <option value="karnataka"> KARNATAKA</option>
+                  <option value="kerala"> KERALA</option>
+                  <option value="ladakh"> LADAKH</option>
+                  <option value="lakshadweep"> LAKSHADWEEP</option>
+                  <option value="madhya pradesh"> MADHYA PRADESH</option>
+                  <option value="maharashtra"> MAHARASHTRA</option>
+                  <option value="manipur"> MANIPUR</option>
+                  <option value="meghalaya"> MEGHALAYA</option>
+                  <option value="mizoram">MIZORAM</option>
+                  <option value="nagaland"> NAGALAND</option>
+                  <option value="odisha"> ODISHA</option>
+                  <option value="puducherry">PUDUCHERRY </option>
+                  <option value="punjab"> PUNJAB</option>
+                  <option value="rajasthan"> RAJASTHAN</option>
+                  <option value="sikkim"> SIKKIM</option>
+                  <option value="tamil nadu"> TAMIL NADU</option>
+                  <option value="telangana"> TELANGANA</option>
+                  <option value="tripura"> TRIPURA</option>
+                  <option value="uttar pradesh"> UTTAR PRADESH</option>
+                  <option value="uttarakhand"> UTTARAKHAND</option>
+                  <option value="west bengal">WEST BENGAL</option>
+                </select>
+              </div>
+              <div>
+                <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+                <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="slct2">
+                  <option>Choose District</option>
+                </select>
               </div>
             </div>
-          </a>&nbsp;&nbsp;&nbsp;</span>
-      </div>
-      <div class="conatinerFluid part5">
-        <div class="eachimage">
-          <div class="breaksection">
-            <span>Your photo<sup style="color:rgb(255, 8, 8)"> * </sup></span> 
-            <input type="file" name="" class="docs" onchange="loadFile1(event)">
           </div>
-          <div class="breaksection">
-            <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>         
-          <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
-            <option> .jpg </option>
-            <option> .png </option>
-            <option> .bmp </option>
-            <option> .jpeg </option>
-          </select>
+          <div>
+            <span class="longerspan">(ii) I am ordinarily resident at the address given above since Date <sup
+                style="color:rgb(255, 8, 8);"> * </sup></span>
+            <input class="date" type="date" name="" id="">
           </div>
-          
-        </div>
-        <div class="eachimage">
-          <div class="breaksection">
-            <span>Age proof <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <input type="file" name="" class="docs" onchange="loadFile2(event)">
-          </div>
-          <div class="breaksection">
-            <span>Document type<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
-            <option> .jpg </option>
-            <option> .png </option>
-            <option> .bmp </option>
-            <option> .jpeg </option>
-          </select>
-          </div>
-          
-          
-        </div>
-        <div class="eachimage">
-          <div class="breaksection">
-            <span>Address proof<sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <input type="file" name="" class="docs" onchange="loadFile3(event)">
-          </div>
-          <div class="breaksection">
-            <span>Document type <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-          <select class="btn btn-secondary btn-sm dropdown-toggle select image" name="" id="">
-            <option> .jpg </option>
-            <option> .png </option>
-            <option> .bmp </option>
-            <option> .jpeg </option>
-          </select>
-          </div>
-          
-          
-        </div>
-        <div>
-          <img style="background-color: white; margin-right: 10px;" id="output1" width="200px" height="200px" />
-          <img style="background-color: white; margin-right: 10px;" id="output2" width="200px" height="200px" />
-          <img style="background-color: white; margin-right: 10px;" id="output3" width="200px" height="200px" />
-        </div>
-        
-
-      </div>
-      <!-- form part 5 ends -->
-
-      <!-- form part 6 starts -->
-      <div class="descrip">Declaration</div>
-      <div class="conatinerFluid part6">
-        <div>I hereby declare that to the best of knowledge and belief</div>
-        <div>
-          <span class="longerspan">(i) I am a citizen of India and place of my birth is</span>
-          <div style="margin-left: 20px;">
-            <div>
-              <span>City / Village: </span>
-              <!--remove zoomeffect-->
-              <input class="" type="text" name="" id="" required><br>
-            </div>
-            <div>
-              <span>State: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <select class="btn btn-secondary btn-sm dropdown-toggle state" name="slct1" id="slct1"
-              onchange="populate(this.id,'slct2')">
-                <option>Choose State</option>
-                <option value="andaman and nicobar islands"> ANDAMAN AND NICOBAR ISLANDS</option>
-                <option value="andhra pradesh"> ANDHRA PRADESH</option>
-                <option value="arunachal pradesh"> ARUNACHAL PRADESH</option>
-                <option value="assam"> ASSAM</option>
-                <option value="bihar"> BIHAR</option>
-                <option value="chandigarh"> CHANDIGARH</option>
-                <option value="chattisgarh"> CHATTISGARH</option>
-                <option value="dadra and nagar haveli"> DADRA AND NAGAR HAVELI</option>
-                <option value="daman and diu"> DAMAN AND DIU</option>
-                <option value="delhi"> DELHI</option>
-                <option value="goa"> GOA</option>
-                <option value="gujarat"> GUJARAT</option>
-                <option value="haryana"> HARYANA</option>
-                <option value="himachal pradesh"> HIMACHAL PRADESH</option>
-                <option value="jammu and kashmir"> JAMMU AND KASHMIR</option>
-                <option value="jharkhand"> JHARKHAND</option>
-                <option value="karnataka"> KARNATAKA</option>
-                <option value="kerala"> KERALA</option>
-                <option value="ladakh"> LADAKH</option>
-                <option value="lakshadweep"> LAKSHADWEEP</option>
-                <option value="madhya pradesh"> MADHYA PRADESH</option>
-                <option value="maharashtra"> MAHARASHTRA</option>
-                <option value="manipur"> MANIPUR</option>
-                <option value="meghalaya"> MEGHALAYA</option>
-                <option value="mizoram">MIZORAM</option>
-                <option value="nagaland"> NAGALAND</option>
-                <option value="odisha"> ODISHA</option>
-                <option value="puducherry">PUDUCHERRY </option>
-                <option value="punjab"> PUNJAB</option>
-                <option value="rajasthan"> RAJASTHAN</option>
-                <option value="sikkim"> SIKKIM</option>
-                <option value="tamil nadu"> TAMIL NADU</option>
-                <option value="telangana"> TELANGANA</option>
-                <option value="tripura"> TRIPURA</option>
-                <option value="uttar pradesh"> UTTAR PRADESH</option>
-                <option value="uttarakhand"> UTTARAKHAND</option>
-                <option value="west bengal">WEST BENGAL</option>
-              </select>
-            </div>
-            <div>
-              <span>District: <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-              <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct2" id="slct2">
-                <option>Choose District</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div>
-          <span class="longerspan">(ii) I am ordinarily resident at the address given above since Date <sup style="color:rgb(255, 8, 8);"> * </sup></span>
-          <input class="date" type="date" name="" id="">
-        </div>
-        <div>
-          <span class="longerspan">(iii) I have not applied for the inclusion of my name in the electoral roll for any other constituency</span>
-          <div style="margin-left: 25px;">
-            <ul>
-              <li>
-                <input type="radio" name="select" id="">
-                <span class="longerspan" style="display: block;">My name has not already been included in the electoral roll for this or any other assembly/ parliamentary constituency</span>
-              </li>
-              <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
-              <li>
-                <input type="radio" name="select" id=""">
-                <span  class="longerspan" style="display: block;">
+          <div>
+            <span class="longerspan">(iii) I have not applied for the inclusion of my name in the electoral roll for any
+              other constituency</span>
+            <div style="margin-left: 25px;">
+              <ul>
+                <li>
+                  <input type="radio" name="select" id="">
+                  <span class="longerspan" style="display: block;">My name has not already been included in the
+                    electoral roll for this or any other assembly/ parliamentary constituency</span>
+                </li>
+                <div style="margin: 5px 0 5px 20px; font-size: 1rem; font-weight: bold;">OR</div>
+                <li>
+                  <input type="radio" name="select" id=""">
+                <span  class=" longerspan" style="display: block;">
                   My name may have been included in the electoral roll for<sup style="color:rgb(255, 8, 8)"> * </sup>
                   <select class="btn btn-secondary btn-sm dropdown-toggle district" name="slct4" id="slct4">
                     <option>Choose District</option>
@@ -1220,175 +1241,179 @@
                     <option value="uttarakhand"> UTTARAKHAND</option>
                     <option value="west bengal">WEST BENGAL</option>
                   </select>
-                  State in which I was ordinarily resident earlier at the address mentioned below and if so, I request that the same may be deleted from that electoral roll.
-                </span>
-              </li>
-            </ul>
+                  State in which I was ordinarily resident earlier at the address mentioned below and if so, I request
+                  that the same may be deleted from that electoral roll.
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div style="border-bottom: 3px solid white;"></div>
-        <div>
+          <div style="border-bottom: 3px solid white;"></div>
           <div>
-            <span>Location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-            <input class="date" type="text" name="" id="" required>
-          </div>
-          <div>
-            <span>Date <sup style="color:rgb(255, 8, 8)"> * </sup></span>
-            <input class="date" type="date" name="" id=""></div>
-          <div>
-            <input type="radio" name="select" id="">
-            <span class="longerspan">
-              I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, 
-              is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
-            </span>
-          </div>
-        </div>
-      </div>
-      <!-- form part 6 ends -->
-
-      <div>
-        <div class="captcha-container"
-          style="text-align: center; margin: 0 auto; text-align: center; border: 0px solid;">
-          <div class="securityCode">
-            <p id="code"></p>
-            <div class="icons">
-              <span class="readText" style="align-items: center;">
-                <i class="fas fa-headphones"></i>
+            <div>
+              <span>Location <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input class="date" type="text" name="" id="" required>
+            </div>
+            <div>
+              <span>Date <sup style="color:rgb(255, 8, 8)"> * </sup></span>
+              <input class="date" type="date" name="" id="">
+            </div>
+            <div>
+              <input type="radio" name="select" id="">
+              <span class="longerspan">
+                I am aware that making a statement or declaration which is false and which I know or believe to be false
+                or do not believe to be true,
+                is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
               </span>
-              <span class="changeText">
-                <i class="fas fa-sync-alt"></i>
-              </span>
-              <input type="text" placeholder="Type the text here" style="width: 50%;">
             </div>
           </div>
         </div>
-        <br>
-        <br>
-        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-        <script src="./script.js"></script>
-      </div>
+        <!-- form part 6 ends -->
 
-      <div class="myBtn">
-        <input type="reset" class="btn btn-success resetBtn" value="Reset">
-        <input type="submit" class="btn btn-success submitBtn" value="Submit" id="submitButton">
-      </div>
+        <div>
+          <div class="captcha-container"
+            style="text-align: center; margin: 0 auto; text-align: center; border: 0px solid;">
+            <div class="securityCode">
+              <p id="code"></p>
+              <div class="icons">
+                <span class="readText" style="align-items: center;">
+                  <i class="fas fa-headphones"></i>
+                </span>
+                <span class="changeText">
+                  <i class="fas fa-sync-alt"></i>
+                </span>
+                <input type="text" placeholder="Type the text here" style="width: 50%;">
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+          <script src="./script.js"></script>
+        </div>
 
-    </form>
+        <div class="myBtn">
+          <input type="reset" class="btn btn-success resetBtn" value="Reset">
+          <input type="submit" class="btn btn-success submitBtn" value="Submit" id="submitButton">
+        </div>
 
-  </div> 
+      </form>
+
+  </div>
   <!-- footer starts -->
   <footer id="ft">
-  <div id="footer">
-    <div class="one">
-      <div class="contact">
-        <h2>Contact Us</h2>
-        <a href="tel:1947" class="contactUsButton">
-          <i class="fas fa-phone-alt phonei"> Toll free: 1947</i>
-        </a>
-        <a href="mailto:help@nationalvoterportal.gov.in" class="contactUsButton">
-          <i class="fas fa-envelope envelopei"> help@nationalvoterportal.gov.in</i>
-        </a>
-        <a href="help.html" target="_blank" class="contactUsButton">
+    <div id="footer">
+      <div class="one">
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <a href="tel:1947" class="contactUsButton">
+            <i class="fas fa-phone-alt phonei"> Toll free: 1947</i>
+          </a>
+          <a href="mailto:help@nationalvoterportal.gov.in" class="contactUsButton">
+            <i class="fas fa-envelope envelopei"> help@nationalvoterportal.gov.in</i>
+          </a>
+          <a href="help.html" target="_blank" class="contactUsButton">
             Help Desk
-        </a>
+          </a>
+        </div>
+        <div class="follow-us">
+          <h2>Follow Us</h2>
+          <div class="icons">
+            <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
+              <i class="fab fa-facebook-f fbi"></i>
+            </a>
+            <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank">
+              <i class="fab fa-twitter twi"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
+              <i class="fab fa-youtube yti"></i>
+            </a>
+            <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
+              <i class="fab fa-instagram igi"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
+              <i class="fab fa-linkedin-in li"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    <div class="follow-us">
-      <h2>Follow Us</h2>
-      <div class="icons">
-        <a href="https://www.facebook.com/NationalPortalIndia/" target="_blank">
-          <i class="fab fa-facebook-f fbi"></i>
-        </a>
-        <a href="https://twitter.com/mygovindia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-          <i class="fab fa-twitter twi"></i>
-        </a>
-        <a href="https://www.youtube.com/watch?v=Gz2igetpSoU" target="_blank">
-          <i class="fab fa-youtube yti"></i>
-        </a>
-        <a href="https://www.instagram.com/mygovindia/?hl=en" target="_blank">
-          <i class="fab fa-instagram igi"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/government-of-india" target="_blank">
-          <i class="fab fa-linkedin-in li"></i>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="two">
-      <h2>NATIONAL VOTER PORTAL Head Office</h2>
-      <h3>unique identification authority of india</h3>
-      <h3>government of india</h3>
-      <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
+      <div class="two">
+        <h2>NATIONAL VOTER PORTAL Head Office</h2>
+        <h3>unique identification authority of india</h3>
+        <h3>government of india</h3>
+        <h3>bangla sahib road, behind kali market, gole market, new delhi - 110001</h3>
 
-      <h2>Regional Offices</h2>
-      <select name="place" id="place" onchange="myFunction(this)">
-        <option value="delhi">Delhi</option>
-        <option value="mumbai">Mumbai</option>
-        <option value="kolkata">Kolkata</option>
-        <option value="lucknow">Lucknow</option>
-        <option value="chennai">Chennai</option>
-        <option value="bengaluru">Bengaluru</option>
-        <option value="hyderabad">Hyderabad</option>
-      </select>
-      <h3 id="tag">
-        NVP Regional Office, Delhi
-        Ground Floor, Pragati Maidan Metro Station,
-        Pragati Maidan, New Delhi-110001
-      </h3>
-    </div>
-    <div class="three">
-      <ul>
-        <li>
-          <a href="">
-            <h4>Website Policy</h4>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <h4>Terms and conditions</h4>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <h4>Privacy policy</h4>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <h4>Hyperlinking policy</h4>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <h4>Copyright policy</h4>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <h4>Disclaimer</h4>
-          </a>
-        </li>
-        <li>
-          <a href="help.html">
-            <h4>Help</h4>
-          </a>
-        </li>
-        <li>
-          <a href="feedbackform.html">
-            <h4>Feedback</h4>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <h4>Sitemap</h4>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="four">
-      <h2>Government of India</h2>
-      <h4>Integrity Pledge
-        <i class="fas fa-external-link-alt"></i>
-      </h4>
+        <h2>Regional Offices</h2>
+        <select name="place" id="place" onchange="myFunction(this)">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="chennai">Chennai</option>
+          <option value="bengaluru">Bengaluru</option>
+          <option value="hyderabad">Hyderabad</option>
+        </select>
+        <h3 id="tag">
+          NVP Regional Office, Delhi
+          Ground Floor, Pragati Maidan Metro Station,
+          Pragati Maidan, New Delhi-110001
+        </h3>
+      </div>
+      <div class="three">
+        <ul>
+          <li>
+            <a href="">
+              <h4>Website Policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Terms and conditions</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Privacy policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Hyperlinking policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Copyright policy</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Disclaimer</h4>
+            </a>
+          </li>
+          <li>
+            <a href="help.html">
+              <h4>Help</h4>
+            </a>
+          </li>
+          <li>
+            <a href="feedbackform.html">
+              <h4>Feedback</h4>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <h4>Sitemap</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="four">
+        <h2>Government of India</h2>
+        <h4>Integrity Pledge
+          <i class="fas fa-external-link-alt"></i>
+        </h4>
         <ul>
           <li>
             <a href="https://www.mygov.in/" target="_blank">
@@ -1412,7 +1437,7 @@
             </a>
           </li>
           <li>
-            <a href="http://dbtindia.gov.in/"  target="_blank">
+            <a href="http://dbtindia.gov.in/" target="_blank">
               DBT Bharatpur <i class="fas fa-external-link-alt"></i>
             </a>
           </li>
@@ -1432,83 +1457,83 @@
               </div>
             </div>
           </div>
-            </div> 
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="footer-down">
-    
-    <div>
-      <input type="checkbox" class="checkbox" id="chk" />
-      <label class="labelnew" for="chk">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-        <div class="ball"></div>
-      </label>
+    <div class="footer-down">
+
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="labelnew" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+
+
+
+      <script>
+
+        let tag = document.getElementById("tag");
+        function myFunction(selectObject) {
+
+          if (tag.innerHTML.length != 0) {
+            tag.innerHTML = "";
+          }
+          let value = selectObject.value;
+          console.log(value);
+          var address = "";
+          if (value === "mumbai") {
+            address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
+          } else if (value === "kolkata") {
+            address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
+          } else if (value === "lucknow") {
+            address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
+          } else if (value === "chennai") {
+            address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
+          } else if (value === "bengaluru") {
+            address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
+          } else if (value === "hyderabad") {
+            address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
+          } else if (value === "delhi") {
+            address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
+          }
+          tag.innerHTML = `${address}`;
+        }
+
+        window.onload = function () {
+          const chk = document.getElementById('chk');
+          const mode = JSON.parse(localStorage.getItem("Mode"));
+          mode === true ? chk.checked = true && document.body.classList.toggle('dark') : null;
+
+          chk.addEventListener('change', (e) => {
+            document.body.classList.toggle('dark');
+            const mode = e.target.checked;
+            localStorage.setItem("Mode", mode);
+          });
+        }
+      </script>
+      <div class="copyright" style="padding-bottom:20px">
+        Copyright ©
+        <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
+      </div>
     </div>
-
-
-
-
-    <script>
-
-let tag = document.getElementById("tag");
-function myFunction(selectObject) {
-    
-    if(tag.innerHTML.length!= 0) {
-      tag.innerHTML = "";
-    }
-    let value = selectObject.value;  
-    console.log(value);
-    var address="";
-      if(value === "mumbai") {
-        address = "Seth Motish Lane, Municipal School, Brahmin Wadi, Mazagaon Telephone Exchange Marg, Mumbai 400 010";
-      } else if(value === "kolkata") {
-        address = "Regional Office Park Street Guide Kolkata , Pincode - 700016, West Bengal";
-      } else if(value === "lucknow") {
-      address = "No.23 Mirza Tower, Mahatma Gandhi Marg, Opposite To Board Of Generals, Hazratganj, Lucknow, Uttar Pradesh 226001";
-      } else if(value === "chennai") {
-      address = "Regional Office Mayor Basudev St, Korukkupet, Tondiarpet, Chennai, Tamil Nadu 600021";
-      } else if(value === "bengaluru") {
-      address = "Nirvachana Nilaya, Central College Electrol Offices, Seshadri Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001";
-      } else if(value === "hyderabad") {
-      address = "PTI Building, 1st Floor, DTCP Building, Opp:, AC Guards, Hyderabad, Telangana 500004";
-      } else if(value === "delhi") {
-      address = "NVP Regional Office, Delhi Ground Floor, Pragati Maidan Metro Station, Pragati Maidan, New Delhi-110001";
-      }
-      tag.innerHTML = `${address}`;
-  }
-
-      window.onload = function(){
-        const chk = document.getElementById('chk');
-        const mode = JSON.parse(localStorage.getItem("Mode"));
-        mode===true?chk.checked=true && document.body.classList.toggle('dark'):null;
-
-        chk.addEventListener('change', (e) => {
-          document.body.classList.toggle('dark');
-          const mode = e.target.checked;
-          localStorage.setItem("Mode",mode);
-        });
-      }
-    </script>
-  <div class="copyright" style="padding-bottom:20px">
-    Copyright ©
-    <script>document.write(new Date().getFullYear())</script> Qazi Maaz Arshad
-    </div>
-  </div>
   </footer>
   <script>
 
-	$('#lang-switch').change(function () { // put onchange event when user select option from select
-		var lang = $(this).val(); // decide which language to display using if else.
-		if(lang=='en'){
-		window.open('Home.html',"_self");
-		}
-		else{
-		window.open('home_hindi.html',"_self");
-		}
-	});
+    $('#lang-switch').change(function () { // put onchange event when user select option from select
+      var lang = $(this).val(); // decide which language to display using if else.
+      if (lang == 'en') {
+        window.open('Home.html', "_self");
+      }
+      else {
+        window.open('home_hindi.html', "_self");
+      }
+    });
 
-	</script>
+  </script>
 
   <script>
     $("input#submitButton").click(function () {
@@ -1522,10 +1547,10 @@ function myFunction(selectObject) {
       console.log(name);
       console.log(nickname);
       console.log(relative);
-      if(name.value.length == 0|nickname.value.length == 0|relative.value.length == 0|nameregional.value.length == 0|nicknameregional.value.length == 0|relativeregional.value.length == 0) {
-        swal("Please fill all the required details","","info");
+      if (name.value.length == 0 | nickname.value.length == 0 | relative.value.length == 0 | nameregional.value.length == 0 | nicknameregional.value.length == 0 | relativeregional.value.length == 0) {
+        swal("Please fill all the required details", "", "info");
       } else {
-        swal("Form successfully submitted","","success");
+        swal("Form successfully submitted", "", "success");
         window.location.href = "submitted.html";
       }
     });
@@ -1569,201 +1594,8 @@ function myFunction(selectObject) {
       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
   </script>
-  <script>
-
-    function populate(s3, s4) {
-      var s3 = document.getElementById(s3);
-      var s4 = document.getElementById(s4);
-
-      s4.innerHTML = "";
-
-      if (s3.value == "andaman and nicobar islands") {
-        var optionArray = ['nicobar|Nicobar', 'north and middle andaman|North and Middle Andaman', 'south andaman|South Andaman'];
-      }
 
 
-      else if (s3.value == "andhra pradesh") {
-        var optionArray = ['anantapur|Anantapur',
-          'chittoor|Chittor',
-          'east godavari|East Godavari',
-          'guntur|Guntur',
-          'kadapa|Kadapa',
-          'krishna|Krishna',
-          'kurnool|Kurnool',
-          'nellore|Nellore',
-          'prakasam|Prakasam',
-          'srikakulum|Srikakilum',
-          'vishakhapatnam|Vishakhapatnam',
-          'vizianagaram|Vizianagaram',
-          'west godavari|West Godavari'];
-      }
-      else if (s3.value == "arunachal pradesh") {
-        var optionArray = ['anjaw|Anjaw',
-          'changalng|Changlang',
-          'dibang valley|Dibang Valley',
-          'east kameng|East Kameng',
-          'east siang|East Siang',
-          'itanagar capital complex|Itanagar Capital Complex',
-          'kamle|Kamle',
-          'kra daadi|Kra Daadi',
-          'kurung kumey|Kurung Kumey',
-          'lepa rada|Lepa Rada',
-          'lohit|Lohit',
-          'longding|Longding',
-          'lower dibang valley|Lower Dibang Valley',
-          'lower siang|Lower Siang',
-          'lower subansiri|Lower Subansiri',
-          'namsai|Namsai',
-          'pakke kessang|Pakke Kessang',
-          'papum pare|Papum Pare',
-          'shi yomi|Shi Yomi',
-          'siang|Siang',
-          'tawang|Tawang',
-          'tirap|Tirap',
-          'upper siang|Upper Siang',
-          'upper subansiri|Upper Subansiri',
-          'west kameng|West kameng',
-          'west siang|West Siang'];
-
-
-      }
-
-      else if (s3.value == "assam") {
-        var optionArray = ['baksa|Baksa', 'barpeta|Barpeta', 'biswanath|Biswanath', 'bongaigaon|Bongaigaon', 'cachar|Cachar', 'charaideo|Charaideo', 'chirang|Chirang', 'daranng|Daranng', 'dhemaji|Dhemaji', 'dhubri|Dhubri', 'dibrugarh|Dibrugarh', 'dima hasao|Dima Hasao', 'goalpara|Goalpara', 'hailankandi|Hailankandi', 'hojai|Hojai', 'jorhat|Jorhat', 'kamrup metropolitan|Kamrup Metropolitan', 'kamrup rural|Kamrup Rural', 'karbi anglong|Karbi Anglong', 'karimganj|Karimganj', 'kokrajhar|Kokrajhar', 'lakhimpur|Lakhimpur', 'majuli|Majuli', 'morigaon|Morigaon'
-          , , 'nagaon|Nagaon', 'nalbari|Nalbari', 'sivasagar|Sivasagar', 'sonitpur|Sonitpur', 'south salmara mankachar|South Salmara Mankachar', 'tinsukia|Tinsukia', 'udalguri|Udalguri', 'west karbi anglong|West Karbi Anglong'];
-      }
-
-      else if (s3.value == "bihar") {
-        var optionArray = ['araria|Araria', 'arwal|Arwal', 'aurangabad|Aurangabad', 'banka|Banka', 'begusarai|Begusarai', 'bhojpur|Bhojpur', 'buxar|Buxar', 'darbhanga|Dharbhanga', 'east champaran|East Champaran', 'gaya|Gaya', 'gopalganj|Gopalganj', 'jamui|Jamui', 'jehanabad|Jehanabad', 'kaimur|Kaimur', 'katihar|Katihar', 'khagaria|Khagaria', 'kishanganj|Kishanganj', 'lakhisarai|Lakhisarai', 'madhepura|Madhepura', 'madhubani|Madhubani', 'munger|Munger', 'muzaffarpur|Muzaffapur', 'nalanda|Nalanda', 'nawada|Nawada', 'patna|Patna', 'purnia|Purnia', 'rohtas|Rohtas', 'saharsa|Saharsa', 'samashtipur|Samashtipur', 'saran|Saran', 'sheikhpura|Sheikhpura', 'sheohar|Sheohar', 'sitamarhi|Sitamarhi', 'siwan|Siwan', 'supaul|Supaul', 'vaishali|Vaishali', 'west champaran|West Champaran'];
-      }
-
-      else if (s3.value == "chandigarh") {
-        var optionArray = ['chandigarh|Chandigarh'];
-      }
-
-      else if (s3.value == "chattisgarh") {
-        var optionArray = ['balod|Balod', 'baloda bazaar|Baloda Bazaar', 'balrampur|Balrampur', 'bastar|Bastar', 'bemetara|Bemetara', 'bijapur|Bijapur', 'bilaspur|Bilaspur', 'dantewada|Dantewada', 'dhamtari|Dhamtari', 'durg|Durg', 'gariaband|Gariaband', 'gaurela pendra marwahi|Gaurela Pendra Marwahi', 'janjgir-champa|Janjgir-Champa', 'jashpur|Jahspur', 'kanker|Kanker', 'kawardha|Kawardha', 'kondagaon|Kondagaon', 'korba|Korba', 'koriya|Koriya', 'mahasamund|Mahasamund', 'mungeli|Mungeli', 'narayanpur|Narayanpur', 'raigarh|Raigarh', 'raipur|Raipur', 'rajnandgaon|Rajnandgaon', 'sukma|Sukma', 'surajpur|Surjapur', 'surguja|Surguja'];
-      }
-
-      else if (s3.value == "dadra and nagar haveli") {
-        var optionArray = ['dadra and nagar haveli|Dadra and Nagar Haveli'];
-      }
-
-      else if (s3.value == "daman and diu") {
-
-        var optionArray = ['daman|Daman', 'diu|Diu'];
-      }
-
-
-
-      else if (s3.value == "delhi") {
-        var optionArray = ['central delhi|Central Delhi', 'east delhi|East Delhi', 'new delhi|New Delhi', 'north delhi|North Delhi', 'north east delhi|North East Delhi', 'north west delhi|North West Delhi', 'shahdara|Shahdara', 'south delhi|South Delhi', 'south east delhi|South East Delhi', 'south west delhi|South West Delhi', 'west delhi|West Delhi'];
-      }
-
-      else if (s3.value == "goa") {
-        var optionArray = ['north goa|North Goa', 'south goa|South Goa'];
-      }
-
-      else if (s3.value == "gujarat") {
-        var optionArray = ['ahmedabad|Ahmedabad', 'ahmedabad corporation|Ahmedabad Corporation', 'amreli|Amreli', 'anand|Anand', 'aravalli|Aravalli', 'banaskantha|Banaskantha', 'bharuch|Bharuch', 'bhavnagar|Bhavnagar', 'bhavnagar corporation|Bhavnagar Corporation', 'botad|Botad', 'chhotaudepur|Chhotaudepur', 'dahod|Dahod', 'dang|Dang', 'devbhumi dwaraka|Devbhumi Dwaraka', 'gandhinagar|Gandhinagar', 'gir somnath|Gir Somnath', 'jamnagar|Jamnagar', 'jamnagar corporation|Jamnagar Corporation', 'junagadh|Junagadh', 'junagadh|junagadh corporation', 'kheda|Kheda', 'kutch|Kutch', 'mahisagar|Mahisagar', 'mehsana|Mehsana', 'morbi|Morbi' | 'narmada|Narmada', 'navsari|Navsari', 'panchmahal|Panchmahal', 'patan|Patan', 'porbandar|Porbandar', 'rajkot|Rajkot', 'rajkot corporation|Rajkot Corporation', 'sabarkantha|Sabarkantha', 'surat|Surat', 'surat corporation|Surat Corporation', 'surendranagar|Surendranagar', 'tapi|Tapi', 'vadodara|Vadodara', 'vadodara corporation|Vadodara Corporation', 'valsad|Valsad'];
-      }
-      else if (s3.value == "haryana") {
-        var optionArray = ['ambala|Ambala', 'bhiwani|Bhiwani', 'charkhi dadri|Charkhi Dadri', 'faridabad|Faridabad', 'fatehabad|Fatehabad', 'gurgaon|Gurgaon', 'hisar|Hisar', 'jhajjar|Jhajjar', 'jind|Jind', 'kaithal|Kaithal', 'karnal|Karnal', 'kurukshetra|Kurukshetra', 'mahendragarh|Mahendragarh', 'nuh|Nuh', 'palwal|Palwal', 'panchkula|Panchkula', 'panipat|Panipat', 'rewari|Rewari', 'rohtak|Rohtak', 'sirsa|Sirsa', 'sonipat|Sonipat', 'yamunanagar|Yamunanagar'];
-      }
-
-      else if (s3.value == "himachal pradesh") {
-        var optionArray = ['bilaspur|Bilaspur', 'chamba|Chamba', 'hamirpur|Hamirpur', 'kangra|kangra', 'kinnaur|Kinnaur', 'kullu|Kullu', 'lahaul spiti|Lahaul Spiti', 'mandi|Mandi', 'shimla|Shimla', 'sirmaur|Sirmaur', 'solan|Solan', 'una|Una'];
-      }
-
-      else if (s3.value == "jammu and kashmir") {
-        var optionArray = ['anantnag|Anantnag', 'bandipore|Bandipore', 'baramulla|Baramulla', 'budgam|Budgam', 'doda|Doda', 'ganderbal|Ganderbal', 'jammu|Jammu', 'kathua|Kathua', 'kishtwar|Kishtwar', 'kulgam|Kulgam', 'kupwara|Kupwara', 'poonch|Poonch', 'pulwama|Pulwama', 'rajouri|Rajouri', 'ramban|Ramban', 'reasi|Reasi', 'samba|Samba', 'shopian|Shopian', 'srinagar|Srinagar', 'udhampur|Udhampur'];
-      }
-
-      else if (s3.value == "jharkhand") {
-        var optionArray = ['bokaro|Bokaro', 'chatra|Chatra', 'deoghar|Deoghar', 'dhanbad|Dhanbad', 'dumka|Dumka', 'east singhbhum|East Singhbhum', 'garhwa|Garhwa', 'giridih|Giridih', 'godda|Godda', 'gumla|Gumla', 'hazaribagh|Hazaribagh', 'jamtara|Jamtara', 'khunti|Khunti', 'koderma|koderma', 'latehar|Latehar', 'pakur|Pakur', 'palamu|Palamu', 'ramgarh|Ramgarh', 'ranchi|ranchi', 'sahebganj|Sahebganj', 'seraikela kharsawan|Seraikela Kharsawan', 'simdega|Simdega', 'west singhbhum|West Singhbhum'];
-      }
-      else if (s3.value == "karnataka") {
-        var optionArray = ['bagalkot|Bagalkot', 'bangalore rural|Bangalore Rural', 'Bangalore Urban|Bangalore Urban', 'bbmp|BBMP', 'belgaum|Belgaum', 'bellary|Bellary', 'bidam|Bidam', 'chamarajanagar|Chamarajanagar', 'chikamagalur|Chikamagalur', 'chikkaballapur|Chikkaballapur', 'chitradurga|Chitradurga', 'dakshina kannada|Dakshina Kannada', 'devanagere|Devanagere', 'dharwad|Dharwad', 'gadag|Gadag', 'gulbarga|Gulbarga', 'hassan|Hassan', 'haveri|Haveri', 'kodagu|Kodagu', 'kolar|Kolar', 'koppal|Koppal', 'mandya|Mandya', 'mysore|Mysore', 'raichur|Raichur', 'ramanagara|Ramanagara', 'shimoga|Shimoga', 'tumkur|Tumkur', 'udupi|Udupi', 'uttar kannada|Uttar Kannada', 'vijayapura|Vijayapura', 'yadgir|Yadgir'];
-      }
-      else if (s3.value == "kerala") {
-        var optionArray = ['alappuzha|Alappuzha', 'ernakulam|Ernakulam', 'idukki|Idukki', 'kannur|Kannur', 'kasaragod|Kasaragod', 'kollam|Kollam', 'kottayam|Kottayam', 'kozhikode|Kozikode', 'malappuram|Malappuram', 'palakkad|Palakkad', 'pathanamthitta|Pathanamthitta', 'thiruvananthapuram|Thiruvananthapuram', 'thrissur|Thrissur', 'wayanad|Wayanad'];
-      }
-      else if (s3.value == "ladakh") {
-        var optionArray = ['kargil|Kargil', 'leh|Leh'];
-      }
-
-      else if (s3.value == "lakshadweep") {
-        var optionArray = ['agatti island|Agatti Island', 'lakshadweep|Lakshadweep'];
-      }
-      else if (s3.value == "madhya pradesh") {
-        var optionArray = ['agar|Agar', 'alirajpur|Alirajpur', 'anuppur|Anuppur', 'ashoknagar|Ashoknagar', 'balaghat|Balaghat', 'barwani|Barwani', 'betul|Betul', 'bhind|Bhind', 'bhopal|Bhopal', 'burhanpur|Burhanpur', 'chhatarpur|Chattarpur', 'chhindwara|Chhindwara', 'damoh|Damoh', 'datia|Datia', 'dewas|Dewas', 'dhar|Dhar', 'dindori|Dindori', 'guna|Guna', 'gwalior|Gwalior', 'harda|Harda', 'hoshangabad|Hoshangabad', 'indore|Indore', 'jabalpur|Jabalpur', 'jhabua|Jhabua', 'katni|Katni', 'khandwa|Khandwa', 'khargone|Khargone', 'mandla|Mandla', 'mandsaur|Mandsaur', 'morena|Morena', 'narsinghpur|Narsinghpur', 'neemuch|Neemuch', 'panna|Panna', 'raiseb|Raisen', 'rajgarh|Rajgarh', 'ratlam|Ratlam', 'rewa|Rewa', 'sagar|Sagar', 'satna|Satna', 'sehore|Sehore', 'seoni|Seoni', 'shahdol|Shahdol', 'shajapur|Shajapur', 'dheopur|Sheopur', 'shivpuri|SHivpuri', 'sidhi|Sidhi', 'singrauli|Singrauli', 'tikamgarh|Tikamgarh', 'ujjain|Ujjain', 'umaria|Umaria', 'vidisha|Vidisha'];
-      }
-
-      else if (s3.value == "maharashtra") {
-        var optionArray = ['ahmednagar|Ahmednagar', 'akola|AKola', 'amravati|Amravati', 'aurangabad|Aurangabad', 'beed|Beed', 'bhandara|Bhandara', 'buldhana|Buldhana', 'chandrapur|Chandrapur', 'dhule|Dhule', 'gadchiroli|Gadchiroli', 'gondia|Gondia', 'hingoli|Hingoli', 'jalgaon|Jalgaon', 'jalna|Jalna', 'kolhapur|Kolhapur', 'latur|Latur', 'mumbai|Mumbai', 'nagpur|Nagpur', 'nanded|Nanded', 'nandurbar|Nandurbar', 'nashik|Nahsik', 'osmanabad|Osmanabad', 'palghar|Palghar', 'parbhani|Parbhani',
-          'pune|Pune', 'rajgad|Rajgad', 'ratnagiri|Ratnagiri', 'sangli|Sangli', 'satara|Satara', 'sindhudurg|Sindhudurg', 'solapur|Solapur', 'thane|Thane', 'wardha|Wardha', 'washim|Washim', 'yavatmal|Yavatmal'];
-      }
-      else if (s3.value == "manipur") {
-        var optionArray = ['bishnupur|Bishnupur', 'chandel|Chandel', 'churachandpur|Churanchandpur', 'imphal east|Imphal East', 'imphal west|Imphal West', 'jiribam|Jiribam', 'kakching|Kakching', 'kamjong|Kamjong', 'kangpokpi|Kanhpokpi', 'noney|Noney', 'pherzawl|Pherzawl', 'senapati|Senapati', 'tamenglong|Tamenglong', 'tengnoupal|Tengnoupal', 'thoubal|Thoubal', 'ukhrul|Ukhrul'];
-      }
-      else if (s3.value == "meghalaya") {
-        var optionArray = ['east garo hills|East Garo Hills', 'east jaintia hills|East Jaintia Hills', 'east khasi hills|East Khasi Hills', 'north garo hills|North Garo Hills', 'ri-bhoi|Ri-Bhoi', 'south garo hills|SOuth Garo Hills', 'south west khasi hills|South West Khasi Hills', 'west garo hills|West Garo Hills', 'west jaintia hills|West Jaintia Hills', 'west khasi hills|West Khasi Hills'];
-      }
-      else if (s3.value == "mizoram") {
-        var optionArray = ['aizawl east|Aizawl East', 'aizawl west|Aizawl West', 'champhai|Champhai', 'kolasib|Kolasib', 'lawngtai|Lawngtai', 'lunglei|Lunglei', 'mamit|Mamit', 'serchhip|Serchhip', 'siaha|Siaha'];
-      }
-
-      else if (s3.value == "nagaland") {
-        var optionArray = ['dimapur|Dimapur', 'kiphire|Kiphire', 'kohima|Kohima', 'longleng|Longleng', 'mokokchung|Mokokchung', 'mon|Mon', 'peren|Peren', 'phek|Phek', 'tuensang|Tuensang', 'wokha|Wokha', 'zunheboto|Zunheboto'];
-      }
-      else if (s3.value == "odisha") {
-        var optionArray = ['angul|Angul', 'balangir|Balangir', 'balasore|Balasore', 'bargarh|Bargarh', 'bhadrak|Bhadrak', 'boudh|Boudh', 'cuttack|Cuttack', 'deogarh|Deogarh', 'dhenkanal|Dhenkanal', 'gajapati|Gajapati', 'ganjam|Ganjam', 'jagatsinghpur|Jagatsinghpur', 'jajpur|Jajpur', 'jharsuguda|Jharsuguda', 'kalahandi|Kalahandi', 'kandhamal|Kandhamal', 'kendrapara|Kendrapara', 'kendujhar|Kendujhar', 'khurda|Khurda', 'koraput|Koraput', 'malkangiri|Malkangiri', 'mayurbhanj|Mayurbhanj', 'nabarangpur|Nabarangpur', 'nayagarh|Nayagarh', 'nuapada|Nuapada', 'puri|Puri', 'rayagada|Rayagada', 'sambalpur|Sambalpur', 'subarnapur|Subarnapur', 'sundargarh|Sundargarh'];
-      }
-
-      else if (s3.value == "puducherry") {
-        var optionArray = ['karaikal|Karaikal', 'mahe|Mahe', 'puducherry|Puducherry', 'yanam|Yanam'];
-      }
-      else if (s3.value == "punjab") {
-        var optionArray = ['amritsar|Amritsar', 'barnala|Barnala', 'bathinda|Bathinda', 'faridkot|Faridkot', 'fatehgarh sahib|Fatehgarh Sahib', 'fazilka|Fazilka', 'ferozpur|Ferozpur', 'gurdaspur|Gurdaspur', 'hishiarpur|Hoshiarpur', 'jalandhar|Jalandhar', 'kapurthala|Kapurthala', 'ludhiana|Ludhiana', 'mansa|mansa', 'moga|Moga', 'pathankot|Pathankot', 'patiala|Patiala', 'rup nagar|Rup Nagar', 'sangrur|Sangrur', 'sas nagar|SAS Nagar', 'sbs nagar|SBS Nagar', 'sri mukhtsar sahib|Sri Muktsar Sahib', 'tarn taran|Tarn Taran'];
-      }
-      else if (s3.value == "rajasthan") {
-        var optionArray = ['ajmer|Ajmer', 'alwar|Alwar', 'banswara|Banswara', 'baran|Baran', 'barmer|Barmer', 'bharatpur|Bharatpur', 'bhilwara|Bhilwara', 'bikaner|Bikaner', 'bundu|Bundi', 'chittorgarh|Chittorgarh', 'churu|Churu', 'dausa|Dausa', 'dholpur|Dholpur', 'dungarpur|Dungarpur', 'hanumangarh|Hanumangarh', 'jaipur I|Jaipur I', 'jaipur II|Jaipur II', 'jaisalmer|Jaisalmer', 'jalore|Jalore', 'jhalawar|Jhalawar', 'jhunjhunu|Jhunjhunu', 'jodhpur|Jodhpur', 'karauli|Karauli', 'kota|Kota', 'nagaur|Nagaur', 'pali|Pali', 'pratapgarh|Pratapgarh', 'rajsamand|Rajsamand', 'sawai madhopur|Sawai Madhopur', 'sikar|Sikar', 'sirohi|Sirohi', 'sri ganganagar|Sri Ganganagar', 'tonk|Tonk', 'udaipur|Udaipur'];
-      }
-      else if (s3.value == "sikkim") {
-        var optionArray = ['east sikkim|East Sikkim', 'north sikkim|North Sikkim', 'south sikkim|South Sikkim', 'west sikkim|West Sikkim'];
-      }
-      else if (s3.value == "tamil nadu") {
-        var optionArray = ['aranthangi|Aranthangi', 'ariyalur|Ariyalur', 'attur|Attur', 'chengalpet|Chengalpet', 'chennai|chennai', 'cheyyar|Cheyyar', 'coimbatore|Coimbatore', 'cuddalore|Cuddalore', 'dharmapuri|Dharmapuri', 'dindigul|DIndigul', 'erode|Erode', 'kallakurichi|Kallakurichi', 'kanchipuram|Kanchipuram', 'kanyakumari|Kanyakumari', 'karur|Karur', 'kovilpatti|Kovilpatti', 'krishnagiri|Krishnagiri', 'madurai|Madurai', 'nagapattinam|Nagapattinam', 'namakkal|Namakkal', 'nilgiris|Nilgiris', 'palani|Palani', 'paramakudi|Paramakudi', 'perambalur|Perambalur', 'poonamallee|Poonamallee', 'pudukkottai|Pudukkottai', 'ramanathapuram|Ramanathapuram', 'ranipet|Ranipet', 'salem|Salem', 'sivaganga|Sivaganga', 'sivakasi|Sivakasi', 'tenkasi|Tenkasi', 'thanjavur|Thanjavur', 'theni|Theni', 'thoothukudi(tuticorin)|Thoothukudi(Tuticorin)', 'tiruchirappalli|Tiruchirappalli', 'tirunelvelli|Tirunelvelli', 'tirupattur|Tirupattur', 'tiruppur|Tiruppur', 'tiruvaluur|Tiruvallur', 'tiruvannamalai|Tiruvannamalai', 'tiruvarur|Tiruvarur', 'vellore|Vellore', 'viluppuram|Viluppuram', 'virudhunagar|Virudhunagar'];
-      }
-      else if (s3.value == "telangana") {
-        var optionArray = ['adilabad|Adilabad', 'bhadradri kothagudem|Bhadradi Kothagudem', 'hyderabad|Hyderabad', 'jagtial|Jagtial', 'jangaon|Jangaon', 'jayashankar bhupalpally|Jayashankar Bhupalpally', 'jogulamba gadwal|Jogulamba Gadwal', 'kamareddy|Kamareddy', 'karimnagar|Karimnagar', 'khammam|Khammam', 'kumuram bheem|Kumuram Bheem', 'mahbubabad|Mahabubabad', 'mahabubnagar|mahabubnagar', 'mancherial|Mancherial', 'medak|Medak', 'medchal|Medchal', 'mulugu|Mulugu', 'nagarkurnool|Nagarkurnool', 'nalgonda|Nalgonda', 'narayanpet|Narayanpet', 'nirmal|Nirmal', 'nizamabad|Nizamabad', 'peddapalli|Peddapalli', 'rajanna sircilla|Rajanna Sircilla', 'rangareddy|Rangareddy', 'sangareddy|Sangareddy', 'siddipet|Siddipet', 'suryapet|Suryapet', 'vikarabad|Vikarabad', 'wanaparthy|Wanaparthy', 'warangal(rural)|Warangal(Rural)', 'warangal(urban)|Warangal(Urban)', 'yadadri bhuvanagiri|Yadadri Bhuvanagiri'];
-      }
-      else if (s3.value == "tripura") {
-        var optionArray = ['dhalai|Dhalai', 'gomati|Gomati', 'khowai|Khowai', 'north tripura|North Tripura', 'sepahijala|Sepahijala', 'south tripura|South Tripura', 'unakoti|Unakoti', 'west tripura|West Tripura'];
-      }
-
-      else if (s3.value == "uttar pradesh") {
-        var optionArray = ['agra|Agra', 'aligarh|Aligarh', 'ambedkar nagar|Ambedkar Nagar', 'amethi|Amethi', 'amroha|Amroha', 'auraiya|Auraiya', 'ayodhya|Ayodhya', 'azamgarh|Azamgarh', 'badaun|Badaun', 'baghpat|Baghpat', 'bahraich|Bahraich', 'balarampur|Balarampur', 'ballia|Ballia', 'banda|Banda', 'barabanki|Barabanki', 'bareilly|Bareilly', 'basti|Basti', 'bhadohi|Bhadohi', 'bijnour|Bijnour', 'bulandshahr|Bulandshahr', 'chandauli|Chandauli', 'chitrakoot|Chitrakoot', 'deoria|Deoria', 'etah|Etah', 'etawah|Etawah', 'farrukhabad|Farrukhabad', 'fatehpur|Fatehpur', 'firozabad|Firozabad', 'gautam buddha nagar|Gautam Buddha Nagar', 'ghaziabad|Ghaziabad', 'ghazipur|Ghazipur', 'gonda|Gonda', 'gorakhpur|Gorakhpur', 'hamirpur|Hamirpur', 'hapur|Hapur', 'hardoi|Hardoi', 'hathras|Hathras', 'jalaun|Jalaun', 'jaunpur|Jaunpur', 'jhansi|Jhansi', 'kannauj|Kannauj', 'kanpur dehat|Kanpur Dehat', 'kanpur nagar|Kanpur Nagar', 'kasganj|Kasganj', 'kaushambi|Kaushambi', 'kushinagar|Kushinagar', 'lakhimpur kheri|Lakhimpur Kheri', 'lalitpur|Lalitpur', 'lucknow|Lucknow', 'maharajganj|Maharajganj', 'mahoba|Mahoba', 'mainpuri|Mainpuri', 'mathura|mathura', 'mau|Mau', 'meerut|Meerut', 'mirzapur|Mirzapur', 'moradabad|Moradabad', 'muzaffarnagar|Muzaffarnagar', 'pilibhit|Pilibhit', 'pratapgarh|Pratapgarh', 'prayagraj|Prayagraj', 'raebareli|Raebareli', 'rampur|Rampur', 'saharanpur|Saharanpur', 'sambhal|Sambhal', 'sant kabir nagar|Sant Kabir Nagar', 'shahjahanpur|Shahjahanpur', 'shamli|Shamli', 'shravasti|Shravasti', 'siddharthnagar|Siddharthnagar', 'sitapur|Sitapur', 'sonbhadra|Sonbhadra', 'sultanpur|Sultanpur', 'unnao|Unnao', 'varanasi|Varanasi'];
-      }
-
-      else if (s3.value == "uttarakhand") {
-        var optionArray = ['almora|Almora', 'bageshwar|Bageshwar', 'chamoli|Chamoli', 'champawat|Champawat', 'dehradun|Dehradun', 'haridwar|Haridwar', 'nainital|Nainital', 'pauri garhwal|Pauri Garhwal', 'pithoragarh|Pithoragarh', 'rudraprayag|Rudraprayag', 'tehri garhwal|Tehri Garhwal', 'udha, dingh nagar|Udham Singh Nagar', 'uttarkashi|Uttarkashi'];
-      }
-
-      else if (s3.value == "west bengal") {
-        var optionArray = ['alipurduar district|Alipurduar District', 'bankura|Bankura', 'basirhat hd(north 24 parganas)|Basirhat HD(North 24 Pargana)', 'birbhum|Birbhum', 'bishnupur hd(bankura)|Bishnupur HD(Bankura)', 'coochbehar|Coochbehar', 'dakshin dinajpur|Dakshin DInajpur', 'darjeeling|Darjeeling', 'diamond harbor hd(south 24 pargana)|Diamond Harbor HD(South 24 Pargana)', 'east bardhaman|East Bardhaman', 'hoogly|Hoogly', 'howrah|Howrah', 'jalpaiguri|Jalpaiguri', 'jhargram|Jhargram', 'kalimpong|Kalimpong', 'kolkata|Kolkata', 'malda|Malda', 'murshidabad|Murshidabad', 'nadia|Nadia', 'nandigram hd(east medinipore)|Nandigram HD(East Medinipore)', 'north 24 parganas|North 24 Parganas', 'paschim medinipore|Paschim MEdinipore', 'purba medinipore|Purba Medinipore', 'purulia|Purulia', 'rampurhat hd(birbhum)|Rampurhat HD(Birbhum)', 'south 24 parganas|South 24 Parganas', 'uttar dinajpur|Uttar Dinajpur', 'west bardhaman|West Bardhaman'];
-      }
-
-      for (var option in optionArray) {
-        var pair = optionArray[option].split("|");
-        var newoption = document.createElement("option");
-
-        newoption.value = pair[0];
-        newoption.innerHTML = pair[1];
-        s4.options.add(newoption);
-      }
-    }
-  </script>
   <script>
 
     function populate(s7, s8) {
@@ -1895,8 +1727,8 @@ function myFunction(selectObject) {
       }
 
       else if (s7.value == "maharashtra") {
-        var optionArray = ['ahmednagar|Ahmednagar', 'akola|AKola', 'amravati|Amravati', 'aurangabad|Aurangabad', 'beed|Beed', 'bhandara|Bhandara', 'buldhana|Buldhana', 'chandrapur|Chandrapur', 'dhule|Dhule', 'gadchiroli|Gadchiroli', 'gondia|Gondia', 'hingoli|Hingoli', 'jalgaon|Jalgaon', 'jalna|Jalna', 'kolhapur|Kolhapur', 'latur|Latur', 'mumbai|Mumbai', 'nagpur|Nagpur', 'nanded|Nanded', 'nandurbar|Nandurbar', 'nashik|Nahsik', 'osmanabad|Osmanabad', 'palghar|Palghar', 'parbhani|Parbhani',
-          'pune|Pune', 'rajgad|Rajgad', 'ratnagiri|Ratnagiri', 'sangli|Sangli', 'satara|Satara', 'sindhudurg|Sindhudurg', 'solapur|Solapur', 'thane|Thane', 'wardha|Wardha', 'washim|Washim', 'yavatmal|Yavatmal'];
+        var optionArray = ['ahmednagar|Ahmednagar', 'akola|AKola', 'amravati|Amravati', 'aurangabad|Aurangabad', 'beed|Beed', 'bhandara|Bhandara', 'buldhana|Buldhana', 'chandrapur|Chandrapur', 'dhule|Dhule', 'gadchiroli|Gadchiroli', 'gondia|Gondia', 'hingoli|Hingoli', 'jalgaon|Jalgaon', 'jalna|Jalna', 'kolhapur|Kolhapur', 'latur|Latur',  'nagpur|Nagpur', 'nanded|Nanded', 'nandurbar|Nandurbar', 'nashik|Nahsik', 'osmanabad|Osmanabad', 'palghar|Palghar', 'parbhani|Parbhani',
+          'pune|Pune', 'raigad|Raigad','mumbai-suburban|Mumbai-Suburban','mumbai-city|Mumbai-City','ratnagiri|Ratnagiri', 'sangli|Sangli', 'satara|Satara', 'sindhudurg|Sindhudurg', 'solapur|Solapur', 'thane|Thane', 'wardha|Wardha', 'washim|Washim', 'yavatmal|Yavatmal'];
       }
       else if (s7.value == "manipur") {
         var optionArray = ['bishnupur|Bishnupur', 'chandel|Chandel', 'churachandpur|Churanchandpur', 'imphal east|Imphal East', 'imphal west|Imphal West', 'jiribam|Jiribam', 'kakching|Kakching', 'kamjong|Kamjong', 'kangpokpi|Kanhpokpi', 'noney|Noney', 'pherzawl|Pherzawl', 'senapati|Senapati', 'tamenglong|Tamenglong', 'tengnoupal|Tengnoupal', 'thoubal|Thoubal', 'ukhrul|Ukhrul'];
@@ -1959,197 +1791,442 @@ function myFunction(selectObject) {
       }
     }
   </script>
+ 
   <script>
-    function populate(s1, s2) {
-      var s1 = document.getElementById(s1);
-      var s2 = document.getElementById(s2);
+   
+   function Constituency_Change(s2,s3)
+    {
+      var s2=document.getElementById(s2);
+      var s3 = document.getElementById(s3);
+   console.log(s2.value);
 
-      s2.innerHTML = "";
+s3.innerHTML = "";
 
-      if (s1.value == "andaman and nicobar islands") {
-        var optionArray = ['nicobar|Nicobar', 'north and middle andaman|North and Middle Andaman', 'south andaman|South Andaman'];
-      }
+  
+if(s2.value=="raigad")
+     {
+  var optionArray=['|188 - Panvel'
+,'|189 - Karjat'
+,'|190 - Uran'
+,'|191 - Pen'
+,'|192 - Alibag'
+,'|193 - Shrivardhan'
+,'|194 - Mahad'];
+     }
+    else if(s2.value=="osmanabad")
+     {
+      var optionArray=['|240 - Omerga',
+'|241 - Tuljapur',
+'|242 - Osmanabad',
+'|243 - Paranda'];
+     }
+     else if(s2.value=="pune")
+     {
+      var optionArray=['|195 - Junnar'
+,'|196 - Ambegaon'
+,'|197 - Khed Alandi'
+,'|198 - Shirur'
+,'|199 - Daund'
+,'|200 - Indapur'
+,'|201 - Baramati'
+,'|202 - Purandar'
+,'|203 - Bhor'
+,'|204 - Maval'
+,'|205 - Chinchwad'
+,'|206 - Pimpri'
+,'|207 - Bhosari'
+,'|208 - Vadgaon Sheri'
+,'|209 - Shivajinagar'
+,'|210 - Kothrud'
+,'|211 - Khadakwasala'
+,'|212 - Parvati'
+,'|213 - Hadapsar'
+,'|214 - Pune Cantonment' 
+,'|215 - Kasba Peth'];
+     }
+     else if(s2.value=="latur")
+     {
+      var optionArray=
+      [
+     '| 234 - Latur Rural',
+'|235 - Latur City',
+'|236 - Ahmedpur',
+'|237 - Udgir',
+'|238 - Nilanga',
+'|239 - Ausa'];
+     }
+     else if(s2.value=="nanded")
+     {
+      var optionArray=['|83 - Kinwat'
+,'|84 - Hadgaon'
+,'|85 - Bhokar'
+,'|86 - Nanded North'
+,'|87 - Nanded South'
+,'|88 - Loha'
+,'|89 - Naigaon'
+,'|90 - Deglur'
+,'|91 - Mukhed'];
+     }
+     else if(s2.value=="akola")
+     {
+      var optionArray=['|28 - Akot'
+,'|29 - Balapur'
+,'|30 - Aakola West'
+,'|31 - Akola East'
+,'|32 - Murtizapur'];
+     }
+     else if(s2.value=="amravati")
+     {
+      var optionArray=['|36 - Dhamangaon Railway'
+,'|37 - Badnera'
+,'|38 - Amrawati'
+,'|39 - Teosa'
+,'|40 - Daryapur'
+,'|41 - Melghat'
+,'|42 - Achalpur','|43 - Morshi'];
+     }
+     else if(s2.value=="aurangabad")
+     {
+      var optionArray=['|104 - Sillod'
+,'|105 - Kannad'
+,'|106 - Pholambari'
+,'|107 - Aurangabad (Central)'
+,'|108 - Aurangabad (West)'
+,'|109 - Aurangbad (East)'
+,'|110 - Paithan'
+,'|111 - Gangapur'
+,'|112 - Vaijapur'];
+     }
+     else if(s2.value=="sangli")
+     {
+      var optionArray=
+      [
+      '|281 - Miraj',
+'|282 - Sangli',
+'|283 - Islampur',
+'|284 - Shirala',
+'|285 - Palus-Kadegaon',
+'|286 - Khanpur',
+'|287 - Tasgaon-Kavathe Mahankal',
+'|288 - Jat'
+      ];
+     }
+     else if(s2.value=="satara")
+     {
+      var optionArray=
+      [
+      '|255 - Phaltan',
+'|256 - Wai',
+'|257 - Koregaon',
+'|258 - Man',
+'|259 - Karad North',
+'|260 - Karad South',
+'|261 - Patan',
+'|262 - Satara'];
+     }
+     else if(s2.value=="solapur")
+     {
+      var optionArray=[
+      '|244 - Karmala',
+'|245 - Madha',
+'|246 - Barshi',
+'|247 - Mohol',
+'|248 - Solapur City North',
+'|249 - Solapur City Central',
+'|250 - Akkalkot',
+'|251 - Solapur South',
+'|252 - Pandharpur',
+'|253 - Sangola',
+'|254 - Malshiran'];
+     }
+     else if(s2.value=="nashik")
+     {
+      var optionArray=['|113 - Nandgaon'
+,'|114 - Malegaon (Central)'
+,'|115 - Malegaon (Outer)'
+,'|116 - Baglan'
+,'|117 - Kalwan '
+,'|118 - Chandwad'
+,'|119 - Yevla'
+,'|120 - Sinnar'
+,'|121 - Niphad'
+,'|122 - Dindori '
+,'|123 - Nashik East'
+,'|124 - Nashik (Central)'
+,'|125 - Nashik West'
+,'|126 - Deolali '
+,'|127 - Igatpuri '];
+     }
+     else if(s2.value=="nandurbar")
+     {
+      var optionArray=['|1-Akkalkuwa','|2-Shahada ','|3-Nandurbar','|4-Nawapur'];
+     }
+     else if(s2.value=="beed")
+     {
+      var optionArray=[
+      '|228 - Georai',
+'|229 - Majalgaon',
+'|230 - Beed',
+'|231 - Ashti',
+'|232 - Kaij ',
+'|233 - Parli' ];
+     }
+     else if(s2.value=="bhandara")
+     {
+      var optionArray=['|60 - Tumsar'
+,'|61 - Bhandara'
+,'|62 - Sakoli'
+];
+     }
+     else if(s2.value=="buldhana")
+     {
+      var optionArray=['|21 - Malkapur',
+,'|22 - Buldhana'
+,'|23 - Chikhli'
+,'|24 - Sindhkhed Raja'
+,'|25 - Mehkar '
+,'|26 - Khamgaon'
+,'|27 - Jalgaon (Jamod)'];
+     }
+     else if(s2.value=="chandrapur")
+     {
+      var optionArray=['|70 - Rajura'
+,'|71 - Chandrapur'
+,'|72 - Ballarpur'
+,'|73 - Bramhapuri'
+,'|74 - Chimur'
+,'|75 - Warora'];
+     }
+     else if(s2.value=="dhule")
+     {
+      var optionArray=['|5 - Sakri','|6 - Dhule Rural','|7 - Dhule City','|8 - Sindhkheda','|9 - Shirpur'];
+     }
+     else if(s2.value=="gadchiroli")
+     {
+      var optionArray=['|67 - Armori'
+,'|68 - Gadchiroli'
+,'|69 - Aheri'];
+     }
+     else if(s2.value=="gondia")
+     {
+      var optionArray=['|63 - Arjuni Morgaon'
+,'|64 - Tirora'
+,'|65 - Gondia'
+,'|66 - Amgaon '];
+     }
+     else if(s2.value=="hingoli")
+     {
+      var optionArray=['|92 - Basmath'
+,'|93 - Kalamnuri'
+,'|94 - Hingoli'];
+     }
+     else if(s2.value=="jalgaon")
+     {
+      var optionArray=['|10 - Chopda'
+,'|11 - Raver',
+'|12 - Bhusawal'
+,'|13 - Jalgaon City',
+,'|14 - Jalgaon Rural',
+,'|15 - Amalner',
+,'|16 - Erandol',
+,'|17 - Chalisgaon',
+,'|18 - Pachora'
+,'|19 - Jamner',
+,'|20 - Muktainagar'];
+     }
+     else if(s2.value=="kolhapur")
+     {
+      var optionArray=
+      [
+      '|271 - Chandgad',
+'|272 - Radhanagari',
+'|273 - kagal',
+'|274 - Kolhapur South',
+'|275 - Karvir',
+'|276 - Kolhapur North',
+'|277 - Shahuwadi',
+'|278 - Hatkanangle',
+'|279 - Ichalkaranji',
+'|280 - Shirol'
+
+      ];
+     }
+     else if(s2.value=="palghar")
+     {
+      var optionArray=
+      [
+'|128 - Dahanu',
+'|129 - Vekramgrth',
+'|130 - Palghar',
+'|131 - Boisar',
+'|132 - Nalasopara',
+'|133 - Vasai'
+      ];
+     }
+     else if(s2.value=="parbhani")
+     {
+      var optionArray=['|95 - Jintur'
+,'|96 - Parbhani'
+,'|97 - Gangakhed'
+,'|98 - Pathri'];
+     }
+     else if(s2.value=="ahmednagar")
+     {
+      var optionArray=
+      ['|216 - Akole',
+'|217 - Sangmner',
+'|218 - Shirdi',
+'|219 - Kopargaon',
+'|220 - Shrirampur',
+'|221 - Nevasa',
+'|222 - Shevgaon',
+'|223 - Rahuri',
+'|224 - Parner',
+'|225 - Ahmednagar City',
+'|226 - Shrigonda',
+'|227 - Karjat Jamkhed'];
+     }
+     else if(s2.value=="ratnagiri")
+     {
+      var optionArray=
+      [
+      '|263 - Dapoli',
+'|264 - Guhagar',
+'|265 - Chiplun',
+'|266 - Ratnagiri',
+'|267 - Rajapur',
+      ];
+     }
+     else if(s2.value=="sindhudurg")
+     {
+      var optionArray=
+      [
+      '|268 - Kankavli',
+'|269 - Kudal',
+'|270 - Sawantwadi'
+      ];
+     }
+     else if(s2.value=="thane")
+     {
+      var optionArray=['|134 - Bhiwandi Rural'
+,'|135 - Shahapur '
+,'|136 - Bhiwandi West'
+,'|137 - Bhiwandi East'
+,'|138 - Kalyan West'
+,'|139 - Murbad'
+,'|140 - Ambarnath'
+,'|141 - Ulhasnagar'
+,'|142 - Kalyan East'
+,'|143 - Dombivali'
+,'|144 - Kalyan Rural'
+,'|145 - Meera Bhayandar'
+,'146 - Ovala majiwada'
+,'|147 - Kopri-Pachpakhadi'
+,'|148 - Thane'
+,'|149 - Mumbra-Kalwa'
+,'|150 - Airoli'
+,'|151 - Belapur'];
+     }
+     else if(s2.value=="wardha")
+     {
+      var optionArray=['44 - Arvi',
+'|45 - Deoli',
+,'|46 - Hinganghat'
+,'|47 - Wardha'
+];
+     }
+     else if(s2.value=="washim")
+     {
+      var optionArray=['|33 - Risod',
+,'|34 - Washim'
+,'|35 - Karanja'];
+     }
+     else if(s2.value=="yavatmal")
+     {
+      var optionArray=['|76 - Wani'
+,'|77 - Ralegaon'
+,'|78 - Yavatmal'
+,'|79 - Digras'
+,'|80 - Arni'
+,'|81 - Pusad'
+,'|82 - Umarkhed'];
+     }
+   
+    else if(s2.value=="jalna")
+     {
+      var optionArray=['|99 - Partur'
+,'|100 - Gansavangi'
+,'|101 - Jalna'
+,'|102 - Badnapur'
+,'|103 - Bhokardan'];
+     }
+  else if(s2.value=="nagpur")
+     {
+      var optionArray=['|48 - Katol'
+,'|49 - Savner'
+,'|50 - Hingna'
+,'|51 - Umred'
+,'|52 - Nagpur South West'
+,'|53 - Nagpur South'
+,'|54 - Nagpur East'
+,'|55 - Nagpur Central'
+,'|56 - Nagpur West'
+,'|57 - Nagpur North'
+,'|58 - Kamthi'
+,'|59 - Ramtek'];
+     }
+ else if(s2.value=="mumbai-suburban")
+ {
+  var optionArray=['|152 - Borivali'
+,'|153 - Dhaisar'
+,'|154 - Magathane'
+,'|155 - Mulund'
+,'|156 - Vikhroli'
+,'|157 - Bhandup West'
+,'|158 - Jogeshwari East'
+,'|159 - Dindoshi'
+,'|160 - Kandivali East'
+,'|161 - Charkop'
+,'|162 - Malad West'
+,'|163 - Goregaon'
+,'|164 - Varsova'
+,'|165 - Andheri West'
+,'|166 - Andheri East'
+,'|167 - Vile Parle'
+,'|168 - Chandivali'
+,'|169 - Ghatkopar West'
+,'|170 - Ghatkopar East'
+,'|171 - Mankhurd shivajinagar'
+,'|172 - Anushakti Nagar'
+,'|173 - Chembur'
+,'|174 - Kurla '
+,'|175 - Kalina'
+,'|176 - Vandre East'
+,'|177 - Vandre West']
+ }
+ else if(s2.value=="mumbai-city")
+ {
+  var optionArray=['|178 - Dharavi' 
+,'|179 - Sion Koliwada'
+,'|180 - Wadala'
+,'|181 - Mahim'
+,'|182 - Worli'
+,'|183 - Shivadi'
+,'|184 - Byculla'
+,'|185 - Malabar Hill'
+,'|186 - Mumbadevi','|Colaba']
+ }  
+ else {console.log("null");return;}
+     
 
 
-      else if (s1.value == "andhra pradesh") {
-        var optionArray = ['anantapur|Anantapur',
-          'chittoor|Chittor',
-          'east godavari|East Godavari',
-          'guntur|Guntur',
-          'kadapa|Kadapa',
-          'krishna|Krishna',
-          'kurnool|Kurnool',
-          'nellore|Nellore',
-          'prakasam|Prakasam',
-          'srikakulum|Srikakilum',
-          'vishakhapatnam|Vishakhapatnam',
-          'vizianagaram|Vizianagaram',
-          'west godavari|West Godavari'];
-      }
-      else if (s1.value == "arunachal pradesh") {
-        var optionArray = ['anjaw|Anjaw',
-          'changalng|Changlang',
-          'dibang valley|Dibang Valley',
-          'east kameng|East Kameng',
-          'east siang|East Siang',
-          'itanagar capital complex|Itanagar Capital Complex',
-          'kamle|Kamle',
-          'kra daadi|Kra Daadi',
-          'kurung kumey|Kurung Kumey',
-          'lepa rada|Lepa Rada',
-          'lohit|Lohit',
-          'longding|Longding',
-          'lower dibang valley|Lower Dibang Valley',
-          'lower siang|Lower Siang',
-          'lower subansiri|Lower Subansiri',
-          'namsai|Namsai',
-          'pakke kessang|Pakke Kessang',
-          'papum pare|Papum Pare',
-          'shi yomi|Shi Yomi',
-          'siang|Siang',
-          'tawang|Tawang',
-          'tirap|Tirap',
-          'upper siang|Upper Siang',
-          'upper subansiri|Upper Subansiri',
-          'west kameng|West kameng',
-          'west siang|West Siang'];
-
-
-      }
-
-      else if (s1.value == "assam") {
-        var optionArray = ['baksa|Baksa', 'barpeta|Barpeta', 'biswanath|Biswanath', 'bongaigaon|Bongaigaon', 'cachar|Cachar', 'charaideo|Charaideo', 'chirang|Chirang', 'daranng|Daranng', 'dhemaji|Dhemaji', 'dhubri|Dhubri', 'dibrugarh|Dibrugarh', 'dima hasao|Dima Hasao', 'goalpara|Goalpara', 'hailankandi|Hailankandi', 'hojai|Hojai', 'jorhat|Jorhat', 'kamrup metropolitan|Kamrup Metropolitan', 'kamrup rural|Kamrup Rural', 'karbi anglong|Karbi Anglong', 'karimganj|Karimganj', 'kokrajhar|Kokrajhar', 'lakhimpur|Lakhimpur', 'majuli|Majuli', 'morigaon|Morigaon'
-          , , 'nagaon|Nagaon', 'nalbari|Nalbari', 'sivasagar|Sivasagar', 'sonitpur|Sonitpur', 'south salmara mankachar|South Salmara Mankachar', 'tinsukia|Tinsukia', 'udalguri|Udalguri', 'west karbi anglong|West Karbi Anglong'];
-      }
-
-      else if (s1.value == "bihar") {
-        var optionArray = ['araria|Araria', 'arwal|Arwal', 'aurangabad|Aurangabad', 'banka|Banka', 'begusarai|Begusarai', 'bhojpur|Bhojpur', 'buxar|Buxar', 'darbhanga|Dharbhanga', 'east champaran|East Champaran', 'gaya|Gaya', 'gopalganj|Gopalganj', 'jamui|Jamui', 'jehanabad|Jehanabad', 'kaimur|Kaimur', 'katihar|Katihar', 'khagaria|Khagaria', 'kishanganj|Kishanganj', 'lakhisarai|Lakhisarai', 'madhepura|Madhepura', 'madhubani|Madhubani', 'munger|Munger', 'muzaffarpur|Muzaffapur', 'nalanda|Nalanda', 'nawada|Nawada', 'patna|Patna', 'purnia|Purnia', 'rohtas|Rohtas', 'saharsa|Saharsa', 'samashtipur|Samashtipur', 'saran|Saran', 'sheikhpura|Sheikhpura', 'sheohar|Sheohar', 'sitamarhi|Sitamarhi', 'siwan|Siwan', 'supaul|Supaul', 'vaishali|Vaishali', 'west champaran|West Champaran'];
-      }
-
-      else if (s1.value == "chandigarh") {
-        var optionArray = ['chandigarh|Chandigarh'];
-      }
-
-      else if (s1.value == "chattisgarh") {
-        var optionArray = ['balod|Balod', 'baloda bazaar|Baloda Bazaar', 'balrampur|Balrampur', 'bastar|Bastar', 'bemetara|Bemetara', 'bijapur|Bijapur', 'bilaspur|Bilaspur', 'dantewada|Dantewada', 'dhamtari|Dhamtari', 'durg|Durg', 'gariaband|Gariaband', 'gaurela pendra marwahi|Gaurela Pendra Marwahi', 'janjgir-champa|Janjgir-Champa', 'jashpur|Jahspur', 'kanker|Kanker', 'kawardha|Kawardha', 'kondagaon|Kondagaon', 'korba|Korba', 'koriya|Koriya', 'mahasamund|Mahasamund', 'mungeli|Mungeli', 'narayanpur|Narayanpur', 'raigarh|Raigarh', 'raipur|Raipur', 'rajnandgaon|Rajnandgaon', 'sukma|Sukma', 'surajpur|Surjapur', 'surguja|Surguja'];
-      }
-
-      else if (s1.value == "dadra and nagar haveli") {
-        var optionArray = ['dadra and nagar haveli|Dadra and Nagar Haveli'];
-      }
-
-      else if (s1.value == "daman and diu") {
-
-        var optionArray = ['daman|Daman', 'diu|Diu'];
-      }
-
-
-
-      else if (s1.value == "delhi") {
-        var optionArray = ['central delhi|Central Delhi', 'east delhi|East Delhi', 'new delhi|New Delhi', 'north delhi|North Delhi', 'north east delhi|North East Delhi', 'north west delhi|North West Delhi', 'shahdara|Shahdara', 'south delhi|South Delhi', 'south east delhi|South East Delhi', 'south west delhi|South West Delhi', 'west delhi|West Delhi'];
-      }
-
-      else if (s1.value == "goa") {
-        var optionArray = ['north goa|North Goa', 'south goa|South Goa'];
-      }
-
-      else if (s1.value == "gujarat") {
-        var optionArray = ['ahmedabad|Ahmedabad', 'ahmedabad corporation|Ahmedabad Corporation', 'amreli|Amreli', 'anand|Anand', 'aravalli|Aravalli', 'banaskantha|Banaskantha', 'bharuch|Bharuch', 'bhavnagar|Bhavnagar', 'bhavnagar corporation|Bhavnagar Corporation', 'botad|Botad', 'chhotaudepur|Chhotaudepur', 'dahod|Dahod', 'dang|Dang', 'devbhumi dwaraka|Devbhumi Dwaraka', 'gandhinagar|Gandhinagar', 'gir somnath|Gir Somnath', 'jamnagar|Jamnagar', 'jamnagar corporation|Jamnagar Corporation', 'junagadh|Junagadh', 'junagadh|junagadh corporation', 'kheda|Kheda', 'kutch|Kutch', 'mahisagar|Mahisagar', 'mehsana|Mehsana', 'morbi|Morbi' | 'narmada|Narmada', 'navsari|Navsari', 'panchmahal|Panchmahal', 'patan|Patan', 'porbandar|Porbandar', 'rajkot|Rajkot', 'rajkot corporation|Rajkot Corporation', 'sabarkantha|Sabarkantha', 'surat|Surat', 'surat corporation|Surat Corporation', 'surendranagar|Surendranagar', 'tapi|Tapi', 'vadodara|Vadodara', 'vadodara corporation|Vadodara Corporation', 'valsad|Valsad'];
-      }
-      else if (s1.value == "haryana") {
-        var optionArray = ['ambala|Ambala', 'bhiwani|Bhiwani', 'charkhi dadri|Charkhi Dadri', 'faridabad|Faridabad', 'fatehabad|Fatehabad', 'gurgaon|Gurgaon', 'hisar|Hisar', 'jhajjar|Jhajjar', 'jind|Jind', 'kaithal|Kaithal', 'karnal|Karnal', 'kurukshetra|Kurukshetra', 'mahendragarh|Mahendragarh', 'nuh|Nuh', 'palwal|Palwal', 'panchkula|Panchkula', 'panipat|Panipat', 'rewari|Rewari', 'rohtak|Rohtak', 'sirsa|Sirsa', 'sonipat|Sonipat', 'yamunanagar|Yamunanagar'];
-      }
-
-      else if (s1.value == "himachal pradesh") {
-        var optionArray = ['bilaspur|Bilaspur', 'chamba|Chamba', 'hamirpur|Hamirpur', 'kangra|kangra', 'kinnaur|Kinnaur', 'kullu|Kullu', 'lahaul spiti|Lahaul Spiti', 'mandi|Mandi', 'shimla|Shimla', 'sirmaur|Sirmaur', 'solan|Solan', 'una|Una'];
-      }
-
-      else if (s1.value == "jammu and kashmir") {
-        var optionArray = ['anantnag|Anantnag', 'bandipore|Bandipore', 'baramulla|Baramulla', 'budgam|Budgam', 'doda|Doda', 'ganderbal|Ganderbal', 'jammu|Jammu', 'kathua|Kathua', 'kishtwar|Kishtwar', 'kulgam|Kulgam', 'kupwara|Kupwara', 'poonch|Poonch', 'pulwama|Pulwama', 'rajouri|Rajouri', 'ramban|Ramban', 'reasi|Reasi', 'samba|Samba', 'shopian|Shopian', 'srinagar|Srinagar', 'udhampur|Udhampur'];
-      }
-
-      else if (s1.value == "jharkhand") {
-        var optionArray = ['bokaro|Bokaro', 'chatra|Chatra', 'deoghar|Deoghar', 'dhanbad|Dhanbad', 'dumka|Dumka', 'east singhbhum|East Singhbhum', 'garhwa|Garhwa', 'giridih|Giridih', 'godda|Godda', 'gumla|Gumla', 'hazaribagh|Hazaribagh', 'jamtara|Jamtara', 'khunti|Khunti', 'koderma|koderma', 'latehar|Latehar', 'pakur|Pakur', 'palamu|Palamu', 'ramgarh|Ramgarh', 'ranchi|ranchi', 'sahebganj|Sahebganj', 'seraikela kharsawan|Seraikela Kharsawan', 'simdega|Simdega', 'west singhbhum|West Singhbhum'];
-      }
-      else if (s1.value == "karnataka") {
-        var optionArray = ['bagalkot|Bagalkot', 'bangalore rural|Bangalore Rural', 'Bangalore Urban|Bangalore Urban', 'bbmp|BBMP', 'belgaum|Belgaum', 'bellary|Bellary', 'bidam|Bidam', 'chamarajanagar|Chamarajanagar', 'chikamagalur|Chikamagalur', 'chikkaballapur|Chikkaballapur', 'chitradurga|Chitradurga', 'dakshina kannada|Dakshina Kannada', 'devanagere|Devanagere', 'dharwad|Dharwad', 'gadag|Gadag', 'gulbarga|Gulbarga', 'hassan|Hassan', 'haveri|Haveri', 'kodagu|Kodagu', 'kolar|Kolar', 'koppal|Koppal', 'mandya|Mandya', 'mysore|Mysore', 'raichur|Raichur', 'ramanagara|Ramanagara', 'shimoga|Shimoga', 'tumkur|Tumkur', 'udupi|Udupi', 'uttar kannada|Uttar Kannada', 'vijayapura|Vijayapura', 'yadgir|Yadgir'];
-      }
-      else if (s1.value == "kerala") {
-        var optionArray = ['alappuzha|Alappuzha', 'ernakulam|Ernakulam', 'idukki|Idukki', 'kannur|Kannur', 'kasaragod|Kasaragod', 'kollam|Kollam', 'kottayam|Kottayam', 'kozhikode|Kozikode', 'malappuram|Malappuram', 'palakkad|Palakkad', 'pathanamthitta|Pathanamthitta', 'thiruvananthapuram|Thiruvananthapuram', 'thrissur|Thrissur', 'wayanad|Wayanad'];
-      }
-      else if (s1.value == "ladakh") {
-        var optionArray = ['kargil|Kargil', 'leh|Leh'];
-      }
-
-      else if (s1.value == "lakshadweep") {
-        var optionArray = ['agatti island|Agatti Island', 'lakshadweep|Lakshadweep'];
-      }
-      else if (s1.value == "madhya pradesh") {
-        var optionArray = ['agar|Agar', 'alirajpur|Alirajpur', 'anuppur|Anuppur', 'ashoknagar|Ashoknagar', 'balaghat|Balaghat', 'barwani|Barwani', 'betul|Betul', 'bhind|Bhind', 'bhopal|Bhopal', 'burhanpur|Burhanpur', 'chhatarpur|Chattarpur', 'chhindwara|Chhindwara', 'damoh|Damoh', 'datia|Datia', 'dewas|Dewas', 'dhar|Dhar', 'dindori|Dindori', 'guna|Guna', 'gwalior|Gwalior', 'harda|Harda', 'hoshangabad|Hoshangabad', 'indore|Indore', 'jabalpur|Jabalpur', 'jhabua|Jhabua', 'katni|Katni', 'khandwa|Khandwa', 'khargone|Khargone', 'mandla|Mandla', 'mandsaur|Mandsaur', 'morena|Morena', 'narsinghpur|Narsinghpur', 'neemuch|Neemuch', 'panna|Panna', 'raiseb|Raisen', 'rajgarh|Rajgarh', 'ratlam|Ratlam', 'rewa|Rewa', 'sagar|Sagar', 'satna|Satna', 'sehore|Sehore', 'seoni|Seoni', 'shahdol|Shahdol', 'shajapur|Shajapur', 'dheopur|Sheopur', 'shivpuri|SHivpuri', 'sidhi|Sidhi', 'singrauli|Singrauli', 'tikamgarh|Tikamgarh', 'ujjain|Ujjain', 'umaria|Umaria', 'vidisha|Vidisha'];
-      }
-
-      else if (s1.value == "maharashtra") {
-        var optionArray = ['ahmednagar|Ahmednagar', 'akola|AKola', 'amravati|Amravati', 'aurangabad|Aurangabad', 'beed|Beed', 'bhandara|Bhandara', 'buldhana|Buldhana', 'chandrapur|Chandrapur', 'dhule|Dhule', 'gadchiroli|Gadchiroli', 'gondia|Gondia', 'hingoli|Hingoli', 'jalgaon|Jalgaon', 'jalna|Jalna', 'kolhapur|Kolhapur', 'latur|Latur', 'mumbai|Mumbai', 'nagpur|Nagpur', 'nanded|Nanded', 'nandurbar|Nandurbar', 'nashik|Nahsik', 'osmanabad|Osmanabad', 'palghar|Palghar', 'parbhani|Parbhani',
-          'pune|Pune', 'rajgad|Rajgad', 'ratnagiri|Ratnagiri', 'sangli|Sangli', 'satara|Satara', 'sindhudurg|Sindhudurg', 'solapur|Solapur', 'thane|Thane', 'wardha|Wardha', 'washim|Washim', 'yavatmal|Yavatmal'];
-      }
-      else if (s1.value == "manipur") {
-        var optionArray = ['bishnupur|Bishnupur', 'chandel|Chandel', 'churachandpur|Churanchandpur', 'imphal east|Imphal East', 'imphal west|Imphal West', 'jiribam|Jiribam', 'kakching|Kakching', 'kamjong|Kamjong', 'kangpokpi|Kanhpokpi', 'noney|Noney', 'pherzawl|Pherzawl', 'senapati|Senapati', 'tamenglong|Tamenglong', 'tengnoupal|Tengnoupal', 'thoubal|Thoubal', 'ukhrul|Ukhrul'];
-      }
-      else if (s1.value == "meghalaya") {
-        var optionArray = ['east garo hills|East Garo Hills', 'east jaintia hills|East Jaintia Hills', 'east khasi hills|East Khasi Hills', 'north garo hills|North Garo Hills', 'ri-bhoi|Ri-Bhoi', 'south garo hills|SOuth Garo Hills', 'south west khasi hills|South West Khasi Hills', 'west garo hills|West Garo Hills', 'west jaintia hills|West Jaintia Hills', 'west khasi hills|West Khasi Hills'];
-      }
-      else if (s1.value == "mizoram") {
-        var optionArray = ['aizawl east|Aizawl East', 'aizawl west|Aizawl West', 'champhai|Champhai', 'kolasib|Kolasib', 'lawngtai|Lawngtai', 'lunglei|Lunglei', 'mamit|Mamit', 'serchhip|Serchhip', 'siaha|Siaha'];
-      }
-
-      else if (s1.value == "nagaland") {
-        var optionArray = ['dimapur|Dimapur', 'kiphire|Kiphire', 'kohima|Kohima', 'longleng|Longleng', 'mokokchung|Mokokchung', 'mon|Mon', 'peren|Peren', 'phek|Phek', 'tuensang|Tuensang', 'wokha|Wokha', 'zunheboto|Zunheboto'];
-      }
-      else if (s1.value == "odisha") {
-        var optionArray = ['angul|Angul', 'balangir|Balangir', 'balasore|Balasore', 'bargarh|Bargarh', 'bhadrak|Bhadrak', 'boudh|Boudh', 'cuttack|Cuttack', 'deogarh|Deogarh', 'dhenkanal|Dhenkanal', 'gajapati|Gajapati', 'ganjam|Ganjam', 'jagatsinghpur|Jagatsinghpur', 'jajpur|Jajpur', 'jharsuguda|Jharsuguda', 'kalahandi|Kalahandi', 'kandhamal|Kandhamal', 'kendrapara|Kendrapara', 'kendujhar|Kendujhar', 'khurda|Khurda', 'koraput|Koraput', 'malkangiri|Malkangiri', 'mayurbhanj|Mayurbhanj', 'nabarangpur|Nabarangpur', 'nayagarh|Nayagarh', 'nuapada|Nuapada', 'puri|Puri', 'rayagada|Rayagada', 'sambalpur|Sambalpur', 'subarnapur|Subarnapur', 'sundargarh|Sundargarh'];
-      }
-
-      else if (s1.value == "puducherry") {
-        var optionArray = ['karaikal|Karaikal', 'mahe|Mahe', 'puducherry|Puducherry', 'yanam|Yanam'];
-      }
-      else if (s1.value == "punjab") {
-        var optionArray = ['amritsar|Amritsar', 'barnala|Barnala', 'bathinda|Bathinda', 'faridkot|Faridkot', 'fatehgarh sahib|Fatehgarh Sahib', 'fazilka|Fazilka', 'ferozpur|Ferozpur', 'gurdaspur|Gurdaspur', 'hishiarpur|Hoshiarpur', 'jalandhar|Jalandhar', 'kapurthala|Kapurthala', 'ludhiana|Ludhiana', 'mansa|mansa', 'moga|Moga', 'pathankot|Pathankot', 'patiala|Patiala', 'rup nagar|Rup Nagar', 'sangrur|Sangrur', 'sas nagar|SAS Nagar', 'sbs nagar|SBS Nagar', 'sri mukhtsar sahib|Sri Muktsar Sahib', 'tarn taran|Tarn Taran'];
-      }
-      else if (s1.value == "rajasthan") {
-        var optionArray = ['ajmer|Ajmer', 'alwar|Alwar', 'banswara|Banswara', 'baran|Baran', 'barmer|Barmer', 'bharatpur|Bharatpur', 'bhilwara|Bhilwara', 'bikaner|Bikaner', 'bundu|Bundi', 'chittorgarh|Chittorgarh', 'churu|Churu', 'dausa|Dausa', 'dholpur|Dholpur', 'dungarpur|Dungarpur', 'hanumangarh|Hanumangarh', 'jaipur I|Jaipur I', 'jaipur II|Jaipur II', 'jaisalmer|Jaisalmer', 'jalore|Jalore', 'jhalawar|Jhalawar', 'jhunjhunu|Jhunjhunu', 'jodhpur|Jodhpur', 'karauli|Karauli', 'kota|Kota', 'nagaur|Nagaur', 'pali|Pali', 'pratapgarh|Pratapgarh', 'rajsamand|Rajsamand', 'sawai madhopur|Sawai Madhopur', 'sikar|Sikar', 'sirohi|Sirohi', 'sri ganganagar|Sri Ganganagar', 'tonk|Tonk', 'udaipur|Udaipur'];
-      }
-      else if (s1.value == "sikkim") {
-        var optionArray = ['east sikkim|East Sikkim', 'north sikkim|North Sikkim', 'south sikkim|South Sikkim', 'west sikkim|West Sikkim'];
-      }
-      else if (s1.value == "tamil nadu") {
-        var optionArray = ['aranthangi|Aranthangi', 'ariyalur|Ariyalur', 'attur|Attur', 'chengalpet|Chengalpet', 'chennai|chennai', 'cheyyar|Cheyyar', 'coimbatore|Coimbatore', 'cuddalore|Cuddalore', 'dharmapuri|Dharmapuri', 'dindigul|DIndigul', 'erode|Erode', 'kallakurichi|Kallakurichi', 'kanchipuram|Kanchipuram', 'kanyakumari|Kanyakumari', 'karur|Karur', 'kovilpatti|Kovilpatti', 'krishnagiri|Krishnagiri', 'madurai|Madurai', 'nagapattinam|Nagapattinam', 'namakkal|Namakkal', 'nilgiris|Nilgiris', 'palani|Palani', 'paramakudi|Paramakudi', 'perambalur|Perambalur', 'poonamallee|Poonamallee', 'pudukkottai|Pudukkottai', 'ramanathapuram|Ramanathapuram', 'ranipet|Ranipet', 'salem|Salem', 'sivaganga|Sivaganga', 'sivakasi|Sivakasi', 'tenkasi|Tenkasi', 'thanjavur|Thanjavur', 'theni|Theni', 'thoothukudi(tuticorin)|Thoothukudi(Tuticorin)', 'tiruchirappalli|Tiruchirappalli', 'tirunelvelli|Tirunelvelli', 'tirupattur|Tirupattur', 'tiruppur|Tiruppur', 'tiruvaluur|Tiruvallur', 'tiruvannamalai|Tiruvannamalai', 'tiruvarur|Tiruvarur', 'vellore|Vellore', 'viluppuram|Viluppuram', 'virudhunagar|Virudhunagar'];
-      }
-      else if (s1.value == "telangana") {
-        var optionArray = ['adilabad|Adilabad', 'bhadradri kothagudem|Bhadradi Kothagudem', 'hyderabad|Hyderabad', 'jagtial|Jagtial', 'jangaon|Jangaon', 'jayashankar bhupalpally|Jayashankar Bhupalpally', 'jogulamba gadwal|Jogulamba Gadwal', 'kamareddy|Kamareddy', 'karimnagar|Karimnagar', 'khammam|Khammam', 'kumuram bheem|Kumuram Bheem', 'mahbubabad|Mahabubabad', 'mahabubnagar|mahabubnagar', 'mancherial|Mancherial', 'medak|Medak', 'medchal|Medchal', 'mulugu|Mulugu', 'nagarkurnool|Nagarkurnool', 'nalgonda|Nalgonda', 'narayanpet|Narayanpet', 'nirmal|Nirmal', 'nizamabad|Nizamabad', 'peddapalli|Peddapalli', 'rajanna sircilla|Rajanna Sircilla', 'rangareddy|Rangareddy', 'sangareddy|Sangareddy', 'siddipet|Siddipet', 'suryapet|Suryapet', 'vikarabad|Vikarabad', 'wanaparthy|Wanaparthy', 'warangal(rural)|Warangal(Rural)', 'warangal(urban)|Warangal(Urban)', 'yadadri bhuvanagiri|Yadadri Bhuvanagiri'];
-      }
-      else if (s1.value == "tripura") {
-        var optionArray = ['dhalai|Dhalai', 'gomati|Gomati', 'khowai|Khowai', 'north tripura|North Tripura', 'sepahijala|Sepahijala', 'south tripura|South Tripura', 'unakoti|Unakoti', 'west tripura|West Tripura'];
-      }
-
-      else if (s1.value == "uttar pradesh") {
-        var optionArray = ['agra|Agra', 'aligarh|Aligarh', 'ambedkar nagar|Ambedkar Nagar', 'amethi|Amethi', 'amroha|Amroha', 'auraiya|Auraiya', 'ayodhya|Ayodhya', 'azamgarh|Azamgarh', 'badaun|Badaun', 'baghpat|Baghpat', 'bahraich|Bahraich', 'balarampur|Balarampur', 'ballia|Ballia', 'banda|Banda', 'barabanki|Barabanki', 'bareilly|Bareilly', 'basti|Basti', 'bhadohi|Bhadohi', 'bijnour|Bijnour', 'bulandshahr|Bulandshahr', 'chandauli|Chandauli', 'chitrakoot|Chitrakoot', 'deoria|Deoria', 'etah|Etah', 'etawah|Etawah', 'farrukhabad|Farrukhabad', 'fatehpur|Fatehpur', 'firozabad|Firozabad', 'gautam buddha nagar|Gautam Buddha Nagar', 'ghaziabad|Ghaziabad', 'ghazipur|Ghazipur', 'gonda|Gonda', 'gorakhpur|Gorakhpur', 'hamirpur|Hamirpur', 'hapur|Hapur', 'hardoi|Hardoi', 'hathras|Hathras', 'jalaun|Jalaun', 'jaunpur|Jaunpur', 'jhansi|Jhansi', 'kannauj|Kannauj', 'kanpur dehat|Kanpur Dehat', 'kanpur nagar|Kanpur Nagar', 'kasganj|Kasganj', 'kaushambi|Kaushambi', 'kushinagar|Kushinagar', 'lakhimpur kheri|Lakhimpur Kheri', 'lalitpur|Lalitpur', 'lucknow|Lucknow', 'maharajganj|Maharajganj', 'mahoba|Mahoba', 'mainpuri|Mainpuri', 'mathura|mathura', 'mau|Mau', 'meerut|Meerut', 'mirzapur|Mirzapur', 'moradabad|Moradabad', 'muzaffarnagar|Muzaffarnagar', 'pilibhit|Pilibhit', 'pratapgarh|Pratapgarh', 'prayagraj|Prayagraj', 'raebareli|Raebareli', 'rampur|Rampur', 'saharanpur|Saharanpur', 'sambhal|Sambhal', 'sant kabir nagar|Sant Kabir Nagar', 'shahjahanpur|Shahjahanpur', 'shamli|Shamli', 'shravasti|Shravasti', 'siddharthnagar|Siddharthnagar', 'sitapur|Sitapur', 'sonbhadra|Sonbhadra', 'sultanpur|Sultanpur', 'unnao|Unnao', 'varanasi|Varanasi'];
-      }
-
-      else if (s1.value == "uttarakhand") {
-        var optionArray = ['almora|Almora', 'bageshwar|Bageshwar', 'chamoli|Chamoli', 'champawat|Champawat', 'dehradun|Dehradun', 'haridwar|Haridwar', 'nainital|Nainital', 'pauri garhwal|Pauri Garhwal', 'pithoragarh|Pithoragarh', 'rudraprayag|Rudraprayag', 'tehri garhwal|Tehri Garhwal', 'udha, dingh nagar|Udham Singh Nagar', 'uttarkashi|Uttarkashi'];
-      }
-
-      else if (s1.value == "west bengal") {
-        var optionArray = ['alipurduar district|Alipurduar District', 'bankura|Bankura', 'basirhat hd(north 24 parganas)|Basirhat HD(North 24 Pargana)', 'birbhum|Birbhum', 'bishnupur hd(bankura)|Bishnupur HD(Bankura)', 'coochbehar|Coochbehar', 'dakshin dinajpur|Dakshin DInajpur', 'darjeeling|Darjeeling', 'diamond harbor hd(south 24 pargana)|Diamond Harbor HD(South 24 Pargana)', 'east bardhaman|East Bardhaman', 'hoogly|Hoogly', 'howrah|Howrah', 'jalpaiguri|Jalpaiguri', 'jhargram|Jhargram', 'kalimpong|Kalimpong', 'kolkata|Kolkata', 'malda|Malda', 'murshidabad|Murshidabad', 'nadia|Nadia', 'nandigram hd(east medinipore)|Nandigram HD(East Medinipore)', 'north 24 parganas|North 24 Parganas', 'paschim medinipore|Paschim MEdinipore', 'purba medinipore|Purba Medinipore', 'purulia|Purulia', 'rampurhat hd(birbhum)|Rampurhat HD(Birbhum)', 'south 24 parganas|South 24 Parganas', 'uttar dinajpur|Uttar Dinajpur', 'west bardhaman|West Bardhaman'];
-      }
-
-      for (var option in optionArray) {
+     for (var option in optionArray) {
         var pair = optionArray[option].split("|");
         var newoption = document.createElement("option");
 
         newoption.value = pair[0];
         newoption.innerHTML = pair[1];
-        s2.options.add(newoption);
+        s3.options.add(newoption);
       }
     }
   </script>
@@ -2201,46 +2278,46 @@ function myFunction(selectObject) {
       responsiveVoice.speak(text, "UK English Male", { rate: 0.8 });
     })
   </script>
-    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+  <button id="scrollToTopButton" title="Go to top" class="ml-5">
+    <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
   </button>
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
       var scrollTopButton = document.getElementById("scrollToTopButton");
       window.onscroll = function () { scrollFunction() };
 
       function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollTopButton.style.display = "block";
-      } else {
-        scrollTopButton.style.display = "none";
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
       }
-    }
 
-    $("#scrollToTopButton").click(function(){
-    $('html ,body').animate({scrollTop : 0},800)
-  });
-  });
+      $("#scrollToTopButton").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 800)
+      });
+    });
   </script>
   <script src="js/video.js"></script>
   <script>
-  function logout(){
-    window.location.replace("login.html");
-  }
-</script>
+    function logout() {
+      window.location.replace("login.html");
+    }
+  </script>
   <script>
-		function printDiv(printMe){
-			var printContents = document.getElementById("printMe").innerHTML;
-			var originalContents = document.body.innerHTML;
+    function printDiv(printMe) {
+      var printContents = document.getElementById("printMe").innerHTML;
+      var originalContents = document.body.innerHTML;
 
-			document.body.innerHTML = printContents;
+      document.body.innerHTML = printContents;
 
-			window.print();
+      window.print();
 
-			document.body.innerHTML = originalContents;
+      document.body.innerHTML = originalContents;
 
-		}
-	</script>
+    }
+  </script>
   <script src="./index.js"></script>
 </body>
 
