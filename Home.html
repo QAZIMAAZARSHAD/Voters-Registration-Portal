@@ -2294,8 +2294,17 @@ if(s2.value=="raigad")
         }
       }
 
+      function detectMob() {
+        return ( ( window.screen.width <= 600 ) && ( window.screen.height <= 950 ) );
+      }
+
       $("#scrollToTopButton").click(function () {
-        $('html ,body').animate({ scrollTop: 0 }, 800)
+        if (detectMob()){
+          $('html ,body').animate({ scrollTop: 0 }, 1);
+        }
+      	else {
+          $('html ,body').animate({ scrollTop: 0 }, 800);
+        }
       });
     });
   </script>
