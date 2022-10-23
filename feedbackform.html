@@ -655,9 +655,18 @@ function myFunction(selectObject) {
     }
   }
 
-  $("#scrollToTopButton").click(function(){
-  $('html ,body').animate({scrollTop : 0},800)
-});
+  function detectMob() {
+    return ( ( window.screen.width <= 600 ) && ( window.screen.height <= 950 ) );
+  }
+
+  $("#scrollToTopButton").click(function () {
+    if (detectMob()){
+      $('html ,body').animate({ scrollTop: 0 }, 1);
+    }
+    else {
+      $('html ,body').animate({ scrollTop: 0 }, 800);
+    }
+  });
 });
 </script>
 <script>
